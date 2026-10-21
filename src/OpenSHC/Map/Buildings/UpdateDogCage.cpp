@@ -42,30 +42,30 @@ namespace Map {
                 }
             }
         }
-        if (unitCount == 0) {
+        if (unitCount != 0) {
+            if (dogCount != 0) {
+                DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
+                DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
+                MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::updateBuildingSignpostCounter,
+                    DAT_BuildingsState::ptr)(buildingID, 1);
+                DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
+                DAT_BuildingsState::instance.buildings[buildingID].animationFrame
+                    = (char)DAT_BuildingDefinedData::instance
+                          .DogCageAnimationFrames[DAT_BuildingsState::instance.buildings[buildingID].animationIndex];
+                if (DAT_BuildingsState::instance.buildings[buildingID].animationFrame <= 0) {
+                    DAT_BuildingsState::instance.buildings[buildingID].animationIndex = 0;
+                    DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 1;
+                }
+            } else {
+                DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
+                DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
+            }
+        } else {
             DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
             DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
             DAT_TileMapState::instance.showNoRubbleWhenDestroyingBuilding = 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::destroyBuilding, DAT_BuildingsState::ptr)(
                 buildingID);
-            return;
-        }
-        if (dogCount == 0) {
-            DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
-            DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
-            return;
-        }
-        DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
-        DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
-        MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::updateBuildingSignpostCounter,
-            DAT_BuildingsState::ptr)(buildingID, 1);
-        DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
-        DAT_BuildingsState::instance.buildings[buildingID].animationFrame
-            = (char)DAT_BuildingDefinedData::instance
-                  .DogCageAnimationFrames[DAT_BuildingsState::instance.buildings[buildingID].animationIndex];
-        if (DAT_BuildingsState::instance.buildings[buildingID].animationFrame <= 0) {
-            DAT_BuildingsState::instance.buildings[buildingID].animationIndex = 0;
-            DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 1;
         }
     }
 

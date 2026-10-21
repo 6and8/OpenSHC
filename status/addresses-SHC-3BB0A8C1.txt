@@ -5557,7 +5557,7 @@ SHC_3BB0A8C1_0x00418530 | 79.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00418640 | 96.4% | Register allocation differs
 
-SHC_3BB0A8C1_0x00418740 | 73.1% | Register allocation differs
+SHC_3BB0A8C1_0x00418740 | 88.6% | Register allocation differs
 
 SHC_3BB0A8C1_0x00418880 | 100.0% | Reimplemented
 
@@ -5579,7 +5579,7 @@ SHC_3BB0A8C1_0x00418F70 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418F90 | 83.0% | Register allocation differs
 
-SHC_3BB0A8C1_0x004190D0 | 69.0% | Register allocation differs
+SHC_3BB0A8C1_0x004190D0 | 86.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00419190 | 78.6% | Register allocation differs
 
@@ -6229,7 +6229,7 @@ SHC_3BB0A8C1_0x004205B0 | 56.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00420760 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00420A30 | 55.7% | Register allocation differs
+SHC_3BB0A8C1_0x00420A30 | 62.1% | Register allocation differs
 
 SHC_3BB0A8C1_0x00420BF0 | 100.0% | Reimplemented
 

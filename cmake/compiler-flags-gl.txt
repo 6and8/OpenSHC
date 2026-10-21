@@ -52,3 +52,13 @@ src/OpenSHC/Map/Buildings/BuildingsState/clearBuildings.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/applyVersionUpgradeAccessibilityRecompute.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/recomputeAccessibilityForAllBuildings.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/getResourceSpace.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/aiFindBuildingToAttack.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceLoss.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/resolveBuildingEntryAccessibility.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spreadFireRandomlyToBuildings.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/canUnitReachBuildingPerimeter.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceGain.cpp

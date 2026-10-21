@@ -21,7 +21,6 @@ namespace Map {
         int const buildingID = DAT_CurrentBuildingID::instance;
         DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
         DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 1;
-        DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraAnimationSprite1 = 2;
         DAT_BuildingsState::instance.buildings[buildingID].extraAnimationSprite2 = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraAnimationSprite3 = 0;
@@ -29,6 +28,7 @@ namespace Map {
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage1 = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage2 = 122;
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage3 = 0;
+        DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage5 = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage6 = 0;
         DAT_BuildingsState::instance.buildings[buildingID].extraOverlayImage7 = 0;

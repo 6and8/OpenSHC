@@ -70,8 +70,11 @@ namespace Map {
                 = (int)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].widthOrHeight / 2;
             int const centerX = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x + half;
             int const centerY = half + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
-            for (int x = centerX - 8; x < centerX + 8; ++x) {
-                for (int y = centerY - 8; y < centerY + 8; ++y) {
+            int const xEnd = centerX + 8;
+            int const yStart = centerY - 8;
+            int const yEnd = centerY + 8;
+            for (int x = centerX - 8; x < xEnd; ++x) {
+                for (int y = yStart; y < yEnd; ++y) {
                     // Faithful to the original, which tests the map cell at (x, x) rather than (x, y)
                     if ((uint)x <= 399
                         && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[x * 400 + x] != 0) {
@@ -107,65 +110,24 @@ namespace Map {
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].outpostRelatedUnk4 < 0) {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].outpostRelatedUnk4 = 1200;
                 int aliveUnits = 0;
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitID[0] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                                    .insideUnitID[0]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitUID[0]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[0]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitID[1] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                                    .insideUnitID[1]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitUID[1]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[1]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitID[2] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                                    .insideUnitID[2]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitUID[2]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[2]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitID[3] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                                    .insideUnitID[3]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitUID[3]) {
-                    aliveUnits += 1;
-                }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3] > 0
-                    && DAT_UnitsState::instance
-                            .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3]]
-                            .uid
-                        == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[3]) {
-                    aliveUnits += 1;
+                for (int i = 0; i < 4; ++i) {
+                    if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].insideUnitID[i] > 0
+                        && DAT_UnitsState::instance
+                                .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
+                                        .insideUnitID[i]]
+                                .uid
+                            == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
+                                .insideUnitUID[i]) {
+                        aliveUnits += 1;
+                    }
+                    if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i] > 0
+                        && DAT_UnitsState::instance
+                                .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
+                                        .workerID[i]]
+                                .uid
+                            == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[i]) {
+                        aliveUnits += 1;
+                    }
                 }
                 if (aliveUnits
                     < DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].randomOutpostField) {

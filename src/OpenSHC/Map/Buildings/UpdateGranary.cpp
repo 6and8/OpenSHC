@@ -39,7 +39,7 @@ namespace Map {
             && DAT_GameState::instance.playerDataArray[owner].someCountdown01 == 0) {
             int resourceGiven = 0;
             if (DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_BREAD] > 0
-                && MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
+                && (int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                        DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
                     < 250) {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_BREAD]
@@ -51,7 +51,7 @@ namespace Map {
                 resourceGiven = 1;
             }
             if (DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_CHEESE] > 0
-                && MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
+                && (int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                        DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
                     < 250) {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_CHEESE]
@@ -63,7 +63,7 @@ namespace Map {
                 resourceGiven = 1;
             }
             if (DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_MEAT] > 0
-                && MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
+                && (int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                        DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
                     < 250) {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_MEAT] += 1;
@@ -74,7 +74,7 @@ namespace Map {
                 resourceGiven = 1;
             }
             if (DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_APPLE] > 0
-                && MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
+                && (int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                        DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
                     < 250) {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_APPLE]
@@ -90,7 +90,7 @@ namespace Map {
                     OpenSHC::Map::Buildings::BuildingsState_Func::countPlayerResources, DAT_BuildingsState::ptr)(owner);
             }
         }
-        if (MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
+        if ((int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
             < 230) {
             DAT_GameState::instance.playerDataArray[owner].granaryIsAlmostFilledUp = 0;

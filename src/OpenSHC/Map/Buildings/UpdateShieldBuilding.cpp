@@ -77,13 +77,7 @@ namespace Map {
                 -= DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount;
             return;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount == 1) {
-            for (int i = 0; i < 1; ++i) {
-                DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
-                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
-            }
-        } else {
+        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount != 1) {
             int position = SEC_RNG::instance.currentNumber2 % 16;
             MACRO_CALL_MEMBER(OpenSHC::Random::RNG_Func::nextRandomNumber2, SEC_RNG::ptr)();
             for (int i = 0;
@@ -125,6 +119,12 @@ namespace Map {
                 DAT_UnitsState::instance.units[workerID].targetedUnitID__OR__engineerMannedSiegeEngineRef = unitID;
             }
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount = 0;
+        } else {
+            for (int i = 0; i < 1; ++i) {
+                DAT_UnitsState::instance
+                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
+                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
+            }
         }
         MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::calculatePreferredRelativeOrientation,
             DAT_DirectionAlgorithmState::ptr)(DAT_UnitsState::instance.units[unitID].x,

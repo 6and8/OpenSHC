@@ -72,19 +72,7 @@ namespace Map {
                 -= DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount;
             return;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount == 2) {
-            if (DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0]]
-                    .aiUnitBehaviourType
-                == OpenSHC::AI::AIUBT_HARASS_SIEGE) {
-                DAT_UnitsState::instance.units[unitID].aiUnitBehaviourType = OpenSHC::AI::AIUBT_SIEGE_01;
-            }
-            for (int i = 0; i < 2; ++i) {
-                DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
-                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
-            }
-        } else {
+        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount != 2) {
             for (int i = 0;
                 i < DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount; ++i) {
                 int const workerID
@@ -104,6 +92,18 @@ namespace Map {
                 }
             }
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount = 0;
+        } else {
+            if (DAT_UnitsState::instance
+                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0]]
+                    .aiUnitBehaviourType
+                == OpenSHC::AI::AIUBT_HARASS_SIEGE) {
+                DAT_UnitsState::instance.units[unitID].aiUnitBehaviourType = OpenSHC::AI::AIUBT_SIEGE_01;
+            }
+            for (int i = 0; i != 2; ++i) {
+                DAT_UnitsState::instance
+                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
+                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
+            }
         }
         MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::calculatePreferredRelativeOrientation,
             DAT_DirectionAlgorithmState::ptr)(DAT_UnitsState::instance.units[unitID].x,

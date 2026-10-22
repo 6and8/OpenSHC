@@ -28,7 +28,7 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
-        int const buildingID = DAT_CurrentBuildingID::instance;
+        int buildingID = DAT_CurrentBuildingID::instance;
         DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
         DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
         MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::updateBuildingSignpostCounter,
@@ -54,12 +54,12 @@ namespace Map {
             MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                 DAT_BuildingsState::instance.buildings[buildingID].x,
                 DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WITCH_BURN);
+            buildingID = DAT_CurrentBuildingID::instance;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 49) {
+        if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 49) {
             MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x,
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
-                OpenSHC::DE::SHCDE::FX_WITCH_SCREAM);
+                DAT_BuildingsState::instance.buildings[buildingID].x,
+                DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WITCH_SCREAM);
         }
     }
 

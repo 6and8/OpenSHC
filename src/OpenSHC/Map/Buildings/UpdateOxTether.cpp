@@ -40,7 +40,7 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
-        int const buildingID = DAT_CurrentBuildingID::instance;
+        int buildingID = DAT_CurrentBuildingID::instance;
         if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
             DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 1;
             DAT_BuildingsState::instance.buildings[buildingID].flagSlot.overlayImage += 1;
@@ -72,32 +72,30 @@ namespace Map {
                 DAT_BuildingsState::ptr)(buildingID, 1);
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::determineBuildingEntranceFromKeepArea,
                 DAT_BuildingsState::ptr)(buildingID, 1, 1);
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryX != 0
-                && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryY != 0) {
+            buildingID = DAT_CurrentBuildingID::instance;
+            if (DAT_BuildingsState::instance.buildings[buildingID].buildingEntryX != 0
+                && DAT_BuildingsState::instance.buildings[buildingID].buildingEntryY != 0) {
                 int const unitID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::spawnUnit,
-                    DAT_UnitsState::ptr)(DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner,
-                    0, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryX * 8,
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryY * 8,
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].terrainHeightUnk,
+                    DAT_UnitsState::ptr)(DAT_BuildingsState::instance.buildings[buildingID].owner, 0,
+                    DAT_BuildingsState::instance.buildings[buildingID].buildingEntryX * 8,
+                    DAT_BuildingsState::instance.buildings[buildingID].buildingEntryY * 8,
+                    DAT_BuildingsState::instance.buildings[buildingID].terrainHeightUnk,
                     OpenSHC::Map::Units::UT_QUARRYOX);
+                buildingID = DAT_CurrentBuildingID::instance;
                 if (unitID != 0) {
-                    DAT_UnitsState::instance.units[unitID].workplaceBuildingUID
-                        = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].uid;
-                    DAT_UnitsState::instance.units[unitID].targetX_2
-                        = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryX;
-                    DAT_UnitsState::instance.units[unitID].targetY_2
-                        = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingEntryY;
-                    DAT_UnitsState::instance.units[unitID].workplaceBuildingID_1 = DAT_CurrentBuildingID::instance;
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].oxTetherRelatedUnitID
-                        = unitID;
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].oxTetherRelatedUnitUID
-                        = DAT_UnitsState::instance.units[unitID].uid;
+                    OpenSHC::Map::Units::Unit& unit = DAT_UnitsState::instance.units[unitID];
+                    unit.workplaceBuildingUID = DAT_BuildingsState::instance.buildings[buildingID].uid;
+                    unit.targetX_2 = DAT_BuildingsState::instance.buildings[buildingID].buildingEntryX;
+                    unit.targetY_2 = DAT_BuildingsState::instance.buildings[buildingID].buildingEntryY;
+                    unit.workplaceBuildingID_1 = buildingID;
+                    DAT_BuildingsState::instance.buildings[buildingID].oxTetherRelatedUnitID = unitID;
+                    DAT_BuildingsState::instance.buildings[buildingID].oxTetherRelatedUnitUID = unit.uid;
                 }
             }
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::setBuildingInitialEntryTileTry,
-                DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance, 0);
+                DAT_BuildingsState::ptr)(buildingID, 0);
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::determineBuildingEntranceFromKeepArea,
-                DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance, 1, 0);
+                DAT_BuildingsState::ptr)(buildingID, 1, 0);
             return;
         }
         // An ox is already out: forget it once its unit slot was reused, and wait 300 ticks when it burns

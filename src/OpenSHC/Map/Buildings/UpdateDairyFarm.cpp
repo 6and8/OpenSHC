@@ -126,7 +126,7 @@ namespace Map {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 32;
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock = 0;
                     // Find a free cow slot, or free the first one whose cow is gone
-                    int slot = 0;
+                    int slot;
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1] == 0) {
                         slot = 0;
                     } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2]
@@ -136,6 +136,7 @@ namespace Map {
                         == 0) {
                         slot = 2;
                     } else {
+                        slot = 0;
                         for (int i = 1; i < 4; ++i) {
                             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[i]
                                     != DAT_UnitsState::instance
@@ -241,10 +242,9 @@ namespace Map {
                           [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1]
                     + 16;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 0;
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1 / 12
-                        < 30
-                    && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1 % 12
-                        == 10) {
+                int const milk
+                    = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1;
+                if (milk / 12 < 30 && milk % 12 == 10) {
                     MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x,
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
@@ -289,24 +289,21 @@ namespace Map {
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
         }
         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].numberOfAnimals = 0;
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1] == 0
-            || DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
-                    .uid
+        int const cow1 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1];
+        if (cow1 == 0
+            || DAT_UnitsState::instance.units[cow1].uid
                 != DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[1]) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1] = 0;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2] == 0
-            || DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2]]
-                    .uid
+        int const cow2 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2];
+        if (cow2 == 0
+            || DAT_UnitsState::instance.units[cow2].uid
                 != DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[2]) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[2] = 0;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3] == 0
-            || DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3]]
-                    .uid
+        int const cow3 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3];
+        if (cow3 == 0
+            || DAT_UnitsState::instance.units[cow3].uid
                 != DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[3]) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[3] = 0;
         }

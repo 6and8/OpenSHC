@@ -63,11 +63,11 @@ namespace Map {
             } else {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 32;
             }
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength > 0) {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
-            } else {
+            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength <= 0) {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex = 0;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state = 4;
+            } else {
+                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
             }
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 4) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].spriteOffetX = -16;
@@ -94,12 +94,12 @@ namespace Map {
             int const frame
                 = (char)DAT_BuildingDefinedData::instance.OilSmelterAnimationFrames3
                       [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            if (frame <= 0) {
+            if (frame > 0) {
+                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 32;
+            } else {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex = 0;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationCycleCompleted = 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state = 1;
-            } else {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 32;
             }
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength < 31) {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength += 1;
@@ -120,11 +120,11 @@ namespace Map {
             } else {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame;
             }
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength > 0) {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
-            } else {
+            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength <= 0) {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex = 0;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state = 7;
+            } else {
+                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
             }
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 7) {
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationActive != 0

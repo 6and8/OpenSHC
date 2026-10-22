@@ -25,7 +25,7 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
-        int const buildingID = DAT_CurrentBuildingID::instance;
+        int buildingID = DAT_CurrentBuildingID::instance;
         int const workerID = DAT_BuildingsState::instance.buildings[buildingID].workerID[0];
         if (workerID != 0 && DAT_UnitsState::instance.units[workerID].state.generic == 2) {
             DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive = 1;
@@ -54,8 +54,9 @@ namespace Map {
             != DAT_BuildingsState::instance.buildings[buildingID].oldVisualActiveState) {
             MACRO_CALL_MEMBER(OpenSHC::Map::TileMapState_Func::updateBuildingGraphicsLayer, DAT_TileMapState::ptr)(
                 buildingID);
-            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].oldVisualActiveState
-                = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingIsVisuallyActive;
+            buildingID = DAT_CurrentBuildingID::instance;
+            DAT_BuildingsState::instance.buildings[buildingID].oldVisualActiveState
+                = DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive;
         }
         if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
             DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 1;

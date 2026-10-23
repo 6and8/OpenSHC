@@ -27,6 +27,7 @@ namespace Map {
         int meat = 0;
         int apples = 0;
         int sprite = 1;
+        int resourceGiven = 0;
         MACRO_CALL_MEMBER(OpenSHC::AI::AICState_Func::addBuildingToTargetableBuildings, DAT_AICState::ptr)(
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
@@ -37,7 +38,6 @@ namespace Map {
             && DAT_GameCore::instance.gameMode_2 != OpenSHC::Game::GM_EDITOR
             && DAT_GameCore::instance.gameMode_2 != OpenSHC::Game::GM_SIEGE_THAT
             && DAT_GameState::instance.playerDataArray[owner].someCountdown01 == 0) {
-            int resourceGiven = 0;
             if (DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_BREAD] > 0
                 && (int)MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                        DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance)
@@ -130,37 +130,33 @@ namespace Map {
         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].flagSlot.overlayImage = 0;
         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].overlayImageID = 0;
         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraOverlayImage10 = 0;
-        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[0] == 0
-            && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_BREAD]
-                != 0) {
+        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[0] == 0) {
             bread = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                         .resources[OpenSHC::Game::Resources::RT_BREAD];
-            totalFood += bread;
+            if (bread != 0) {
+                totalFood += bread;
+            }
         }
-        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[1] == 0
-            && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_CHEESE]
-                != 0) {
+        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[1] == 0) {
             cheese = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                          .resources[OpenSHC::Game::Resources::RT_CHEESE];
-            totalFood += cheese;
+            if (cheese != 0) {
+                totalFood += cheese;
+            }
         }
-        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[2] == 0
-            && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_MEAT]
-                != 0) {
+        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[2] == 0) {
             meat = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                        .resources[OpenSHC::Game::Resources::RT_MEAT];
-            totalFood += meat;
+            if (meat != 0) {
+                totalFood += meat;
+            }
         }
-        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[3] == 0
-            && DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_APPLE]
-                != 0) {
+        if (DAT_GameState::instance.playerDataArray[owner].isFoodTypeBanned[3] == 0) {
             apples = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                          .resources[OpenSHC::Game::Resources::RT_APPLE];
-            totalFood += apples;
+            if (apples != 0) {
+                totalFood += apples;
+            }
         }
         DAT_GameState::instance.playerDataArray[owner].breadCount += bread;
         DAT_GameState::instance.playerDataArray[owner].cheeseCount += cheese;

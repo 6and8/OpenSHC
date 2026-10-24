@@ -63,14 +63,10 @@ namespace Map {
 
         // Most of the animation tables are declared byte, but the original reads them signed
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 0) {
-            char frame;
-            if (DAT_GameSynchronyState::instance.currentGameMode == 0) {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            } else {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTanner
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            }
+            int const index = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
+            char const frame = DAT_GameSynchronyState::instance.currentGameMode == 0
+                ? (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary[index]
+                : (char)DAT_BuildingDefinedData::instance.AnimTanner[index];
             if (frame <= 0) {
                 animationDone = 1;
             } else {
@@ -105,18 +101,24 @@ namespace Map {
                         OpenSHC::DE::SHCDE::FX_TANNER_BRUSH2);
                 }
             }
-            char frame;
             if (DAT_GameSynchronyState::instance.currentGameMode == 0) {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary2
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                char const frame
+                    = (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary2
+                          [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                if (frame <= 0) {
+                    animationDone = 1;
+                } else {
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 12;
+                }
             } else {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTanner2
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            }
-            if (frame <= 0) {
-                animationDone = 1;
-            } else {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 12;
+                char const frame
+                    = (char)DAT_BuildingDefinedData::instance.AnimTanner2
+                          [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                if (frame <= 0) {
+                    animationDone = 1;
+                } else {
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 12;
+                }
             }
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 2
             || DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 4) {
@@ -151,18 +153,24 @@ namespace Map {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
                     OpenSHC::DE::SHCDE::FX_TANNER_CUT);
             }
-            char frame;
             if (DAT_GameSynchronyState::instance.currentGameMode == 0) {
-                frame = (char)DAT_BuildingDefinedData::instance.TannersWorkshopAnimationFrames1
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                char const frame
+                    = (char)DAT_BuildingDefinedData::instance.TannersWorkshopAnimationFrames1
+                          [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                if (frame <= 0) {
+                    animationDone = 1;
+                } else {
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 25;
+                }
             } else {
-                frame = (char)DAT_BuildingDefinedData::instance.TannersWorkshopAnimationFrames2
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            }
-            if (frame <= 0) {
-                animationDone = 1;
-            } else {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 25;
+                char const frame
+                    = (char)DAT_BuildingDefinedData::instance.TannersWorkshopAnimationFrames2
+                          [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
+                if (frame <= 0) {
+                    animationDone = 1;
+                } else {
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 25;
+                }
             }
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 0) {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 31;
@@ -182,14 +190,10 @@ namespace Map {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength
                 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 9) {
-            char frame;
-            if (DAT_GameSynchronyState::instance.currentGameMode == 0) {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary4
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            } else {
-                frame = (char)DAT_BuildingDefinedData::instance.AnimTanner6
-                            [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-            }
+            int const index = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
+            char const frame = DAT_GameSynchronyState::instance.currentGameMode == 0
+                ? (char)DAT_BuildingDefinedData::instance.AnimTannerSolitary4[index]
+                : (char)DAT_BuildingDefinedData::instance.AnimTanner6[index];
             if (frame <= 0) {
                 animationDone = 1;
             } else {

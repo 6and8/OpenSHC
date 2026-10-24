@@ -154,9 +154,7 @@ namespace Map {
                             }
                         }
                     }
-                    // tileRef1 .. tileRef3 are consecutive fields in the generated header
-                    int const tile
-                        = (&DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileRef1)[slot];
+                    int const tile = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileRefs[slot];
                     int const tileY = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[tile];
                     int const tileX = tile - DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile;
                     int const cowID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::spawnUnit,

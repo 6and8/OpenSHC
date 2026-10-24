@@ -16,7 +16,7 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x0040D6E0
-        undefined4 BuildingsState::isSpaceAvailableAtUnitRallyPoint(int playerID, int group, int unitID)
+        BOOLEnum BuildingsState::isSpaceAvailableAtUnitRallyPoint(int playerID, int group, int unitID)
         {
             if (DAT_GameSynchronyState::instance.currentGameMode != 0
                 && DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] == -1
@@ -24,11 +24,11 @@ namespace Map {
                 && DAT_UnitsState::instance.units[unitID].aiUnitBehaviourType != 2) {
                 int const keepID = DAT_GameState::instance.playerDataArray[playerID].keep.id;
                 if (keepID == 0) {
-                    return 0;
+                    return FALSE;
                 }
                 this->DAT_TempXOffset = DAT_BuildingsState::instance.buildings[keepID].someX;
                 this->DAT_TempYOffset = DAT_BuildingsState::instance.buildings[keepID].someY;
-                return 1;
+                return TRUE;
             }
             int index = group;
             if (index == 6) {
@@ -64,15 +64,15 @@ namespace Map {
                         this->DAT_TempYOffset = y;
                         if (x == DAT_UnitsState::instance.units[unitID].x
                             && y == DAT_UnitsState::instance.units[unitID].y) {
-                            return 0;
+                            return FALSE;
                         }
-                        return 1;
+                        return TRUE;
                     }
                 }
-                return 0;
+                return FALSE;
             }
             if (DAT_GameState::instance.playerDataArray[playerID].barracks.id <= 0) {
-                return 0;
+                return FALSE;
             }
             if (group == 6) {
                 if (DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[5].x != 0) {
@@ -102,11 +102,11 @@ namespace Map {
                 this->DAT_TempXOffset = x;
                 this->DAT_TempYOffset = y;
                 if (x == DAT_UnitsState::instance.units[unitID].x && y == DAT_UnitsState::instance.units[unitID].y) {
-                    return 0;
+                    return FALSE;
                 }
-                return 1;
+                return TRUE;
             }
-            return 0;
+            return FALSE;
         }
 
     }

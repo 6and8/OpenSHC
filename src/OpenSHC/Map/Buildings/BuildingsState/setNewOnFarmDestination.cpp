@@ -14,13 +14,13 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x0040EA00
-        undefined4 BuildingsState::setNewOnFarmDestination(int buildingID)
+        BOOLEnum BuildingsState::setNewOnFarmDestination(int buildingID)
         {
             uint const entryX = this->buildings[buildingID].buildingEntryX;
             uint const entryY = this->buildings[buildingID].buildingEntryY;
             if (entryX > 399 || entryY > 399
                 || DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[entryY * 400 + entryX] == 0) {
-                return 0;
+                return FALSE;
             }
             int const entryArea
                 = (short)DAT_TileMapState::instance
@@ -29,14 +29,13 @@ namespace Map {
             // The header has no field for the short at 0x26e.
             int direction = *(short*)this->buildings[buildingID].padding_0x26e == 0x51 ? 4 : 2;
             for (int i = 0; i < 24; ++i) {
-                // The header splits the tile reference array into tileRef1..tileRef19.
-                int const tile = (&this->buildings[buildingID].tileRef1)[i];
+                int const tile = this->buildings[buildingID].tileRefs[i];
                 int const row = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[tile];
                 int const damage = (char)DAT_TileMapState::instance.DamageLayer[tile];
                 DAT_BuildingsState::instance.farmerDestinationTile = tile;
                 int const height
                     = MACRO_CALL_MEMBER(TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(tile);
-                if (this->buildings[buildingID].wheatGrowStateRelated == 5) {
+                if (this->buildings[buildingID].farmGrowState == 5) {
                     if ((uint)(damage - 14) > 13) {
                         continue;
                     }
@@ -53,14 +52,14 @@ namespace Map {
                                        TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(target)
                                    - height)
                                 < 16) {
-                            return 1;
+                            return TRUE;
                         }
                         direction += 2;
                         if (direction >= 8) {
                             direction = 0;
                         }
                     }
-                } else if (this->buildings[buildingID].wheatGrowStateRelated == 3) {
+                } else if (this->buildings[buildingID].farmGrowState == 3) {
                     if ((uint)damage > 1) {
                         continue;
                     }
@@ -77,7 +76,7 @@ namespace Map {
                                        TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(target)
                                    - height)
                                 < 16) {
-                            return 1;
+                            return TRUE;
                         }
                         direction += 2;
                         if (direction >= 8) {
@@ -85,10 +84,10 @@ namespace Map {
                         }
                     }
                 } else {
-                    return 0;
+                    return FALSE;
                 }
             }
-            return 0;
+            return FALSE;
         }
 
     }

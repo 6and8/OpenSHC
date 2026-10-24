@@ -14,10 +14,10 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x0040E610
-        undefined4 BuildingsState::findFreeCathedralAssemblyTile(int playerID, int unitID)
+        BOOLEnum BuildingsState::findFreeCathedralAssemblyTile(int playerID, int unitID)
         {
             if (DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[3].x == 0) {
-                return 0;
+                return FALSE;
             }
             int const assemblyX = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[3].x;
             int const assemblyY = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[3].y;
@@ -41,12 +41,12 @@ namespace Map {
                     this->DAT_TempYOffset = y;
                     if (x == DAT_UnitsState::instance.units[unitID].x
                         && y == DAT_UnitsState::instance.units[unitID].y) {
-                        return 0;
+                        return FALSE;
                     }
-                    return 1;
+                    return TRUE;
                 }
             }
-            return 0;
+            return FALSE;
         }
 
     }

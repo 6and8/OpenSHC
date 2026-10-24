@@ -15,7 +15,7 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x004105F0
-        undefined4 BuildingsState::canUnitReachAdjacentTile(int param_1, int param_2)
+        BOOLEnum BuildingsState::canUnitReachAdjacentTile(int param_1, int param_2)
         {
             int const unitArea
                 = (short)DAT_TileMapState::instance.PathConnectionLayer[DAT_UnitsState::instance.units[param_2].tile];
@@ -23,7 +23,7 @@ namespace Map {
             int const row = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[param_1];
             if (MACRO_CALL_MEMBER(Units::UnitsState_Func::selectionContainsOnlyArabAssassins, DAT_UnitsState::ptr)()
                 != FALSE) {
-                return 0;
+                return FALSE;
             }
             for (int direction = 0; direction < 8; ++direction) {
                 int const area
@@ -37,10 +37,10 @@ namespace Map {
                            DAT_PathFindingState::ptr)(DAT_UnitsState::instance.units[param_2].owner, unitArea, area,
                            MACRO_CALL_MEMBER(Units::UnitsState_Func::canAUnitClimb, DAT_UnitsState::ptr)())
                         != 0) {
-                    return 1;
+                    return TRUE;
                 }
             }
-            return 0;
+            return FALSE;
         }
 
     }

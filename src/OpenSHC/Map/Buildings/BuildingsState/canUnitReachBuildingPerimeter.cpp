@@ -17,10 +17,10 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x00410440
-        undefined4 BuildingsState::canUnitReachBuildingPerimeter(int buildingID, int unitID)
+        BOOLEnum BuildingsState::canUnitReachBuildingPerimeter(int buildingID, int unitID)
         {
             if (buildingID == 0 || buildingID >= 2000) {
-                return 0;
+                return FALSE;
             }
             int const unitArea
                 = (short)DAT_TileMapState::instance.PathConnectionLayer[DAT_UnitsState::instance.units[unitID].tile];
@@ -61,10 +61,10 @@ namespace Map {
                         MACRO_CALL_MEMBER(Units::UnitsState_Func::canAUnitClimb, DAT_UnitsState::ptr)());
                 }
                 if (reachable != 0) {
-                    return 1;
+                    return TRUE;
                 }
             }
-            return 0;
+            return FALSE;
         }
 
     }

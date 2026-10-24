@@ -88,11 +88,11 @@ namespace Map {
                     + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x;
                 int const y = DAT_AttackInfoDefinedData::instance.SiegeCrewPositionOffsets[position][1]
                     + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
-                position = (position + 1) % 16;
                 DAT_UnitsState::instance.units[workerID].state.generic = OpenSHC::Map::Units::States::US_JESTER_ROAM_TO;
                 DAT_UnitsState::instance.units[workerID].disappearFadeAlphaCountdown = 32;
                 DAT_UnitsState::instance.units[workerID].engineerManningSiegeStateRef_checkType = 0xfe;
                 DAT_UnitsState::instance.units[workerID].cachedState = 0;
+                position = (position + 1) % 16;
                 MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::PathFindingState_Func::computeNextRallyPointDestination,
                     DAT_PathFindingState::ptr)(-1, x, y);
                 DAT_UnitsState::instance.units[workerID].tile = DAT_PathFindingState::instance.ALG_ResultTile;
@@ -144,12 +144,12 @@ namespace Map {
             DAT_UnitsState::instance.units[unitID].facingDirection = 0;
         }
         // AI tribe type 20 and unit logic state 5 have no constants.
+        DAT_UnitsState::instance.units[unitID].unknownSiegeTentRelated02
+            = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].unknownSiegeTentRelated01 + 1;
+        DAT_UnitsState::instance.units[unitID].logicalState = 5;
         MACRO_CALL_MEMBER(OpenSHC::Map::Units::TroopValueState_Func::addUnitToNewTribe, DAT_TroopValueState::ptr)(
             unitID, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].attackWave,
             (OpenSHC::AI::Tribes::AITribeType)20, owner);
-        DAT_UnitsState::instance.units[unitID].logicalState = 5;
-        DAT_UnitsState::instance.units[unitID].unknownSiegeTentRelated02
-            = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].unknownSiegeTentRelated01 + 1;
         short const employeeCount
             = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount;
         for (int i = 0; i < employeeCount; ++i) {

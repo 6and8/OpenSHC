@@ -126,8 +126,9 @@ namespace Map {
                 && MACRO_CALL_MEMBER(
                     OpenSHC::Map::Buildings::BuildingsState_Func::getArmoryIDIfSpaceLeft, DAT_BuildingsState::ptr)(
                     DAT_CurrentBuildingID::instance, OpenSHC::Game::Resources::RT_IRONARMOR, owner, 1)) {
+                // The original sets the iron armour count to 1 instead of adding 1
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_IRONARMOR]
-                    += 1;
+                    = 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_IRONARMOR]
                     -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]

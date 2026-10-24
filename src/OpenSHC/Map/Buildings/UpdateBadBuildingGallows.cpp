@@ -28,9 +28,9 @@ namespace Map {
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
         int const buildingID = DAT_CurrentBuildingID::instance;
-        DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 0;
         MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::updateBuildingSignpostCounter,
-            DAT_BuildingsState::ptr)(buildingID, 1);
+            DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance, 1);
         int const fear = DAT_GameState::instance.playerDataArray[owner].fearFactorLevel;
         if (fear <= -3) {
             DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;

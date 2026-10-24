@@ -25,7 +25,7 @@ namespace Map {
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
         int const buildingID = DAT_CurrentBuildingID::instance;
-        int const owner = DAT_BuildingsState::instance.buildings[buildingID].owner;
+        int const owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
         DAT_BuildingsState::instance.buildings[buildingID].playerColorUnk = 0;
         DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
         DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;

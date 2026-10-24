@@ -5531,7 +5531,7 @@ SHC_3BB0A8C1_0x004174E0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00417740 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004177E0 | 98.5% | Register allocation differs
+SHC_3BB0A8C1_0x004177E0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004178E0 | 97.6% | Register allocation differs
 
@@ -5553,7 +5553,7 @@ SHC_3BB0A8C1_0x004184D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418500 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00418530 | 79.7% | Register allocation differs
+SHC_3BB0A8C1_0x00418530 | 90.8% | Register allocation differs
 
 SHC_3BB0A8C1_0x00418640 | 96.4% | Register allocation differs
 
@@ -5579,11 +5579,11 @@ SHC_3BB0A8C1_0x00418F70 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418F90 | 98.6% | Register allocation differs
 
-SHC_3BB0A8C1_0x004190D0 | 86.7% | Register allocation differs
+SHC_3BB0A8C1_0x004190D0 | 91.3% | Register allocation differs
 
-SHC_3BB0A8C1_0x00419190 | 78.6% | Register allocation differs
+SHC_3BB0A8C1_0x00419190 | 92.9% | Register allocation differs
 
-SHC_3BB0A8C1_0x00419290 | 87.8% | Register allocation differs
+SHC_3BB0A8C1_0x00419290 | 90.5% | Register allocation differs
 
 SHC_3BB0A8C1_0x00419340 | 100.0% | Reimplemented
 
@@ -5595,7 +5595,7 @@ SHC_3BB0A8C1_0x00419630 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00419670 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004196D0 | 94.6% | Register allocation differs
+SHC_3BB0A8C1_0x004196D0 | 97.3% | Register allocation differs
 
 SHC_3BB0A8C1_0x00419780 | 94.7% | only the loop end address differs: past-the-end of BuildingCost lands on a different symbol in the DLL data layout
 
@@ -6197,7 +6197,7 @@ SHC_3BB0A8C1_0x0041E85C | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041E860 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041E870 | 91.4% | Register allocation differs
+SHC_3BB0A8C1_0x0041E870 | 92.1% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041EB00 | 89.3% | Register allocation differs
 
@@ -6229,7 +6229,7 @@ SHC_3BB0A8C1_0x004205B0 | 56.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00420760 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00420A30 | 62.1% | Register allocation differs
+SHC_3BB0A8C1_0x00420A30 | 87.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00420BF0 | 100.0% | Reimplemented
 

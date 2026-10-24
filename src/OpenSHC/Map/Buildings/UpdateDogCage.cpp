@@ -26,8 +26,9 @@ namespace Map {
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
         int const buildingID = DAT_CurrentBuildingID::instance;
-        DAT_GameState::instance.playerDataArray[DAT_BuildingsState::instance.buildings[buildingID].owner].dogCageCount
-            += 1;
+        DAT_GameState::instance
+            .playerDataArray[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner]
+            .dogCageCount += 1;
         int unitCount = 0;
         int dogCount = 0;
         for (int i = 0; i < 4; ++i) {

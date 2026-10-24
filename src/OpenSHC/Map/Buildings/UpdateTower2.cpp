@@ -19,10 +19,10 @@ namespace Map {
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
         int const buildingID = DAT_CurrentBuildingID::instance;
-        DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
-        DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 1;
-        DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 0;
-        DAT_BuildingsState::instance.buildings[buildingID].someX
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderAnimation = 1;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].displayOwnerFlag = 1;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = 0;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].someX
             = DAT_BuildingsState::instance.buildings[buildingID].x + 1;
         DAT_BuildingsState::instance.buildings[buildingID].someY
             = DAT_BuildingsState::instance.buildings[buildingID].y + 1;

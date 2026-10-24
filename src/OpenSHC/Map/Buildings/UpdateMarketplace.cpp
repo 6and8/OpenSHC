@@ -28,7 +28,7 @@ namespace Map {
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
         int buildingID = DAT_CurrentBuildingID::instance;
-        DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderAnimation = 0;
         DAT_BuildingsState::instance.buildings[buildingID].animationIncrement = 1;
         DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
         if (DAT_GameCore::instance.gameMode_2 == Game::GM_SKIRMISH_AND_MULTIPLAYER) {

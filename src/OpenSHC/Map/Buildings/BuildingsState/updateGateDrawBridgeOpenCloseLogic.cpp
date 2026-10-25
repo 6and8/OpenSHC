@@ -30,8 +30,9 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x004224F0
         void BuildingsState::updateGateDrawBridgeOpenCloseLogic()
         {
-            // Matching note: The original uses a larger stack frame (0x4c) and reuses the slot of the
-            // defender as the new controller; the remaining differences are register and stack slot allocation.
+            // Matching note: The entity loops are bounded with `n != 10` because the original does not unroll them
+            // (the strongest-player loop it does unroll). The original uses a larger stack frame (0x4c) and reuses
+            // the slot of the defender as the new controller; the rest is register and stack slot allocation.
             // Updates the gatehouse DAT_CurrentBuildingID: capturing by enemy troops and opening/closing for its owner
             int gateX = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x;
             int gateY = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
@@ -78,7 +79,7 @@ namespace Map {
                     }
                     int entityID = DAT_TileMapState::instance.EntityLayer[tile];
                     if (entityID != 0) {
-                        for (int n = 1; n < 10; ++n) {
+                        for (int n = 1; n != 10; ++n) {
                             if (DAT_EntityState::instance.entityArray[entityID].entityType
                                     == OpenSHC::Map::Entities::ET_FLAG_1
                                 || DAT_EntityState::instance.entityArray[entityID].entityType
@@ -151,7 +152,7 @@ namespace Map {
                                                    .addXgetTile
                                       + DAT_TileMapState::instance.buildingX + gateX];
                         if (entityID != 0) {
-                            for (int n = 1; n < 10; ++n) {
+                            for (int n = 1; n != 10; ++n) {
                                 if (DAT_EntityState::instance.entityArray[entityID].entityType
                                         == OpenSHC::Map::Entities::ET_FLAG_1
                                     || DAT_EntityState::instance.entityArray[entityID].entityType

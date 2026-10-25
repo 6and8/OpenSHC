@@ -20,8 +20,9 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x0040D9C0
         undefined4 BuildingsState::getKeepLocationForAIUnit(int playerID, int param_2, int unitID)
         {
-            // Matching note: The remaining differences are register allocation; the original also does not
-            // constant propagate group = 16 in the rally branch.
+            // Matching note: The tile's unit is read once into an int (one movsx, as in the original). The remaining
+            // differences are register allocation; the original also does not constant propagate group = 16 in the
+            // rally branch.
             int group = param_2;
             // AI units in multiplayer gather at the keep
             if (DAT_GameSynchronyState::instance.currentGameMode != OpenSHC::Game::GM_SOLITARY
@@ -59,8 +60,9 @@ namespace Map {
                     int y = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[searchOffset].y + pointY;
                     int x = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[searchOffset].x + pointX;
                     int tile = DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x;
-                    if (((short)DAT_TileMapState::instance.UnitLayer[tile] == 0
-                            || (short)DAT_TileMapState::instance.UnitLayer[tile] == unitID
+                    int const occupant = (short)DAT_TileMapState::instance.UnitLayer[tile];
+                    if ((occupant == 0
+                            || occupant == unitID
                             || DAT_UnitsState::instance.units[unitID].movementRelated != 8)
                         && MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::PathFindingState_Func::
                                                  calculateCanPlayerUnitsNavigateToAreaFromArea,
@@ -102,12 +104,9 @@ namespace Map {
                         x = DAT_GameState::instance.playerDataArray[playerID]
                                 .structure.mercenaryOutpostCampgroundLocations[(group - 10) * 72 + searchOffset]
                                 .x;
-                        if ((short)DAT_TileMapState::instance
-                                    .UnitLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x]
-                                == 0
-                            || (short)DAT_TileMapState::instance
-                                    .UnitLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x]
-                                == unitID
+                        int const occupant = (short)DAT_TileMapState::instance
+                                .UnitLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x];
+                        if (occupant == 0 || occupant == unitID
                             || DAT_UnitsState::instance.units[unitID].movementRelated != 8) {
                             break;
                         }

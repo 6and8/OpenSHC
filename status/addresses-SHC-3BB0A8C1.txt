@@ -6509,7 +6509,7 @@ SHC_3BB0A8C1_0x00421A40 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00421BE0 | 51.9% | header returns char but the original sets eax
 
-SHC_3BB0A8C1_0x00421D70 | 57.4% | stack slots and shared tail
+SHC_3BB0A8C1_0x00421D70 | 75.1% | this spilled, register allocation differs
 
 SHC_3BB0A8C1_0x00422230 | 100.0% | Reimplemented
 

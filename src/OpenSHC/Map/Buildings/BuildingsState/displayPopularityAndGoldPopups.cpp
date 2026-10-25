@@ -20,7 +20,7 @@ namespace Map {
             int buildingID, int param_2, int param_3, undefined4 param_4)
         {
             int const owner = this->buildings[buildingID].owner;
-            if (owner == DAT_GameSynchronyState::instance.currentPlayerSlotID) {
+            if (this->buildings[buildingID].owner == DAT_GameSynchronyState::instance.currentPlayerSlotID) {
                 return;
             }
             // EntityType has no constants for the popup types 40 to 43.

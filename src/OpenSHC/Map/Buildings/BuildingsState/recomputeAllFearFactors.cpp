@@ -18,9 +18,10 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x0040B260
         void BuildingsState::recomputeAllFearFactors()
         {
-            // Matching note: The original keeps each 'goodOrBad = -1' as its own block that jumps to a shared
-            // compare of goodOrBad; our compiler jump-threads the constants straight into the counters. An inlined
-            // helper returning -1/0/1 was tried and made it worse (31% -> 15%).
+            // Matching note: Reading owner into a local after the type chain keeps each 'goodOrBad = -1' as its own
+            // block jumping to the shared compare, as in the original (without it the compiler jump-threads the
+            // constants into the counters, 31%). The rest is the third loop's player-record anchor (4 bytes off)
+            // and the original holding 0 in a register.
             for (int p = 1; p < 9; ++p) {
                 DAT_GameState::instance.playerDataArray[p].badStuffCount = 0;
                 DAT_GameState::instance.playerDataArray[p].goodStuffCount = 0;
@@ -60,10 +61,11 @@ namespace Map {
                     || this->buildings[i].buildingType == BT_DANCINGBEAR) {
                     goodOrBad = 1;
                 }
+                int const owner = this->buildings[i].owner;
                 if (goodOrBad < 0) {
-                    ++DAT_GameState::instance.playerDataArray[this->buildings[i].owner].badStuffCount;
+                    ++DAT_GameState::instance.playerDataArray[owner].badStuffCount;
                 } else if (goodOrBad > 0) {
-                    ++DAT_GameState::instance.playerDataArray[this->buildings[i].owner].goodStuffCount;
+                    ++DAT_GameState::instance.playerDataArray[owner].goodStuffCount;
                 }
             }
 

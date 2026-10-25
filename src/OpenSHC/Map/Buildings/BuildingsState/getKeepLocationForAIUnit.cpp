@@ -18,12 +18,13 @@ namespace Map {
         using OpenSHC::Game::GameMode;
 
         // FUNCTION: STRONGHOLDCRUSADER 0x0040D9C0
-        undefined4 BuildingsState::getKeepLocationForAIUnit(int playerID, int param_2, int unitID)
+        undefined4 BuildingsState::getKeepLocationForAIUnit(int playerID, int group, int unitID)
         {
-            // Matching note: The tile's unit is read once into an int (one movsx, as in the original). The remaining
-            // differences are register allocation; the original also does not constant propagate group = 16 in the
-            // rally branch.
-            int group = param_2;
+            // Matching note: The parameter is the adjusted group and a copy keeps the requested one (as in the
+            // original, and in isSpaceAvailableAtUnitRallyPoint); the tile's unit is read once into an int. The rest is
+            // register allocation and one return block the original shares.
+            // group is the mercenary group (10 to 16)
+            int const requestedGroup = group;
             // AI units in multiplayer gather at the keep
             if (DAT_GameSynchronyState::instance.currentGameMode != OpenSHC::Game::GM_SOLITARY
                 && DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] == -1
@@ -38,18 +39,17 @@ namespace Map {
                 return 1;
             }
 
-            // param_2 is the mercenary group (10 to 16)
-            if (param_2 == 16) {
+            if (requestedGroup == 16) {
                 group = 13;
             }
             // Note: indexes past the declared size of rallySearchOffsetsUnk
             int searchOffset = DAT_GameState::instance.playerDataArray[playerID].rallySearchOffsetsUnk[group];
-            if (DAT_GameState::instance.playerDataArray[playerID].mercenaryAssemblyPoints[param_2 - 10][0] != 0) {
+            if (DAT_GameState::instance.playerDataArray[playerID].mercenaryAssemblyPoints[requestedGroup - 10][0] != 0) {
                 // Search around the rally point
-                if (param_2 == 16) {
+                if (requestedGroup == 16) {
                     searchOffset = DAT_GameState::instance.playerDataArray[playerID].someCount23;
-                    group = param_2;
-                } else if (param_2 == 13) {
+                    group = requestedGroup;
+                } else if (requestedGroup == 13) {
                     searchOffset -= DAT_GameState::instance.playerDataArray[playerID].someCount23;
                 }
                 int pointX
@@ -57,8 +57,8 @@ namespace Map {
                 int pointY
                     = (short)DAT_GameState::instance.playerDataArray[playerID].mercenaryAssemblyPoints[group - 10][1];
                 for (; searchOffset < 49; ++searchOffset) {
-                    int y = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[searchOffset].y + pointY;
                     int x = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[searchOffset].x + pointX;
+                    int y = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[searchOffset].y + pointY;
                     int tile = DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x;
                     int const occupant = (short)DAT_TileMapState::instance.UnitLayer[tile];
                     if ((occupant == 0
@@ -83,41 +83,36 @@ namespace Map {
             } else {
                 // No rally point, use the parade ground of the mercenary post
                 if (DAT_GameState::instance.playerDataArray[playerID].mercenaryPost.id > 0) {
-                    if (param_2 == 16) {
+                    if (requestedGroup == 16) {
                         if (DAT_GameState::instance.playerDataArray[playerID].mercenaryAssemblyPoints[3][0] != 0) {
                             searchOffset = DAT_GameState::instance.playerDataArray[playerID].someCount23;
                         }
-                    } else if (param_2 == 13
+                    } else if (requestedGroup == 13
                         // Note: the original reads index 16 instead of 16 - 10
                         && DAT_GameState::instance.playerDataArray[playerID].mercenaryAssemblyPoints[16][0] != 0) {
                         searchOffset -= DAT_GameState::instance.playerDataArray[playerID].someCount23;
                     }
-                    int x;
-                    int y;
-                    for (;; ++searchOffset) {
-                        if (searchOffset >= 72) {
-                            return 0;
-                        }
-                        y = DAT_GameState::instance.playerDataArray[playerID]
-                                .structure.mercenaryOutpostCampgroundLocations[(group - 10) * 72 + searchOffset]
-                                .y;
-                        x = DAT_GameState::instance.playerDataArray[playerID]
+                    for (; searchOffset < 72; ++searchOffset) {
+                        int const x = DAT_GameState::instance.playerDataArray[playerID]
                                 .structure.mercenaryOutpostCampgroundLocations[(group - 10) * 72 + searchOffset]
                                 .x;
+                        int const y = DAT_GameState::instance.playerDataArray[playerID]
+                                .structure.mercenaryOutpostCampgroundLocations[(group - 10) * 72 + searchOffset]
+                                .y;
                         int const occupant = (short)DAT_TileMapState::instance
                                 .UnitLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x];
-                        if (occupant == 0 || occupant == unitID
-                            || DAT_UnitsState::instance.units[unitID].movementRelated != 8) {
-                            break;
+                        if (occupant != 0 && occupant != unitID
+                            && DAT_UnitsState::instance.units[unitID].movementRelated == 8) {
+                            continue;
                         }
+                        this->DAT_TempXOffset = x;
+                        this->DAT_TempYOffset = y;
+                        if (x == DAT_UnitsState::instance.units[unitID].x
+                            && y == DAT_UnitsState::instance.units[unitID].y) {
+                            return 0;
+                        }
+                        return 1;
                     }
-                    this->DAT_TempXOffset = x;
-                    this->DAT_TempYOffset = y;
-                    if (x == DAT_UnitsState::instance.units[unitID].x
-                        && y == DAT_UnitsState::instance.units[unitID].y) {
-                        return 0;
-                    }
-                    return 1;
                 }
             }
             return 0;

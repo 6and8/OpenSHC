@@ -18,6 +18,7 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x0040D6E0
         BOOLEnum BuildingsState::isSpaceAvailableAtUnitRallyPoint(int playerID, int group, int unitID)
         {
+            int const requestedGroup = group;
             if (DAT_GameSynchronyState::instance.currentGameMode != 0
                 && DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] == -1
                 && DAT_GameSynchronyState::instance.currentAIArray[playerID] != 0
@@ -30,20 +31,19 @@ namespace Map {
                 this->DAT_TempYOffset = DAT_BuildingsState::instance.buildings[keepID].someY;
                 return TRUE;
             }
-            int index = group;
-            if (index == 6) {
-                index = 5;
+            if (group == 6) {
+                group = 5;
             }
-            int offset = DAT_GameState::instance.playerDataArray[playerID].rallySearchOffsetsUnk[index];
-            if (DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[group].x != 0) {
-                if (group == 6) {
+            int offset = DAT_GameState::instance.playerDataArray[playerID].rallySearchOffsetsUnk[group];
+            if (DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[requestedGroup].x != 0) {
+                if (requestedGroup == 6) {
                     offset = DAT_GameState::instance.playerDataArray[playerID].rallySearchOffset;
-                    index = group;
-                } else if (group == 5) {
+                    group = requestedGroup;
+                } else if (requestedGroup == 5) {
                     offset -= DAT_GameState::instance.playerDataArray[playerID].rallySearchOffset;
                 }
-                int const assemblyX = DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[index].x;
-                int const assemblyY = DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[index].y;
+                int const assemblyX = DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[group].x;
+                int const assemblyY = DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[group].y;
                 for (int i = offset; i < 49; ++i) {
                     int const x = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[i].x + assemblyX;
                     int const y = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[i].y + assemblyY;
@@ -74,20 +74,20 @@ namespace Map {
             if (DAT_GameState::instance.playerDataArray[playerID].barracks.id <= 0) {
                 return FALSE;
             }
-            if (group == 6) {
+            if (requestedGroup == 6) {
                 if (DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[5].x != 0) {
                     offset = DAT_GameState::instance.playerDataArray[playerID].rallySearchOffset;
                 }
-            } else if (group == 5) {
+            } else if (requestedGroup == 5) {
                 if (DAT_GameState::instance.playerDataArray[playerID].barracksAssemblyPoints[6].x != 0) {
                     offset -= DAT_GameState::instance.playerDataArray[playerID].rallySearchOffset;
                 }
             }
             for (int i = offset; i < 72; ++i) {
                 int const x
-                    = DAT_GameState::instance.playerDataArray[playerID].barracksParadegroundLocations[index][i].x;
+                    = DAT_GameState::instance.playerDataArray[playerID].barracksParadegroundLocations[group][i].x;
                 int const y
-                    = DAT_GameState::instance.playerDataArray[playerID].barracksParadegroundLocations[index][i].y;
+                    = DAT_GameState::instance.playerDataArray[playerID].barracksParadegroundLocations[group][i].y;
                 if ((uint)x > 399 || (uint)y > 399
                     || DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[y * 400 + x] == 0) {
                     continue;

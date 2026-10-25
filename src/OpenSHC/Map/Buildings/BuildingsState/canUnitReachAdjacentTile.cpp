@@ -17,10 +17,10 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x004105F0
         BOOLEnum BuildingsState::canUnitReachAdjacentTile(int param_1, int param_2)
         {
+            int const row = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[param_1];
             int const unitArea
                 = (short)DAT_TileMapState::instance.PathConnectionLayer[DAT_UnitsState::instance.units[param_2].tile];
             int const height = DAT_TileMapState::instance.HeightLayer[param_1];
-            int const row = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[param_1];
             if (MACRO_CALL_MEMBER(Units::UnitsState_Func::selectionContainsOnlyArabAssassins, DAT_UnitsState::ptr)()
                 != FALSE) {
                 return FALSE;

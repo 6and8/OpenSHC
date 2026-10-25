@@ -113,8 +113,8 @@ namespace Map {
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileScanCountdown > 0) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileScanCountdown -= 1;
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileScanCountdown == 0) {
-                int unitsOnTop = 0;
                 int i = 0;
+                int unitsOnTop = 0;
                 do {
                     MACRO_CALL_MEMBER(
                         OpenSHC::Map::TileMapState_Func::getBuildingSizeIndexMappingData, DAT_TileMapState::ptr)(i, 6);

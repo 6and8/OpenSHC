@@ -13,7 +13,7 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x00421BE0
-        char BuildingsState::resolveBuildingEntryAccessibility(int buildingID, int param_2, int x, int y)
+        int BuildingsState::resolveBuildingEntryAccessibility(int buildingID, int param_2, int x, int y)
         {
             if (buildingID <= 0) {
                 return 0;

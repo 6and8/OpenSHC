@@ -1,5 +1,5 @@
 #include "OpenSHC/Audio/SFX/SFXState.func.hpp"
-#include "OpenSHC/Map/Buildings/BuildingsState.func.hpp"
+#include "../BuildingsState.func.hpp"
 #include "OpenSHC/Map/Entities/EntityState.func.hpp"
 #include "OpenSHC/Map/TileMapState.func.hpp"
 #include "OpenSHC/Map/Units/TroopValueState.func.hpp"
@@ -239,18 +239,18 @@ namespace Map {
                     continue;
                 }
                 int distanceX;
-                if (DAT_UnitsState::instance.units[enemyID].microXPosition < gateMicroX) {
+                if (gateMicroX > DAT_UnitsState::instance.units[enemyID].microXPosition) {
                     distanceX = gateMicroX - DAT_UnitsState::instance.units[enemyID].microXPosition;
                 } else {
                     distanceX = DAT_UnitsState::instance.units[enemyID].microXPosition - gateMicroX;
                 }
                 int distance;
-                if (DAT_UnitsState::instance.units[enemyID].microYPosition < gateMicroY) {
+                if (gateMicroY > DAT_UnitsState::instance.units[enemyID].microYPosition) {
                     distance = gateMicroY - DAT_UnitsState::instance.units[enemyID].microYPosition;
                 } else {
                     distance = DAT_UnitsState::instance.units[enemyID].microYPosition - gateMicroY;
                 }
-                if (distance <= distanceX) {
+                if (distanceX >= distance) {
                     distance = distanceX;
                 }
                 if (distance < 200) {

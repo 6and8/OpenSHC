@@ -462,7 +462,7 @@ namespace Map {
                 break;
             }
 
-            this->field34_0x18e074 = 1;
+            DAT_BuildingsState::instance.field34_0x18e074 = 1;
             if (MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::isFearFactorBuilding, this)(buildingID)
                 != 0) {
                 MACRO_CALL_MEMBER(

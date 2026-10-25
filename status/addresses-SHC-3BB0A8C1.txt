@@ -5145,7 +5145,7 @@ SHC_3BB0A8C1_0x004105F0 | 93.2% | Allocator-bound: unit area and height locals t
 
 SHC_3BB0A8C1_0x004106D0 | 92.4% | register allocation of the building fields
 
-SHC_3BB0A8C1_0x00410800 | 74.9% | interval branch block layout
+SHC_3BB0A8C1_0x00410800 | 86.5% | interval branch block layout
 
 SHC_3BB0A8C1_0x00410920 | 100.0% | Reimplemented
 

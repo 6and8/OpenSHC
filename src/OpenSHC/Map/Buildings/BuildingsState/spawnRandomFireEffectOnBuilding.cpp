@@ -18,6 +18,7 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x00410800
         void BuildingsState::spawnRandomFireEffectOnBuilding(int buildingID, undefined4 playerID)
         {
+            int const sum = this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration;
             if (this->buildings[buildingID].fireDuration < 400) {
                 return;
             }
@@ -30,8 +31,7 @@ namespace Map {
             } else {
                 interval = (16 - size) * 5;
             }
-            if ((this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration) % interval
-                != 0) {
+            if (sum % interval != 0) {
                 return;
             }
             int const height

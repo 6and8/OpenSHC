@@ -71,8 +71,8 @@ namespace Map {
             int const centerX = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x + half;
             int const xEnd = centerX + 8;
             int const centerY = half + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
-            int const yStart = centerY - 8;
             int const yEnd = centerY + 8;
+            int const yStart = centerY - 8;
             for (int x = centerX - 8; x < xEnd; ++x) {
                 for (int y = yStart; y < yEnd; ++y) {
                     // Faithful to the original, which tests the map cell at (x, x) rather than (x, y)

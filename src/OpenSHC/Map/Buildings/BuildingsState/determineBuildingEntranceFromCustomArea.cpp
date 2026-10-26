@@ -29,10 +29,10 @@ namespace Map {
             // otherwise.
             int playerID = this->buildings[buildingID].owner;
             int index = 0;
+            int found = 0;
             int areaFrom
                 = (short)DAT_TileMapState::instance
                       .PathConnectionLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x];
-            int found = 0;
             int heightStep = 16;
             if (DAT_BuildingsState::instance.buildings[buildingID].buildingType == BT_QUARRY) {
                 heightStep = 32;

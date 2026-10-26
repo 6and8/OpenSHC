@@ -87,10 +87,10 @@ namespace Map {
             MACRO_CALL_MEMBER(OpenSHC::Random::RNG_Func::nextRandomNumber2, SEC_RNG::ptr)();
             for (int i = 0;
                 i < DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].currentEmployeeCount; ++i) {
-                int const workerID
-                    = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i];
                 int const x = DAT_AttackInfoDefinedData::instance.SiegeCrewPositionOffsets[position][0]
                     + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x;
+                int const workerID
+                    = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i];
                 int const y = DAT_AttackInfoDefinedData::instance.SiegeCrewPositionOffsets[position][1]
                     + DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
                 DAT_UnitsState::instance.units[workerID].state.generic = OpenSHC::Map::Units::States::US_JESTER_ROAM_TO;

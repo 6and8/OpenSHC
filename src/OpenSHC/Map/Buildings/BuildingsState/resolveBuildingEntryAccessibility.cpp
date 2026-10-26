@@ -18,13 +18,13 @@ namespace Map {
             if (buildingID <= 0) {
                 return 0;
             }
-            int const targetArea
-                = (short)DAT_TileMapState::instance
-                      .PathConnectionLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x];
             int const buildingHeight
                 = DAT_TileMapState::instance.HeightLayer
                       [DAT_ViewportRenderState::instance.translationMatrix[this->buildings[buildingID].y].addXgetTile
                           + this->buildings[buildingID].x];
+            int const targetArea
+                = (short)DAT_TileMapState::instance
+                      .PathConnectionLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x];
             int blocked = 0;
             if (this->buildings[buildingID].buildingEntryX == 0 && this->buildings[buildingID].buildingEntryY == 0) {
                 blocked = 1;

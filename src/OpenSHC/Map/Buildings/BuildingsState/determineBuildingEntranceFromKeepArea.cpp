@@ -29,10 +29,10 @@ namespace Map {
             // Returns 1 if an entrance was found, 2 if only an unreachable one (e.g. behind a locked gate) and 0
             // otherwise.
             int playerID = this->buildings[buildingID].owner;
-            int index = 0;
             int areaFrom
                 = (short)DAT_TileMapState::instance
                       .PathConnectionLayer[DAT_GameState::instance.playerDataArray[playerID].campground.tileEntry];
+            int index = 0;
             int found = 0;
             int heightStep = 16;
             if (DAT_BuildingsState::instance.buildings[buildingID].buildingType == BT_QUARRY) {

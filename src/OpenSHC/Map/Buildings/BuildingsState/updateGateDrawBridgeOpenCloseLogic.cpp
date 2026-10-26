@@ -35,8 +35,8 @@ namespace Map {
             // the slot of the defender as the new controller; the rest is register and stack slot allocation.
             // Updates the gatehouse DAT_CurrentBuildingID: capturing by enemy troops and opening/closing for its owner
             int gateX = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x;
-            int gateY = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
             int gateMicroX = gateX * 8;
+            int gateY = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
             int gateMicroY = gateY * 8;
             int defender = 0;
             int attacker = 0;

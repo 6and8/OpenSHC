@@ -18,8 +18,8 @@ namespace Map {
             do {
                 swapped = 0;
                 for (int i = 0; i < (int)this->DAT_CountOfBuildingsNeedPeasants - 1; ++i) {
-                    int const firstID = (short)this->DAT_BuildingIDsNeedPeasantsQueue[i];
                     int const secondID = (short)this->DAT_BuildingIDsNeedPeasantsQueue[i + 1];
+                    int const firstID = (short)this->DAT_BuildingIDsNeedPeasantsQueue[i];
                     short const firstIdle = this->buildings[firstID].idleTimerUnk;
                     short const secondIdle = this->buildings[secondID].idleTimerUnk;
                     if (firstIdle > secondIdle

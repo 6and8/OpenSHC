@@ -40,8 +40,8 @@ namespace Map {
             default: {
                 // One crow in the middle of the building and some more on random tiles of it
                 int halfSize = (int)this->buildings[buildingID].widthOrHeight / 2;
-                int microY = ((short)this->buildings[buildingID].y + halfSize) * 8;
                 int microX = ((short)this->buildings[buildingID].x + halfSize) * 8;
+                int microY = ((short)this->buildings[buildingID].y + halfSize) * 8;
                 MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
                     DAT_EntityState::ptr)(0, 0, 0, microX, microY,
                     DAT_TileMapState::instance

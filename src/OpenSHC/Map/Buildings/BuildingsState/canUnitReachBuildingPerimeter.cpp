@@ -24,10 +24,10 @@ namespace Map {
             }
             int const unitArea
                 = (short)DAT_TileMapState::instance.PathConnectionLayer[DAT_UnitsState::instance.units[unitID].tile];
+            int const size = this->buildings[buildingID].widthOrHeight;
             int const buildingHeight
                 = DAT_TileMapState::instance.DefaultHeightLayer[DAT_BuildingsState::instance.buildings[buildingID]
                         .currentTilePositionAdjusted];
-            int const size = this->buildings[buildingID].widthOrHeight;
             int const tileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCount[size];
             int onlyAssassins = 0;
             if (MACRO_CALL_MEMBER(Units::UnitsState_Func::selectionContainsOnlyArabAssassins, DAT_UnitsState::ptr)()

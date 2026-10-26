@@ -146,9 +146,9 @@ namespace Map {
             } else {
                 int buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
                 int wood = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredWood * percentage / 100;
+                int iron = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredIron_0x8 * percentage / 100;
                 int stone
                     = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredStone_0x4 * percentage / 100;
-                int iron = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredIron_0x8 * percentage / 100;
                 pitch = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredPitch_0xc * percentage / 100;
                 gold = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredGold * percentage / 100;
                 if (DAT_GameCore::instance.gameMode_2 == OpenSHC::Game::GM_SIEGE_THAT) {

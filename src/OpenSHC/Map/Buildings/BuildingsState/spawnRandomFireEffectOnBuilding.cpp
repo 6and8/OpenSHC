@@ -18,21 +18,28 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x00410800
         void BuildingsState::spawnRandomFireEffectOnBuilding(int buildingID, undefined4 playerID)
         {
-            int const sum = this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration;
             if (this->buildings[buildingID].fireDuration < 400) {
                 return;
             }
             int const size = this->buildings[buildingID].widthOrHeight;
-            int interval;
             if (size <= 3) {
-                interval = 24 - size * 5;
+                if ((this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration)
+                        % (24 - size * 5)
+                    != 0) {
+                    return;
+                }
             } else if (size <= 6) {
-                interval = (8 - size) * 5;
+                if ((this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration)
+                        % ((8 - size) * 5)
+                    != 0) {
+                    return;
+                }
             } else {
-                interval = (16 - size) * 5;
-            }
-            if (sum % interval != 0) {
-                return;
+                if ((this->buildings[buildingID].fireRelatedRNG1 + this->buildings[buildingID].fireDuration)
+                        % ((16 - size) * 5)
+                    != 0) {
+                    return;
+                }
             }
             int const height
                 = DAT_TileMapState::instance.HeightLayer[this->buildings[buildingID].currentTilePositionAdjusted];

@@ -23,7 +23,6 @@ namespace Map {
             case Units::UT_E_MACE:
                 *outPrice = 20;
                 return;
-            case Units::UT_TUNNELER:
             case Units::UT_E_XBOW:
                 *outPrice = 20;
                 return;
@@ -41,6 +40,9 @@ namespace Map {
                 return;
             case Units::UT_E_MONK:
                 *outPrice = 10;
+                return;
+            case Units::UT_TUNNELER:
+                *outPrice = 20;
                 return;
             case Units::UT_S_CATAPULT:
                 *outPrice = this->buildingCosts[BT_CATAPULT].requiredGold;

@@ -14,10 +14,10 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x004106D0
         void BuildingsState::processDamageToUnitsOnBuilding(int buildingID, int damagePercentage)
         {
-            int const y = this->buildings[buildingID].y;
-            int const x = this->buildings[buildingID].x;
-            int const size = this->buildings[buildingID].widthOrHeight;
             int i = 0;
+            int const size = this->buildings[buildingID].widthOrHeight;
+            int const x = this->buildings[buildingID].x;
+            int const y = this->buildings[buildingID].y;
             do {
                 MACRO_CALL_MEMBER(TileMapState_Func::getBuildingSizeIndexMappingData, DAT_TileMapState::ptr)(i, size);
                 for (int unitID = (short)DAT_TileMapState::instance

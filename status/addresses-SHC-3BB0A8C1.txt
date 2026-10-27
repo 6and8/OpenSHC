@@ -5143,7 +5143,7 @@ SHC_3BB0A8C1_0x00410440 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004105F0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004106D0 | 92.4% | register allocation of the building fields
+SHC_3BB0A8C1_0x004106D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00410800 | 86.5% | interval branch block layout
 

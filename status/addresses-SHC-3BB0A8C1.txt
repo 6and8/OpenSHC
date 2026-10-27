@@ -5521,7 +5521,7 @@ SHC_3BB0A8C1_0x00416720 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004167E0 | 97.9% | Register allocation differs
 
-SHC_3BB0A8C1_0x00416F80 | 84.6% | Register allocation differs
+SHC_3BB0A8C1_0x00416F80 | 90.4% | Code layout differs: original places two else blocks out of line; swapped arms compile identically
 
 SHC_3BB0A8C1_0x004173D0 | 100.0% | Reimplemented
 

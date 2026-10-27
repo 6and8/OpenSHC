@@ -4993,7 +4993,7 @@ SHC_3BB0A8C1_0x0040E410 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040E550 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0040E610 | 93.9% | early-return block placed inline instead of at the end
+SHC_3BB0A8C1_0x0040E610 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040E660 | 0.0% | Pending
 

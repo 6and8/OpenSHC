@@ -20,15 +20,17 @@ namespace Map {
             int const laddermenCount = (short)DAT_GameState::instance.playerDataArray[playerID].someCount28;
             int index = (int)DAT_GameState::instance.playerDataArray[playerID].someCount27 - laddermenCount;
             int isLadderman = 0;
+            int assemblyIndex = 0;
             if (DAT_UnitsState::instance.units[unitID].unitType == Units::UT_E_LADDER) {
                 isLadderman = 1;
+                assemblyIndex = 1;
                 index = laddermenCount;
             }
-            if (DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[isLadderman].x != 0) {
+            if (DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[assemblyIndex].x != 0) {
                 int const assemblyX
-                    = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[isLadderman].x;
+                    = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[assemblyIndex].x;
                 int const assemblyY
-                    = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[isLadderman].y;
+                    = DAT_GameState::instance.playerDataArray[playerID].specialBuildingAssemblyPoints[assemblyIndex].y;
                 for (int i = index; i < 49; ++i) {
                     int const x = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[i].x + assemblyX;
                     int const y = DAT_BuildingDefinedData::instance.SearchRelatedXYOffsets_1[i].y + assemblyY;

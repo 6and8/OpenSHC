@@ -61,9 +61,9 @@ namespace Map {
                         this->buildings[buildingID].someResourceNumber
                             = this->buildings[buildingID].resources[resourceType];
                     } else {
-                        DAT_GameState::instance.playerDataArray[playerID].currentResources[resourceType]
-                            -= this->buildings[buildingID].resources[resourceType];
+                        int const left = this->buildings[buildingID].resources[resourceType];
                         this->buildings[buildingID].resources[resourceType] = 0;
+                        DAT_GameState::instance.playerDataArray[playerID].currentResources[resourceType] -= left;
                     }
                 }
                 if (param_4 == 0) {

@@ -41,7 +41,7 @@ namespace Map {
                         DAT_GameState::instance.playerDataArray[playerID].currentResources[r]
                             += this->buildings[i].resources[r];
                     }
-                } else {
+                } else if (this->buildings[i].buildingType == BT_ARMORY) {
                     for (int r = OpenSHC::Game::Resources::RT_BOW; r < 25; ++r) {
                         DAT_GameState::instance.playerDataArray[playerID].currentResources[r]
                             += this->buildings[i].resources[r];

@@ -68,7 +68,9 @@ namespace Map {
             if (DAT_GameSynchronyState::instance.currentGameMode == OpenSHC::Game::GM_SOLITARY) {
                 playerID_dup = 0;
             }
-            if (x > 399 || y > 399 || DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[y * 400 + x] == 0) {
+            bool const onMap = x <= 399 && y <= 399
+                && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[y * 400 + x] != 0;
+            if (!onMap) {
                 return 0;
             }
 

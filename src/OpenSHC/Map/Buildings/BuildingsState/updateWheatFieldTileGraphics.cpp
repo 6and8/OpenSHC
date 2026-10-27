@@ -18,7 +18,7 @@ namespace Map {
             int frame = 0;
             int unchangedLeft = 3;
             if (DAT_BuildingsState::instance.field14_0x18e024 == 0) {
-                start = *(short*)DAT_BuildingsState::instance.buildings[buildingID].padding_0x2fc;
+                start = *(short*)this->buildings[buildingID].padding_0x2fc;
             }
             for (int i = 0; i < 36; ++i) {
                 int tile = this->buildings[buildingID]

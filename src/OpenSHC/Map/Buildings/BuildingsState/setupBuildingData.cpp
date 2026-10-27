@@ -113,7 +113,7 @@ namespace Map {
             this->buildings[buildingID].terrainHeightUnk = averageHeight;
 
             // Decorations use their own sprite variations
-            short variation;
+            int variation;
             if (buildingType == BT_GARDEN) {
                 this->buildings[buildingID].ffBuildingVariation
                     = DAT_BuildingDefinedData::instance.GardenVariations[variationIndex];
@@ -199,9 +199,7 @@ namespace Map {
                 = DAT_BuildingDefinedData::instance.BuildingFlag4Defaults[buildingType].byteValue;
             this->buildings[buildingID].flag2
                 = DAT_BuildingDefinedData::instance.BuildingFlag2Defaults[buildingType].shortValue;
-            this->buildings[buildingID].maxHealth
-                = DAT_BuildingDefinedData::instance.BuildingHP[buildingType].shortValue;
-            this->buildings[buildingID].currentHealth
+            this->buildings[buildingID].currentHealth = this->buildings[buildingID].maxHealth
                 = DAT_BuildingDefinedData::instance.BuildingHP[buildingType].shortValue;
             this->buildings[buildingID].buildMonthOrBuildOrder
                 = DAT_GameState::instance.mapAndTime.month + DAT_GameState::instance.mapAndTime.year * 12;
@@ -361,7 +359,7 @@ namespace Map {
             case BT_CESSPIT: {
                 // Flies and a poison cloud in the middle of the cesspit
                 int halfSize = (int)width / 2;
-                int middleY = (short)this->buildings[buildingID].y + halfSize;
+                int middleY = (short)DAT_BuildingsState::instance.buildings[buildingID].y + halfSize;
                 int buildingX = (short)this->buildings[buildingID].x;
                 MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
                     DAT_EntityState::ptr)(0, 0, 0, (buildingX + halfSize) * 8, middleY * 8,
@@ -370,7 +368,8 @@ namespace Map {
                             + buildingX + halfSize],
                     0, 0, 0, OpenSHC::Map::Entities::ET_COW_POISON_CLOUD, 0);
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    (short)this->buildings[buildingID].x + halfSize, (short)this->buildings[buildingID].y + halfSize,
+                    (short)this->buildings[buildingID].x + halfSize,
+                    (short)DAT_BuildingsState::instance.buildings[buildingID].y + halfSize,
                     OpenSHC::DE::SHCDE::FX_FLIES);
                 break;
             }

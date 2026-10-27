@@ -5057,7 +5057,7 @@ SHC_3BB0A8C1_0x0040F790 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0040F8A0 | 91.7% | register allocation differs
 
-SHC_3BB0A8C1_0x0040F9D0 | 99.1% | one register choice differs
+SHC_3BB0A8C1_0x0040F9D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040FC40 | 100.0% | Reimplemented
 

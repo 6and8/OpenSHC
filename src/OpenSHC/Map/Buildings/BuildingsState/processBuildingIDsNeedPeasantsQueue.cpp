@@ -22,10 +22,10 @@ namespace Map {
             for (int i = 0; i < (int)this->DAT_CountOfBuildingsNeedPeasants; ++i) {
                 int buildingID = (short)this->DAT_BuildingIDsNeedPeasantsQueue[i];
                 if (this->buildings[buildingID].buildingTypeBasedEmployeeCount == 1) {
+                    UnitType workerType = (UnitType)DAT_BuildingDefinedData::instance
+                                              .WorkerTypeForBuildingType[this->buildings[buildingID].buildingType];
                     int unitID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::assignPeasantToBuilding,
-                        DAT_UnitsState::ptr)((UnitType)DAT_BuildingDefinedData::instance
-                                                 .WorkerTypeForBuildingType[this->buildings[buildingID].buildingType],
-                        buildingID, playerID, 0);
+                        DAT_UnitsState::ptr)(workerType, buildingID, playerID, 0);
                     MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::assignWorkerToBuilding, this)(
                         buildingID, unitID, 0);
                     continue;

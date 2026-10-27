@@ -13,9 +13,10 @@ namespace Map {
         {
             for (int i = 0; i < 23; ++i) {
                 int tile = this->buildings[param_1].tileRefs[4 + i];
+                int const damage = (char)DAT_TileMapState::instance.DamageLayer[tile];
                 int gfx = GMTotalPicturesProcessed::instance[14] + 55
                     + MACRO_CALL_MEMBER(OpenSHC::Map::TileMapState_Func::getRubbleGraphicStageForDamageLevel,
-                        DAT_TileMapState::ptr)((char)DAT_TileMapState::instance.DamageLayer[tile]);
+                        DAT_TileMapState::ptr)(damage);
                 if (gfx != DAT_TileMapState::instance.GfxLayer[tile]) {
                     DAT_TileMapState::instance.GfxLayer[tile] = gfx;
                     DAT_TileMapState::instance.MiscDisplayLayer[tile] &= 0xfff3;

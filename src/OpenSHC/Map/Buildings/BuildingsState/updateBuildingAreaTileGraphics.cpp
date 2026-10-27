@@ -9,7 +9,7 @@ namespace Map {
     namespace Buildings {
 
         // FUNCTION: STRONGHOLDCRUSADER 0x0040EFD0
-        ushort* BuildingsState::updateBuildingAreaTileGraphics(int param_1)
+        void BuildingsState::updateBuildingAreaTileGraphics(int param_1)
         {
             for (int i = 0; i < 23; ++i) {
                 int tile = this->buildings[param_1].tileRefs[4 + i];
@@ -22,8 +22,6 @@ namespace Map {
                     DAT_TileMapState::instance.MiscDisplayLayer[tile] &= 0xfff3;
                 }
             }
-            // The original has no meaningful return value
-            return 0;
         }
 
     }

@@ -41,14 +41,13 @@ namespace Map {
                 if (DAT_DirectionAlgorithmState::instance.distanceHigh >= closestDistance) {
                     continue;
                 }
-                int const toArea
-                    = (short)DAT_TileMapState::instance
-                          .PathConnectionLayer[DAT_ViewportRenderState::instance
-                                                   .translationMatrix[this->buildings[buildingID].buildingEntryY]
-                                                   .addXgetTile
-                              + this->buildings[buildingID].buildingEntryX];
+                int const tile = DAT_ViewportRenderState::instance
+                                     .translationMatrix[this->buildings[buildingID].buildingEntryY]
+                                     .addXgetTile
+                    + this->buildings[buildingID].buildingEntryX;
                 if (MACRO_CALL_MEMBER(Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                        DAT_PathFindingState::ptr)(DAT_UnitsState::instance.units[unitID].owner, fromArea, toArea, 0)
+                        DAT_PathFindingState::ptr)(DAT_UnitsState::instance.units[unitID].owner, fromArea,
+                        (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                     != 0) {
                     closestDistance = DAT_DirectionAlgorithmState::instance.distanceHigh;
                     closestBuildingID = buildingID;

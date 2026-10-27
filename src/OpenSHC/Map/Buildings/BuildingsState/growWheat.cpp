@@ -66,23 +66,17 @@ namespace Map {
                 this->buildings[buildingID].farmGrowState = 8;
                 return;
             }
-            if (empty == 0) {
-                if (stage120 != 0) {
-                    this->buildings[buildingID].farmGrowState = 3;
-                    return;
-                }
-                if (stage102 != 0) {
-                    this->buildings[buildingID].farmGrowState = 3;
-                    return;
-                }
-                if (stage103To119 != 0) {
-                    this->buildings[buildingID].farmGrowState = 3;
-                    return;
-                }
+            if (empty != 0) {
+                this->buildings[buildingID].farmGrowState = 3;
+            } else if (stage120 != 0) {
+                this->buildings[buildingID].farmGrowState = 3;
+            } else if (stage102 != 0) {
+                this->buildings[buildingID].farmGrowState = 3;
+            } else if (stage103To119 != 0) {
+                this->buildings[buildingID].farmGrowState = 3;
+            } else {
                 this->buildings[buildingID].farmGrowState = seeded != 0 ? 5 : 2;
-                return;
             }
-            this->buildings[buildingID].farmGrowState = 3;
         }
 
     }

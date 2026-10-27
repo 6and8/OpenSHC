@@ -18,8 +18,9 @@ namespace Map {
         {
             uint const entryX = this->buildings[buildingID].buildingEntryX;
             uint const entryY = this->buildings[buildingID].buildingEntryY;
-            if (entryX > 399 || entryY > 399
-                || DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[entryY * 400 + entryX] == 0) {
+            bool const onMap = entryX <= 399 && entryY <= 399
+                && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[entryY * 400 + entryX] != 0;
+            if (!onMap) {
                 return FALSE;
             }
             int const entryArea
@@ -40,13 +41,13 @@ namespace Map {
                         continue;
                     }
                     for (int k = 0; k < 4; ++k) {
+                        int const target = DAT_TileMapState::instance.directionTranslationMatrix[row][direction] + tile;
                         DAT_BuildingsState::instance.hopFarmerDestinationOffsetX
                             = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[direction]
                                   .int_.xOffset;
                         DAT_BuildingsState::instance.hopFarmerDestinationOffsetY
                             = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[direction]
                                   .int_.yOffset;
-                        int const target = DAT_TileMapState::instance.directionTranslationMatrix[row][direction] + tile;
                         if ((short)DAT_TileMapState::instance.PathConnectionLayer[target] == entryArea
                             && abs((int)MACRO_CALL_MEMBER(
                                        TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(target)
@@ -64,13 +65,13 @@ namespace Map {
                         continue;
                     }
                     for (int k = 0; k < 4; ++k) {
+                        int const target = DAT_TileMapState::instance.directionTranslationMatrix[row][direction] + tile;
                         DAT_BuildingsState::instance.hopFarmerDestinationOffsetX
                             = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[direction]
                                   .int_.xOffset;
                         DAT_BuildingsState::instance.hopFarmerDestinationOffsetY
                             = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[direction]
                                   .int_.yOffset;
-                        int const target = DAT_TileMapState::instance.directionTranslationMatrix[row][direction] + tile;
                         if ((short)DAT_TileMapState::instance.PathConnectionLayer[target] == entryArea
                             && abs((int)MACRO_CALL_MEMBER(
                                        TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(target)

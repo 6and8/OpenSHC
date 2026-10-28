@@ -105,39 +105,39 @@ namespace Map {
 
                 int flagColor = 0;
                 int newController = 0;
-                if (defender == 0) {
-                    if (attacker != 0) {
-                        // Undefended and attacked, the strongest player captures the gatehouse
-                        if (flagEntityID == 0) {
-                            int owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
-                            int height = DAT_TileMapState::instance.HeightLayer[DAT_BuildingsState::instance
-                                                 .buildings[DAT_CurrentBuildingID::instance]
-                                                 .currentTilePositionAdjusted]
-                                + 30;
-                            int microY
-                                = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y * 8;
-                            int microX
-                                = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8;
-                            MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
-                                DAT_EntityState::ptr)(0, owner, owner, microX, microY, height, microX, microY, height,
-                                OpenSHC::Map::Entities::ET_FLAG_1, 0);
-                        }
-                        int strongest = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
-                        int strongestStrength = 0;
-                        for (int p = 1; p < 9; ++p) {
-                            if (strongestStrength < strength[p]) {
-                                strongest = p;
-                                strongestStrength = strength[p];
-                            }
-                        }
-                        flagColor = strongest;
-                        newController = strongest;
+                if (defender != 0) {
+                    if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 == 0
+                        || attacker == 0) {
+                        // Defended, the owner keeps or regains control
+                        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 = 0;
+                        flagColor = defender;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 == 0
-                    || attacker == 0) {
-                    // Defended, the owner keeps or regains control
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 = 0;
-                    flagColor = defender;
+                } else if (attacker != 0) {
+                    // Undefended and attacked, the strongest player captures the gatehouse
+                    if (flagEntityID == 0) {
+                        int owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
+                        int height = DAT_TileMapState::instance.HeightLayer[DAT_BuildingsState::instance
+                                             .buildings[DAT_CurrentBuildingID::instance]
+                                             .currentTilePositionAdjusted]
+                            + 30;
+                        int microY
+                            = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y * 8;
+                        int microX
+                            = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8;
+                        MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
+                            DAT_EntityState::ptr)(0, owner, owner, microX, microY, height, microX, microY, height,
+                            OpenSHC::Map::Entities::ET_FLAG_1, 0);
+                    }
+                    int strongest = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
+                    int strongestStrength = 0;
+                    for (int p = 1; p < 9; ++p) {
+                        if (strongestStrength < strength[p]) {
+                            strongest = p;
+                            strongestStrength = strength[p];
+                        }
+                    }
+                    flagColor = strongest;
+                    newController = strongest;
                 }
 
                 if (flagColor != 0 && flagEntityID != 0) {

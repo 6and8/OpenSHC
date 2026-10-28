@@ -190,11 +190,12 @@ namespace Map {
             >= 1) {
             smoke = (char)DAT_BuildingDefinedData::instance.OilSmelterAnimationFrames8
                         [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock];
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock += 1;
         } else {
             smoke = (char)DAT_BuildingDefinedData::instance.OilSmelterAnimationFrames7
                         [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock];
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock += 1;
         }
-        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock += 1;
         if (smoke <= 0) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock = 0;
         } else {

@@ -14,8 +14,8 @@ namespace Map {
     // FUNCTION: STRONGHOLDCRUSADER 0x00417FD0
     void Buildings::UpdateTunnel()
     {
-        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIncrement = 1;
         int const unitID = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].unitRefID;
+        DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIncrement = 1;
         // Unit states 3 and 9 have no UnitState constant.
         if (DAT_UnitsState::instance.units[unitID].state.generic == 3
             || DAT_UnitsState::instance.units[unitID].state.generic == Units::States::US_RELOAD_WEAPONUnk

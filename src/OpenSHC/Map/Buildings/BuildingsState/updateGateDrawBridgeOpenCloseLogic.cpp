@@ -104,13 +104,16 @@ namespace Map {
                 } while (t < DAT_TileMapState::instance.constructionTileCount);
 
                 int flagColor = 0;
-                int newController = 0;
+                int newController;
                 if (defender != 0) {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 == 0
                         || attacker == 0) {
                         // Defended, the owner keeps or regains control
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field201_0x2c6 = 0;
                         flagColor = defender;
+                        newController = 0;
+                    } else {
+                        newController = 0;
                     }
                 } else if (attacker != 0) {
                     // Undefended and attacked, the strongest player captures the gatehouse
@@ -131,13 +134,15 @@ namespace Map {
                     int strongest = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
                     int strongestStrength = 0;
                     for (int p = 1; p < 9; ++p) {
-                        if (strongestStrength < strength[p]) {
+                        if (strength[p] > strongestStrength) {
                             strongest = p;
                             strongestStrength = strength[p];
                         }
                     }
                     flagColor = strongest;
                     newController = strongest;
+                } else {
+                    newController = 0;
                 }
 
                 if (flagColor != 0 && flagEntityID != 0) {

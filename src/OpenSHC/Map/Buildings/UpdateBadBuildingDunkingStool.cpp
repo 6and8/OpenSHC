@@ -27,7 +27,7 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
-        int const buildingID = DAT_CurrentBuildingID::instance;
+        int buildingID = DAT_CurrentBuildingID::instance;
         DAT_BuildingsState::instance.buildings[buildingID].playerColorUnk = 0;
         DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
         DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
@@ -55,30 +55,34 @@ namespace Map {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                     DAT_BuildingsState::instance.buildings[buildingID].x,
                     DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WH_DUNK);
+                buildingID = DAT_CurrentBuildingID::instance;
             }
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 34) {
+            if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 34) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x,
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
+                    DAT_BuildingsState::instance.buildings[buildingID].x,
+                    DAT_BuildingsState::instance.buildings[buildingID].y,
                     OpenSHC::DE::SHCDE::FX_WH_BREATH1);
+                buildingID = DAT_CurrentBuildingID::instance;
             }
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 72) {
+            if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 72) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x,
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
+                    DAT_BuildingsState::instance.buildings[buildingID].x,
+                    DAT_BuildingsState::instance.buildings[buildingID].y,
                     OpenSHC::DE::SHCDE::FX_WH_BREATH2);
+                buildingID = DAT_CurrentBuildingID::instance;
             }
-            if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 104) {
+            if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 104) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x,
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y,
+                    DAT_BuildingsState::instance.buildings[buildingID].x,
+                    DAT_BuildingsState::instance.buildings[buildingID].y,
                     OpenSHC::DE::SHCDE::FX_WH_LIFT);
+                buildingID = DAT_CurrentBuildingID::instance;
             }
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingIsVisuallyActive
-            != DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].oldVisualActiveState) {
+        if (DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive
+            != DAT_BuildingsState::instance.buildings[buildingID].oldVisualActiveState) {
             MACRO_CALL_MEMBER(OpenSHC::Map::TileMapState_Func::updateBuildingGraphicsLayer, DAT_TileMapState::ptr)(
-                DAT_CurrentBuildingID::instance);
+                buildingID);
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].oldVisualActiveState
                 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].buildingIsVisuallyActive;
         }

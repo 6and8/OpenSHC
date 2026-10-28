@@ -120,8 +120,16 @@ namespace Map {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 12;
                 }
             }
-        } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 2
-            || DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 4) {
+        } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 2) {
+            char const frame = DAT_BuildingDefinedData::instance
+                                   .AnimTanner3[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
+                                           .animationIndex];
+            if (frame <= 0) {
+                animationDone = 1;
+            } else {
+                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame;
+            }
+        } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 4) {
             char const frame = DAT_BuildingDefinedData::instance
                                    .AnimTanner3[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                                            .animationIndex];

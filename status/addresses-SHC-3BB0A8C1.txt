@@ -5495,7 +5495,7 @@ SHC_3BB0A8C1_0x004138D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00413DC0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004140B0 | 75.3% | Register allocation differs
+SHC_3BB0A8C1_0x004140B0 | 77.0% | Register allocation differs
 
 SHC_3BB0A8C1_0x00414720 | 100.0% | Reimplemented
 

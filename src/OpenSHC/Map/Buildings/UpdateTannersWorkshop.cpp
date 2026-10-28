@@ -143,10 +143,9 @@ namespace Map {
                                    .AnimTanner4[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                                            .animationIndex];
             if (frame <= 0) {
-                animationDone = 1;
-            } else {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame;
+                goto doneWithBlend;
             }
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength
                 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 7) {
@@ -191,10 +190,9 @@ namespace Map {
                                    .AnimTanner5[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
                                            .animationIndex];
             if (frame <= 0) {
-                animationDone = 1;
-            } else {
-                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 25;
+                goto doneWithBlend;
             }
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 25;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength
                 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 9) {
@@ -214,18 +212,18 @@ namespace Map {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
             }
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 10) {
-            if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
-                animationDone = 1;
-            } else {
+            if (DAT_GameSynchronyState::instance.currentGameMode == 0) {
                 char const frame
                     = (char)DAT_BuildingDefinedData::instance.AnimTanner7
                           [DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex];
-                if (frame <= 0) {
-                    animationDone = 1;
-                } else {
+                if (frame > 0) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 51;
+                    goto blend;
                 }
             }
+        doneWithBlend:
+            animationDone = 1;
+        blend:
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength
                 = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex;
         }

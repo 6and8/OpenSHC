@@ -81,3 +81,5 @@ src/OpenSHC/Map/Buildings/UpdateIronMine.cpp
 src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/buildingHasSpaceForResource.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/processSyncPacket.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/translateMultiplayerIDsIntoPlayerIDs.cpp

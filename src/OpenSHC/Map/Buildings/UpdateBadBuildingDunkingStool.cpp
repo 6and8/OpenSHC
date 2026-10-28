@@ -60,22 +60,19 @@ namespace Map {
             if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 34) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                     DAT_BuildingsState::instance.buildings[buildingID].x,
-                    DAT_BuildingsState::instance.buildings[buildingID].y,
-                    OpenSHC::DE::SHCDE::FX_WH_BREATH1);
+                    DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WH_BREATH1);
                 buildingID = DAT_CurrentBuildingID::instance;
             }
             if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 72) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                     DAT_BuildingsState::instance.buildings[buildingID].x,
-                    DAT_BuildingsState::instance.buildings[buildingID].y,
-                    OpenSHC::DE::SHCDE::FX_WH_BREATH2);
+                    DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WH_BREATH2);
                 buildingID = DAT_CurrentBuildingID::instance;
             }
             if (DAT_BuildingsState::instance.buildings[buildingID].animationIndex == 104) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                     DAT_BuildingsState::instance.buildings[buildingID].x,
-                    DAT_BuildingsState::instance.buildings[buildingID].y,
-                    OpenSHC::DE::SHCDE::FX_WH_LIFT);
+                    DAT_BuildingsState::instance.buildings[buildingID].y, OpenSHC::DE::SHCDE::FX_WH_LIFT);
                 buildingID = DAT_CurrentBuildingID::instance;
             }
         }

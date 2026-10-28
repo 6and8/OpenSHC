@@ -251,7 +251,8 @@ namespace Map {
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field221_0x308 < delay) {
                 return;
             }
-            int const mask = (ushort)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].outpostRelatedUnk1;
+            int const mask
+                = (ushort)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].outpostRelatedUnk1;
             int enabledTypes = 0;
             if ((mask & 1) != 0) {
                 enabledTypes += 1;

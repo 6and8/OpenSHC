@@ -40,14 +40,9 @@ namespace Map {
         if (secondWorkerID != 0
             && DAT_UnitsState::instance.units[secondWorkerID].uid
                 == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[1]
-            && (DAT_UnitsState::instance.units[secondWorkerID]
-                        .unitType
-                    == OpenSHC::Map::Units::UT_BURNINGMAN
-                || DAT_UnitsState::instance.units[secondWorkerID]
-                        .unitType
-                    == OpenSHC::Map::Units::UT_BURNING_ANIMAL_BIG
-                || DAT_UnitsState::instance.units[secondWorkerID]
-                        .unitType
+            && (DAT_UnitsState::instance.units[secondWorkerID].unitType == OpenSHC::Map::Units::UT_BURNINGMAN
+                || DAT_UnitsState::instance.units[secondWorkerID].unitType == OpenSHC::Map::Units::UT_BURNING_ANIMAL_BIG
+                || DAT_UnitsState::instance.units[secondWorkerID].unitType
                     == OpenSHC::Map::Units::UT_BURNING_ANIMAL_SMALL)) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].burningWorkerCountdown = 400;
         }

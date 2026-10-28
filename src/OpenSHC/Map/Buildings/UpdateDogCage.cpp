@@ -28,7 +28,8 @@ namespace Map {
         int const buildingID = DAT_CurrentBuildingID::instance;
         DAT_GameState::instance
             .playerDataArray[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner]
-            .dogCageCount += 1;
+            .dogCageCount
+            += 1;
         int unitCount = 0;
         int dogCount = 0;
         for (int i = 0; i < 4; ++i) {

@@ -68,7 +68,9 @@ namespace Map {
             return;
         }
         int const unitID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::spawnUnit, DAT_UnitsState::ptr)(
-            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8,
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner,
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner,
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8,
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y * 8,
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].terrainHeightUnk,
             OpenSHC::Map::Units::UT_S_BATTERINGRAM);
@@ -123,7 +125,8 @@ namespace Map {
             for (int i = 0; i != 4; ++i) {
                 DAT_UnitsState::instance
                     .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
-                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
+                    .state.generic
+                    = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
             }
         }
         MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::calculatePreferredRelativeOrientation,

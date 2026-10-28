@@ -154,7 +154,8 @@ namespace Map {
                             }
                         }
                     }
-                    int const tile = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileRefs[slot];
+                    int const tile
+                        = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].tileRefs[slot];
                     int const tileY = DAT_ViewportRenderState::instance.tileTranslationMatrix_YComponent[tile];
                     int const tileX = tile - DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile;
                     int const cowID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::spawnUnit,
@@ -272,7 +273,8 @@ namespace Map {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationSprite3 = 0;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationSprite4 = 55;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_CHEESE] = 1;
+                .resources[OpenSHC::Game::Resources::RT_CHEESE]
+                = 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].dairyProductionStage = 0;
         } else {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock = 0;

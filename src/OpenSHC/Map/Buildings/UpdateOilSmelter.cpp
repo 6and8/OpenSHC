@@ -86,7 +86,8 @@ namespace Map {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field117_0x11a = 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1 = 0;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_PITCH] += 1;
+                    .resources[OpenSHC::Game::Resources::RT_PITCH]
+                    += 1;
             }
         } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 5) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].spriteOffetX = -16;
@@ -150,7 +151,8 @@ namespace Map {
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex = 0;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state = 8;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_PITCH] -= 1;
+                    .resources[OpenSHC::Game::Resources::RT_PITCH]
+                    -= 1;
                 // Unit state 9 has no UnitState constant.
                 int const engineerID
                     = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].engineerUnitID;

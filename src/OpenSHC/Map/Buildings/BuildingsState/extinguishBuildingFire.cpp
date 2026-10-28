@@ -47,9 +47,10 @@ namespace Map {
             int const tileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCount[size];
             for (int try_ = 0; try_ < tileCount; ++try_) {
                 MACRO_CALL_MEMBER(BuildingsState_Func::setupBuildingEntrancesOffset, this)(size, 1, try_, 0);
-                MACRO_CALL_MEMBER(Entities::EntityState_Func::updateAllFireEntitiesAtTile, DAT_EntityState::ptr)(x
-                    + DAT_ViewportRenderState::instance.translationMatrix[this->DAT_TempYOffset + y].addXgetTile
-                    + this->DAT_TempXOffset);
+                int const rowTile
+                    = DAT_ViewportRenderState::instance.translationMatrix[this->DAT_TempYOffset + y].addXgetTile + x;
+                MACRO_CALL_MEMBER(Entities::EntityState_Func::updateAllFireEntitiesAtTile, DAT_EntityState::ptr)(
+                    rowTile + this->DAT_TempXOffset);
             }
         }
 

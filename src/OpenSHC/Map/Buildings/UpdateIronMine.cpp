@@ -111,8 +111,17 @@ namespace Map {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field117_0x11a == 1) {
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state = 5;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 5
-                    || DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 6) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 5) {
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state
+                        = MACRO_CALL_MEMBER(
+                              OpenSHC::Map::Buildings::BuildingsState_Func::getBuildingResourceAmountByUid,
+                              DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance,
+                              DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].uid,
+                              OpenSHC::Game::Resources::RT_IRON)
+                            < 7
+                        ? 0
+                        : 6;
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 6) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state
                         = MACRO_CALL_MEMBER(
                               OpenSHC::Map::Buildings::BuildingsState_Func::getBuildingResourceAmountByUid,

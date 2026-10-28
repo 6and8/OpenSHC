@@ -68,7 +68,7 @@ namespace Map {
             return;
         }
         int const unitID = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::spawnUnit, DAT_UnitsState::ptr)(
-            owner, owner, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8,
+            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8,
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y * 8,
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].terrainHeightUnk,
             OpenSHC::Map::Units::UT_S_BATTERINGRAM);

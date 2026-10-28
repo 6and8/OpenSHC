@@ -30,28 +30,23 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::addBuildingInRegistry, DAT_GameState::ptr)(
             DAT_CurrentBuildingID::instance);
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0] != 0
-            && DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0]]
-                    .uid
+        int const firstWorkerID = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[0];
+        if (firstWorkerID != 0
+            && DAT_UnitsState::instance.units[firstWorkerID].uid
                 == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[0]) {
             hunterPresent = 1;
         }
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1] != 0
-            && DAT_UnitsState::instance
-                    .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
-                    .uid
+        int const secondWorkerID = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1];
+        if (secondWorkerID != 0
+            && DAT_UnitsState::instance.units[secondWorkerID].uid
                 == DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerUID[1]
-            && (DAT_UnitsState::instance
-                        .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
+            && (DAT_UnitsState::instance.units[secondWorkerID]
                         .unitType
                     == OpenSHC::Map::Units::UT_BURNINGMAN
-                || DAT_UnitsState::instance
-                        .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
+                || DAT_UnitsState::instance.units[secondWorkerID]
                         .unitType
                     == OpenSHC::Map::Units::UT_BURNING_ANIMAL_BIG
-                || DAT_UnitsState::instance
-                        .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[1]]
+                || DAT_UnitsState::instance.units[secondWorkerID]
                         .unitType
                     == OpenSHC::Map::Units::UT_BURNING_ANIMAL_SMALL)) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].burningWorkerCountdown = 400;

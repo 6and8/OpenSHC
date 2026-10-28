@@ -135,8 +135,8 @@ namespace Map {
                     int strongestStrength = 0;
                     for (int p = 1; p < 9; ++p) {
                         if (strength[p] > strongestStrength) {
-                            strongest = p;
                             strongestStrength = strength[p];
+                            strongest = p;
                         }
                     }
                     flagColor = strongest;

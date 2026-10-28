@@ -83,3 +83,4 @@ src/OpenSHC/Map/Buildings/BuildingsState/buildingHasSpaceForResource.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
 src/OpenSHC/Synchrony/GameSynchronyState/processSyncPacket.cpp
 src/OpenSHC/Synchrony/GameSynchronyState/translateMultiplayerIDsIntoPlayerIDs.cpp
+

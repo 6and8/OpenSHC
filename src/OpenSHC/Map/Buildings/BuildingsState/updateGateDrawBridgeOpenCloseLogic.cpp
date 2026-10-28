@@ -78,24 +78,27 @@ namespace Map {
                         }
                     }
                     int entityID = DAT_TileMapState::instance.EntityLayer[tile];
-                    if (entityID != 0) {
-                        for (int n = 1; n != 10; ++n) {
-                            if (DAT_EntityState::instance.entityArray[entityID].entityType
-                                    == OpenSHC::Map::Entities::ET_FLAG_1
-                                || DAT_EntityState::instance.entityArray[entityID].entityType
-                                    == OpenSHC::Map::Entities::ET_FLAG_4
-                                || DAT_EntityState::instance.entityArray[entityID].entityType
-                                    == OpenSHC::Map::Entities::ET_FLAG_2
-                                || DAT_EntityState::instance.entityArray[entityID].entityType
-                                    == OpenSHC::Map::Entities::ET_FLAG_3) {
-                                flagEntityID = entityID;
-                            }
-                            int next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
-                            if (entityID == next || next == 0) {
-                                break;
-                            }
-                            entityID = next;
+                    int n = 0;
+                    while (entityID != 0) {
+                        ++n;
+                        if (n >= 10) {
+                            break;
                         }
+                        if (DAT_EntityState::instance.entityArray[entityID].entityType
+                                == OpenSHC::Map::Entities::ET_FLAG_1
+                            || DAT_EntityState::instance.entityArray[entityID].entityType
+                                == OpenSHC::Map::Entities::ET_FLAG_4
+                            || DAT_EntityState::instance.entityArray[entityID].entityType
+                                == OpenSHC::Map::Entities::ET_FLAG_2
+                            || DAT_EntityState::instance.entityArray[entityID].entityType
+                                == OpenSHC::Map::Entities::ET_FLAG_3) {
+                            flagEntityID = entityID;
+                        }
+                        int next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
+                        if (entityID == next) {
+                            break;
+                        }
+                        entityID = next;
                     }
                     ++t;
                 } while (t < DAT_TileMapState::instance.constructionTileCount);
@@ -151,24 +154,27 @@ namespace Map {
                                                    .translationMatrix[DAT_TileMapState::instance.buildingY + gateY]
                                                    .addXgetTile
                                       + DAT_TileMapState::instance.buildingX + gateX];
-                        if (entityID != 0) {
-                            for (int n = 1; n != 10; ++n) {
-                                if (DAT_EntityState::instance.entityArray[entityID].entityType
-                                        == OpenSHC::Map::Entities::ET_FLAG_1
-                                    || DAT_EntityState::instance.entityArray[entityID].entityType
-                                        == OpenSHC::Map::Entities::ET_FLAG_4
-                                    || DAT_EntityState::instance.entityArray[entityID].entityType
-                                        == OpenSHC::Map::Entities::ET_FLAG_2
-                                    || DAT_EntityState::instance.entityArray[entityID].entityType
-                                        == OpenSHC::Map::Entities::ET_FLAG_3) {
-                                    DAT_EntityState::instance.entityArray[entityID].colorUnk = flagColor;
-                                }
-                                int next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
-                                if (entityID == next || next == 0) {
-                                    break;
-                                }
-                                entityID = next;
+                        int n = 0;
+                        while (entityID != 0) {
+                            ++n;
+                            if (n >= 10) {
+                                break;
                             }
+                            if (DAT_EntityState::instance.entityArray[entityID].entityType
+                                    == OpenSHC::Map::Entities::ET_FLAG_1
+                                || DAT_EntityState::instance.entityArray[entityID].entityType
+                                    == OpenSHC::Map::Entities::ET_FLAG_4
+                                || DAT_EntityState::instance.entityArray[entityID].entityType
+                                    == OpenSHC::Map::Entities::ET_FLAG_2
+                                || DAT_EntityState::instance.entityArray[entityID].entityType
+                                    == OpenSHC::Map::Entities::ET_FLAG_3) {
+                                DAT_EntityState::instance.entityArray[entityID].colorUnk = flagColor;
+                            }
+                            int next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
+                            if (entityID == next) {
+                                break;
+                            }
+                            entityID = next;
                         }
                         ++t2;
                     } while (t2 < DAT_TileMapState::instance.constructionTileCount);

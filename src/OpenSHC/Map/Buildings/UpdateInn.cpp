@@ -140,8 +140,7 @@ namespace Map {
                     >= DAT_GameState::instance.playerDataArray[owner].aleRate) {
                     *(short*)&DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].padding_0x2b2 = 0;
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                        .flagonsOfAleOrCheeseOrReleaseDogs
-                        -= 1;
+                        .flagonsOfAleOrCheeseOrReleaseDogs -= 1;
                 }
             }
             if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]

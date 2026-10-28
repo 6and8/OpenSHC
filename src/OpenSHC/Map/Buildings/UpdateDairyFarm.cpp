@@ -273,8 +273,7 @@ namespace Map {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationSprite3 = 0;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationSprite4 = 55;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_CHEESE]
-                = 1;
+                .resources[OpenSHC::Game::Resources::RT_CHEESE] = 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].dairyProductionStage = 0;
         } else {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].campgroundVclock = 0;

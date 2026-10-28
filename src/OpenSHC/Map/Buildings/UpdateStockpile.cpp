@@ -45,8 +45,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_WOOD] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_WOOD] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_WOOD]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_WOOD] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -60,8 +59,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_HOPS] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_HOPS] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_HOPS]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_HOPS] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -75,8 +73,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_STONE] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_STONE] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_STONE]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_STONE] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -90,8 +87,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_IRON] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_IRON] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_IRON]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_IRON] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -105,8 +101,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_PITCH] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_PITCH] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_PITCH]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_PITCH] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -120,8 +115,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_WHEAT] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_WHEAT] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_WHEAT]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_WHEAT] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -135,8 +129,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_ALE] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_ALE] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_ALE]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_ALE] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;
@@ -150,8 +143,7 @@ namespace Map {
             DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_FLOUR] += 1;
             DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_FLOUR] -= 1;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                .resources[OpenSHC::Game::Resources::RT_FLOUR]
-                += 1;
+                .resources[OpenSHC::Game::Resources::RT_FLOUR] += 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::computeResourceSumForBuilding,
                 DAT_BuildingsState::ptr)(DAT_CurrentBuildingID::instance);
             DAT_GameState::instance.playerDataArray[owner].hasInitialResourceRecievingStarted = 1;

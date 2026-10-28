@@ -44,8 +44,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_BOW] += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_BOW] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_BOW]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_BOW] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -58,8 +57,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_CROSSBOW]
                     -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_CROSSBOW]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_CROSSBOW] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -71,8 +69,7 @@ namespace Map {
                     += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_SPEAR] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_SPEAR]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_SPEAR] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -83,8 +80,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_PIKE] += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_PIKE] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_PIKE]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_PIKE] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -95,8 +91,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_MACE] += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_MACE] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_MACE]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_MACE] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -108,8 +103,7 @@ namespace Map {
                     += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_SWORD] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_SWORD]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_SWORD] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -119,13 +113,11 @@ namespace Map {
                     OpenSHC::Map::Buildings::BuildingsState_Func::getArmoryIDIfSpaceLeft, DAT_BuildingsState::ptr)(
                     DAT_CurrentBuildingID::instance, OpenSHC::Game::Resources::RT_LEATHERARMOR, owner, 1)) {
                 DAT_GameState::instance.playerDataArray[owner]
-                    .currentResources[OpenSHC::Game::Resources::RT_LEATHERARMOR]
-                    += 1;
+                    .currentResources[OpenSHC::Game::Resources::RT_LEATHERARMOR] += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_LEATHERARMOR]
                     -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_LEATHERARMOR]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_LEATHERARMOR] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -140,8 +132,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_IRONARMOR]
                     -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_IRONARMOR]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_IRONARMOR] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }

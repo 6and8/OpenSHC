@@ -20,8 +20,7 @@ namespace Map {
     {
         DAT_GameState::instance
             .playerDataArray[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner]
-            .countPitchRigs
-            += 1;
+            .countPitchRigs += 1;
         int animationDone = 0;
         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderAnimation
             = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workers[0] != 0;

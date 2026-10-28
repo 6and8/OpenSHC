@@ -125,8 +125,7 @@ namespace Map {
             for (int i = 0; i != 4; ++i) {
                 DAT_UnitsState::instance
                     .units[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workerID[i]]
-                    .state.generic
-                    = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
+                    .state.generic = OpenSHC::Map::Units::States::US_AIM_WEAPONUnk;
             }
         }
         MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::calculatePreferredRelativeOrientation,

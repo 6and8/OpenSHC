@@ -46,8 +46,7 @@ namespace Map {
                     += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_BREAD] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_BREAD]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_BREAD] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -59,8 +58,7 @@ namespace Map {
                     += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_CHEESE] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_CHEESE]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_CHEESE] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -71,8 +69,7 @@ namespace Map {
                 DAT_GameState::instance.playerDataArray[owner].currentResources[OpenSHC::Game::Resources::RT_MEAT] += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_MEAT] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_MEAT]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_MEAT] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }
@@ -84,8 +81,7 @@ namespace Map {
                     += 1;
                 DAT_GameState::instance.playerDataArray[owner].startResources[OpenSHC::Game::Resources::RT_APPLE] -= 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
-                    .resources[OpenSHC::Game::Resources::RT_APPLE]
-                    += 1;
+                    .resources[OpenSHC::Game::Resources::RT_APPLE] += 1;
                 DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].resourceRelatedCountDown = 100;
                 resourceGiven = 1;
             }

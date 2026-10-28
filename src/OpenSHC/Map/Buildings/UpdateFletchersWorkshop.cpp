@@ -47,6 +47,9 @@ namespace Map {
                 = DAT_TileMapState::instance.uiBuildingRotation;
         }
 
+        // Matching note: the bow and crossbow arms of state 0 share the frame store and the index check; the
+        // original keeps the crossbow copy and the bow arm jumps into it.
+        int shownFrame;
         // The animation tables are declared byte, but the original reads them signed
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].producedItemTypeNext
             == OpenSHC::Game::Resources::RT_BOW) {
@@ -72,18 +75,10 @@ namespace Map {
                 }
                 if (frame <= 0) {
                     animationDone = 1;
-                } else {
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame;
+                    goto checkIndex;
                 }
-                if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 0) {
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = 0;
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 31;
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex
-                    < 30) {
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength -= 1;
-                } else {
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 0;
-                }
+                shownFrame = frame;
+                goto storeFrame;
             } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].state == 1) {
                 if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
                     animationDone = 1;
@@ -114,9 +109,12 @@ namespace Map {
                 }
                 if (frame <= 0) {
                     animationDone = 1;
-                } else {
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = frame + 36;
+                    goto checkIndex;
                 }
+                shownFrame = frame + 36;
+            storeFrame:
+                DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = shownFrame;
+            checkIndex:
                 if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationIndex == 0) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].animationFrame = 0;
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].renderBlendStrength = 31;

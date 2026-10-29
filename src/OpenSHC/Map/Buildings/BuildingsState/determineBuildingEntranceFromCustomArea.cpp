@@ -63,7 +63,7 @@ namespace Map {
                         DAT_BuildingsState::ptr)((short)DAT_TileMapState::instance.BuildingLayer[tile]);
                 }
                 if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x50501481) == 0 && height <= tileHeight + heightStep
-                    && tileHeight - heightStep <= height
+                    && height >= tileHeight - heightStep
                     && (areaFrom == 0 || (short)DAT_TileMapState::instance.PathConnectionLayer[tile] == areaFrom
                         || MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::PathFindingState_Func::
                                                  calculateCanPlayerUnitsNavigateToAreaFromArea,
@@ -101,7 +101,7 @@ namespace Map {
                         DAT_BuildingsState::ptr)((short)DAT_TileMapState::instance.BuildingLayer[tile]);
                 }
                 if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x50501481) == 0 && height <= tileHeight + 16
-                    && tileHeight - 16 <= height
+                    && height >= tileHeight - 16
                     && (areaFrom == 0 || (short)DAT_TileMapState::instance.PathConnectionLayer[tile] == areaFrom
                         || MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::PathFindingState_Func::
                                                  calculateCanPlayerUnitsNavigateToAreaFromArea,
@@ -147,7 +147,7 @@ namespace Map {
                         DAT_BuildingsState::ptr)((short)DAT_TileMapState::instance.BuildingLayer[tile]);
                 }
                 if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x50501481) == 0 && height <= tileHeight + 16
-                    && tileHeight - 16 <= height && DAT_TileMapState::instance.PathConnectionLayer[tile] != 0
+                    && height >= tileHeight - 16 && DAT_TileMapState::instance.PathConnectionLayer[tile] != 0
                     && ++found >= param_2) {
                     this->buildings[buildingID].buildingEntryX
                         = this->DAT_TempXOffset - param_3 + this->buildings[buildingID].x;

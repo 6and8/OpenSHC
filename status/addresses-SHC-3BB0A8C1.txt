@@ -6083,13 +6083,13 @@ SHC_3BB0A8C1_0x0041A860 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041A8D0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041ADE0 | 64.5% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041ADE0 | 66.0% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B11E | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041B190 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041B2B0 | 59.6% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041B2B0 | 61.1% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B6A0 | 0.0% | Pending
 

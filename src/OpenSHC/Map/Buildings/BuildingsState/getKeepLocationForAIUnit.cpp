@@ -95,12 +95,10 @@ namespace Map {
                     // The search runs across the three 24-entry pieces, so the formation is read as 72 flat slots.
                     for (int i = searchOffset; i < 72; ++i) {
                         int const x = (&DAT_GameState::instance.playerDataArray[playerID]
-                                .structure
-                                .mercenaryOutpostCampgroundLocations[0][0][0])[(group - 10) * 72 + i]
+                                .structure.mercenaryOutpostCampgroundLocations[0][0][0])[(group - 10) * 72 + i]
                                           .x;
                         int const y = (&DAT_GameState::instance.playerDataArray[playerID]
-                                .structure
-                                .mercenaryOutpostCampgroundLocations[0][0][0])[(group - 10) * 72 + i]
+                                .structure.mercenaryOutpostCampgroundLocations[0][0][0])[(group - 10) * 72 + i]
                                           .y;
                         int const occupant
                             = DAT_TileMapState::instance

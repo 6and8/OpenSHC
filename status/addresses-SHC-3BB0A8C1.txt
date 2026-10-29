@@ -6529,7 +6529,7 @@ SHC_3BB0A8C1_0x00422A70 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00422B80 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00422C60 | 68.2% | edx kept across the flammability call
+SHC_3BB0A8C1_0x00422C60 | 80.6% | playerID kept in a register in the first loop; the original compares it from the stack
 
 SHC_3BB0A8C1_0x00422D10 | 0.0% | Pending
 

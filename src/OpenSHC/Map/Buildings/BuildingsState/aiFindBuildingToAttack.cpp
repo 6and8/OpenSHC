@@ -26,7 +26,7 @@ namespace Map {
                     continue;
                 }
                 int const dx = x - this->buildings[buildingID].x;
-                short const dy = y - this->buildings[buildingID].y;
+                int const dy = y - this->buildings[buildingID].y;
                 int const distance = dy * dy + dx * dx;
                 if (distance <= radiusSquared && distance < closestDistance) {
                     closestDistance = distance;

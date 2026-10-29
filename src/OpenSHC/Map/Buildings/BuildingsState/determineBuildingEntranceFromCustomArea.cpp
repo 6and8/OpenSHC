@@ -43,7 +43,7 @@ namespace Map {
                 index = (short)this->buildings[buildingID].entranceAttemptTileIndex % tileCount;
                 this->buildings[buildingID].entranceAttemptTileIndex = index;
             }
-            short height = this->buildings[buildingID].terrainHeightUnk;
+            int height = this->buildings[buildingID].terrainHeightUnk;
             this->buildings[buildingID].buildingEntryX = 0;
             this->buildings[buildingID].buildingEntryY = 0;
 

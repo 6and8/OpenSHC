@@ -28,7 +28,7 @@ namespace Map {
             // Returns 1 if an entrance was found, 2 if only an unreachable one (e.g. behind a locked gate) and 0
             // otherwise.
             int playerID = this->buildings[buildingID].owner;
-            int index = 0;
+            int index;
             int found = 0;
             int areaFrom
                 = (short)DAT_TileMapState::instance
@@ -39,7 +39,9 @@ namespace Map {
             }
             int size = this->buildings[buildingID].widthOrHeight + param_3 * 2;
             int tileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCount[size];
-            if (tileCount > 0) {
+            if (tileCount <= 0) {
+                index = 0;
+            } else {
                 index = (short)this->buildings[buildingID].entranceAttemptTileIndex % tileCount;
                 this->buildings[buildingID].entranceAttemptTileIndex = index;
             }

@@ -3873,7 +3873,7 @@ SHC_3BB0A8C1_0x00409FF0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040A020 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0040A060 | 73.1% | compiler folds the height offset into the entity type
+SHC_3BB0A8C1_0x0040A060 | 69.6% | compiler folds the height offset into the entity type
 
 SHC_3BB0A8C1_0x0040A228 | 0.0% | Pending
 
@@ -4099,7 +4099,7 @@ SHC_3BB0A8C1_0x0040B1A0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040B1E0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0040B260 | 68.7% | loop anchor and zero register differ
+SHC_3BB0A8C1_0x0040B260 | 60.7% | loop anchor and zero register differ
 
 SHC_3BB0A8C1_0x0040B4E0 | 100.0% | Reimplemented
 
@@ -5815,7 +5815,7 @@ SHC_3BB0A8C1_0x00419EA2 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00419EB0 | 39.4% | original strength-reduces the two enemy arrays into one pointer
 
-SHC_3BB0A8C1_0x00419FA0 | 51.3% | Layout-bound: the enemy building ID and UID arrays are one struct in the DLL, so MSVC folds their distance and allocates differently
+SHC_3BB0A8C1_0x00419FA0 | 48.3% | Layout-bound: the enemy building ID and UID arrays are one struct in the DLL, so MSVC folds their distance and allocates differently
 
 SHC_3BB0A8C1_0x0041A060 | 100.0% | Reimplemented
 
@@ -6509,7 +6509,7 @@ SHC_3BB0A8C1_0x00421A40 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00421BE0 | 61.2% | register allocation differs
 
-SHC_3BB0A8C1_0x00421D70 | 79.3% | this spilled, register allocation differs
+SHC_3BB0A8C1_0x00421D70 | 77.8% | this spilled, register allocation differs
 
 SHC_3BB0A8C1_0x00422230 | 100.0% | Reimplemented
 
@@ -6519,7 +6519,7 @@ SHC_3BB0A8C1_0x00422400 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00422430 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004224F0 | 84.3% | stack slot allocation differs
+SHC_3BB0A8C1_0x004224F0 | 83.4% | stack slot allocation differs
 
 SHC_3BB0A8C1_0x00422600 | 0.0% | Pending
 

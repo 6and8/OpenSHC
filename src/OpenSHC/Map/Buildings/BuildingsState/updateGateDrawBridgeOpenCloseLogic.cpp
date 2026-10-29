@@ -117,7 +117,7 @@ namespace Map {
                 } else if (attacker != 0) {
                     // Undefended and attacked, the strongest player captures the gatehouse
                     if (flagEntityID == 0) {
-                        short owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
+                        int owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
                         int height
                             = DAT_TileMapState::instance
                                   .HeightLayer[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]

@@ -52,8 +52,9 @@ namespace Map {
             int const half = (int)this->buildings[buildingID].widthOrHeight / 2;
             int const x = this->buildings[buildingID].x + half;
             int const y = this->buildings[buildingID].y + half;
-            int const height = DAT_TileMapState::instance
-                                   .HeightLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x]
+            short const height
+                = DAT_TileMapState::instance
+                      .HeightLayer[DAT_ViewportRenderState::instance.translationMatrix[y].addXgetTile + x]
                 + heightOffset;
             int const entityID = MACRO_CALL_MEMBER(Entities::EntityState_Func::spawnProjectileEntity,
                 DAT_EntityState::ptr)(0, this->buildings[buildingID].owner, 0, x * 8, y * 8, height, 0, 0, 0,

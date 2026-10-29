@@ -78,7 +78,7 @@ namespace Map {
                     - DAT_GameState::instance.playerDataArray[p].badStuffCount;
                 if (balance < 0) {
                     balance = -balance;
-                    int level = -(balance / thingsPerLevel);
+                    short level = -(balance / thingsPerLevel);
                     DAT_GameState::instance.playerDataArray[p].fearFactorLevel = level;
                     DAT_GameState::instance.playerDataArray[p].objectsLeftUntilNextLevel
                         = thingsPerLevel - balance % thingsPerLevel;

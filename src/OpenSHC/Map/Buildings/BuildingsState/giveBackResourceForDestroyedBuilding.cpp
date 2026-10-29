@@ -134,7 +134,7 @@ namespace Map {
                 }
                 goto goldGain;
             } else {
-                int buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
+                short buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
                 int wood = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredWood * percentage / 100;
                 int iron = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredIron_0x8 * percentage / 100;
                 int stone

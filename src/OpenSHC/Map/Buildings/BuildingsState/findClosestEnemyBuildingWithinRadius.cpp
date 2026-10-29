@@ -12,7 +12,7 @@ namespace Map {
             int closestBuildingID = 0;
             int closestDistance = 1000000;
             for (int i = 0; i < DAT_GameState::instance.mapAndTime.playerBuildingInfoIndex[param_1]; ++i) {
-                int const buildingID = DAT_GameState::instance.mapAndTime.playerEnemyBuildingIDs[param_1][i];
+                short const buildingID = DAT_GameState::instance.mapAndTime.playerEnemyBuildingIDs[param_1][i];
                 if (this->buildings[buildingID].uid
                     == DAT_GameState::instance.mapAndTime.playerEnemyBuildingUID[param_1][i]) {
                     int const dx = param_2 - this->buildings[buildingID].x;

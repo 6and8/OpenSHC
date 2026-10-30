@@ -148,7 +148,7 @@ namespace UI {
         } else if (iVar3 < 0x4b) {
             iVar1 = 100;
         } else {
-            iVar1 = iVar3 >= 100 ? 200 : 150;
+            iVar1 = iVar3 < 100 ? 150 : 200;
         }
         MACRO_CALL(OpenSHC::UI::Rendering_Func::TransformAndRenderPercentage)(
             DAT_TextManagerObject::instance.currentXOffset_0x0 + 0xd6 + DAT_MenuHandlerState::instance.x,
@@ -159,24 +159,24 @@ namespace UI {
             iVar3 = 0x32;
         } else if (iVar3 < 0x4b) {
             iVar3 = 0x4b;
-        } else {
-            if (iVar3 >= 100) {
-                iVar7 = 0;
-                BVar8 = FALSE;
-                iVar4 = 0x12;
-                BVar6 = 0;
-                TVar5 = OpenSHC::Text::TTA_LEFT;
-                iVar3 = DAT_MenuHandlerState::instance.y + 0x20d;
-                iVar1 = DAT_MenuHandlerState::instance.x + 0xb4;
-                /*
-                  added by script: "Maximum bonus achieved"
-                 */
-                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
-                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_INN, 8),
-                    iVar1, iVar3, TVar5, BVar6, iVar4, BVar8, iVar7);
-            }
+        } else if (iVar3 < 100) {
             iVar3 = 100;
+        } else {
+            iVar7 = 0;
+            BVar8 = FALSE;
+            iVar4 = 0x12;
+            BVar6 = 0;
+            TVar5 = OpenSHC::Text::TTA_LEFT;
+            iVar3 = DAT_MenuHandlerState::instance.y + 0x20d;
+            iVar1 = DAT_MenuHandlerState::instance.x + 0xb4;
+            /*
+              added by script: "Maximum bonus achieved"
+             */
+            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_INN, 8),
+                iVar1, iVar3, TVar5, BVar6, iVar4, BVar8, iVar7);
+            return;
         }
         iVar9 = 0;
         BVar8 = FALSE;

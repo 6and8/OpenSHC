@@ -94,6 +94,12 @@ namespace UI {
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_BLACKSMITHS_WORKSHOP, 3),
                 iVar5, iVar1, TVar6, BVar7, iVar8, BVar2, iVar9);
             switch (DAT_BuildingsState::instance.buildings[iVar4].producedItemTypeNext) {
+            case OpenSHC::Game::Resources::RT_SWORD:
+                _textNumInGroup = 5;
+                break;
+            case OpenSHC::Game::Resources::RT_MACE:
+                _textNumInGroup = 6;
+                break;
             case OpenSHC::Game::Resources::RT_BOW:
                 _textNumInGroup = 7;
                 break;
@@ -105,12 +111,6 @@ namespace UI {
                 break;
             case OpenSHC::Game::Resources::RT_PIKE:
                 _textNumInGroup = 10;
-                break;
-            case OpenSHC::Game::Resources::RT_MACE:
-                _textNumInGroup = 6;
-                break;
-            case OpenSHC::Game::Resources::RT_SWORD:
-                _textNumInGroup = 5;
             }
             iVar9 = 0;
             BVar2 = TRUE;
@@ -139,6 +139,12 @@ namespace UI {
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_BLACKSMITHS_WORKSHOP, 4),
             iVar5, iVar1, TVar6, BVar7, iVar8, BVar2, iVar9);
         switch (DAT_BuildingsState::instance.buildings[iVar4].producedItemType) {
+        case OpenSHC::Game::Resources::RT_SWORD:
+            _textNumInGroup = 5;
+            break;
+        case OpenSHC::Game::Resources::RT_MACE:
+            _textNumInGroup = 6;
+            break;
         case OpenSHC::Game::Resources::RT_BOW:
             _textNumInGroup = 7;
             break;
@@ -150,12 +156,6 @@ namespace UI {
             break;
         case OpenSHC::Game::Resources::RT_PIKE:
             _textNumInGroup = 10;
-            break;
-        case OpenSHC::Game::Resources::RT_MACE:
-            _textNumInGroup = 6;
-            break;
-        case OpenSHC::Game::Resources::RT_SWORD:
-            _textNumInGroup = 5;
         }
         iVar8 = 0;
         BVar2 = TRUE;

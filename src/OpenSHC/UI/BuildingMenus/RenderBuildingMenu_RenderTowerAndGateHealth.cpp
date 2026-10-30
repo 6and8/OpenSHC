@@ -3,6 +3,8 @@
 #include "OpenSHC/OS.func.hpp"
 #include "OpenSHC/Text/TextManager.func.hpp"
 #include "OpenSHC/UI/Rendering/PencilRenderCore.func.hpp"
+#include "OpenSHC/IO/Helpers/ColorUnion.hpp"
+#include "OpenSHC/Map/Buildings/Building.hpp"
 #include "OpenSHC/Text/TextAlignment.hpp"
 #include "OpenSHC/WindowsHelper/Enums/BOOLEnum.hpp"
 
@@ -13,11 +15,11 @@
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
 #include "OpenSHC/Globals/DAT_PencilRenderCore.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
-#include "OpenSHC/Globals/MSVC_SecurityCookie.hpp"
 
 namespace OpenSHC {
 namespace UI {
 
+    using OpenSHC::IO::Helpers::ColorUnion;
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
@@ -27,45 +29,36 @@ namespace UI {
     // FUNCTION: STRONGHOLDCRUSADER 0x0043E350
     void BuildingMenus::RenderBuildingMenu_RenderTowerAndGateHealth()
     {
-        short sVar1;
-        int local_20;
-        ColorUnion local_18;
-        char local_14[16];
-        int iVar4 = DAT_MenuHandlerState::instance.y;
-        int iVar2 = DAT_MenuHandlerState::instance.x;
-        uint local_4 = MSVC_SecurityCookie::instance ^ (uint)&local_20;
-        int local_1c = DAT_BuildingsState::instance.menuSelectedBuildingID * 0x32c;
-        int iVar3 = (int)DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID]
-                        .currentHealth;
-        local_18.shortValue = COL_LIME::instance.shortValue;
-        if ((iVar3 < 1)
-            || (sVar1
-                = DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID].maxHealth,
-                sVar1 < 1)) {
-            iVar3 = 0;
+        int id = DAT_BuildingsState::instance.menuSelectedBuildingID;
+        int health = DAT_BuildingsState::instance.buildings[id].currentHealth;
+        ColorUnion healthColor;
+        healthColor.shortValue = COL_LIME::instance.shortValue;
+        int percent;
+        if (health <= 0 || DAT_BuildingsState::instance.buildings[id].maxHealth <= 0) {
+            percent = 0;
         } else {
-            iVar3 = (iVar3 * 100) / (int)sVar1;
+            percent = health * 100 / DAT_BuildingsState::instance.buildings[id].maxHealth;
         }
         int left = DAT_MenuHandlerState::instance.x + 0x1d6;
-        MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::PencilRenderCore_Func::drawBorderBox, DAT_PencilRenderCore::ptr)(left,
-            DAT_MenuHandlerState::instance.y + 0x1d3, DAT_MenuHandlerState::instance.x + 0x209,
-            DAT_MenuHandlerState::instance.y + 0x1de, (ushort)(COL_BLACK::instance.shortValue));
-        int bottom = iVar4 + 0x1dd;
-        iVar4 = iVar4 + 0x1d4;
-        local_20 = iVar2 + 0x1d7;
+        int top = DAT_MenuHandlerState::instance.y + 0x1d3;
+        MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::PencilRenderCore_Func::drawBorderBox, DAT_PencilRenderCore::ptr)(
+            left, top, left + 0x33, top + 0xb, COL_BLACK::instance.shortValue);
+        int innerBottom = top + 0xa;
+        int innerTop = top + 1;
+        int innerLeft = left + 1;
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
-            local_20, iVar4, iVar2 + 0x208, bottom, (ushort)(COL_RED::instance.shortValue));
-        if (1 < iVar3) {
+            innerLeft, innerTop, left + 0x32, innerBottom, COL_RED::instance.shortValue);
+        if (percent >= 2) {
             MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
-                local_20, iVar4, (iVar3 >> 1) + left, bottom, local_18.shortValue);
+                innerLeft, innerTop, (percent >> 1) + left, innerBottom, healthColor.shortValue);
         }
-        MACRO_CALL(OpenSHC::OS_Func::_sprintf)(local_14, "%d/%d",
-            (int)*(short*)((int)DAT_BuildingsState::instance.buildings[0].resources + local_1c + -0x14),
-            (int)*(short*)((int)DAT_BuildingsState::instance.buildings[0].resources + local_1c + -0x12));
-        MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(local_14,
+        char text[16];
+        MACRO_CALL(OpenSHC::OS_Func::_sprintf)(text, "%d/%d",
+            (int)DAT_BuildingsState::instance.buildings[id].currentHealth,
+            (int)DAT_BuildingsState::instance.buildings[id].maxHealth);
+        MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(text,
             DAT_MenuHandlerState::instance.x + 0x1ef, DAT_MenuHandlerState::instance.y + 0x1e2,
             OpenSHC::Text::TTA_CENTER, 0, 0x12, FALSE, 0);
-        ;
     }
 
 }

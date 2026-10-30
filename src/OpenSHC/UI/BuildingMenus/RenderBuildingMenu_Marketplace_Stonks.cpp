@@ -77,17 +77,15 @@ namespace UI {
             _resourceType = (OpenSHC::Game::Resources::ResourceType)(DAT_RenderingDefinedData::instance
                     .MarketStonksOrder[_index]);
             if (_resourceType != ((ResourceType)0)) {
-                if (_index < 13) {
-                    if (_index < 10) {
-                        iVar4 = 40;
-                        iVar1 = _index;
-                    } else {
-                        iVar4 = 100;
-                        iVar1 = _index + -10;
-                    }
-                } else {
+                if (_index >= 13) {
+                    iVar1 = _index - 11;
                     iVar4 = 100;
-                    iVar1 = _index + -0xb;
+                } else if (_index >= 10) {
+                    iVar1 = _index - 10;
+                    iVar4 = 100;
+                } else {
+                    iVar1 = _index;
+                    iVar4 = 40;
                 }
                 iVar1 = iVar1 * 0x2f;
                 BVar6 = MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable,
@@ -99,7 +97,7 @@ namespace UI {
                     }
                     if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                             .currentResources[_resourceType]
-                        < -99) {
+                        <= -100) {
                         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGMWithBlending,
                             DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_ICONS_2,
                             (int)(RVar2 * 2 + 0x2a), DAT_MenuHandlerState::instance.x + 0x42 + iVar1,
@@ -125,22 +123,22 @@ namespace UI {
                     } else if ((_index == 0xd) || (_index == 0xe)) {
                         iVar1 = iVar1 + -2;
                     }
-                    iVar7 = DAT_MenuHandlerState::instance.y + 0x1e5;
-                    iVar5 = DAT_MenuHandlerState::instance.x + 0x46;
+                    iVar7 = DAT_MenuHandlerState::instance.y + iVar4 + 0x1e5;
+                    iVar5 = DAT_MenuHandlerState::instance.x + iVar1 + 0x46;
                     iVar3 = MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::getBuyPriceForOneUnit,
                         DAT_GameState::ptr)(_resourceType);
                     MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumber2, DAT_TextManagerObject::ptr)(
-                        iVar3, iVar5 + iVar1, iVar7 + iVar4, OpenSHC::Text::TTA_LEFT, 0xc2f0eb, 0, 0x12, FALSE, 0);
+                        iVar3, iVar5, iVar7, OpenSHC::Text::TTA_LEFT, 0xc2f0eb, 0, 0x12, FALSE, 0);
                     MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderInGameTextWithShadow,
                         DAT_TextManagerObject::ptr)("/", DAT_MenuHandlerState::instance.x + 0x46 + iVar1,
                         DAT_MenuHandlerState::instance.y + 0x1e5 + iVar4, OpenSHC::Text::TTA_LEFT, 0xc2f0eb, 0, 0x12,
                         TRUE, 0);
-                    iVar7 = DAT_MenuHandlerState::instance.y + 0x1e5;
-                    iVar5 = DAT_MenuHandlerState::instance.x + 0x46;
+                    iVar7 = DAT_MenuHandlerState::instance.y + iVar4 + 0x1e5;
+                    iVar5 = DAT_MenuHandlerState::instance.x + iVar1 + 0x46;
                     iVar3 = MACRO_CALL_MEMBER(
                         OpenSHC::Game::GameStateStructures_Func::getSalePriceOfGood, DAT_GameState::ptr)(_resourceType);
                     MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumber2, DAT_TextManagerObject::ptr)(
-                        iVar3, iVar5 + iVar1, iVar7 + iVar4, OpenSHC::Text::TTA_LEFT, 0xc2f0eb, 0, 0x12, TRUE, 0);
+                        iVar3, iVar5, iVar7, OpenSHC::Text::TTA_LEFT, 0xc2f0eb, 0, 0x12, TRUE, 0);
                 }
             }
             _index = _index + 1;

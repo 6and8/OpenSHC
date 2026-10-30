@@ -69,13 +69,12 @@ namespace UI {
             if (2000 < DVar2 - DAT_GameState::instance.playerDataArray[iVar1].timeTaxesOrRationsChange) {
                 iVar12 = DAT_GameState::instance.playerDataArray[iVar1].rationsSetting3;
                 if (iVar12 == 4) {
-                    iVar12 = 2;
+                    MACRO_CALL(OpenSHC::UI::Helpers_Func::SetTaxesSetting_unknown)(2);
                 } else if (iVar12 == 0) {
-                    iVar12 = 3;
+                    MACRO_CALL(OpenSHC::UI::Helpers_Func::SetTaxesSetting_unknown)(3);
                 } else {
-                    iVar12 = 1;
+                    MACRO_CALL(OpenSHC::UI::Helpers_Func::SetTaxesSetting_unknown)(1);
                 }
-                MACRO_CALL(OpenSHC::UI::Helpers_Func::SetTaxesSetting_unknown)(iVar12);
             }
             DVar2 = timeGetTime();
             if (2500 < DVar2 - DAT_GameState::instance.playerDataArray[iVar1].timeTaxesOrRationsChange) {

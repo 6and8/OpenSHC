@@ -13477,11 +13477,11 @@ SHC_3BB0A8C1_0x0043C1A0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043C1E0 | 85.4% | Reimplemented, asm differs
 
-SHC_3BB0A8C1_0x0043C6A0 | 98.3% | Reimplemented, the three menu arrays share one base (one struct in our header)
+SHC_3BB0A8C1_0x0043C6A0 | 98.3% | Reimplemented, only the loop-end compare (one past the table) differs
 
 SHC_3BB0A8C1_0x0043C700 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0043C840 | 87.9% | Reimplemented, the three menu arrays share one base (one struct in our header)
+SHC_3BB0A8C1_0x0043C840 | 87.9% | Reimplemented, asm differs (icon load scheduled before the compare)
 
 SHC_3BB0A8C1_0x0043C9F0 | 100.0% | Reimplemented
 

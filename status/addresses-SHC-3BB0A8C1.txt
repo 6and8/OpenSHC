@@ -5505,7 +5505,7 @@ SHC_3BB0A8C1_0x00415110 | 60.9% | Register allocation differs
 
 SHC_3BB0A8C1_0x004156F0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00415A80 | 95.3% | Register allocation differs
+SHC_3BB0A8C1_0x00415A80 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00415BF0 | 100.0% | Reimplemented
 
@@ -5595,7 +5595,7 @@ SHC_3BB0A8C1_0x00419630 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00419670 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004196D0 | 97.3% | Register allocation differs
+SHC_3BB0A8C1_0x004196D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00419780 | 94.7% | only the loop end address differs: past-the-end of BuildingCost lands on a different symbol in the DLL data layout
 

@@ -59,8 +59,8 @@ namespace UI {
     // FUNCTION: STRONGHOLDCRUSADER 0x0043C840
     void BuildingMenus::RenderBuildingMenu_Armory()
     {
-        int iconsY = DAT_MenuHandlerState::instance.y + 0x1fb;
         int x = DAT_MenuHandlerState::instance.x + 0x1e;
+        int iconsY = DAT_MenuHandlerState::instance.y + 0x1fb;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_ARMOURY, 0),
@@ -70,8 +70,8 @@ namespace UI {
         for (int i = 0; i < 8; ++i) {
             int amount = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                              .currentResources[DAT_ArmoryMenuResourceTypes::instance[i]];
-            int iconY = DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY;
             int iconX = DAT_ArmoryIconsPositionNudges::instance[i].x + x;
+            int iconY = DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY;
             int icon = DAT_ArmoryMenuResourceIcons::instance[i];
             if (amount < 1) {
                 MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGMWithBlending,

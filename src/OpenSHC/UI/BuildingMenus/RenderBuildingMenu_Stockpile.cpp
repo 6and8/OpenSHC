@@ -57,8 +57,8 @@ namespace UI {
     // FUNCTION: STRONGHOLDCRUSADER 0x0043C6A0
     void BuildingMenus::RenderBuildingMenu_Stockpile()
     {
-        int iconsY = DAT_MenuHandlerState::instance.y + 0x200;
         int x = DAT_MenuHandlerState::instance.x + 0x1e;
+        int iconsY = DAT_MenuHandlerState::instance.y + 0x200;
         // Render stockpile title
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,

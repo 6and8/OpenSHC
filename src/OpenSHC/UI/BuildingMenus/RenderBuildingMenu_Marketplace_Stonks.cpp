@@ -14,8 +14,8 @@
 
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
+#include "OpenSHC/Globals/DAT_MarketStonksOrder.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 
@@ -74,8 +74,7 @@ namespace UI {
             iVar4, iVar1, alignment, color, iVar5, BVar6, iVar7);
         _index = 0;
         do {
-            _resourceType = (OpenSHC::Game::Resources::ResourceType)(DAT_RenderingDefinedData::instance
-                    .MarketStonksOrder[_index]);
+            _resourceType = (OpenSHC::Game::Resources::ResourceType)(DAT_MarketStonksOrder::instance[_index]);
             if (_resourceType != ((ResourceType)0)) {
                 if (_index >= 13) {
                     iVar1 = _index - 11;

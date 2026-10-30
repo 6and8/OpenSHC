@@ -8,10 +8,10 @@
 #include "OpenSHC/Text/TextAlignment.hpp"
 #include "OpenSHC/WindowsHelper/Enums/BOOLEnum.hpp"
 
+#include "OpenSHC/Globals/DAT_ARRAY_00618050.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 
 namespace OpenSHC {
@@ -45,7 +45,7 @@ namespace UI {
             0, 0x11, FALSE, 0);
         int offset = 0;
         for (int i = 0; i < 8; ++i) {
-            ResourceType resourceType = (ResourceType)DAT_RenderingDefinedData::instance.field1047_0x555e4[i];
+            ResourceType resourceType = (ResourceType)DAT_ARRAY_00618050::instance[i];
             int x = DAT_MenuHandlerState::instance.x + offset + 0x78;
             if (MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable, DAT_GameState::ptr)(
                     resourceType)

@@ -22,7 +22,9 @@
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
 #include "OpenSHC/Globals/DAT_MouseState.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
+#include "OpenSHC/Globals/DAT_StockpileIconsPositionNudges.hpp"
+#include "OpenSHC/Globals/DAT_StockpileMenuResourceIcons.hpp"
+#include "OpenSHC/Globals/DAT_StockpileMenuResourceTypes.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 #include "OpenSHC/Globals/GMTotalPicturesProcessed.hpp"
@@ -66,27 +68,24 @@ namespace UI {
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
         for (int i = 0; i < 8; ++i) {
             int amount = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                             .currentResources[DAT_RenderingDefinedData::instance.StockpileMenuResourceTypes[i]];
+                             .currentResources[DAT_StockpileMenuResourceTypes::instance[i]];
             // Render resource image
             MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM,
                 DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2,
-                DAT_RenderingDefinedData::instance.StockpileMenuResourceIcons[i],
-                DAT_RenderingDefinedData::instance.StockpileIconsPositionNudges[i].x + x,
-                DAT_RenderingDefinedData::instance.StockpileIconsPositionNudges[i].y + iconsY);
+                DAT_StockpileMenuResourceIcons::instance[i], DAT_StockpileIconsPositionNudges::instance[i].x + x,
+                DAT_StockpileIconsPositionNudges::instance[i].y + iconsY);
             if (DAT_MouseState::instance.leftClickStart != 0) {
-                int image = DAT_RenderingDefinedData::instance.StockpileMenuResourceIcons[i]
-                    + GMTotalPicturesProcessed::instance[0x2e] - 1;
+                int image = DAT_StockpileMenuResourceIcons::instance[i] + GMTotalPicturesProcessed::instance[0x2e] - 1;
                 BOOLEnum inside = MACRO_CALL_MEMBER(OpenSHC::Input::MouseState_Func::isMouseInsideBox,
-                    DAT_MouseState::ptr)(DAT_RenderingDefinedData::instance.StockpileIconsPositionNudges[i].x + x,
-                    DAT_RenderingDefinedData::instance.StockpileIconsPositionNudges[i].y + iconsY,
+                    DAT_MouseState::ptr)(DAT_StockpileIconsPositionNudges::instance[i].x + x,
+                    DAT_StockpileIconsPositionNudges::instance[i].y + iconsY,
                     DAT_GMImageHeaders::instance.imh[image].width, DAT_GMImageHeaders::instance.imh[image].height);
                 if (inside != FALSE
                     && DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                             .marketplace.id
                         != 0
-                    && MACRO_CALL_MEMBER(
-                           OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable, DAT_GameState::ptr)(
-                           (ResourceType)DAT_RenderingDefinedData::instance.StockpileMenuResourceTypes[i])
+                    && MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable,
+                           DAT_GameState::ptr)((ResourceType)DAT_StockpileMenuResourceTypes::instance[i])
                         != FALSE) {
                     DAT_BuildingsState::instance.newSelectedBuildingID
                         = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
@@ -95,7 +94,7 @@ namespace UI {
                     MACRO_CALL_MEMBER(OpenSHC::Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                         OpenSHC::UI::Enums::MVT_BUILDING_AND_STATUS_MENU, 0);
                     DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                        .marketSelectedResourceType = DAT_RenderingDefinedData::instance.StockpileMenuResourceTypes[i];
+                        .marketSelectedResourceType = DAT_StockpileMenuResourceTypes::instance[i];
                 }
             }
             // Render textfields for resources

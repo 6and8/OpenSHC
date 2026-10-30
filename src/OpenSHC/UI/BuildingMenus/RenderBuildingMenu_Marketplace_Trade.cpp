@@ -10,10 +10,10 @@
 #include "OpenSHC/Text/TextAlignment.hpp"
 #include "OpenSHC/WindowsHelper/Enums/BOOLEnum.hpp"
 
+#include "OpenSHC/Globals/DAT_ARRAY_00618070.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 
@@ -52,8 +52,8 @@ namespace UI {
         }
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
             OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, (int)(RVar4 + ((ResourceType)0x62)),
-            DAT_RenderingDefinedData::instance.field1048_0x55604[RVar1].x + 0x55 + DAT_MenuHandlerState::instance.x,
-            DAT_RenderingDefinedData::instance.field1048_0x55604[RVar1].y + 0x20a + DAT_MenuHandlerState::instance.y);
+            DAT_ARRAY_00618070::instance[RVar1].x + 0x55 + DAT_MenuHandlerState::instance.x,
+            DAT_ARRAY_00618070::instance[RVar1].y + 0x20a + DAT_MenuHandlerState::instance.y);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                 .currentResources[DAT_GameState::instance

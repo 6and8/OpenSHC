@@ -11,7 +11,7 @@
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
+#include "OpenSHC/Globals/DAT_RawResourceTypes.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 
 namespace OpenSHC {
@@ -45,7 +45,7 @@ namespace UI {
             0, 0x11, FALSE, 0);
         int offset = 0;
         for (int i = 0; i < 4; ++i) {
-            ResourceType resourceType = (ResourceType)DAT_RenderingDefinedData::instance.RawResourceTypes[i];
+            ResourceType resourceType = (ResourceType)DAT_RawResourceTypes::instance[i];
             int x = DAT_MenuHandlerState::instance.x + offset + 0x97;
             if (MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable, DAT_GameState::ptr)(
                     resourceType)

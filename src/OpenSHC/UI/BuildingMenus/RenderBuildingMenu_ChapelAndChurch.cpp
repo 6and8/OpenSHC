@@ -12,6 +12,7 @@
 #include "OpenSHC/Text/TextAlignment.hpp"
 #include "OpenSHC/WindowsHelper/Enums/BOOLEnum.hpp"
 
+#include "OpenSHC/Globals/DAT_0061824c.hpp"
 #include "OpenSHC/Globals/DAT_00b98428.hpp"
 #include "OpenSHC/Globals/DAT_00b9842c.hpp"
 #include "OpenSHC/Globals/DAT_00b98430.hpp"
@@ -23,7 +24,6 @@
 #include "OpenSHC/Globals/DAT_HusbandUnitType.hpp"
 #include "OpenSHC/Globals/DAT_MenuHandlerState.hpp"
 #include "OpenSHC/Globals/DAT_RenderedUnitOwner.hpp"
-#include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 #include "OpenSHC/Globals/DAT_UnitsState.hpp"
@@ -102,8 +102,8 @@ namespace UI {
                 iVar5, iVar4, TVar6, BVar7, iVar8, BVar9, iVar11);
             return;
         }
-        if (DAT_GameState::instance.mapAndTime.month != DAT_RenderingDefinedData::instance.field1120_0x557e0) {
-            DAT_RenderingDefinedData::instance.field1120_0x557e0 = DAT_GameState::instance.mapAndTime.month;
+        if (DAT_GameState::instance.mapAndTime.month != DAT_0061824c::instance) {
+            DAT_0061824c::instance = DAT_GameState::instance.mapAndTime.month;
             DAT_00b9843c::instance = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::chooseHusbandAndWife,
                 DAT_UnitsState::ptr)((int*)DAT_HusbandID::ptr, (int*)DAT_WifeID::ptr);
             if (DAT_00b9843c::instance == 0) {

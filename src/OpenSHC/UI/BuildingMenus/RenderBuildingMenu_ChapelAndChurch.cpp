@@ -124,10 +124,10 @@ namespace UI {
                     iVar5, iVar4, TVar6, BVar7, iVar8, BVar9, iVar11);
                 return;
             }
-            DAT_HusbandUnitType::instance
-                = (UnitTypeInt)(short)DAT_UnitsState::instance.units[DAT_HusbandID::instance].unitType;
-            DAT_WifeUnitType::instance
-                = (UnitTypeInt)(short)DAT_UnitsState::instance.units[DAT_WifeID::instance].unitType;
+            int husband = DAT_HusbandID::instance;
+            int wife = DAT_WifeID::instance;
+            DAT_HusbandUnitType::instance = (UnitTypeInt)(short)DAT_UnitsState::instance.units[husband].unitType;
+            DAT_WifeUnitType::instance = (UnitTypeInt)(short)DAT_UnitsState::instance.units[wife].unitType;
             switch (DAT_WifeUnitType::instance) {
             case OpenSHC::Map::Units::UT_BREWER:
                 DAT_00b98428::instance = DAT_00b98428::instance + 1;
@@ -154,7 +154,9 @@ namespace UI {
                 DAT_00b9843c::instance = 0;
             }
             if ((int)(short)DAT_UnitsState::instance.units[DAT_WifeID::instance].unitType
-                == DAT_WifeUnitType::instance) {
+                != DAT_WifeUnitType::instance) {
+                DAT_00b9843c::instance = 0;
+            } else {
                 if (DAT_00b9843c::instance != 0) {
                     MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderLoadedGfx,
                         DAT_TextureRenderCoreObject::ptr)(
@@ -253,8 +255,6 @@ namespace UI {
                         }
                     }
                 }
-            } else {
-                DAT_00b9843c::instance = 0;
             }
         }
         if (DAT_00b9843c::instance == 0) {

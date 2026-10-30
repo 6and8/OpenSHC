@@ -5137,7 +5137,7 @@ SHC_3BB0A8C1_0x00410286 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00410290 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00410320 | 60.0% | Allocator-bound: original keeps this in ebp with a stack spill, ours keeps it in ecx
+SHC_3BB0A8C1_0x00410320 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00410440 | 100.0% | Reimplemented
 
@@ -5513,9 +5513,9 @@ SHC_3BB0A8C1_0x00415C90 | 97.3% | Register allocation differs
 
 SHC_3BB0A8C1_0x00415E80 | 99.7% | Only a backward branch offset differs (3 bytes of alignment padding)
 
-SHC_3BB0A8C1_0x00416540 | 95.3% | Register allocation differs
+SHC_3BB0A8C1_0x00416540 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00416630 | 95.3% | Register allocation differs
+SHC_3BB0A8C1_0x00416630 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00416720 | 100.0% | Reimplemented
 
@@ -5533,11 +5533,11 @@ SHC_3BB0A8C1_0x00417740 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004177E0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004178E0 | 97.6% | Register allocation differs
+SHC_3BB0A8C1_0x004178E0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004179B0 | 97.7% | Register allocation differs
+SHC_3BB0A8C1_0x004179B0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00417AA0 | 97.7% | Register allocation differs
+SHC_3BB0A8C1_0x00417AA0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00417B90 | 99.2% | Register allocation differs
 
@@ -6529,7 +6529,7 @@ SHC_3BB0A8C1_0x00422A70 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00422B80 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00422C60 | 80.6% | playerID kept in a register in the first loop; the original compares it from the stack
+SHC_3BB0A8C1_0x00422C60 | 85.1% | playerID kept in a register in the first loop; the original compares it from the stack
 
 SHC_3BB0A8C1_0x00422D10 | 0.0% | Pending
 

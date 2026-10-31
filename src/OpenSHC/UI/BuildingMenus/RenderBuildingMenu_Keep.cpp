@@ -60,11 +60,8 @@ namespace UI {
         int _xPos;
         iVar4 = DAT_GameSynchronyState::instance.currentPlayerSlotID;
         _displayNumber = DAT_BuildingsState::instance.menuSelectedBuildingID;
-        int iVar1 = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                        .currentResources[0xf];
-        if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                .timeTaxesOrRationsChange
-            != 0) {
+        int iVar1 = DAT_GameState::instance.playerDataArray[iVar4].currentResources[0xf];
+        if (DAT_GameState::instance.playerDataArray[iVar4].timeTaxesOrRationsChange != 0) {
             DWORD DVar2 = timeGetTime();
             if (2000 < DVar2 - DAT_GameState::instance.playerDataArray[iVar4].timeTaxesOrRationsChange) {
                 iVar3 = DAT_GameState::instance.playerDataArray[iVar4].taxesSliderUI;

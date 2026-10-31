@@ -37,7 +37,6 @@ namespace UI {
             DAT_MenuHandlerState::instance.x + 0xaf, DAT_MenuHandlerState::instance.y + 0x205, OpenSHC::Text::TTA_LEFT,
             0, 0x12, FALSE, 0);
         // "Horse Available" / "Horses Available"
-        int y = DAT_MenuHandlerState::instance.y + 0x205;
         int x = DAT_MenuHandlerState::instance.x;
         if (DAT_BuildingsState::instance.buildings[id].numberOfAnimals
                 - DAT_BuildingsState::instance.buildings[id].randomOutpostField
@@ -45,12 +44,12 @@ namespace UI {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_STABLES, 1),
-                x + 0xb4, y, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                x + 0xb4, DAT_MenuHandlerState::instance.y + 0x205, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         } else {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_STABLES, 3),
-                x + 0xb4, y, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                x + 0xb4, DAT_MenuHandlerState::instance.y + 0x205, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         }
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_BuildingsState::instance.buildings[id].randomOutpostField, DAT_MenuHandlerState::instance.x + 0xaf,

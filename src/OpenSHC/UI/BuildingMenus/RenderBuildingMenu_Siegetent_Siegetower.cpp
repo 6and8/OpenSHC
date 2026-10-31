@@ -18,53 +18,47 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x0043E0E0
     void BuildingMenus::RenderBuildingMenu_Siegetent_Siegetower()
     {
-        char* pcVar2;
-        int iVar3;
-        int iVar4;
-        TextAlignment TVar5;
-        BGR24 BVar6;
-        int iVar7;
-        BOOLEnum BVar8;
+        int buildingIDOrY;
+        int xOrFontSize;
+        TextAlignment alignment;
+        BGR24 color;
+        int fontSizeOrBlendStrength;
+        BOOLEnum keepOffsetX;
         int blendStrength;
-        iVar3 = DAT_BuildingsState::instance.menuSelectedBuildingID;
+        buildingIDOrY = DAT_BuildingsState::instance.menuSelectedBuildingID;
         blendStrength = 0;
-        BVar8 = FALSE;
-        iVar7 = 0x11;
-        BVar6 = 0;
-        TVar5 = OpenSHC::Text::TTA_LEFT;
-        int iVar1 = DAT_MenuHandlerState::instance.y + 0x1eb;
-        iVar4 = DAT_MenuHandlerState::instance.x + 0xb4;
-        /*
-          added by script: "Siege Tower"
-         */
+        keepOffsetX = FALSE;
+        fontSizeOrBlendStrength = 0x11;
+        color = 0;
+        alignment = OpenSHC::Text::TTA_LEFT;
+        int yOrX = DAT_MenuHandlerState::instance.y + 0x1eb;
+        xOrFontSize = DAT_MenuHandlerState::instance.x + 0xb4;
+        // "Siege Tower"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_SIEGE_TENT, 3),
-            iVar4, iVar1, TVar5, BVar6, iVar7, BVar8, blendStrength);
+            xOrFontSize, yOrX, alignment, color, fontSizeOrBlendStrength, keepOffsetX, blendStrength);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
-            (DAT_BuildingsState::instance.buildings[iVar3].buildingProgress * 100) / 0x500,
+            (DAT_BuildingsState::instance.buildings[buildingIDOrY].buildingProgress * 100) / 0x500,
             DAT_MenuHandlerState::instance.x + 0xb4, DAT_MenuHandlerState::instance.y + 0x209, OpenSHC::Text::TTA_LEFT,
             0, 0x11, FALSE, 0);
-        iVar7 = 0;
-        BVar8 = TRUE;
-        iVar4 = 0x11;
-        BVar6 = 0;
-        TVar5 = OpenSHC::Text::TTA_LEFT;
-        iVar3 = DAT_MenuHandlerState::instance.y + 0x209;
-        iVar1 = DAT_MenuHandlerState::instance.x + 0xb4;
-        /*
-          added by script: "% Complete"
-         */
+        fontSizeOrBlendStrength = 0;
+        keepOffsetX = TRUE;
+        xOrFontSize = 0x11;
+        color = 0;
+        alignment = OpenSHC::Text::TTA_LEFT;
+        buildingIDOrY = DAT_MenuHandlerState::instance.y + 0x209;
+        yOrX = DAT_MenuHandlerState::instance.x + 0xb4;
+        // "% Complete"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_SIEGE_TENT, 6),
-            iVar1, iVar3, TVar5, BVar6, iVar4, BVar8, iVar7);
+            yOrX, buildingIDOrY, alignment, color, xOrFontSize, keepOffsetX, fontSizeOrBlendStrength);
     }
 
 }

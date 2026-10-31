@@ -27,33 +27,21 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      WARNING: Enum "DPSEND_EnumInt": Some values do not have unique names
-     */
-    /*
-      WARNING: Enum "DPERRInt": Some values do not have unique names
-     */
-    /*
-      WARNING: Enum "MappersEnum": Some values do not have unique names
-     */
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
     // FUNCTION: STRONGHOLDCRUSADER 0x0043D280
     void BuildingMenus::RenderBuildingMenu_Marketplace_Trade()
     {
-        ResourceTypeInt RVar1
+        ResourceTypeInt selectedType
             = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                   .marketSelectedResourceType;
-        ResourceType RVar4 = (OpenSHC::Game::Resources::ResourceType)(RVar1);
+        ResourceType iconType = (OpenSHC::Game::Resources::ResourceType)(selectedType);
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
-        if (RVar4 == OpenSHC::Game::Resources::RT_PITCH) {
-            RVar4 = OpenSHC::Game::Resources::RT_PARTIALPITCH;
+        if (iconType == OpenSHC::Game::Resources::RT_PITCH) {
+            iconType = OpenSHC::Game::Resources::RT_PARTIALPITCH;
         }
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
-            OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, (int)(RVar4 + ((ResourceType)0x62)),
-            DAT_ARRAY_00618070::instance[RVar1].x + 0x55 + DAT_MenuHandlerState::instance.x,
-            DAT_ARRAY_00618070::instance[RVar1].y + 0x20a + DAT_MenuHandlerState::instance.y);
+            OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, (int)(iconType + ((ResourceType)0x62)),
+            DAT_ARRAY_00618070::instance[selectedType].x + 0x55 + DAT_MenuHandlerState::instance.x,
+            DAT_ARRAY_00618070::instance[selectedType].y + 0x20a + DAT_MenuHandlerState::instance.y);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                 .currentResources[DAT_GameState::instance
@@ -69,18 +57,19 @@ namespace UI {
                 .currentResources[0xf],
             DAT_MenuHandlerState::instance.x + 0x1b8, DAT_MenuHandlerState::instance.y + 0x1fe, OpenSHC::Text::TTA_LEFT,
             0, 0x11, FALSE, 0);
-        BOOLEnum BVar2 = MACRO_CALL_MEMBER(
+        BOOLEnum anyGoodsForSale = MACRO_CALL_MEMBER(
             OpenSHC::Game::GameStateStructures_Func::anyGoodsAreAllowedForSale, DAT_GameState::ptr)();
-        if (BVar2 != FALSE) {
-            int iVar3 = MACRO_CALL_MEMBER(
-                OpenSHC::Game::GameStateStructures_Func::getPreviousGoodsFilteringUnallowed, DAT_GameState::ptr)(RVar4);
+        if (anyGoodsForSale != FALSE) {
+            int neighbourType
+                = MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::getPreviousGoodsFilteringUnallowed,
+                    DAT_GameState::ptr)(iconType);
             MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM,
-                DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, iVar3 * 2 + 0x2a,
+                DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, neighbourType * 2 + 0x2a,
                 DAT_MenuHandlerState::instance.x + 0x14, DAT_MenuHandlerState::instance.y + 0x1d4);
-            iVar3 = MACRO_CALL_MEMBER(
-                OpenSHC::Game::GameStateStructures_Func::getNextGoodFilteringUnallowed, DAT_GameState::ptr)(RVar4);
+            neighbourType = MACRO_CALL_MEMBER(
+                OpenSHC::Game::GameStateStructures_Func::getNextGoodFilteringUnallowed, DAT_GameState::ptr)(iconType);
             MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM,
-                DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, iVar3 * 2 + 0x2a,
+                DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, neighbourType * 2 + 0x2a,
                 DAT_MenuHandlerState::instance.x + 0x90, DAT_MenuHandlerState::instance.y + 0x1d4);
         }
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_MAP_GAME;

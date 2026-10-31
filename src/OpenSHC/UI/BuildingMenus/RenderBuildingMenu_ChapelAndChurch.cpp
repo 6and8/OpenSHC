@@ -42,64 +42,58 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      WARNING: Enum "MappersEnum": Some values do not have unique names
-     */
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x0043C1E0
     void BuildingMenus::RenderBuildingMenu_ChapelAndChurch()
     {
-        BuildingTypeShort BVar2;
-        char* pcVar3;
-        int iVar4;
-        int iVar5;
-        TextAlignment TVar6;
-        BGR24 BVar7;
+        BuildingTypeShort selectedType;
+        int idOrPosition;
+        int xOrYOrFontSize;
+        TextAlignment alignment;
+        BGR24 color2;
         uint color;
-        int iVar8;
-        BOOLEnum BVar9;
-        int iVar10;
+        int fontSizeOrXOrBlendStrength;
+        BOOLEnum keepOffsetX;
+        int blendStrengthOrX;
         int blendStrength;
-        int iVar11;
-        iVar4 = DAT_BuildingsState::instance.menuSelectedBuildingID;
-        BVar2
+        int blendStrengthOrFontSizeOrY;
+        idOrPosition = DAT_BuildingsState::instance.menuSelectedBuildingID;
+        selectedType
             = DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID].buildingType;
-        if (BVar2 == OpenSHC::Map::Buildings::BT_CHAPEL) {
+        if (selectedType == OpenSHC::Map::Buildings::BT_CHAPEL) {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 0),
                 DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
-        } else if (BVar2 == OpenSHC::Map::Buildings::BT_CHURCH) {
+        } else if (selectedType == OpenSHC::Map::Buildings::BT_CHURCH) {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 3),
                 DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
-        } else if (BVar2 == OpenSHC::Map::Buildings::BT_CATHEDRAL) {
+        } else if (selectedType == OpenSHC::Map::Buildings::BT_CATHEDRAL) {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 4),
                 DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         }
-        if (DAT_BuildingsState::instance.buildings[iVar4].currentEmployeeCount == 0) {
-            iVar11 = 0;
-            BVar9 = FALSE;
-            iVar8 = 0x12;
-            BVar7 = 0;
-            TVar6 = OpenSHC::Text::TTA_LEFT;
-            iVar4 = DAT_MenuHandlerState::instance.y + 0x205;
-            iVar5 = DAT_MenuHandlerState::instance.x + 0xaf;
-            /*
-              added by script: "No Wedding this month"
-             */
+        if (DAT_BuildingsState::instance.buildings[idOrPosition].currentEmployeeCount == 0) {
+            blendStrengthOrFontSizeOrY = 0;
+            keepOffsetX = FALSE;
+            fontSizeOrXOrBlendStrength = 0x12;
+            color2 = 0;
+            alignment = OpenSHC::Text::TTA_LEFT;
+            idOrPosition = DAT_MenuHandlerState::instance.y + 0x205;
+            xOrYOrFontSize = DAT_MenuHandlerState::instance.x + 0xaf;
+            // "No Wedding this month"
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_MARRIAGE, 0x22),
-                iVar5, iVar4, TVar6, BVar7, iVar8, BVar9, iVar11);
+                xOrYOrFontSize, idOrPosition, alignment, color2, fontSizeOrXOrBlendStrength, keepOffsetX,
+                blendStrengthOrFontSizeOrY);
             return;
         }
         if (DAT_GameState::instance.mapAndTime.month != DAT_0061824c::instance) {
@@ -108,20 +102,19 @@ namespace UI {
                 DAT_UnitsState::ptr)((int*)DAT_HusbandID::ptr, (int*)DAT_WifeID::ptr);
             if (DAT_00b9843c::instance == 0) {
                 /* no wedding this month: render the notice and stop */
-                iVar11 = 0;
-                BVar9 = FALSE;
-                iVar8 = 0x12;
-                BVar7 = 0;
-                TVar6 = OpenSHC::Text::TTA_LEFT;
-                iVar4 = DAT_MenuHandlerState::instance.y + 0x205;
-                iVar5 = DAT_MenuHandlerState::instance.x + 0xaf;
-                /*
-                added by script: "No Wedding this month"
-                */
+                blendStrengthOrFontSizeOrY = 0;
+                keepOffsetX = FALSE;
+                fontSizeOrXOrBlendStrength = 0x12;
+                color2 = 0;
+                alignment = OpenSHC::Text::TTA_LEFT;
+                idOrPosition = DAT_MenuHandlerState::instance.y + 0x205;
+                xOrYOrFontSize = DAT_MenuHandlerState::instance.x + 0xaf;
+                // "No Wedding this month"
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                     MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                         DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_MARRIAGE, 0x22),
-                    iVar5, iVar4, TVar6, BVar7, iVar8, BVar9, iVar11);
+                    xOrYOrFontSize, idOrPosition, alignment, color2, fontSizeOrXOrBlendStrength, keepOffsetX,
+                    blendStrengthOrFontSizeOrY);
                 return;
             }
             int husband = DAT_HusbandID::instance;
@@ -161,20 +154,21 @@ namespace UI {
                     MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderLoadedGfx,
                         DAT_TextureRenderCoreObject::ptr)(
                         1, DAT_MenuHandlerState::instance.x + 0x173, DAT_MenuHandlerState::instance.y + 0x1e0);
-                    iVar8 = 0;
-                    iVar5 = 0x12;
+                    fontSizeOrXOrBlendStrength = 0;
+                    xOrYOrFontSize = 0x12;
                     color = 0;
-                    iVar4 = 0x15e;
+                    idOrPosition = 0x15e;
                     switch (DAT_WifeUnitType::instance) {
                     case OpenSHC::Map::Units::UT_BREWER:
-                        iVar11 = DAT_MenuHandlerState::instance.y + 0x22f;
-                        iVar10 = DAT_MenuHandlerState::instance.x + 0xb4;
+                        blendStrengthOrFontSizeOrY = DAT_MenuHandlerState::instance.y + 0x22f;
+                        blendStrengthOrX = DAT_MenuHandlerState::instance.x + 0xb4;
                         MACRO_CALL_MEMBER(
                             OpenSHC::Text::TextManager_Func::renderMultilineText5Unk, DAT_TextManagerObject::ptr)(
                             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                                 DAT_TextManagerObject::ptr)(
                                 OpenSHC::DE::SHCDE::TEXT_MARRIAGE, DAT_00b98428::instance + 1),
-                            iVar10, iVar11, iVar4, color, iVar5, iVar8);
+                            blendStrengthOrX, blendStrengthOrFontSizeOrY, idOrPosition, color, xOrYOrFontSize,
+                            fontSizeOrXOrBlendStrength);
                         break;
                     case OpenSHC::Map::Units::UT_TANNER:
                         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderMultilineTextUnk,
@@ -206,50 +200,54 @@ namespace UI {
                         OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
                         (OpenSHC::DE::SHCDE::eGM)DAT_CurrentlyRenderedSpriteID::instance, 3,
                         DAT_MenuHandlerState::instance.x + 0x91, DAT_MenuHandlerState::instance.y + 0x1dd);
-                    iVar4 = DAT_HusbandID::instance;
-                    byte bVar1 = DAT_UnitsState::instance.units[DAT_HusbandID::instance].firstNameIndex;
+                    idOrPosition = DAT_HusbandID::instance;
+                    byte nameIndex = DAT_UnitsState::instance.units[DAT_HusbandID::instance].firstNameIndex;
                     DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue
                         = OpenSHC::Rendering::Enums::RT_MAP_GAME;
-                    if ('\0' < (char)bVar1) {
-                        iVar10 = 0;
-                        BVar9 = FALSE;
-                        iVar11 = 0x12;
-                        BVar7 = 0;
-                        TVar6 = OpenSHC::Text::TTA_LEFT;
-                        iVar5 = DAT_MenuHandlerState::instance.y + 0x1ec;
-                        iVar8 = DAT_MenuHandlerState::instance.x + 0xd7;
+                    if ('\0' < (char)nameIndex) {
+                        blendStrengthOrX = 0;
+                        keepOffsetX = FALSE;
+                        blendStrengthOrFontSizeOrY = 0x12;
+                        color2 = 0;
+                        alignment = OpenSHC::Text::TTA_LEFT;
+                        xOrYOrFontSize = DAT_MenuHandlerState::instance.y + 0x1ec;
+                        fontSizeOrXOrBlendStrength = DAT_MenuHandlerState::instance.x + 0xd7;
                         MACRO_CALL_MEMBER(
                             OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                                DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_PEASANT_NAMES, (int)((char)bVar1)),
-                            iVar8, iVar5, TVar6, BVar7, iVar11, BVar9, iVar10);
-                        bVar1 = DAT_UnitsState::instance.units[iVar4].rng1_to_70;
-                        if (bVar1 != 0) {
+                                DAT_TextManagerObject::ptr)(
+                                OpenSHC::DE::SHCDE::TEXT_PEASANT_NAMES, (int)((char)nameIndex)),
+                            fontSizeOrXOrBlendStrength, xOrYOrFontSize, alignment, color2, blendStrengthOrFontSizeOrY,
+                            keepOffsetX, blendStrengthOrX);
+                        nameIndex = DAT_UnitsState::instance.units[idOrPosition].rng1_to_70;
+                        if (nameIndex != 0) {
                             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
-                                OpenSHC::DE::SHCDE::TEXT_PEASANT_SURNAMES, (int)((char)bVar1),
+                                OpenSHC::DE::SHCDE::TEXT_PEASANT_SURNAMES, (int)((char)nameIndex),
                                 DAT_MenuHandlerState::instance.x + 0xdc, DAT_MenuHandlerState::instance.y + 0x1ec,
                                 OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE);
                         }
                     }
-                    iVar4 = DAT_WifeID::instance;
-                    bVar1 = DAT_UnitsState::instance.units[DAT_WifeID::instance].firstNameIndex;
-                    if ('\0' < (char)bVar1) {
-                        iVar10 = 0;
-                        BVar9 = FALSE;
-                        iVar11 = 0x12;
-                        BVar7 = 0;
-                        TVar6 = OpenSHC::Text::TTA_LEFT;
-                        iVar5 = DAT_MenuHandlerState::instance.y + 0x205;
-                        iVar8 = DAT_MenuHandlerState::instance.x + 0xe6;
+                    idOrPosition = DAT_WifeID::instance;
+                    nameIndex = DAT_UnitsState::instance.units[DAT_WifeID::instance].firstNameIndex;
+                    if ('\0' < (char)nameIndex) {
+                        blendStrengthOrX = 0;
+                        keepOffsetX = FALSE;
+                        blendStrengthOrFontSizeOrY = 0x12;
+                        color2 = 0;
+                        alignment = OpenSHC::Text::TTA_LEFT;
+                        xOrYOrFontSize = DAT_MenuHandlerState::instance.y + 0x205;
+                        fontSizeOrXOrBlendStrength = DAT_MenuHandlerState::instance.x + 0xe6;
                         MACRO_CALL_MEMBER(
                             OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                                DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_PEASANT_NAMES, (int)((char)bVar1)),
-                            iVar8, iVar5, TVar6, BVar7, iVar11, BVar9, iVar10);
-                        bVar1 = DAT_UnitsState::instance.units[iVar4].rng1_to_70;
-                        if (bVar1 != 0) {
+                                DAT_TextManagerObject::ptr)(
+                                OpenSHC::DE::SHCDE::TEXT_PEASANT_NAMES, (int)((char)nameIndex)),
+                            fontSizeOrXOrBlendStrength, xOrYOrFontSize, alignment, color2, blendStrengthOrFontSizeOrY,
+                            keepOffsetX, blendStrengthOrX);
+                        nameIndex = DAT_UnitsState::instance.units[idOrPosition].rng1_to_70;
+                        if (nameIndex != 0) {
                             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
-                                OpenSHC::DE::SHCDE::TEXT_PEASANT_SURNAMES, (int)((char)bVar1),
+                                OpenSHC::DE::SHCDE::TEXT_PEASANT_SURNAMES, (int)((char)nameIndex),
                                 DAT_MenuHandlerState::instance.x + 0xeb, DAT_MenuHandlerState::instance.y + 0x205,
                                 OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE);
                         }
@@ -258,20 +256,19 @@ namespace UI {
             }
         }
         if (DAT_00b9843c::instance == 0) {
-            iVar11 = 0;
-            BVar9 = FALSE;
-            iVar8 = 0x12;
-            BVar7 = 0;
-            TVar6 = OpenSHC::Text::TTA_LEFT;
-            iVar4 = DAT_MenuHandlerState::instance.y + 0x205;
-            iVar5 = DAT_MenuHandlerState::instance.x + 0xaf;
-            /*
-              added by script: "No Wedding this month"
-             */
+            blendStrengthOrFontSizeOrY = 0;
+            keepOffsetX = FALSE;
+            fontSizeOrXOrBlendStrength = 0x12;
+            color2 = 0;
+            alignment = OpenSHC::Text::TTA_LEFT;
+            idOrPosition = DAT_MenuHandlerState::instance.y + 0x205;
+            xOrYOrFontSize = DAT_MenuHandlerState::instance.x + 0xaf;
+            // "No Wedding this month"
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_MARRIAGE, 0x22),
-                iVar5, iVar4, TVar6, BVar7, iVar8, BVar9, iVar11);
+                xOrYOrFontSize, idOrPosition, alignment, color2, fontSizeOrXOrBlendStrength, keepOffsetX,
+                blendStrengthOrFontSizeOrY);
         }
     }
 

@@ -22,54 +22,48 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x0043B9D0
     void BuildingMenus::RenderBuildingMenu_Armourer()
     {
-        char* pcVar2;
-        int iVar3;
-        TextAlignment TVar4;
-        BGR24 BVar5;
-        int iVar6;
-        BOOLEnum BVar7;
-        int iVar8;
-        iVar8 = 0;
-        BVar7 = FALSE;
-        iVar6 = 0x10;
-        BVar5 = 0;
-        TVar4 = OpenSHC::Text::TTA_LEFT;
-        int iVar1 = DAT_MenuHandlerState::instance.y + 0x1d3;
-        iVar3 = DAT_MenuHandlerState::instance.x + 0x19;
-        /*
-          added by script: "Armourer’s Workshop"
-         */
+        int x;
+        TextAlignment alignment;
+        BGR24 color;
+        int fontSize;
+        BOOLEnum paused;
+        int blendStrength;
+        blendStrength = 0;
+        paused = FALSE;
+        fontSize = 0x10;
+        color = 0;
+        alignment = OpenSHC::Text::TTA_LEFT;
+        int yOrWorkerID = DAT_MenuHandlerState::instance.y + 0x1d3;
+        x = DAT_MenuHandlerState::instance.x + 0x19;
+        // "Armourer’s Workshop"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_ARMOURERS_WORKSHOP, 0),
-            iVar3, iVar1, TVar4, BVar5, iVar6, BVar7, iVar8);
-        iVar1 = (int)DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID]
-                    .workerID[0];
-        if ((iVar1 != 0)
-            && (DAT_UnitsState::instance.units[iVar1].state.generic
+            x, yOrWorkerID, alignment, color, fontSize, paused, blendStrength);
+        yOrWorkerID = (int)DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID]
+                          .workerID[0];
+        if ((yOrWorkerID != 0)
+            && (DAT_UnitsState::instance.units[yOrWorkerID].state.generic
                 == (OpenSHC::Map::Units::States::US_STAND_UPUnk | OpenSHC::Map::Units::States::US_IDLEUnk))) {
-            BVar7 = MACRO_CALL(OpenSHC::Map::Units_Func::CheckUnitProductionPaused)(iVar1);
-            if (BVar7 == FALSE) {
-                iVar8 = 0;
-                BVar7 = FALSE;
-                iVar6 = 0x12;
-                BVar5 = 0;
-                TVar4 = OpenSHC::Text::TTA_LEFT;
-                iVar1 = DAT_MenuHandlerState::instance.y + 0x1fe;
-                iVar3 = DAT_MenuHandlerState::instance.x + 0xaf;
-                /*
-                  added by script: "Not producing - No Iron"
-                 */
+            paused = MACRO_CALL(OpenSHC::Map::Units_Func::CheckUnitProductionPaused)(yOrWorkerID);
+            if (paused == FALSE) {
+                blendStrength = 0;
+                paused = FALSE;
+                fontSize = 0x12;
+                color = 0;
+                alignment = OpenSHC::Text::TTA_LEFT;
+                yOrWorkerID = DAT_MenuHandlerState::instance.y + 0x1fe;
+                x = DAT_MenuHandlerState::instance.x + 0xaf;
+                // "Not producing - No Iron"
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                     MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                         DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_BLACKSMITHS_WORKSHOP, 0xc),
-                    iVar3, iVar1, TVar4, BVar5, iVar6, BVar7, iVar8);
+                    x, yOrWorkerID, alignment, color, fontSize, paused, blendStrength);
             }
         }
     }

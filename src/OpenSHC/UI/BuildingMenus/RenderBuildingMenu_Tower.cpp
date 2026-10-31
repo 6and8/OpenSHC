@@ -21,48 +21,45 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x00447D30
     void BuildingMenus::RenderBuildingMenu_Tower()
     {
-        int BVar1;
-        char* pcVar3;
-        int iVar4;
+        int selectedType;
+        int x;
         TextAlignment alignment;
         BGR24 color;
-        int iVar5;
-        uint color_00;
+        int fontSizeOrWidth;
+        uint color2;
         BOOLEnum keepOffsetX;
-        int iVar6;
+        int blendStrengthOrFontSize;
         int blendStrength;
-        BVar1 = (short)DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID]
-                    .buildingType;
-        iVar6 = 0;
+        selectedType
+            = (short)DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID]
+                  .buildingType;
+        blendStrengthOrFontSize = 0;
         keepOffsetX = FALSE;
-        iVar5 = 0x10;
+        fontSizeOrWidth = 0x10;
         color = 0;
         alignment = OpenSHC::Text::TTA_LEFT;
-        int iVar2 = DAT_MenuHandlerState::instance.y + 0x1d3;
-        iVar4 = DAT_MenuHandlerState::instance.x + 0x19;
-        /*
-          added by script: "Tower"
-         */
+        int y = DAT_MenuHandlerState::instance.y + 0x1d3;
+        x = DAT_MenuHandlerState::instance.x + 0x19;
+        // "Tower"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_TOWER, 0),
-            iVar4, iVar2, alignment, color, iVar5, keepOffsetX, iVar6);
+            x, y, alignment, color, fontSizeOrWidth, keepOffsetX, blendStrengthOrFontSize);
         blendStrength = 0;
-        iVar6 = 0x12;
-        color_00 = 0;
-        iVar5 = 0x136;
-        iVar2 = DAT_MenuHandlerState::instance.y + 0x1fb;
-        iVar4 = DAT_MenuHandlerState::instance.x + 0xaf;
+        blendStrengthOrFontSize = 0x12;
+        color2 = 0;
+        fontSizeOrWidth = 0x136;
+        y = DAT_MenuHandlerState::instance.y + 0x1fb;
+        x = DAT_MenuHandlerState::instance.x + 0xaf;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderMultilineText5Unk, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_TOWER, BVar1 + -0x49),
-            iVar4, iVar2, iVar5, color_00, iVar6, blendStrength);
+                DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_TOWER, selectedType - 0x49),
+            x, y, fontSizeOrWidth, color2, blendStrengthOrFontSize, blendStrength);
         MACRO_CALL(OpenSHC::UI::BuildingMenus_Func::RenderBuildingMenu_RenderTowerAndGateHealth)();
     }
 

@@ -17,33 +17,15 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
     // FUNCTION: STRONGHOLDCRUSADER 0x0043D9D0
     void BuildingMenus::RenderBuildingMenu_CessPit()
     {
-        char* textAddress;
-        int xParam;
-        TextAlignment alignment;
-        BGR24 color;
-        int fontSize;
-        BOOLEnum keepOffsetX;
-        int blendStrength;
-        blendStrength = 0;
-        keepOffsetX = FALSE;
-        fontSize = 0x11;
-        color = 0;
-        alignment = OpenSHC::Text::TTA_LEFT;
-        int yParam = DAT_MenuHandlerState::instance.y + 0x1d3;
-        xParam = DAT_MenuHandlerState::instance.x + 0x19;
-        /*
-          added by script: "Cesspit"
-         */
+        // "Cesspit"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CESS_PIT, 0),
-            xParam, yParam, alignment, color, fontSize, keepOffsetX, blendStrength);
+            DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3, OpenSHC::Text::TTA_LEFT,
+            0, 0x11, FALSE, 0);
     }
 
 }

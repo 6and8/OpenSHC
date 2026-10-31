@@ -17,48 +17,42 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x0043D7D0
     void BuildingMenus::RenderBuildingMenu_Campfire()
     {
-        char* pcVar2;
-        int iVar3;
+        int x;
         TextAlignment alignment;
         BGR24 color;
-        int iVar4;
-        uint color_00;
+        int fontSizeOrWidth;
+        uint color2;
         BOOLEnum keepOffsetX;
-        int iVar5;
+        int blendStrengthOrFontSize;
         int blendStrength;
-        iVar5 = 0;
+        blendStrengthOrFontSize = 0;
         keepOffsetX = FALSE;
-        iVar4 = 0x10;
+        fontSizeOrWidth = 0x10;
         color = 0;
         alignment = OpenSHC::Text::TTA_LEFT;
-        int iVar1 = DAT_MenuHandlerState::instance.y + 0x1d3;
-        iVar3 = DAT_MenuHandlerState::instance.x + 0x19;
-        /*
-          added by script: "Camp Ground"
-         */
+        int y = DAT_MenuHandlerState::instance.y + 0x1d3;
+        x = DAT_MenuHandlerState::instance.x + 0x19;
+        // "Camp Ground"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CAMP_FIRE, 0),
-            iVar3, iVar1, alignment, color, iVar4, keepOffsetX, iVar5);
+            x, y, alignment, color, fontSizeOrWidth, keepOffsetX, blendStrengthOrFontSize);
         blendStrength = 0;
-        iVar5 = 0x12;
-        color_00 = 0;
-        iVar4 = 0x136;
-        iVar1 = DAT_MenuHandlerState::instance.y + 0x1fb;
-        iVar3 = DAT_MenuHandlerState::instance.x + 0xaf;
-        /*
-          added by script: "Peasants gather here."
-         */
+        blendStrengthOrFontSize = 0x12;
+        color2 = 0;
+        fontSizeOrWidth = 0x136;
+        y = DAT_MenuHandlerState::instance.y + 0x1fb;
+        x = DAT_MenuHandlerState::instance.x + 0xaf;
+        // "Peasants gather here."
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderMultilineText5Unk, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CAMP_FIRE, 1),
-            iVar3, iVar1, iVar4, color_00, iVar5, blendStrength);
+            x, y, fontSizeOrWidth, color2, blendStrengthOrFontSize, blendStrength);
     }
 
 }

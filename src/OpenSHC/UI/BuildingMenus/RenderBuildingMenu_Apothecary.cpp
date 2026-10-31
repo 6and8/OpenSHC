@@ -19,60 +19,48 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
-    /*
-      WARNING: Enum "DPSEND_EnumInt": Some values do not have unique names
-     */
-    /*
-      WARNING: Enum "DPERRInt": Some values do not have unique names
-     */
-    /*
-      decompilerscript: committed: 2025-01-30 21:57:43.216000
-     */
+    // The argument temporaries mirror the original's evaluation order: written inline in the calls,
+    // the positions are loaded after the text lookup and the match drops (measured).
     // FUNCTION: STRONGHOLDCRUSADER 0x0043BFA0
     void BuildingMenus::RenderBuildingMenu_Apothecary()
     {
-        char* pcVar2;
-        int iVar3;
-        TextAlignment TVar4;
-        BGR24 BVar5;
-        int iVar6;
-        BOOLEnum BVar7;
-        int iVar8;
-        iVar8 = 0;
-        BVar7 = FALSE;
-        iVar6 = 0x10;
-        BVar5 = 0;
-        TVar4 = OpenSHC::Text::TTA_LEFT;
-        int iVar1 = DAT_MenuHandlerState::instance.y + 0x1d3;
-        iVar3 = DAT_MenuHandlerState::instance.x + 0x19;
-        /*
-          added by script: "Apothecary"
-         */
+        int x;
+        TextAlignment alignment;
+        BGR24 color;
+        int fontSize;
+        BOOLEnum keepOffsetX;
+        int blendStrength;
+        blendStrength = 0;
+        keepOffsetX = FALSE;
+        fontSize = 0x10;
+        color = 0;
+        alignment = OpenSHC::Text::TTA_LEFT;
+        int yOrHealerCount = DAT_MenuHandlerState::instance.y + 0x1d3;
+        x = DAT_MenuHandlerState::instance.x + 0x19;
+        // "Apothecary"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_HEALERS, 0),
-            iVar3, iVar1, TVar4, BVar5, iVar6, BVar7, iVar8);
-        iVar8 = 0;
-        BVar7 = FALSE;
-        iVar6 = 0x12;
-        BVar5 = 0;
-        TVar4 = OpenSHC::Text::TTA_LEFT;
-        iVar1 = DAT_MenuHandlerState::instance.y + 0x203;
-        iVar3 = DAT_MenuHandlerState::instance.x + 0xb1;
-        /*
-          added by script: "Immunity From Disease"
-         */
+            x, yOrHealerCount, alignment, color, fontSize, keepOffsetX, blendStrength);
+        blendStrength = 0;
+        keepOffsetX = FALSE;
+        fontSize = 0x12;
+        color = 0;
+        alignment = OpenSHC::Text::TTA_LEFT;
+        yOrHealerCount = DAT_MenuHandlerState::instance.y + 0x203;
+        x = DAT_MenuHandlerState::instance.x + 0xb1;
+        // "Immunity From Disease"
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_HEALERS, 3),
-            iVar3, iVar1, TVar4, BVar5, iVar6, BVar7, iVar8);
-        iVar1
+            x, yOrHealerCount, alignment, color, fontSize, keepOffsetX, blendStrength);
+        yOrHealerCount
             = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID].healerCount;
-        if (iVar1 >= 3) {
-            iVar1 = 3;
+        if (yOrHealerCount >= 3) {
+            yOrHealerCount = 3;
         }
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
-            iVar1 * 0x14, DAT_MenuHandlerState::instance.x + 0xb7, DAT_MenuHandlerState::instance.y + 0x203,
+            yOrHealerCount * 0x14, DAT_MenuHandlerState::instance.x + 0xb7, DAT_MenuHandlerState::instance.y + 0x203,
             OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)("%",
             DAT_MenuHandlerState::instance.x + 0xb7, DAT_MenuHandlerState::instance.y + 0x203, OpenSHC::Text::TTA_LEFT,

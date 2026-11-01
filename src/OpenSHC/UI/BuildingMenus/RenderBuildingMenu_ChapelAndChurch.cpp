@@ -233,8 +233,8 @@ namespace UI {
                                 OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE);
                         }
                     }
-                    idOrPosition = DAT_WifeID::instance;
                     nameIndex = DAT_UnitsState::instance.units[DAT_WifeID::instance].firstNameIndex;
+                    idOrPosition = DAT_WifeID::instance;
                     if ('\0' < (char)nameIndex) {
                         blendStrengthOrX = 0;
                         keepOffsetX = FALSE;

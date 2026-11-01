@@ -114,8 +114,8 @@ namespace UI {
             break;
         case 3:
             iconOffsetX = 0;
-            iconOffsetY = 0;
             rationIcon = 0x11d;
+            iconOffsetY = 0;
         }
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
             OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, rationIcon, DAT_MenuHandlerState::instance.x + 0x159 + iconOffsetX,

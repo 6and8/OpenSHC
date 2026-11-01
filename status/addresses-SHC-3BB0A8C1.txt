@@ -13411,7 +13411,7 @@ SHC_3BB0A8C1_0x0043A9F0 | 74.1% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043AF40 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0043B3B0 | 73.5% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043B3B0 | 73.7% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043B8E4 | 0.0% | Pending
 
@@ -13475,7 +13475,7 @@ SHC_3BB0A8C1_0x0043C160 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043C1A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0043C1E0 | 89.3% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043C1E0 | 90.7% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043C6A0 | 100.0% | Reimplemented, identical code; the loop-end compare (one past the table) is the next global's symbol in the original, unnamed in ours
 

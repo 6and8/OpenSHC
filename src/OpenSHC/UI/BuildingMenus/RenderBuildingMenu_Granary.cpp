@@ -107,35 +107,33 @@ namespace UI {
             iconOffsetY = -10;
             rationIcon = 0x11c;
             break;
-        case 3:
-            iconOffsetX = 0;
-            iconOffsetY = 0;
-            rationIcon = 0x11d;
-            break;
         case 4:
             iconOffsetX = 9;
             iconOffsetY = -5;
             rationIcon = 0x11e;
+            break;
+        case 3:
+            iconOffsetX = 0;
+            iconOffsetY = 0;
+            rationIcon = 0x11d;
         }
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
             OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, rationIcon, DAT_MenuHandlerState::instance.x + 0x159 + iconOffsetX,
             DAT_MenuHandlerState::instance.y + 0x20f + iconOffsetY);
-        int menuY = DAT_MenuHandlerState::instance.y;
-        int menuX = DAT_MenuHandlerState::instance.x;
+        int barY = DAT_MenuHandlerState::instance.y + 0x1ee;
         int barX = DAT_MenuHandlerState::instance.x + 0x17;
-        int barY = DAT_MenuHandlerState::instance.y + 0x1f2;
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
-            OpenSHC::DE::SHCDE::GM_INTERFACE_SLIDER, 6, DAT_MenuHandlerState::instance.x + 0x1f, barY);
+            OpenSHC::DE::SHCDE::GM_INTERFACE_SLIDER, 6, barX + 8, barY + 4);
         MACRO_CALL_MEMBER(
             OpenSHC::UI::Rendering::TextureRenderCore_Func::setRenderingRect, DAT_TextureRenderCoreObject::ptr)(0, 0,
             (DAT_GameState::instance.playerDataArray[playerID].foodClock * 162) / 15000 + 0x10 + barX,
             DAT_WindowAndDirectDraw::instance.resolutionY);
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::drawTgxGmOnFlaggedSurface,
-            DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_SLIDER_BAR, 8, menuX + 0x1f, barY);
+            DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_SLIDER_BAR, 8, barX + 8, barY + 4);
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::setRenderingRectToGameResolution,
             DAT_TextureRenderCoreObject::ptr)();
         MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGMWithAlphaMask,
-            DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_SLIDER_BAR, 5, barX, menuY + 0x1ed,
+            DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_SLIDER_BAR, 5, barX, barY - 1,
             OpenSHC::IO::Graphics::GID_INTERFACE_SLIDER_BAR, 7, 0);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_GameState::instance.playerDataArray[playerID].totalFood, DAT_MenuHandlerState::instance.x + 0x18,
@@ -152,14 +150,16 @@ namespace UI {
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, foodText),
             DAT_MenuHandlerState::instance.x + 0x1c, DAT_MenuHandlerState::instance.y + 0x210, OpenSHC::Text::TTA_LEFT,
             0, 0x12, TRUE, 0);
-        int rationText = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                             .rationsSetting3;
-        if (rationText == 3) {
+        int rationText;
+        int const rations
+            = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                  .rationsSetting3;
+        if (rations == 3) {
             rationText = 0xc;
-        } else if (rationText == 4) {
+        } else if (rations == 4) {
             rationText = 6;
         } else {
-            rationText = rationText + 3;
+            rationText = rations + 3;
         }
         int rationY = DAT_MenuHandlerState::instance.y + 0x1d1;
         int rationX = DAT_MenuHandlerState::instance.x + 0x21c;
@@ -183,7 +183,7 @@ namespace UI {
                 popularity = 0;
             } else if (rations == 1) {
                 popularity = -100;
-            } else {
+            } else if (rations == 0) {
                 popularity = -200;
             }
         }

@@ -53,18 +53,18 @@ namespace UI {
             DAT_BuildingsState::instance.buildings[id].randomOutpostField, DAT_MenuHandlerState::instance.x + 0xaf,
             DAT_MenuHandlerState::instance.y + 0x219, OpenSHC::Text::TTA_LEFT, 0, 0x12, FALSE, 0);
         // "Horse In Use" / "Horses In Use"
-        int y2 = DAT_MenuHandlerState::instance.y + 0x219;
+        int y2 = DAT_MenuHandlerState::instance.y;
         int x2 = DAT_MenuHandlerState::instance.x;
         if (DAT_BuildingsState::instance.buildings[id].randomOutpostField != 1) {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_STABLES, 2),
-                x2 + 0xb4, y2, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                x2 + 0xb4, y2 + 0x219, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         } else {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_STABLES, 4),
-                x2 + 0xb4, y2, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                x2 + 0xb4, y2 + 0x219, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         }
     }
 

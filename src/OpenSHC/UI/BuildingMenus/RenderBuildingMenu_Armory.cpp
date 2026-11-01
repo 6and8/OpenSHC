@@ -58,16 +58,16 @@ namespace UI {
         for (int i = 0; i < 8; ++i) {
             int amount = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                              .currentResources[DAT_ArmoryMenuResourceTypes::instance[i]];
-            int iconX = DAT_ArmoryIconsPositionNudges::instance[i].x + x;
-            int iconY = DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY;
-            int icon = DAT_ArmoryMenuResourceIcons::instance[i];
             if (amount < 1) {
                 MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGMWithBlending,
-                    DAT_TextureRenderCoreObject::ptr)(
-                    OpenSHC::IO::Graphics::GID_INTERFACE_ICONS_2, icon, iconX, iconY, 0x10);
+                    DAT_TextureRenderCoreObject::ptr)(OpenSHC::IO::Graphics::GID_INTERFACE_ICONS_2,
+                    DAT_ArmoryMenuResourceIcons::instance[i], DAT_ArmoryIconsPositionNudges::instance[i].x + x,
+                    DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY, 0x10);
             } else {
                 MACRO_CALL_MEMBER(OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM,
-                    DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2, icon, iconX, iconY);
+                    DAT_TextureRenderCoreObject::ptr)(OpenSHC::DE::SHCDE::GM_INTERFACE_ICONS2,
+                    DAT_ArmoryMenuResourceIcons::instance[i], DAT_ArmoryIconsPositionNudges::instance[i].x + x,
+                    DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY);
             }
             if (DAT_MouseState::instance.leftClickStart != 0) {
                 int image = DAT_ArmoryMenuResourceIcons::instance[i] + GMTotalPicturesProcessed::instance[0x2e] - 1;

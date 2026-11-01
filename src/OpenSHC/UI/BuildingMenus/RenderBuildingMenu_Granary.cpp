@@ -94,23 +94,23 @@ namespace UI {
                 .rationsSetting3) {
         case 0:
             iconOffsetX = -1;
-            iconOffsetY = -5;
             rationIcon = 0x11f;
+            iconOffsetY = -5;
             break;
         case 1:
             iconOffsetX = -1;
-            iconOffsetY = 1;
             rationIcon = 0x120;
+            iconOffsetY = 1;
             break;
         case 2:
             iconOffsetX = 10;
-            iconOffsetY = -10;
             rationIcon = 0x11c;
+            iconOffsetY = -10;
             break;
         case 4:
             iconOffsetX = 9;
-            iconOffsetY = -5;
             rationIcon = 0x11e;
+            iconOffsetY = -5;
             break;
         case 3:
             iconOffsetX = 0;
@@ -138,28 +138,29 @@ namespace UI {
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_GameState::instance.playerDataArray[playerID].totalFood, DAT_MenuHandlerState::instance.x + 0x18,
             DAT_MenuHandlerState::instance.y + 0x210, OpenSHC::Text::TTA_LEFT, 0, 0x12, FALSE, 0);
-        int foodText;
-        if (DAT_GameState::instance.playerDataArray[playerID].totalFood == 1) {
-            foodText = 2;
+        int foodY = DAT_MenuHandlerState::instance.y + 0x210;
+        int foodX = DAT_MenuHandlerState::instance.x + 0x1c;
+        if (DAT_GameState::instance.playerDataArray[playerID].totalFood != 1) {
+            // "units of food."
+            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 1),
+                foodX, foodY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         } else {
-            foodText = 1;
+            // "unit of food."
+            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 2),
+                foodX, foodY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         }
-        // "unit of food." / "units of food."
-        MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
-            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, foodText),
-            DAT_MenuHandlerState::instance.x + 0x1c, DAT_MenuHandlerState::instance.y + 0x210, OpenSHC::Text::TTA_LEFT,
-            0, 0x12, TRUE, 0);
-        int rationText;
-        int const rations
-            = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                  .rationsSetting3;
-        if (rations == 3) {
+        int rationText = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                             .rationsSetting3;
+        if (rationText == 3) {
             rationText = 0xc;
-        } else if (rations == 4) {
+        } else if (rationText == 4) {
             rationText = 6;
         } else {
-            rationText = rations + 3;
+            rationText += 3;
         }
         int rationY = DAT_MenuHandlerState::instance.y + 0x1d1;
         int rationX = DAT_MenuHandlerState::instance.x + 0x21c;
@@ -191,43 +192,40 @@ namespace UI {
             DAT_MenuHandlerState::instance.x + 0x208, DAT_MenuHandlerState::instance.y + 0x1e3, popularity, FALSE);
         int months = DAT_GameState::instance.playerDataArray[playerID].foodStorageLevel;
         if (months != -1) {
-            int textX;
-            int monthsText;
             if (months == 0) {
-                textX = DAT_MenuHandlerState::instance.x + 0xe;
-                monthsText = 0xb;
+                int monthsY = DAT_MenuHandlerState::instance.y + 0x224;
+                int monthsX = DAT_MenuHandlerState::instance.x + 0xe;
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                        DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 0xb),
+                    monthsX, monthsY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
             } else {
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
                     months, DAT_MenuHandlerState::instance.x + 0x18, DAT_MenuHandlerState::instance.y + 0x224,
                     OpenSHC::Text::TTA_LEFT, 0, 0x12, FALSE, 0);
-                textX = DAT_MenuHandlerState::instance.x + 0x1c;
-                if (DAT_GameState::instance.playerDataArray[playerID].foodStorageLevel == 1) {
-                    monthsText = 10;
+                int monthsY = DAT_MenuHandlerState::instance.y + 0x224;
+                int monthsX = DAT_MenuHandlerState::instance.x + 0x1c;
+                if (DAT_GameState::instance.playerDataArray[playerID].foodStorageLevel != 1) {
+                    // "months supply."
+                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                        MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 9),
+                        monthsX, monthsY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
                 } else {
-                    monthsText = 9;
+                    // "month supply."
+                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                        MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 10),
+                        monthsX, monthsY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
                 }
             }
-            // "month supply." / "months supply."
-            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
-                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, monthsText),
-                textX, DAT_MenuHandlerState::instance.y + 0x224, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
         }
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_GameState::instance.playerDataArray[playerID].foodTypesCurrentlyEaten,
             DAT_MenuHandlerState::instance.x + 0x18, DAT_MenuHandlerState::instance.y + 0x238, OpenSHC::Text::TTA_LEFT,
             0, 0x12, FALSE, 0);
-        int eatenText;
-        if (DAT_GameState::instance.playerDataArray[playerID].foodTypesCurrentlyEaten == 1) {
-            // "food type eaten."
-            int eatenY = DAT_MenuHandlerState::instance.y + 0x238;
-            int eatenX = DAT_MenuHandlerState::instance.x + 0x1c;
-            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
-                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 8),
-                eatenX, eatenY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
-            eatenText = 8;
-        } else {
+        int eatenWidth;
+        if (DAT_GameState::instance.playerDataArray[playerID].foodTypesCurrentlyEaten != 1) {
             // "food types eaten."
             int eatenY = DAT_MenuHandlerState::instance.y + 0x238;
             int eatenX = DAT_MenuHandlerState::instance.x + 0x1c;
@@ -235,15 +233,30 @@ namespace UI {
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 7),
                 eatenX, eatenY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
-            eatenText = 7;
+            eatenWidth
+                = MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::computeTextWidth, DAT_TextManagerObject::ptr)(
+                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                        DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 7),
+                    0x12);
+        } else {
+            // "food type eaten."
+            int eatenY = DAT_MenuHandlerState::instance.y + 0x238;
+            int eatenX = DAT_MenuHandlerState::instance.x + 0x1c;
+            MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                    DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 8),
+                eatenX, eatenY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+            eatenWidth
+                = MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::computeTextWidth, DAT_TextManagerObject::ptr)(
+                    MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
+                        DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 8),
+                    0x12);
         }
-        int const eatenWidth = MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::computeTextWidth,
-            DAT_TextManagerObject::ptr)(MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
-                                            DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, eatenText),
-            0x12);
         // Popularity from the food variety; more than four types keeps the rations value
         int varieties = DAT_GameState::instance.playerDataArray[playerID].foodTypesCurrentlyEaten;
-        if ((varieties == 0) || (varieties == 1)) {
+        if (varieties == 0) {
+            popularity = 0;
+        } else if (varieties == 1) {
             popularity = 0;
         } else if (varieties == 2) {
             popularity = 25;

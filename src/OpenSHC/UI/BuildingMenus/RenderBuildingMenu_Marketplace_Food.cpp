@@ -28,11 +28,12 @@ namespace UI {
     // FUNCTION: STRONGHOLDCRUSADER 0x0043D070
     void BuildingMenus::RenderBuildingMenu_Marketplace_Food()
     {
+        int titleY = DAT_MenuHandlerState::instance.y + 0x1d4;
+        int titleX = DAT_MenuHandlerState::instance.x + 0x19;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_TRADEPOST, 2),
-            DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d4, OpenSHC::Text::TTA_LEFT,
-            0, 0x11, FALSE, 0);
+            titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x11, FALSE, 0);
         int offset = 0;
         for (int i = 0; i < 8; ++i) {
             ResourceType resourceType = (ResourceType)DAT_FoodTypes::instance[i];

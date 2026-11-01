@@ -82,11 +82,12 @@ namespace UI {
             }
         }
         // "Granary"
+        int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
+        int titleX = DAT_MenuHandlerState::instance.x + 0x19;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 0),
-            DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3, OpenSHC::Text::TTA_LEFT,
-            0, 0x10, FALSE, 0);
+            titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
         int rationIcon;
         switch (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
@@ -160,11 +161,12 @@ namespace UI {
         } else {
             rationText = rationText + 3;
         }
+        int rationY = DAT_MenuHandlerState::instance.y + 0x1d1;
+        int rationX = DAT_MenuHandlerState::instance.x + 0x21c;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, rationText),
-            DAT_MenuHandlerState::instance.x + 0x21c, DAT_MenuHandlerState::instance.y + 0x1d1,
-            OpenSHC::Text::TTA_RIGHT, 0, 0x12, FALSE, 0);
+            rationX, rationY, OpenSHC::Text::TTA_RIGHT, 0, 0x12, FALSE, 0);
         // Popularity from the rations
         if (DAT_GameState::instance.playerDataArray[playerID].currentPopulation == 0) {
             popularity = 0;
@@ -218,19 +220,21 @@ namespace UI {
         int eatenText;
         if (DAT_GameState::instance.playerDataArray[playerID].foodTypesCurrentlyEaten == 1) {
             // "food type eaten."
+            int eatenY = DAT_MenuHandlerState::instance.y + 0x238;
+            int eatenX = DAT_MenuHandlerState::instance.x + 0x1c;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 8),
-                DAT_MenuHandlerState::instance.x + 0x1c, DAT_MenuHandlerState::instance.y + 0x238,
-                OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                eatenX, eatenY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
             eatenText = 8;
         } else {
             // "food types eaten."
+            int eatenY = DAT_MenuHandlerState::instance.y + 0x238;
+            int eatenX = DAT_MenuHandlerState::instance.x + 0x1c;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_GRANARY, 7),
-                DAT_MenuHandlerState::instance.x + 0x1c, DAT_MenuHandlerState::instance.y + 0x238,
-                OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
+                eatenX, eatenY, OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
             eatenText = 7;
         }
         int const eatenWidth = MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::computeTextWidth,

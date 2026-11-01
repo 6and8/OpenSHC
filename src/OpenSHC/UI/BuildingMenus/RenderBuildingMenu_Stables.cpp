@@ -23,11 +23,12 @@ namespace UI {
     {
         int id = DAT_BuildingsState::instance.menuSelectedBuildingID;
         // "Stables"
+        int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
+        int titleX = DAT_MenuHandlerState::instance.x + 0x19;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_STABLES, 0),
-            DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3, OpenSHC::Text::TTA_LEFT,
-            0, 0x10, FALSE, 0);
+            titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderNumberToScreen2, DAT_TextManagerObject::ptr)(
             DAT_BuildingsState::instance.buildings[id].numberOfAnimals
                 - DAT_BuildingsState::instance.buildings[id].randomOutpostField,

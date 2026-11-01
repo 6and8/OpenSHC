@@ -62,22 +62,28 @@ namespace UI {
         selectedType
             = DAT_BuildingsState::instance.buildings[DAT_BuildingsState::instance.menuSelectedBuildingID].buildingType;
         if (selectedType == OpenSHC::Map::Buildings::BT_CHAPEL) {
+            int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
+            int titleX = DAT_MenuHandlerState::instance.x + 0x19;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 0),
-                DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
+                titleX, titleY,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         } else if (selectedType == OpenSHC::Map::Buildings::BT_CHURCH) {
+            int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
+            int titleX = DAT_MenuHandlerState::instance.x + 0x19;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 3),
-                DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
+                titleX, titleY,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         } else if (selectedType == OpenSHC::Map::Buildings::BT_CATHEDRAL) {
+            int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
+            int titleX = DAT_MenuHandlerState::instance.x + 0x19;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 4),
-                DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
+                titleX, titleY,
                 OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         }
         if (DAT_BuildingsState::instance.buildings[idOrPosition].currentEmployeeCount == 0) {

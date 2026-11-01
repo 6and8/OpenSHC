@@ -13411,7 +13411,7 @@ SHC_3BB0A8C1_0x0043A9F0 | 74.1% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043AF40 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0043B3B0 | 59.3% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043B3B0 | 66.5% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043B8E4 | 0.0% | Pending
 
@@ -13475,9 +13475,9 @@ SHC_3BB0A8C1_0x0043C160 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043C1A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0043C1E0 | 85.4% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043C1E0 | 89.3% | Reimplemented, asm differs
 
-SHC_3BB0A8C1_0x0043C6A0 | 98.3% | Reimplemented, only the loop-end compare (one past the table) differs
+SHC_3BB0A8C1_0x0043C6A0 | 100.0% | Reimplemented, identical code; the loop-end compare (one past the table) is the next global's symbol in the original, unnamed in ours
 
 SHC_3BB0A8C1_0x0043C700 | 0.0% | Pending
 
@@ -13499,11 +13499,11 @@ SHC_3BB0A8C1_0x0043CE30 | 100.0% | Reimplemented, identical code; reccmp reads t
 
 SHC_3BB0A8C1_0x0043CE80 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0043D070 | 76.1% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043D070 | 100.0% | Reimplemented, identical code; the loop-end compare (one past the table) is the next global's symbol in the original, unnamed in ours
 
-SHC_3BB0A8C1_0x0043D120 | 76.1% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043D120 | 100.0% | Reimplemented, identical code; the loop-end compare (one past the table) is the next global's symbol in the original, unnamed in ours
 
-SHC_3BB0A8C1_0x0043D1D0 | 76.1% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043D1D0 | 100.0% | Reimplemented, identical code; the loop-end compare (one past the table) is the next global's symbol in the original, unnamed in ours
 
 SHC_3BB0A8C1_0x0043D280 | 99.0% | Reimplemented, asm differs
 
@@ -13513,7 +13513,7 @@ SHC_3BB0A8C1_0x0043D460 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043D4A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0043D520 | 76.9% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043D520 | 84.3% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043D690 | 100.0% | Reimplemented
 

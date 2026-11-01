@@ -67,24 +67,21 @@ namespace UI {
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 0),
-                titleX, titleY,
-                OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
+                titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         } else if (selectedType == OpenSHC::Map::Buildings::BT_CHURCH) {
             int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
             int titleX = DAT_MenuHandlerState::instance.x + 0x19;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 3),
-                titleX, titleY,
-                OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
+                titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         } else if (selectedType == OpenSHC::Map::Buildings::BT_CATHEDRAL) {
             int titleY = DAT_MenuHandlerState::instance.y + 0x1d3;
             int titleX = DAT_MenuHandlerState::instance.x + 0x19;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_CHURCH, 4),
-                titleX, titleY,
-                OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
+                titleX, titleY, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         }
         if (DAT_BuildingsState::instance.buildings[idOrPosition].currentEmployeeCount == 0) {
             blendStrengthOrFontSizeOrY = 0;
@@ -190,18 +187,18 @@ namespace UI {
                     }
                     DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue
                         = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
-                    DAT_CurrentlyRenderedSpriteID::instance
-                        = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::getPeasantGmID, DAT_UnitsState::ptr)(
-                            DAT_HusbandID::instance);
+                    int husbandSprite = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::getPeasantGmID,
+                        DAT_UnitsState::ptr)(DAT_HusbandID::instance);
                     DAT_RenderedUnitOwner::instance = 0;
+                    DAT_CurrentlyRenderedSpriteID::instance = husbandSprite;
                     MACRO_CALL_MEMBER(
                         OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
                         (OpenSHC::DE::SHCDE::eGM)DAT_CurrentlyRenderedSpriteID::instance, 3,
                         DAT_MenuHandlerState::instance.x + 0x82, DAT_MenuHandlerState::instance.y + 0x1c4);
-                    DAT_CurrentlyRenderedSpriteID::instance
-                        = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::getPeasantGmID, DAT_UnitsState::ptr)(
-                            DAT_WifeID::instance);
+                    int wifeSprite = MACRO_CALL_MEMBER(OpenSHC::Map::Units::UnitsState_Func::getPeasantGmID,
+                        DAT_UnitsState::ptr)(DAT_WifeID::instance);
                     DAT_RenderedUnitOwner::instance = 0;
+                    DAT_CurrentlyRenderedSpriteID::instance = wifeSprite;
                     MACRO_CALL_MEMBER(
                         OpenSHC::UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
                         (OpenSHC::DE::SHCDE::eGM)DAT_CurrentlyRenderedSpriteID::instance, 3,

@@ -66,7 +66,9 @@ namespace Map {
             = (char)DAT_BuildingDefinedData::instance
                   .AnimMarketPlace[DAT_BuildingsState::instance.buildings[buildingID].animationIndex];
         if (DAT_BuildingsState::instance.buildings[buildingID].animationFrame <= 0) {
-            DAT_BuildingsState::instance.buildings[buildingID].animationIndex = 0;
+            // assignment via a local stack pointer is required for a closer match
+            short* animationIndexPtr = &DAT_BuildingsState::instance.buildings[buildingID].animationIndex;
+            *animationIndexPtr = 0;
             DAT_BuildingsState::instance.buildings[buildingID].animationCycleCount += 1;
             DAT_BuildingsState::instance.buildings[buildingID].animationCycleCompleted = 1;
             DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 1;
@@ -88,7 +90,9 @@ namespace Map {
             DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
         }
         if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
-            DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 1;
+            // assignment via a local stack pointer is required for a closer match
+            int* displayOwnerFlagPtr = &DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag;
+            *displayOwnerFlagPtr = 1;
             DAT_BuildingsState::instance.buildings[buildingID].flagSlot.overlayImage += 1;
             if (DAT_BuildingDefinedData::instance.SharedOverlayAnimationFrames
                     [DAT_BuildingsState::instance.buildings[buildingID].flagSlot.overlayImage / 2]

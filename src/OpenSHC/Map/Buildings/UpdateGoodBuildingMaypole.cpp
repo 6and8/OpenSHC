@@ -35,8 +35,12 @@ namespace Map {
             DAT_BuildingsState::ptr)(buildingID, 1);
         DAT_BuildingsState::instance.buildings[buildingID].renderAnimation
             = DAT_GameState::instance.playerDataArray[owner].fearFactorLevel > 0;
-        DAT_BuildingsState::instance.buildings[buildingID].spriteOffetX = -35;
-        DAT_BuildingsState::instance.buildings[buildingID].spriteOffetY = -79;
+        // assignment via a local stack pointer is required for 100% match
+        short* spriteOffetXPtr = &DAT_BuildingsState::instance.buildings[buildingID].spriteOffetX;
+        *spriteOffetXPtr = -35;
+        // assignment via a local stack pointer is required for 100% match
+        short* spriteOffetYPtr = &DAT_BuildingsState::instance.buildings[buildingID].spriteOffetY;
+        *spriteOffetYPtr = -79;
         if (DAT_GameState::instance.playerDataArray[owner].popularity
             < (DAT_BuildingsState::instance.buildings[buildingID].fireRelatedRNG1 & 0xff) + 5000) {
             DAT_BuildingsState::instance.buildings[buildingID].animationFrame
@@ -44,7 +48,9 @@ namespace Map {
                       [DAT_BuildingsState::instance.buildings[buildingID].animationIndex]
                 + 32;
             if (DAT_BuildingsState::instance.buildings[buildingID].animationFrame <= 32) {
-                DAT_BuildingsState::instance.buildings[buildingID].animationIndex = 0;
+                // assignment via a local stack pointer is required for 100% match
+                short* animationIndexPtr = &DAT_BuildingsState::instance.buildings[buildingID].animationIndex;
+                *animationIndexPtr = 0;
                 DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 33;
             }
             return;
@@ -55,7 +61,9 @@ namespace Map {
         if (DAT_BuildingsState::instance.buildings[buildingID].animationFrame <= 0) {
             DAT_BuildingsState::instance.buildings[buildingID].animationCycleCount += 1;
             DAT_BuildingsState::instance.buildings[buildingID].animationIndex = 0;
-            DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 1;
+            // assignment via a local stack pointer is required for 100% match
+            int* animationFramePtr = &DAT_BuildingsState::instance.buildings[buildingID].animationFrame;
+            *animationFramePtr = 1;
             if ((DAT_BuildingsState::instance.buildings[buildingID].animationCycleCount & 7) == 0) {
                 MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                     DAT_BuildingsState::instance.buildings[buildingID].x,

@@ -26,8 +26,12 @@ namespace Map {
             DAT_CurrentBuildingID::instance);
         int const buildingID = DAT_CurrentBuildingID::instance;
         int const owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
-        DAT_BuildingsState::instance.buildings[buildingID].playerColorUnk = 0;
-        DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
+        // assignment via a local stack pointer is required for 100% match
+        int* playerColorUnkPtr = &DAT_BuildingsState::instance.buildings[buildingID].playerColorUnk;
+        *playerColorUnkPtr = 0;
+        // assignment via a local stack pointer is required for 100% match
+        int* displayOwnerFlagPtr = &DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag;
+        *displayOwnerFlagPtr = 0;
         DAT_BuildingsState::instance.buildings[buildingID].renderBlendStrength = 0;
         MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::updateBuildingSignpostCounter,
             DAT_BuildingsState::ptr)(buildingID, 1);

@@ -44,7 +44,9 @@ namespace Map {
             }
         }
         DAT_BuildingsState::instance.buildings[buildingID].spriteOffetX = -35;
-        DAT_BuildingsState::instance.buildings[buildingID].spriteOffetY = -109;
+        // assignment via a local stack pointer is required for 100% match
+        short* spriteOffetYPtr = &DAT_BuildingsState::instance.buildings[buildingID].spriteOffetY;
+        *spriteOffetYPtr = -109;
         DAT_BuildingsState::instance.buildings[buildingID].animationFrame
             = (char)DAT_BuildingDefinedData::instance
                   .BadBuildingGallowsAnimationFrames[DAT_BuildingsState::instance.buildings[buildingID].animationIndex];

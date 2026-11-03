@@ -411,9 +411,9 @@ SHC_3BB0A8C1_0x004012DC | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004012E0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004012F0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004012F0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00401380 | 0.0% | Pending
+SHC_3BB0A8C1_0x00401380 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00401400 | 100.0% | Reimplemented
 
@@ -19927,7 +19927,7 @@ SHC_3BB0A8C1_0x00465E60 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00465F20 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00465F90 | 0.0% | Pending
+SHC_3BB0A8C1_0x00465F90 | 61.9% | Reimplemented, asm differs (tribe index increment and register allocation)
 
 SHC_3BB0A8C1_0x004660B0 | 100.0% | Reimplemented
 
@@ -34153,7 +34153,7 @@ SHC_3BB0A8C1_0x004C6B20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004C6B90 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004C6CD0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004C6CD0 | 81.8% | Reimplemented, asm differs (month/year store order)
 
 SHC_3BB0A8C1_0x004C6D30 | 100.0% | Reimplemented
 
@@ -35567,7 +35567,7 @@ SHC_3BB0A8C1_0x004D5180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D52A0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004D5370 | 0.0% | Pending
+SHC_3BB0A8C1_0x004D5370 | 12.0% | Reimplemented, asm differs (count and array are one struct in the original: count is reloaded after each copy)
 
 SHC_3BB0A8C1_0x004D53A0 | 0.0% | Pending
 

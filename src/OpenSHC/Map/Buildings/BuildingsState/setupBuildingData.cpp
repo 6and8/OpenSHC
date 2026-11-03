@@ -98,7 +98,9 @@ namespace Map {
                 this->buildings[buildingID].sleeping = true;
             }
             --this->unknownCountdown01;
-            this->buildings[buildingID].uid = DAT_GameCore::instance.uniqueGameObjectTracker;
+            // assignment via a local stack pointer is required for a closer match
+            int* uidPtr = &this->buildings[buildingID].uid;
+            *uidPtr = DAT_GameCore::instance.uniqueGameObjectTracker;
             ++DAT_GameCore::instance.uniqueGameObjectTracker;
             this->buildings[buildingID].owner = playerID;
             this->buildings[buildingID].logicalState = BLS_INITIAL;

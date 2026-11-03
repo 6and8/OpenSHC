@@ -43,7 +43,9 @@ namespace Map {
                 index = 0;
             } else {
                 index = (short)this->buildings[buildingID].entranceAttemptTileIndex % tileCount;
-                this->buildings[buildingID].entranceAttemptTileIndex = index;
+                // assignment via a local stack pointer is required for a closer match
+                ushort* entranceAttemptTileIndexPtr = &this->buildings[buildingID].entranceAttemptTileIndex;
+                *entranceAttemptTileIndexPtr = index;
             }
             int height = this->buildings[buildingID].terrainHeightUnk;
             this->buildings[buildingID].buildingEntryX = 0;

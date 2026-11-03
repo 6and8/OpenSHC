@@ -23,7 +23,7 @@
 #include "OpenSHC/Globals/DAT_SFXState.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
-#include "OpenSHC/Globals/GMTotalPicturesProcessed.hpp"
+#include "OpenSHC/Globals/GMFirstPictureIndex.hpp"
 
 namespace OpenSHC {
 namespace UI {
@@ -135,7 +135,7 @@ namespace UI {
                 DAT_TextManagerObject::instance.currentXOffset_0x0 + 0x136 + DAT_MenuHandlerState::instance.x,
                 DAT_MenuHandlerState::instance.y + 0x1db);
             DAT_TextManagerObject::instance.currentXOffset_0x0 = DAT_TextManagerObject::instance.currentXOffset_0x0
-                + DAT_GMImageHeaders::instance.imh[GMTotalPicturesProcessed::instance[0x2e] + 0x7e].width;
+                + DAT_GMImageHeaders::instance.imh[GMFirstPictureIndex::instance[0x2e] + 0x7e].width;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(" = ",
                 DAT_MenuHandlerState::instance.x + 0x140, DAT_MenuHandlerState::instance.y + 0x1e3,
                 OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);
@@ -165,7 +165,7 @@ namespace UI {
                 DAT_TextManagerObject::instance.currentXOffset_0x0 + 0x136 + DAT_MenuHandlerState::instance.x,
                 DAT_MenuHandlerState::instance.y + 0x1db);
             DAT_TextManagerObject::instance.currentXOffset_0x0 = DAT_TextManagerObject::instance.currentXOffset_0x0
-                + DAT_GMImageHeaders::instance.imh[GMTotalPicturesProcessed::instance[0x2e] + 0x7e].width;
+                + DAT_GMImageHeaders::instance.imh[GMFirstPictureIndex::instance[0x2e] + 0x7e].width;
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(" = ",
                 DAT_MenuHandlerState::instance.x + 0x140, DAT_MenuHandlerState::instance.y + 0x1e3,
                 OpenSHC::Text::TTA_LEFT, 0, 0x12, TRUE, 0);

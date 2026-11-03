@@ -7,6 +7,7 @@
 #include "OpenSHC/UI/Rendering/TextureRenderCore.func.hpp"
 #include "OpenSHC/DE/SHCDE/eGM.hpp"
 #include "OpenSHC/DE/SHCDE/eTextSections.hpp"
+#include "OpenSHC/Game/Player/Enums/BuildingEntryInfoEnum.hpp"
 #include "OpenSHC/Game/Resources/ResourceType.hpp"
 #include "OpenSHC/Game/Resources/ResourceTypeInt.hpp"
 #include "OpenSHC/IO/Graphics/GmID.hpp"
@@ -28,7 +29,7 @@
 #include "OpenSHC/Globals/DAT_MouseState.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
-#include "OpenSHC/Globals/GMTotalPicturesProcessed.hpp"
+#include "OpenSHC/Globals/GMFirstPictureIndex.hpp"
 
 namespace OpenSHC {
 namespace UI {
@@ -43,6 +44,8 @@ namespace UI {
     using OpenSHC::Text::TextAlignment;
     using OpenSHC::UI::Enums::MenuViewType;
     using OpenSHC::WindowsHelper::Enums::BOOLEnum;
+
+    using OpenSHC::Game::Player::Enums::BEIE_MARKETPLACE;
 
     // FUNCTION: STRONGHOLDCRUSADER 0x0043C840
     void BuildingMenus::RenderBuildingMenu_Armory()
@@ -70,21 +73,23 @@ namespace UI {
                     DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY);
             }
             if (DAT_MouseState::instance.leftClickStart != 0) {
-                int image = DAT_ArmoryMenuResourceIcons::instance[i] + GMTotalPicturesProcessed::instance[0x2e] - 1;
+                int image = DAT_ArmoryMenuResourceIcons::instance[i] + GMFirstPictureIndex::instance[0x2e] - 1;
                 BOOLEnum inside = MACRO_CALL_MEMBER(OpenSHC::Input::MouseState_Func::isMouseInsideBox,
                     DAT_MouseState::ptr)(DAT_ArmoryIconsPositionNudges::instance[i].x + x,
                     DAT_ArmoryIconsPositionNudges::instance[i].y + iconsY,
                     DAT_GMImageHeaders::instance.imh[image].width, DAT_GMImageHeaders::instance.imh[image].height);
                 if (inside != FALSE
                     && DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                            .marketplace.id
+                            .buildingEntryInfos[BEIE_MARKETPLACE]
+                            .id
                         != 0
                     && MACRO_CALL_MEMBER(OpenSHC::Game::GameStateStructures_Func::isResourceTypeTradeable,
                            DAT_GameState::ptr)((ResourceType)DAT_ArmoryMenuResourceTypes::instance[i])
                         != FALSE) {
                     DAT_BuildingsState::instance.newSelectedBuildingID
                         = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                              .marketplace.id;
+                              .buildingEntryInfos[BEIE_MARKETPLACE]
+                              .id;
                     DAT_GameCore::instance.buildingandstatusmenuMenuTabToSwitchTo = 0x39;
                     MACRO_CALL_MEMBER(OpenSHC::Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                         OpenSHC::UI::Enums::MVT_BUILDING_AND_STATUS_MENU, 0);

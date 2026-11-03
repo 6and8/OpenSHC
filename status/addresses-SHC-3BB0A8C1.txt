@@ -397,7 +397,7 @@ SHC_3BB0A8C1_0x00401120 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00401150 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004011D0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004011D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004012CC | 0.0% | Pending
 
@@ -505,7 +505,7 @@ SHC_3BB0A8C1_0x00402A20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00402AB0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00402AE0 | 0.0% | Pending
+SHC_3BB0A8C1_0x00402AE0 | 78.6% | Reimplemented, asm differs (jump table starts at 1 in ours, 0 in the original)
 
 SHC_3BB0A8C1_0x00402BBC | 0.0% | Pending
 
@@ -30479,9 +30479,9 @@ SHC_3BB0A8C1_0x004BE586 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004BE590 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004BE7E0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004BE7E0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004BE8A0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004BE8A0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004BE960 | 0.0% | Pending
 

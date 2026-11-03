@@ -38283,7 +38283,7 @@ SHC_3BB0A8C1_0x004F1BD3 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004F1BD4 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004F1BE0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004F1BE0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004F1C18 | 0.0% | Pending
 
@@ -38383,7 +38383,7 @@ SHC_3BB0A8C1_0x004F2070 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004F20E0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004F2140 | 0.0% | Pending
+SHC_3BB0A8C1_0x004F2140 | 64.1% | Reimplemented, asm differs (register allocation: constant 1 in edx vs edi)
 
 SHC_3BB0A8C1_0x004F2220 | 0.0% | Pending
 
@@ -38575,13 +38575,13 @@ SHC_3BB0A8C1_0x004F3150 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004F3180 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004F3560 | 0.0% | Pending
+SHC_3BB0A8C1_0x004F3560 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004F3610 | 0.0% | Pending
+SHC_3BB0A8C1_0x004F3610 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004F3700 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004F3730 | 0.0% | Pending
+SHC_3BB0A8C1_0x004F3730 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004F37B0 | 100.0% | Reimplemented
 

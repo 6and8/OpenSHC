@@ -36123,11 +36123,11 @@ SHC_3BB0A8C1_0x004DA17F | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DA180 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DA200 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA200 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
 SHC_3BB0A8C1_0x004DA2A0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DA300 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA300 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
 SHC_3BB0A8C1_0x004DA310 | 0.0% | Pending
 
@@ -36143,7 +36143,7 @@ SHC_3BB0A8C1_0x004DA6E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DA750 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DA7A0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA7A0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DA7E0 | 100.0% | Reimplemented
 
@@ -36155,33 +36155,33 @@ SHC_3BB0A8C1_0x004DA870 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DA8A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DA8D0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA8D0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DA9A0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA9A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DA9F0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DA9F0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DAA80 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAA80 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DAAB0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DAB00 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAB00 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DAB80 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAB80 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DABB0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DABF0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DAC30 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAC30 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DACF0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DACF0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DAD40 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAD40 | 100.0% | Reimplemented (counted: only the loop-end symbol and the 31.0f constant's name differ)
 
-SHC_3BB0A8C1_0x004DAE00 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAE00 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
-SHC_3BB0A8C1_0x004DAE90 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAE90 | 80.0% | Reimplemented, asm differs (one argument loaded into esi earlier)
 
 SHC_3BB0A8C1_0x004DAF50 | 0.0% | Pending
 
@@ -36195,7 +36195,7 @@ SHC_3BB0A8C1_0x004DB210 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DB300 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DB390 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DB390 | 100.0% | Reimplemented (counted: only the 100.0 constant and _ftol2 symbol names differ)
 
 SHC_3BB0A8C1_0x004DB490 | 0.0% | Pending
 

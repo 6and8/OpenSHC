@@ -34,7 +34,7 @@ namespace Synchrony {
 
         void __cdecl TryAcquireAmmunitionOrPlanToBuyStone(int param_1, int param_2);
 
-        short* __cdecl SelectionReplenishAmmo(int playerID, int param_2);
+        void __cdecl SelectionReplenishAmmo(int playerID, int param_2);
 
         void __cdecl ProcessBuildingSleepUpdate(int playerID, int buildingType);
 

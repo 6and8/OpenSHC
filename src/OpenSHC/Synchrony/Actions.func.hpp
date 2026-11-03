@@ -53,7 +53,7 @@ namespace Synchrony {
             &OpenSHC::Synchrony::Actions::TryAcquireAmmunitionOrPlanToBuyStone)
         TryAcquireAmmunitionOrPlanToBuyStone;
 
-        MACRO_FUNCTION_RESOLVER(short*(__cdecl*)(int playerID, int param_2), false, Address::SHC_3BB0A8C1_0x00465F90,
+        MACRO_FUNCTION_RESOLVER(void(__cdecl*)(int playerID, int param_2), false, Address::SHC_3BB0A8C1_0x00465F90,
             &OpenSHC::Synchrony::Actions::SelectionReplenishAmmo)
         SelectionReplenishAmmo;
 

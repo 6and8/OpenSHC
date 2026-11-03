@@ -6893,7 +6893,7 @@ SHC_3BB0A8C1_0x00428AC0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00429630 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00429650 | 0.0% | Pending
+SHC_3BB0A8C1_0x00429650 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00429710 | 0.0% | Pending
 
@@ -12679,7 +12679,7 @@ SHC_3BB0A8C1_0x00437CC0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00437ED0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004380E0 | 0.0% | Pending
+SHC_3BB0A8C1_0x004380E0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00438198 | 0.0% | Pending
 
@@ -13591,7 +13591,7 @@ SHC_3BB0A8C1_0x0043E540 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043E5A0 | 85.1% | Reimplemented, asm differs (last two cases as a branch, ours uses setge)
 
-SHC_3BB0A8C1_0x0043E5F0 | 0.0% | Pending
+SHC_3BB0A8C1_0x0043E5F0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0043E6C0 | 0.0% | Pending
 
@@ -35997,7 +35997,7 @@ SHC_3BB0A8C1_0x004D8A14 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004D8A18 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004D8A20 | 0.0% | Pending
+SHC_3BB0A8C1_0x004D8A20 | 100.0% | Reimplemented (counted: only the security cookie symbols differ)
 
 SHC_3BB0A8C1_0x004D8AB0 | 100.0% | Reimplemented
 
@@ -36183,15 +36183,15 @@ SHC_3BB0A8C1_0x004DAE00 | 100.0% | Reimplemented (counted: only the loop-end sym
 
 SHC_3BB0A8C1_0x004DAE90 | 80.0% | Reimplemented, asm differs (one argument loaded into esi earlier)
 
-SHC_3BB0A8C1_0x004DAF50 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DAF50 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
 SHC_3BB0A8C1_0x004DAFB0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DB0D0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DB180 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DB180 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DB210 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DB210 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
 SHC_3BB0A8C1_0x004DB300 | 71.1% | Reimplemented, asm differs (store order of the parameter globals)
 

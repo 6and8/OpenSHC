@@ -253,3 +253,5 @@ src/OpenSHC/Map/Buildings/UpdatePitchRig.cpp
 src/OpenSHC/Map/Buildings/UpdateHuntersPost.cpp
 src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
 src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp
+src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp

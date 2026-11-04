@@ -18,8 +18,7 @@ namespace OpenSHC {
 namespace Synchrony {
 
     struct TeamDefeatCount {
-        int players;
-        int lordsKilled;
+        int players, lordsKilled;
     };
 
     // FUNCTION: STRONGHOLDCRUSADER 0x00486600

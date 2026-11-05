@@ -70,8 +70,8 @@ void Synchrony::InitSkirmishLobbyData()
             sizeof(DAT_GameSynchronyState::instance.DAT_PlayerGroupArray));
         MACRO_CALL_MEMBER(GameSynchronyState_Func::reorderTeamsAndPositions, DAT_GameSynchronyState::ptr)();
     }
-    DAT_00b960f8::instance = 0;
     INT_00b95958::instance = 0;
+    DAT_00b960f8::instance = 0;
 }
 
 }

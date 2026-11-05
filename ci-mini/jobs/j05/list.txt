@@ -1,0 +1,7 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/Map/Buildings/UpdateMarketplace.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp
+src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp
+src/OpenSHC/Map/Buildings/UpdateBadBuildingStocks.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp

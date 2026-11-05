@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp
+src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp
+src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp

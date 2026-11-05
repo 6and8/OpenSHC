@@ -1,0 +1,10 @@
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/Global/DetectDXVersionByLoadingDDRAW.cpp
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp

@@ -1,0 +1,7 @@
+src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingAreaTileGraphics.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp

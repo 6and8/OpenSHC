@@ -21,7 +21,8 @@ times = []
 
 
 def sh(cmd):
-    r = subprocess.run(['cmd', '/c', cmd], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+    # shell=True passes the string to cmd as is (a list would backslash-escape the inner quotes)
+    r = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
                        errors='replace')
     return r.returncode, r.stdout
 

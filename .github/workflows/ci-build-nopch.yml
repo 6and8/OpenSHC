@@ -1,10 +1,10 @@
 # Free compute: builds OpenSHC.dll on GitHub's Windows runners (public repo = free, unlimited minutes,
 # 4 vCPU each, up to 20 jobs at once). No game files here: reccmp runs locally on the downloaded DLL/PDB.
 # Lives on ci/* branches of the fork only (win/cibuild.py pushes them); never part of a PR.
-name: ci-build
+name: ci-build-nopch
 on:
   push:
-    branches: ['ci/**']
+    branches: ['cinopch/**']
   workflow_dispatch:
 jobs:
   build:
@@ -27,10 +27,12 @@ jobs:
         run: |
           python tools\reimplementation-control\enable_reimplemented_data.py
           python tools\reimplementation-helper\batch\enable_local_functions.py
-      - name: build
+      - name: build (PCH off, pch.h force-included via CL for the C++ DLL objects only)
         shell: cmd
         run: |
-          call .\cmakew.bat --preset RelWithDebInfo "-DCMAKE_MAKE_PROGRAM=%RUNNER_TEMP%\jom\jom.exe"
+          call .\cmakew.bat --preset RelWithDebInfo "-DCMAKE_MAKE_PROGRAM=%RUNNER_TEMP%\jom\jom.exe" -DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON
+          call .\cmakew.bat --build --preset RelWithDebInfo --target pklib
+          set CL=/FI"%GITHUB_WORKSPACE%\src\precomp\pch.h"
           call .\cmakew.bat --build --preset RelWithDebInfo --target OpenSHC.dll
       - uses: actions/upload-artifact@v4
         with:

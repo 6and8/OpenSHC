@@ -1,0 +1,210 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap173_bows_crossbows.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap175_crossbows_spears.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap177_spears_pikes.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap179_pikes_maces.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap181_maces_swords.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap183_swords_leatherArmour.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap185_leatherArmour_ironArmour.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap220_weaponType_amount.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap24_owner_resourceGiven.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap191_foodType_amount.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap23_owner_totalFood.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap24_totalFood_bread.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap25_bread_cheese.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap26_cheese_meat.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap27_meat_apples.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"swap101_x_y.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"swap60_pointX_pointY.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"swap65_x_y.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap120_owner_height.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap121_height_microY.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap126_microY_microX.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap134_strongest_strongestStrength.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap156_entityID_n.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap39_gateMicroX_gateY.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap41_gateMicroY_defender.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap42_defender_attacker.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap43_attacker_flagEntityID.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap28_apples_sprite.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"swap29_sprite_resourceGiven.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingData.cpp",
+"swap364_middleY_buildingX.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"swap24_variant_stockpileID.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"swap25_stockpileID_workerCount.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp",
+"swap43_microX_microY.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"swap32_found_areaFrom.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"swap33_areaFrom_heightStep.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"swap18_frame_unchangedLeft.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"swap52_half_x.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"swap53_x_y.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/resolveBuildingEntryAccessibility.cpp",
+"swap21_buildingHeight_targetArea.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/resolveBuildingEntryAccessibility.cpp",
+"swap25_targetArea_blocked.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"swap22_secondID_firstID.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"swap26_firstIdle_secondIdle.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap44_flagEntityID_gateOwner.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"swap79_entityID_n.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp",
+"swap28_tileX_tileY.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTower1.cpp",
+"swap69_i_unitsOnTop.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"swap25_resourceGiven_sprite.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"swap120_i_unitsOnTop.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/UpdateDogCage.cpp",
+"swap32_unitCount_dogCount.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"swap39_found_heightStep.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/Buildings/UpdateDrawBridge.cpp",
+"swap19_owner_direction.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp",
+"swap76_thingsPerLevel_balance.cpp"
+]
+}

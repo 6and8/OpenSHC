@@ -1,0 +1,2 @@
+src/OpenSHC/Map/Buildings/UpdateDrawBridge.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp

@@ -34,26 +34,10 @@ namespace Game {
         char* RandomEvent13VideoName; // 0x00000030 length: 4
         char* RandomEvent14VideoName; // 0x00000034 length: 4
         char* RandomEvent15VideoName; // 0x00000038 length: 4
-        char** field15_0x3c; // 0x0000003C length: 4
-        char** field16_0x40; // 0x00000040 length: 4
-        char** field17_0x44; // 0x00000044 length: 4
-        char** field18_0x48; // 0x00000048 length: 4
-        char** field19_0x4c; // 0x0000004C length: 4
-        char** field20_0x50; // 0x00000050 length: 4
-        char** field21_0x54; // 0x00000054 length: 4
-        char** field22_0x58; // 0x00000058 length: 4
-        char** field23_0x5c; // 0x0000005C length: 4
-        char** field24_0x60; // 0x00000060 length: 4
-        char** field25_0x64; // 0x00000064 length: 4
-        char** field26_0x68; // 0x00000068 length: 4
-        char** field27_0x6c; // 0x0000006C length: 4
-        char** field28_0x70; // 0x00000070 length: 4
-        char** field29_0x74; // 0x00000074 length: 4
-        char** field30_0x78; // 0x00000078 length: 4
-        char** field31_0x7c; // 0x0000007C length: 4
-        char** field32_0x80; // 0x00000080 length: 4
-        char** field33_0x84; // 0x00000084 length: 4
-        char** field34_0x88; // 0x00000088 length: 4
+        char* missionMapNames1[5]; // 0x0000003C length: 20
+        char* missionMapNames2[5]; // 0x00000050 length: 20
+        char* missionMapNames3[5]; // 0x00000064 length: 20
+        char* missionMapNames4[5]; // 0x00000078 length: 20
         char** field35_0x8c; // 0x0000008C length: 4
         char** field36_0x90; // 0x00000090 length: 4
         char** field37_0x94; // 0x00000094 length: 4

@@ -185,7 +185,7 @@ namespace Map {
 
         void loadMap(char* mapName);
 
-        void loadMapSiegeHeaderForMissionIndex(char* param_1);
+        void loadMapSiegeHeaderForMissionIndex(int missionNumber);
 
         void loadMissionMapAndSetLord(int missionNumber);
     };

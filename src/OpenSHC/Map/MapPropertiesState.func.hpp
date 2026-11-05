@@ -136,7 +136,7 @@ namespace Map {
             void (MapPropertiesState::*)(char*), false, Address::SHC_3BB0A8C1_0x004C62C0, &MapPropertiesState::loadMap)
         loadMap;
 
-        MACRO_FUNCTION_RESOLVER(void (MapPropertiesState::*)(char*), false, Address::SHC_3BB0A8C1_0x004C6820,
+        MACRO_FUNCTION_RESOLVER(void (MapPropertiesState::*)(int), false, Address::SHC_3BB0A8C1_0x004C6820,
             &MapPropertiesState::loadMapSiegeHeaderForMissionIndex)
         loadMapSiegeHeaderForMissionIndex;
 

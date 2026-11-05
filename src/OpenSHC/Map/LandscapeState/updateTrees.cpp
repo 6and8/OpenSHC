@@ -34,9 +34,9 @@ namespace Map {
         if (DAT_GameCore::instance.gameMode_2 == Game::GM_EDITOR) {
             updateStages = FALSE;
         }
-        this->field0_0x0 = 0;
+        this->field_0x0 = 0;
         if (DAT_TileMapState::instance.refreshRelatedOne == 0 || DAT_TileMapState::instance.flatViewToggleValue1 != 0) {
-            this->field0_0x0 = 1;
+            this->field_0x0 = 1;
         }
         DAT_GameState::instance.mapAndTime.newOrganisms = 0;
         this->DAT_TotalOrganisms = 0;
@@ -49,7 +49,7 @@ namespace Map {
                 this->trees[DAT_CurrentTreeID::instance].state = 2;
                 break;
             case 4:
-                if (this->field0_0x0 != 0) {
+                if (this->field_0x0 != 0) {
                     this->trees[DAT_CurrentTreeID::instance].animationFrameUnk = 0;
                 } else {
                     this->trees[DAT_CurrentTreeID::instance].animationFrameUnk

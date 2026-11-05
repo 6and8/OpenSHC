@@ -34,7 +34,7 @@ namespace Map {
                 = (char)DAT_OrganismDefinedData::instance
                       .Tree_1_A[DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].animationFrameIndex];
         }
-        if (DAT_LandscapeState::instance.field0_0x0 != 0) {
+        if (DAT_LandscapeState::instance.field_0x0 != 0) {
             DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].animationFrameUnk = 0;
         }
     }

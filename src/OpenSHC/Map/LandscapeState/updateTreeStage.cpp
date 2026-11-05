@@ -41,7 +41,7 @@ namespace Map {
         if ((short)this->trees[treeID].stageRelated1 < (short)this->trees[treeID].stageRelated2) {
             return;
         }
-        if (this->field1_0x4 == 0) {
+        if (this->field_0x4 == 0) {
             return;
         }
         if (DAT_GameCore::instance.currentMenuViewType == UI::Enums::MVT_MAP_EDITOR_LANDSCAPING) {

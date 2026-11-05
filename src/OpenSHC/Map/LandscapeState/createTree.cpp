@@ -131,10 +131,10 @@ namespace Map {
             this->trees[treeID].appleTreeColorVariation = 0;
             break;
         }
-        undefined4 const savedField0 = this->field0_0x0;
-        this->field0_0x0 = 0;
+        undefined4 const savedField0 = this->field_0x0;
+        this->field_0x0 = 0;
         DAT_OrganismDefinedData::instance.UpdateTree[this->trees[treeID].treeType]();
-        this->field0_0x0 = savedField0;
+        this->field_0x0 = savedField0;
         return treeID;
     }
 

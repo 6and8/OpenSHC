@@ -40,7 +40,7 @@ namespace UI {
                     return;
                 }
                 DAT_TileMapState::instance.demolishBlocked = 0;
-                if (DAT_ViewportRenderState::instance.viewportState.field0_0x0 == 0) {
+                if (DAT_ViewportRenderState::instance.viewportState.field_0x0 == 0) {
                     return;
                 }
                 MACRO_CALL_MEMBER(

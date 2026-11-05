@@ -1,15 +1,28 @@
-# Free compute: builds OpenSHC.dll on GitHub's Windows runners (public repo = free, unlimited minutes,
-# 4 vCPU each, up to 20 jobs at once). No game files here: reccmp runs locally on the downloaded DLL/PDB.
-# Lives on ci/* branches of the fork only (win/cibuild.py pushes them); never part of a PR.
-name: ci-build
+# Variant sweep on the fork's free Windows runners: one job per folder ci-variants/<job>/, which holds replacement
+# files at their repo paths (one variant of each function per job). Each job overlays its folder, builds, uploads
+# its DLL/PDB as artifact dll-<job>; win/cisweep.py scores them locally with reccmp.
+name: ci-variants
 on:
   push:
-    branches: ['ci/**']
-  workflow_dispatch:
+    branches: ['civar/**']
 jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      jobs: ${{ steps.l.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: echo "jobs=$(ls ci-variants | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
   build:
+    needs: list
     runs-on: windows-latest
     timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJson(needs.list.outputs.jobs) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,6 +30,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: overlay variant files
+        shell: cmd
+        run: python -c "import shutil,os,sys; d='ci-variants/'+sys.argv[1]; shutil.copytree(d,'.',dirs_exist_ok=True); [print(os.path.join(r,f)) for r,_,fs in os.walk(d) for f in fs]" ${{ matrix.job }}
       - name: jom
         shell: pwsh
         run: |
@@ -34,7 +50,7 @@ jobs:
           call .\cmakew.bat --build --preset RelWithDebInfo --target OpenSHC.dll
       - uses: actions/upload-artifact@v4
         with:
-          name: dll
+          name: dll-${{ matrix.job }}
           path: |
             build-RelWithDebInfo/DLL/OpenSHC.dll
             build-RelWithDebInfo/DLL/OpenSHC.pdb

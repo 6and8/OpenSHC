@@ -39,8 +39,8 @@ namespace Map {
             int gateMicroX = gateX * 8;
             int gateY = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y;
             int gateMicroY = gateY * 8;
-            int defender = 0;
             int attacker = 0;
+            int defender = 0;
             int flagEntityID = 0;
             int gateOwner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
 

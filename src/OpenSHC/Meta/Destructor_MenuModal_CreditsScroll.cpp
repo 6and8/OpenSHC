@@ -1,4 +1,4 @@
-#include "OpenSHC/Meta.func.hpp"
+#include "../Meta.func.hpp"
 
 namespace OpenSHC {
 

@@ -1,4 +1,6 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
+
+#include "OpenSHC/Game/Resources/ResourceType.hpp"
 #include "OpenSHC/Map/Units/UnitType.hpp"
 #include "OpenSHC/WindowsHelper/Enums/BOOLEnum.hpp"
 
@@ -8,22 +10,22 @@
 namespace OpenSHC {
 namespace UI {
 
-    using OpenSHC::WindowsHelper::Enums::BOOLEnum;
+    using WindowsHelper::Enums::BOOLEnum;
 
     // FUNCTION: STRONGHOLDCRUSADER 0x00465040
     BOOLEnum Helpers::HasEnoughGold(int unitType)
     {
-        int cost = 0;
-        if (unitType == OpenSHC::Map::Units::UT_E_ENGINEER) {
-            cost = 30;
-        } else if (unitType == OpenSHC::Map::Units::UT_E_LADDER) {
-            cost = 4;
-        } else if (unitType == OpenSHC::Map::Units::UT_E_MONK) {
-            cost = 10;
+        int goldCost = 0;
+        if (unitType == Map::Units::UT_E_ENGINEER) {
+            goldCost = 30;
+        } else if (unitType == Map::Units::UT_E_LADDER) {
+            goldCost = 4;
+        } else if (unitType == Map::Units::UT_E_MONK) {
+            goldCost = 10;
         }
-        return (BOOLEnum)(DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                              .currentResources[OpenSHC::Game::Resources::RT_GOLD]
-            >= cost);
+        return DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                   .currentResources[Game::Resources::RT_GOLD]
+            >= goldCost;
     }
 
 }

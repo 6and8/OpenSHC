@@ -1,4 +1,5 @@
-#include "OpenSHC/Meta.func.hpp"
+#include "../Meta.func.hpp"
+
 #include "OpenSHC/Rendering/Bink/BinkControlClass.func.hpp"
 
 #include "OpenSHC/Globals/DAT_BinkControlState.hpp"

@@ -1,4 +1,4 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
 
 #include "OpenSHC/Globals/DAT_LobbyAddAICurrentlyHoveredAI.hpp"
 

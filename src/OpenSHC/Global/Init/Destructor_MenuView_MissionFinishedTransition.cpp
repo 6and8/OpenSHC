@@ -1,5 +1,6 @@
+#include "../Init.func.hpp"
+
 #include "OpenSHC/Global.func.hpp"
-#include "OpenSHC/Global/Init.func.hpp"
 
 #include "OpenSHC/Globals/MenuView_MissionFinishedTransition.hpp"
 

@@ -1,4 +1,5 @@
-#include "OpenSHC/Meta.func.hpp"
+#include "../Meta.func.hpp"
+
 #include "OpenSHC/UI/Rendering/TextureRenderCore.func.hpp"
 
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"

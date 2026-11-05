@@ -1,4 +1,6 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
+
+#include "OpenSHC/Game/Resources/ResourceType.hpp"
 
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
@@ -10,58 +12,57 @@ namespace UI {
     int Helpers::SomeGoldRelatedComputation()
     {
         int const gold = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                             .currentResources[OpenSHC::Game::Resources::RT_GOLD];
+                             .currentResources[Game::Resources::RT_GOLD];
         if (gold == 0) {
-            return 0x1d;
+            return 29;
         }
         if (gold >= 1000) {
-            return 0x20;
+            return 32;
         }
         int const blessed
             = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                   .blessedPeoplePercentage;
         if (blessed >= 80) {
-            return 0x17;
+            return 23;
         }
         int const inns = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                              .workingInnsCount;
         if (inns >= 3) {
-            return 0x1b;
+            return 27;
         }
         if (blessed >= 40) {
-            return 0x16;
+            return 22;
         }
         if (inns == 2) {
-            return 0x1a;
+            return 26;
         }
         if (gold >= 5000) {
-            return 0x1f;
+            return 31;
         }
         if (blessed >= 20) {
-            return 0x15;
+            return 21;
         }
         if (inns == 1) {
-            return 0x19;
+            return 25;
         }
         if (gold < 500) {
-            return 0x1e;
+            return 30;
         }
         if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                 .totalEnemyUnitsCount
             > 4) {
-            return 0x24;
+            return 36;
         }
-        if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                .currentPopulation
-            == 0) {
-            return 0x22;
+        int const population
+            = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                  .currentPopulation;
+        if (population == 0) {
+            return 34;
         }
-        if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                .currentPopulation
-            >= 5) {
-            return 0x27;
+        if (population >= 5) {
+            return 39;
         }
-        return 0x23;
+        return 35;
     }
 
 }

@@ -17,6 +17,12 @@ src/OpenSHC/Game/GameStateStructures/getSellResourceAmount.cpp
 src/OpenSHC/Map/TileMapState/determineBuildingPlacementRotation.cpp
 src/OpenSHC/Map/Navigation/DirectionAlgorithmState/getMouseVectorLengthBasedOnDirection.cpp
 src/OpenSHC/Input/MouseState/updateRightDragCameraControl.cpp
+src/OpenSHC/Game/GameStateStructures/updateFoodTypesInStockForAllPlayers.cpp
+src/OpenSHC/Game/GameStateStructures/clearEnemyRelatedStructures.cpp
+src/OpenSHC/Game/GameStateStructures/fillWith0xFF.cpp
+src/OpenSHC/Game/GameStateStructures/computeSignPostEntryData.cpp
+src/OpenSHC/Game/GameStateStructures/resetSomethingBuildingRelatedForAllPlayers.cpp
+src/OpenSHC/Game/GameStateStructures/setVariousGameStateToInitialValues.cpp
 src/OpenSHC/AI/AIVState/executeDefaultCastleAIV.cpp
 src/OpenSHC/AI/AIVState/findAppropriateGridLocationForBuilding.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/getStorageBuildingForResourceTypeAndAmount.cpp
@@ -62,6 +68,9 @@ src/OpenSHC/Map/Buildings/BuildingsState/canUnitReachBuildingPerimeter.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/processResourceGain.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/receiveAllTransmittedCommands.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/processSyncPacket.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/translateMultiplayerIDsIntoPlayerIDs.cpp
 src/OpenSHC/Map/Buildings/UpdateStables.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/validateBuildingTetheredUnits.cpp
 src/OpenSHC/Map/Buildings/UpdateArmorersWorkshop.cpp
@@ -81,8 +90,6 @@ src/OpenSHC/Map/Buildings/UpdateIronMine.cpp
 src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/buildingHasSpaceForResource.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
-src/OpenSHC/Synchrony/GameSynchronyState/processSyncPacket.cpp
-src/OpenSHC/Synchrony/GameSynchronyState/translateMultiplayerIDsIntoPlayerIDs.cpp
 
 src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
 src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
@@ -255,3 +262,6 @@ src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
 src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp
 src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
 src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/UI/Rendering/ButtonGmData/getPictureNumberInGm.cpp
+src/OpenSHC/UI/Rendering/RenderButtonImageWithBlending.cpp
+src/OpenSHC/UI/Rendering/RenderCurrentNotActiveButtonWithPossibleAlphaTexOnCurrentSurfaceUnk.cpp

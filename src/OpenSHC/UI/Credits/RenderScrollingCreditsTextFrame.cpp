@@ -12,7 +12,7 @@
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_WindowAndDirectDraw.hpp"
 #include "OpenSHC/Globals/FLOAT_00eb9b1c.hpp"
-#include "OpenSHC/Globals/FLOAT_00eb9b24.hpp"
+#include "OpenSHC/Globals/INT_00eb9b24.hpp"
 #include "OpenSHC/Globals/FLOAT_Between1And5.hpp"
 #include "OpenSHC/Globals/INT_00eb9b20.hpp"
 
@@ -27,7 +27,7 @@ namespace UI {
             if (FLOAT_00eb9b1c::instance <= 0.0f) {
                 FLOAT_00eb9b1c::instance += 100.0;
                 INT_00eb9b20::instance += 1;
-                if (INT_00eb9b20::instance > FLOAT_00eb9b24::instance) {
+                if (INT_00eb9b20::instance > INT_00eb9b24::instance) {
                     DAT_00eb9b28::instance = 1;
                 }
             }

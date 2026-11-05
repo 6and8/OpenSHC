@@ -1,5 +1,6 @@
+#include "../Init.func.hpp"
+
 #include "OpenSHC/Audio/SFX/SFXState.func.hpp"
-#include "OpenSHC/Global/Init.func.hpp"
 #include "OpenSHC/Meta.func.hpp"
 #include "OpenSHC/OS.func.hpp"
 

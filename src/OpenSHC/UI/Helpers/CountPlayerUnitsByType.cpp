@@ -1,4 +1,9 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
+
+#include "OpenSHC/OS.func.hpp"
+#include "OpenSHC/Map/Units/Unit.hpp"
+#include "OpenSHC/Map/Units/UnitLogicState.hpp"
+#include "OpenSHC/Map/Units/UnitType.hpp"
 
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_UnitTypeRelatedCounter.hpp"
@@ -7,17 +12,22 @@
 namespace OpenSHC {
 namespace UI {
 
+    using Map::Units::Unit;
+
     // FUNCTION: STRONGHOLDCRUSADER 0x00440360
     void Helpers::CountPlayerUnitsByType()
     {
         int const player = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-        memset(DAT_UnitTypeRelatedCounter::instance, 0, sizeof(DAT_UnitTypeRelatedCounter::instance));
-        for (int i = 1; i < DAT_UnitsState::instance.maxUnitCount; ++i) {
-            if (DAT_UnitsState::instance.units[i].logicalState != 0 && DAT_UnitsState::instance.units[i].owner == player
-                && DAT_UnitsState::instance.units[i].isStalked == 0) {
-                int const unitType = DAT_UnitsState::instance.units[i].unitType;
-                if (unitType >= 1 && (unitType <= 0x42 || unitType >= 0x46)) {
-                    DAT_UnitTypeRelatedCounter::instance[unitType] += 1;
+        MACRO_CALL(OS_Func::_memset)(
+            DAT_UnitTypeRelatedCounter::instance, 0, sizeof(DAT_UnitTypeRelatedCounter::instance));
+        for (int unitID = 1; unitID < DAT_UnitsState::instance.maxUnitCount; ++unitID) {
+            Unit const& unit = DAT_UnitsState::instance.units[unitID];
+            if (unit.logicalState != Map::Units::ULS_INVISIBLE && unit.owner == player && !unit.isStalked) {
+                int const unitType = unit.unitType;
+                // Caged dogs and burning animals are not counted.
+                if (unitType >= Map::Units::UT_PEASANT
+                    && (unitType <= Map::Units::UT_FIREEATER || unitType >= Map::Units::UT_A_ARCHER)) {
+                    ++DAT_UnitTypeRelatedCounter::instance[unitType];
                 }
             }
         }

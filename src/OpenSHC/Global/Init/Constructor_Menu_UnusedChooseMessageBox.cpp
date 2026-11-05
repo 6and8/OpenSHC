@@ -1,4 +1,5 @@
-#include "OpenSHC/Global/Init.func.hpp"
+#include "../Init.func.hpp"
+
 #include "OpenSHC/UI/Menu.func.hpp"
 
 #include "OpenSHC/Globals/DAT_RenderingDefinedData.hpp"

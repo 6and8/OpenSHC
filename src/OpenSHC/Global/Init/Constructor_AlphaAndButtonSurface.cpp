@@ -1,4 +1,5 @@
-#include "OpenSHC/Global/Init.func.hpp"
+#include "../Init.func.hpp"
+
 #include "OpenSHC/Meta.func.hpp"
 #include "OpenSHC/OS.func.hpp"
 #include "OpenSHC/UI/Rendering/AlphaAndButtonSurface.func.hpp"

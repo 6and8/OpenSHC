@@ -1,5 +1,6 @@
+#include "../Meta.func.hpp"
+
 #include "OpenSHC/Global.func.hpp"
-#include "OpenSHC/Meta.func.hpp"
 
 #include "OpenSHC/Globals/DAT_TileMapState.hpp"
 

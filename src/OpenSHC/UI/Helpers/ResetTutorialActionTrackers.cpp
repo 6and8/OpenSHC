@@ -1,4 +1,4 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
 
 #include "OpenSHC/Globals/DAT_00df5588.hpp"
 #include "OpenSHC/Globals/DAT_00df558c.hpp"

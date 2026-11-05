@@ -39,19 +39,19 @@ namespace Synchrony {
             this->ticksAheadOfSlowestPlayer = this->localPlayerMapTime - this->minPlayerMapTime;
         }
         if ((int)this->ticksBehindFastestPlayer < 0) {
-            this->field317_0x109eb8 = 1;
+            this->field_0x109eb8 = 1;
             for (int i = 0; i < 12; ++i) {
-                if ((int)this->ticksBehindFastestPlayer > DAT_ProtocolDefinedData::instance.field4_0x4[i][0]) {
-                    this->field317_0x109eb8 = DAT_ProtocolDefinedData::instance.field4_0x4[i][1];
+                if ((int)this->ticksBehindFastestPlayer > DAT_ProtocolDefinedData::instance.field_0x4[i][0]) {
+                    this->field_0x109eb8 = DAT_ProtocolDefinedData::instance.field_0x4[i][1];
                     return;
                 }
             }
             return;
         }
         for (int i = 0; i < 40; ++i) {
-            if ((int)this->ticksAheadOfSlowestPlayer <= DAT_ProtocolDefinedData::instance.field5_0x64[i][0]) {
-                this->field315_0x109eb0 = DAT_ProtocolDefinedData::instance.field5_0x64[i][1];
-                this->field316_0x109eb4 = DAT_ProtocolDefinedData::instance.field5_0x64[i][2];
+            if ((int)this->ticksAheadOfSlowestPlayer <= DAT_ProtocolDefinedData::instance.field_0x64[i][0]) {
+                this->field_0x109eb0 = DAT_ProtocolDefinedData::instance.field_0x64[i][1];
+                this->field_0x109eb4 = DAT_ProtocolDefinedData::instance.field_0x64[i][2];
                 return;
             }
         }

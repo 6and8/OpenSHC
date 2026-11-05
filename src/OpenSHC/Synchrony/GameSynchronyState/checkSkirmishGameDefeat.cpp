@@ -100,7 +100,7 @@ namespace Synchrony {
             BOOLEnum found = FALSE;
             for (int player = 1; player < 9; ++player) {
                 if ((this->currentPlayerFullIDArray[player] != -1 || this->currentAIArray[player] != 0)
-                    && DAT_GameState::instance.playerDataArray[player].field397_0x229c == 0) {
+                    && DAT_GameState::instance.playerDataArray[player].field_0x229c == 0) {
                     winningTeam = DAT_GameState::instance.mapAndTime.playerTeams[player];
                     found = TRUE;
                 }

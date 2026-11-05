@@ -23,7 +23,7 @@ namespace Synchrony {
         int lines = 0;
         MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::setScreenMenuSurfaceHeightRange,
             DAT_TextureRenderCoreObject::ptr)(yPos - 0x48, yPos + 0x12);
-        DAT_TextManagerObject::instance.field13_0x34 = 0x11;
+        DAT_TextManagerObject::instance.field_0x34 = 0x11;
         for (int message = 0; message < 5; ++message) {
             if (this->DAT_ChatEventArray[this->chatMessageRenderIndex].flag == 1) {
                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderInGameTextWithShadow, DAT_TextManagerObject::ptr)(
@@ -63,7 +63,7 @@ namespace Synchrony {
                 break;
             }
         }
-        DAT_TextManagerObject::instance.field13_0x34 = 0;
+        DAT_TextManagerObject::instance.field_0x34 = 0;
         MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::setScreenMenuSurfaceHeightRangeToResolution,
             DAT_TextureRenderCoreObject::ptr)();
     }

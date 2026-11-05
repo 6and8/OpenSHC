@@ -16,13 +16,13 @@ namespace UI {
                 && textIndex < (int)DAT_NumberOfStoredMenuStrings::instance) {
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].commandType = command;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].soundStream = textIndex;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field6_0x18 = field6;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x18 = field6;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].x = x;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].y = y;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].width = width;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field12_0x30 = field12;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x30 = field12;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x1c = 0;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field13_0x34 = field13;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x34 = field13;
                 if (command == 0xf) {
                     DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x1c = 1;
                 } else if (command == 0x10) {

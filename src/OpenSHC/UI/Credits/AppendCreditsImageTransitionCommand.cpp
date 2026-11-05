@@ -15,10 +15,10 @@ namespace UI {
                 && (command == 5 || command == 6 || command == 7)) {
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].commandType = command;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].soundStream = gfxIndex;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field14_0x38 = -1;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x38 = -1;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].x = x;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].y = y;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field10_0x28 = field10;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x28 = field10;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x1c = 0;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].width
                     = DAT_TextureRenderCoreObject::instance.loadedGfxArray[gfxIndex].width;

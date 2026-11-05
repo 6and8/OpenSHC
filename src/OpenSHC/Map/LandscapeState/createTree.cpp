@@ -61,7 +61,7 @@ namespace Map {
         this->trees[treeID].gmOriginY = DAT_TextureRenderCoreObject::instance
                                             .gmFileHeaderColorpaletteArray[this->trees[treeID].treeTypeBasedValue1]
                                             .originY;
-        this->trees[treeID].treeTypeRelated2 = DAT_OrganismDefinedData::instance.field28_0x854[treeType];
+        this->trees[treeID].treeTypeRelated2 = DAT_OrganismDefinedData::instance.field_0x854[treeType];
         this->trees[treeID].zero = 0;
         this->trees[treeID].animationFrameIndex = DAT_TileMapState::instance.RandomLayer[tile] & 0x1f;
         this->trees[treeID].one = 1;

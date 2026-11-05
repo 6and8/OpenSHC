@@ -35,7 +35,7 @@ namespace Game {
             for (int player = 0; player < 9; ++player) {
                 this->playerLordTypeArray[player] = DAT_GameCore::instance.selectedLordTypes[player];
             }
-            this->mbr_0xf0 = DAT_GameCore::instance.field152_0x2340;
+            this->mbr_0xf0 = DAT_GameCore::instance.field_0x2340;
             this->selectedLordType = DAT_GameCore::instance.selectedLordTypeUnk;
             this->popularity = DAT_GameSynchronyState::instance.skirmishDefaultPopularity;
             this->mapSelectionRelativeSelected = DAT_GameSynchronyState::instance.DAT_MapSelectionRelativeSelected;

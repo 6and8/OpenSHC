@@ -19,8 +19,8 @@ namespace Map {
             this->entityArray[entityID].originY
                 = (short)DAT_TextureRenderCoreObject::instance.gmFileHeaderColorpaletteArray[(short)graphicType1]
                       .originY;
-            this->entityArray[entityID].unkOne_1 = (short)DAT_EntityDefinedData::instance.field50_0x8b0;
-            this->entityArray[entityID].unkThree_1 = (short)DAT_EntityDefinedData::instance.field47_0x7f8;
+            this->entityArray[entityID].unkOne_1 = (short)DAT_EntityDefinedData::instance.field_0x8b0;
+            this->entityArray[entityID].unkThree_1 = (short)DAT_EntityDefinedData::instance.field_0x7f8;
             if (graphicType1 == 0x87) {
                 this->entityArray[entityID].unkOne_1 = 1;
                 this->entityArray[entityID].unkThree_1 = 3;

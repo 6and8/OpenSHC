@@ -105,7 +105,7 @@ namespace Map {
                 entityType = (EntityType)1;
             } else if (entityType == ET_FIREBALLISTA) {
                 markedUnk = TRUE;
-                this->entityArray[entityID].field90_0xd0 = 1;
+                this->entityArray[entityID].field_0xd0 = 1;
                 entityType = (EntityType)ET_BALLISTA;
             } else {
                 if (entityType == ET_FIRETHROWER || entityType == ET_FIRETHROWER_UNTARGETED) {
@@ -174,7 +174,7 @@ namespace Map {
                 this->entityArray[entityID].uid = DAT_GameCore::instance.uniqueGameObjectTracker;
                 DAT_GameCore::instance.uniqueGameObjectTracker += 1;
             }
-            this->entityArray[entityID].field21_0x34 = DAT_GameCore::instance.mapTimeInTicks;
+            this->entityArray[entityID].field_0x34 = DAT_GameCore::instance.mapTimeInTicks;
             this->entityArray[entityID].unitID_OR_seaGullID = unitID;
             this->entityArray[entityID].targetX = targetX;
             this->entityArray[entityID].targetY = targetY;
@@ -203,7 +203,7 @@ namespace Map {
             if (this->entityArray[entityID].rng_2 != 0) {
                 this->entityArray[entityID].gmID = 145;
             }
-            this->entityArray[entityID].field7_0x12 = 0;
+            this->entityArray[entityID].field_0x12 = 0;
             this->entityArray[entityID].unknownAnimationFrameRelated = 0;
             if (entityType == ET_DUST_CLOUD) {
                 if (param_11 == 1) {

@@ -230,7 +230,7 @@ namespace Map {
             }
         }
 
-        // The smelter, in field119_0x11a and extraAnimationFrame1, with its glow in field172_0x292
+        // The smelter, in field_0x11a and extraAnimationFrame1, with its glow in field_0x292
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workers[0] == 0) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 0;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame1 = 0;
@@ -365,7 +365,7 @@ namespace Map {
             }
         }
 
-        // The pour, in field121_0x11e and extraAnimationFrame3; finishing it deposits the iron
+        // The pour, in field_0x11e and extraAnimationFrame3; finishing it deposits the iron
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workers[0] == 0) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e = 0;
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].extraAnimationFrame3 = 0;

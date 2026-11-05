@@ -17,7 +17,7 @@ namespace Map {
         {
             int seagullID = 1;
             for (; seagullID < 100; ++seagullID) {
-                if (this->seagullArray[seagullID].field3_0x8 == 0) {
+                if (this->seagullArray[seagullID].field_0x8 == 0) {
                     break;
                 }
                 if (this->seagullArray[seagullID].entityUID
@@ -29,8 +29,8 @@ namespace Map {
                     return 0;
                 }
             }
-            this->seagullArray[seagullID].field3_0x8 = 2;
-            this->seagullArray[seagullID].field4_0xa = 0;
+            this->seagullArray[seagullID].field_0x8 = 2;
+            this->seagullArray[seagullID].field_0xa = 0;
             this->seagullArray[seagullID].someCountDown = 0;
             this->seagullArray[seagullID].x = x;
             this->seagullArray[seagullID].x_2 = x;
@@ -62,7 +62,7 @@ namespace Map {
             if (this->seagullArray[seagullID].angle < 0) {
                 this->seagullArray[seagullID].angle -= 360;
             }
-            this->seagullArray[seagullID].field12_0x1a = -20;
+            this->seagullArray[seagullID].field_0x1a = -20;
             int const offsetX = (int)(sin(angle) * this->seagullArray[seagullID].unknownCounter_0x16);
             int const offsetY = (int)(cos(angle) * this->seagullArray[seagullID].unknownCounter_0x16);
             this->seagullArray[seagullID].rngMax799_countdown = 400;

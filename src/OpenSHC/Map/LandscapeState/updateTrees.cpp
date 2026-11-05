@@ -69,11 +69,11 @@ namespace Map {
                     && this->trees[DAT_CurrentTreeID::instance].zeroUpTo2 == 0) {
                     this->trees[DAT_CurrentTreeID::instance].zeroUpTo2 = 1;
                     this->trees[DAT_CurrentTreeID::instance].animationFrameIndex = 1;
-                    this->trees[DAT_CurrentTreeID::instance].field8_0x14 = DAT_00ed31a0::instance;
+                    this->trees[DAT_CurrentTreeID::instance].field_0x14 = DAT_00ed31a0::instance;
                 }
-                if ((int)(DAT_00ed31a0::instance - this->trees[DAT_CurrentTreeID::instance].field8_0x14)
+                if ((int)(DAT_00ed31a0::instance - this->trees[DAT_CurrentTreeID::instance].field_0x14)
                     >= this->trees[DAT_CurrentTreeID::instance].treeTypeRelated2) {
-                    this->trees[DAT_CurrentTreeID::instance].field8_0x14 = DAT_00ed31a0::instance;
+                    this->trees[DAT_CurrentTreeID::instance].field_0x14 = DAT_00ed31a0::instance;
                     if (this->trees[DAT_CurrentTreeID::instance].one != 0) {
                         this->trees[DAT_CurrentTreeID::instance].animationFrameIndex += 1;
                     }
@@ -89,12 +89,12 @@ namespace Map {
                     DAT_CurrentTreeID::instance = savedTreeID;
                 }
                 DAT_OrganismDefinedData::instance.UpdateTree[this->trees[DAT_CurrentTreeID::instance].treeType]();
-                if (this->trees[DAT_CurrentTreeID::instance].field92_0x98 != 0) {
+                if (this->trees[DAT_CurrentTreeID::instance].field_0x98 != 0) {
                     if (this->trees[DAT_CurrentTreeID::instance].treeType != Trees::TT_APPLEUnk) {
                         DAT_GameState::instance.mapAndTime.burningTreeCount += 1;
                     }
-                    if (this->trees[DAT_CurrentTreeID::instance].field92_0x98 > 1) {
-                        this->trees[DAT_CurrentTreeID::instance].field92_0x98 -= 1;
+                    if (this->trees[DAT_CurrentTreeID::instance].field_0x98 > 1) {
+                        this->trees[DAT_CurrentTreeID::instance].field_0x98 -= 1;
                     }
                 }
                 break;

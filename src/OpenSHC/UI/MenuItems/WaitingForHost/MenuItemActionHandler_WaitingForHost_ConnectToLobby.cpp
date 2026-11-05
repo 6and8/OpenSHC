@@ -64,7 +64,7 @@ namespace UI {
                     DAT_GameSynchronyState::instance.DPLAYX_4A->EnumSessions(&description, 0,
                         MACRO_CALL(OpenSHC::Synchrony_Func::EnumSessionsCallback_addSession_async), NULL,
                         OpenSHC::DirectPlay::ESFE_ASYNC_ENUMERATION_STOP);
-                    DAT_GameSynchronyState::instance.field224_0x106ee4 = 1;
+                    DAT_GameSynchronyState::instance.field_0x106ee4 = 1;
                     DAT_GameCore::instance.menuTabToSwitchTo.tabType = 0;
                     MACRO_CALL_MEMBER(OpenSHC::Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                         OpenSHC::UI::Enums::MVT_LOBBY_MENU, 0);

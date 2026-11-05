@@ -77,7 +77,7 @@ namespace UI {
                             OpenSHC::DirectPlay::ESFE_ASYNC_ENUMERATION_STOP);
                         MACRO_CALL_MEMBER(OpenSHC::UI::MenuModalComposition_Func::activateModalDialog,
                             DAT_MenuModalComposition1::ptr)(OpenSHC::UI::Enums::MMT_NONE, FALSE);
-                        DAT_GameSynchronyState::instance.field224_0x106ee4 = 1;
+                        DAT_GameSynchronyState::instance.field_0x106ee4 = 1;
                         DAT_GameCore::instance.menuTabToSwitchTo.tabType = 0;
                         MACRO_CALL_MEMBER(OpenSHC::Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                             OpenSHC::UI::Enums::MVT_LOBBY_MENU, 0);

@@ -19,7 +19,7 @@ namespace UI {
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].y = y;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].binkObjIndex = binkObjIndex;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].flagLoopCount = flagLoopCount;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field10_0x28 = 0;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x28 = 0;
                 DAT_UnknownBinkCount::instance += 1;
             }
         }

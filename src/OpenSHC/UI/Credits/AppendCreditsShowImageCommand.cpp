@@ -14,10 +14,10 @@ namespace UI {
             if (DAT_UnknownBinkCount::instance < 288 && gfxIndex >= 0 && command == 0x29) {
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].commandType = 0x29;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].soundStream = gfxIndex;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field14_0x38 = 0;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x38 = 0;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].x = x;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].y = y;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field10_0x28 = field10;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x28 = field10;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x1c = 0;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].width = width;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].height = height;

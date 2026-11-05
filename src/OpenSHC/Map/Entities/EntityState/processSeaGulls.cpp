@@ -81,9 +81,9 @@ namespace Map {
                             (OpenSHC::DE::SHCDE::eSFX)0xc9);
                     }
                     this->seagullArray[seagullID].angle -= 360;
-                    if (this->seagullArray[seagullID].field12_0x1a < 0) {
+                    if (this->seagullArray[seagullID].field_0x1a < 0) {
                         this->seagullArray[seagullID].unknownCounter_0x16 += 1;
-                    } else if (this->seagullArray[seagullID].field12_0x1a > 0) {
+                    } else if (this->seagullArray[seagullID].field_0x1a > 0) {
                         this->seagullArray[seagullID].unknownCounter_0x16 -= 1;
                     }
                     if (this->seagullArray[seagullID].unknownCounter_0x16 < 24) {
@@ -92,16 +92,16 @@ namespace Map {
                     if (this->seagullArray[seagullID].unknownCounter_0x16 > 80) {
                         this->seagullArray[seagullID].unknownCounter_0x16 = 80;
                     }
-                    this->seagullArray[seagullID].field12_0x1a += 1;
-                    if (this->seagullArray[seagullID].field12_0x1a >= 20) {
-                        this->seagullArray[seagullID].field12_0x1a = -20;
+                    this->seagullArray[seagullID].field_0x1a += 1;
+                    if (this->seagullArray[seagullID].field_0x1a >= 20) {
+                        this->seagullArray[seagullID].field_0x1a = -20;
                     }
                 }
                 if (this->seagullArray[seagullID].angle < 0) {
                     this->seagullArray[seagullID].angle += 360;
-                    if (this->seagullArray[seagullID].field12_0x1a < 0) {
+                    if (this->seagullArray[seagullID].field_0x1a < 0) {
                         this->seagullArray[seagullID].unknownCounter_0x16 += 1;
-                    } else if (this->seagullArray[seagullID].field12_0x1a > 0) {
+                    } else if (this->seagullArray[seagullID].field_0x1a > 0) {
                         this->seagullArray[seagullID].unknownCounter_0x16 -= 1;
                     }
                     if (this->seagullArray[seagullID].unknownCounter_0x16 < 24) {
@@ -110,9 +110,9 @@ namespace Map {
                     if (this->seagullArray[seagullID].unknownCounter_0x16 > 80) {
                         this->seagullArray[seagullID].unknownCounter_0x16 = 80;
                     }
-                    this->seagullArray[seagullID].field12_0x1a += 1;
-                    if (this->seagullArray[seagullID].field12_0x1a >= 20) {
-                        this->seagullArray[seagullID].field12_0x1a = -20;
+                    this->seagullArray[seagullID].field_0x1a += 1;
+                    if (this->seagullArray[seagullID].field_0x1a >= 20) {
+                        this->seagullArray[seagullID].field_0x1a = -20;
                     }
                 }
                 int const offsetX = (int)(sin(angleRadians) * this->seagullArray[seagullID].unknownCounter_0x16);

@@ -25,12 +25,12 @@ namespace UI {
             }
             DAT_ARRAY_00ec0348::instance[index].xSpace = xSpace;
             DAT_ARRAY_00ec0348::instance[index].blendStrength = 0.0f;
-            DAT_ARRAY_00ec0348::instance[index].field8_0x20 = field8;
+            DAT_ARRAY_00ec0348::instance[index].field_0x20 = field8;
             DAT_ARRAY_00ec0348::instance[index].x = x;
             DAT_ARRAY_00ec0348::instance[index].y = y;
             DAT_ARRAY_00ec0348::instance[index].width = width;
-            DAT_ARRAY_00ec0348::instance[index].field9_0x24 = field9;
-            DAT_ARRAY_00ec0348::instance[index].field10_0x28 = field10;
+            DAT_ARRAY_00ec0348::instance[index].field_0x24 = field9;
+            DAT_ARRAY_00ec0348::instance[index].field_0x28 = field10;
             DAT_ARRAY_00ec0348::instance[index].isValid = 2;
             DAT_ARRAY_00ec0348::instance[index].fadeMode = fadeMode;
             DAT_ARRAY_00ec0348::instance[index].field7_0x1c = 7;

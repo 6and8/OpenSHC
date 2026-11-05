@@ -32,10 +32,10 @@ namespace Map {
             }
             this->entityArray[entityID]._elapsedTimeOrGravityAccumulator
                 = DAT_EntityDefinedData::instance.ProjectileGravityPerEntityType[entityType];
-            this->entityArray[entityID].field37_0x5a
-                = (short)DAT_EntityDefinedData::instance.field7_0x2ac[entityType - 10];
+            this->entityArray[entityID].field_0x5a
+                = (short)DAT_EntityDefinedData::instance.field_0x2ac[entityType - 10];
             this->entityArray[entityID].gmLookupValue
-                = (short)DAT_EntityDefinedData::instance.field45_0x75c[entityType - 10];
+                = (short)DAT_EntityDefinedData::instance.field_0x75c[entityType - 10];
             switch (entityType) {
             case 11:
                 this->entityArray[entityID].originX += -1;

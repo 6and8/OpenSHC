@@ -109,8 +109,8 @@ namespace Game {
 
             MACRO_CALL_MEMBER(Synchrony::GameSynchronyState_Func::queueCommand, DAT_GameSynchronyState::ptr)(
                 Commands::GCT_CHANGE_GAME_INTENSITY_OR_BALANCE);
-            DAT_GameSynchronyState::instance.field234_0x1072e8 = -1;
-            DAT_GameSynchronyState::instance.field235_0x1072ec = -1;
+            DAT_GameSynchronyState::instance.field_0x1072e8 = -1;
+            DAT_GameSynchronyState::instance.field_0x1072ec = -1;
         }
 
     }

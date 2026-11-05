@@ -62,7 +62,7 @@ namespace Map {
             if (curveType == 0) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
-                this->entityArray[entityID].field62_0x94 = distance;
+                this->entityArray[entityID].field_0x94 = distance;
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 this->entityArray[entityID].startingAngle = MACRO_CALL_MEMBER(EntityState_Func::math_atan_1, this)(
@@ -70,7 +70,7 @@ namespace Map {
             } else if (curveType == 1) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
-                this->entityArray[entityID].field62_0x94 = distance;
+                this->entityArray[entityID].field_0x94 = distance;
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 this->entityArray[entityID].velocityUnk = MACRO_CALL_MEMBER(EntityState_Func::computeVelocity, this)(
@@ -78,7 +78,7 @@ namespace Map {
             } else if (curveType == 2) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
-                this->entityArray[entityID].field62_0x94 = distance;
+                this->entityArray[entityID].field_0x94 = distance;
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 if (this->entityArray[entityID].height > this->entityArray[entityID].targetZ) {
@@ -112,7 +112,7 @@ namespace Map {
             } else if (curveType == 6) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
-                this->entityArray[entityID].field62_0x94 = distance;
+                this->entityArray[entityID].field_0x94 = distance;
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 if ((short)distance > 150) {

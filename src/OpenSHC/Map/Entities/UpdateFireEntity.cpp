@@ -164,7 +164,7 @@ namespace Map {
         if (DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].someTracker == 0
             && DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].unknownAnimationFrameRelated == 1) {
             short const spreadDirection
-                = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].field79_0xb8;
+                = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].field_0xb8;
             int const tileHeight
                 = DAT_TileMapState::instance
                       .HeightLayer[DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].tile];
@@ -233,7 +233,7 @@ namespace Map {
                             DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].fireIntensity);
                     }
                 }
-                DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].field79_0xb8 += 1;
+                DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].field_0xb8 += 1;
             }
         }
         if (!(DAT_TileMapState::instance

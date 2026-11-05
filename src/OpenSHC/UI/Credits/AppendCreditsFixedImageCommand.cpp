@@ -16,7 +16,7 @@ namespace UI {
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].soundStream = gfxIndex;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].x = x;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].y = y;
-                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field10_0x28 = 7;
+                DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x28 = 7;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].field_0x1c = 0;
                 DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkCount::instance].width
                     = DAT_TextureRenderCoreObject::instance.loadedGfxArray[gfxIndex].width;

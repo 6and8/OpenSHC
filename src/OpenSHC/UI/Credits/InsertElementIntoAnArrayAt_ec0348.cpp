@@ -26,7 +26,7 @@ namespace UI {
             DAT_ARRAY_00ec0348::instance[index].isValid = state;
             DAT_ARRAY_00ec0348::instance[index].blendStrength = 0.0f;
             DAT_ARRAY_00ec0348::instance[index].xSpace = xSpace;
-            DAT_ARRAY_00ec0348::instance[index].field11_0x2c = field11;
+            DAT_ARRAY_00ec0348::instance[index].field_0x2c = field11;
             DAT_ARRAY_00ec0348::instance[index].x = x;
             DAT_ARRAY_00ec0348::instance[index].y = y;
             DAT_ARRAY_00ec0348::instance[index].width = width;

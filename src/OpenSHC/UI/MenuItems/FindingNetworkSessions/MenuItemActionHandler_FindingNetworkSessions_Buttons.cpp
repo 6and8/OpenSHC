@@ -3,8 +3,8 @@
 #include "OpenSHC/OS.func.hpp"
 #include "OpenSHC/Synchrony.func.hpp"
 #include "OpenSHC/Synchrony/GameSynchronyState.func.hpp"
-#include "OpenSHC/UI/MenuModalComposition.func.hpp"
 #include "OpenSHC/UI/MenuItems/FindingNetworkSessions.func.hpp"
+#include "OpenSHC/UI/MenuModalComposition.func.hpp"
 #include "OpenSHC/Commands/GameCommandType.hpp"
 #include "OpenSHC/DirectPlay/EnumSessionsFlagsEnum.hpp"
 #include "OpenSHC/UI/Enums/MenuModalType.hpp"
@@ -87,8 +87,7 @@ namespace UI {
                             DAT_GameSynchronyState::ptr)();
                         MACRO_CALL_MEMBER(OpenSHC::Synchrony::GameSynchronyState_Func::queueCommand,
                             DAT_GameSynchronyState::ptr)(OpenSHC::Commands::GCT_ASK_FOR_SLOT_ASSIGNMENT);
-                        MACRO_CALL_MEMBER(
-                            OpenSHC::Input::MouseState_Func::resetMouseState2, DAT_MouseState::ptr)();
+                        MACRO_CALL_MEMBER(OpenSHC::Input::MouseState_Func::resetMouseState2, DAT_MouseState::ptr)();
                     } else {
                         DPSESSIONDESC2 description;
                         MACRO_CALL(OpenSHC::OS_Func::_memset)(&description, 0, sizeof(description));
@@ -106,8 +105,7 @@ namespace UI {
                         MACRO_CALL_MEMBER(OpenSHC::UI::MenuModalComposition_Func::activateModalDialog,
                             DAT_MenuModalComposition1::ptr)(
                             OpenSHC::UI::Enums::MMT_CHOOSE_NETWORK_SERVICE_PROVIDER, FALSE);
-                        MACRO_CALL_MEMBER(
-                            OpenSHC::Input::MouseState_Func::resetMouseState2, DAT_MouseState::ptr)();
+                        MACRO_CALL_MEMBER(OpenSHC::Input::MouseState_Func::resetMouseState2, DAT_MouseState::ptr)();
                     }
                     break;
                 }

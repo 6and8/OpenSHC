@@ -1,14 +1,14 @@
-#include "OpenSHC/UI/MenuItems/WaitingForHost.func.hpp"
-
 #include "OpenSHC/Game/GameCore.func.hpp"
 #include "OpenSHC/OS.func.hpp"
 #include "OpenSHC/Synchrony.func.hpp"
 #include "OpenSHC/Synchrony/GameSynchronyState.func.hpp"
+#include "OpenSHC/UI/MenuItems/WaitingForHost.func.hpp"
 #include "OpenSHC/UI/MenuModalComposition.func.hpp"
 #include "OpenSHC/Commands/GameCommandType.hpp"
 #include "OpenSHC/DirectPlay/EnumSessionsFlagsEnum.hpp"
 #include "OpenSHC/UI/Enums/MenuModalType.hpp"
 #include "OpenSHC/UI/Enums/MenuViewType.hpp"
+#include "OpenSHC/wstring-literals.hpp"
 
 #include "OpenSHC/Globals/DAT_GameCore.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
@@ -16,7 +16,6 @@
 #include "OpenSHC/Globals/DPLAY_CurrentSessionGUID.hpp"
 #include "OpenSHC/Globals/GUID_APP.hpp"
 #include "OpenSHC/Globals/Menu_LobbyMenu.hpp"
-#include "OpenSHC/wstring-literals.hpp"
 
 namespace OpenSHC {
 namespace UI {

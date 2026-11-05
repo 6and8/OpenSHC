@@ -1,0 +1,16 @@
+src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp
+src/OpenSHC/Map/LandscapeState/createTree.cpp

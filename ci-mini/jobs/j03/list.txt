@@ -1,0 +1,9 @@
+src/OpenSHC/Map/Buildings/UpdateArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/MenuItems/WaitingForHost/MenuItemActionHandler_WaitingForHost_ConnectToLobby.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp

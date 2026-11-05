@@ -1,0 +1,5 @@
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp

@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Game/Skirmish/RecalculateAllies.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp
+src/OpenSHC/Map/Entities/EntityState/createSeagull.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp

@@ -1,0 +1,12 @@
+src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/UpdateBrewery.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Entities/UpdateCrossbowArrowEntity.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp

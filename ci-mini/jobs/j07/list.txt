@@ -1,0 +1,9 @@
+src/OpenSHC/Map/Trees/UpdateAppleTree.cpp
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp

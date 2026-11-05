@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp
+src/OpenSHC/Map/MapPropertiesState/updateEventYearsAndCommitBuildingAvailability.cpp
+src/OpenSHC/Map/Version/UpgradeMapLogicToVersion_102.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp

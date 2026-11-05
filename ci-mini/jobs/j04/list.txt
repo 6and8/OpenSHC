@@ -1,0 +1,8 @@
+src/OpenSHC/Map/Buildings/UpdateGranary.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Entities/EntityState/updateEntityMicroMovement.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp

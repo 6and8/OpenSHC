@@ -1,0 +1,14 @@
+src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/UpdateTower1.cpp
+src/OpenSHC/Synchrony/Actions/SelectionReplenishAmmo.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceLoss.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingStorageTypeForResourceType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLobbySetupStructure/restoreSkirmishLobbySetup.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/initBuildingCosts.cpp

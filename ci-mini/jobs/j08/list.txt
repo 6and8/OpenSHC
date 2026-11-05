@@ -1,0 +1,14 @@
+src/OpenSHC/Map/Buildings/UpdateMarketplace.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/MapPropertiesState/adjustEventMonthAndYearForSection1047.cpp
+src/OpenSHC/Map/Buildings/UpdateDogCage.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Synchrony/MemCopyFromParameter.cpp
+src/OpenSHC/UI/Helpers/LoadScoresFileToMemory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp

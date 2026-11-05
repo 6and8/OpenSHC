@@ -34,7 +34,8 @@ namespace UI {
             // FUNCTION: STRONGHOLDCRUSADER 0x004387D0
             void MenuItemActionHandler_BuildMenu_DeleteAction(int param_1, ...)
             {
-                if (DAT_GameSynchronyState::instance.syncStatus != 0 || DAT_GameSynchronyState::instance.saveRelated != 0
+                if (DAT_GameSynchronyState::instance.syncStatus != 0
+                    || DAT_GameSynchronyState::instance.saveRelated != 0
                     || DAT_TileMapState::instance.currentMapperCommand != OpenSHC::Commands::M_MAPPER_DELETE) {
                     return;
                 }
@@ -42,21 +43,22 @@ namespace UI {
                 if (DAT_ViewportRenderState::instance.viewportState.field_0x0 == 0) {
                     return;
                 }
-                MACRO_CALL_MEMBER(OpenSHC::Rendering::ViewportRenderState_Func::setupMouseTileXY,
-                    DAT_ViewportRenderState::ptr)();
+                MACRO_CALL_MEMBER(
+                    OpenSHC::Rendering::ViewportRenderState_Func::setupMouseTileXY, DAT_ViewportRenderState::ptr)();
                 int const tileY = DAT_ViewportRenderState::instance.viewportState.mouseTileY;
                 int const tileX = DAT_ViewportRenderState::instance.viewportState.mouseTileX;
                 DAT_TileMapState::instance.DAT_ClickedTileX = tileX;
                 DAT_TileMapState::instance.DAT_ClickedTileY = tileY;
                 if (DAT_GameCore::instance.gameMode_2 != 1 && DAT_GameCore::instance.gameMode_2 != 6) {
                     if (MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::PathFindingState_Func::isEnemyTooCloseUnk,
-                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID, tileX, tileY,
-                            DAT_GameSynchronyState::instance.currentGameMode == 0 ? 0x1e : 0x0f)) {
+                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID, tileX,
+                            tileY, DAT_GameSynchronyState::instance.currentGameMode == 0 ? 0x1e : 0x0f)) {
                         DAT_TileMapState::instance.demolishBlocked = 1;
                     }
                 }
                 if (DAT_MouseState::instance.leftClickStart == 0) {
-                    if (DAT_TileMapState::instance.placementOnWall != 0 || DAT_TileMapState::instance.placementOnMoat != 0
+                    if (DAT_TileMapState::instance.placementOnWall != 0
+                        || DAT_TileMapState::instance.placementOnMoat != 0
                         || DAT_MouseState::instance.leftClickState != 0) {
                         return;
                     }
@@ -68,37 +70,58 @@ namespace UI {
                 if (DAT_GameCore::instance.solitaryAltUDungeon != 0
                     && DAT_ViewportRenderState::instance.viewportState.mouseRayUnitID != 0) {
                     int const unitID = DAT_ViewportRenderState::instance.viewportState.mouseRayUnitID;
-                    if (DAT_UnitsState::instance.units[unitID].health != 0 && DAT_UnitsState::instance.units[unitID].unitType != OpenSHC::Map::Units::UT_LORD && DAT_UnitsState::instance.units[unitID].dying == 0
-                        && DAT_UnitsState::instance.units[unitID].owner == playerID && DAT_GameSynchronyState::instance.currentGameMode == 0) {
-                        if (DAT_UnitsState::instance.units[unitID].unitType == OpenSHC::Map::Units::UT_E_ENGINEER && DAT_UnitsState::instance.units[unitID].resourceToDeposit != 0) {
-                            MACRO_CALL(OpenSHC::Map::Entities_Func::IgniteFireAtMiniTile_Convenience)(DAT_UnitsState::instance.units[unitID].owner,
-                                DAT_UnitsState::instance.units[unitID].microXPosition, DAT_UnitsState::instance.units[unitID].microYPosition,
-                                DAT_UnitsState::instance.units[unitID].buildingHeight + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight - 8, 5);
+                    if (DAT_UnitsState::instance.units[unitID].health != 0
+                        && DAT_UnitsState::instance.units[unitID].unitType != OpenSHC::Map::Units::UT_LORD
+                        && DAT_UnitsState::instance.units[unitID].dying == 0
+                        && DAT_UnitsState::instance.units[unitID].owner == playerID
+                        && DAT_GameSynchronyState::instance.currentGameMode == 0) {
+                        if (DAT_UnitsState::instance.units[unitID].unitType == OpenSHC::Map::Units::UT_E_ENGINEER
+                            && DAT_UnitsState::instance.units[unitID].resourceToDeposit != 0) {
+                            MACRO_CALL(OpenSHC::Map::Entities_Func::IgniteFireAtMiniTile_Convenience)(
+                                DAT_UnitsState::instance.units[unitID].owner,
+                                DAT_UnitsState::instance.units[unitID].microXPosition,
+                                DAT_UnitsState::instance.units[unitID].microYPosition,
+                                DAT_UnitsState::instance.units[unitID].buildingHeight
+                                    + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight - 8,
+                                5);
                             MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
-                                DAT_EntityState::ptr)(0, DAT_UnitsState::instance.units[unitID].owner, 0, DAT_UnitsState::instance.units[unitID].microXPosition, DAT_UnitsState::instance.units[unitID].microYPosition,
-                                DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight + DAT_UnitsState::instance.units[unitID].buildingHeight, 0, 0, 0,
-                                OpenSHC::Map::Entities::EntityTypeInt__ET_EXPLOSION, 0);
+                                DAT_EntityState::ptr)(0, DAT_UnitsState::instance.units[unitID].owner, 0,
+                                DAT_UnitsState::instance.units[unitID].microXPosition,
+                                DAT_UnitsState::instance.units[unitID].microYPosition,
+                                DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight
+                                    + DAT_UnitsState::instance.units[unitID].buildingHeight,
+                                0, 0, 0, OpenSHC::Map::Entities::EntityTypeInt__ET_EXPLOSION, 0);
                         }
                         DAT_UnitsState::instance.units[unitID].dying = 1;
                         DAT_UnitsState::instance.units[unitID].tunnelerFinishedDigging = 1;
                         DAT_UnitsState::instance.units[unitID].animationCycleNumber = 0;
-                        DAT_UnitsState::instance.units[unitID].state.generic = OpenSHC::Map::Units::States::US_STONE_DEATH_01;
+                        DAT_UnitsState::instance.units[unitID].state.generic
+                            = OpenSHC::Map::Units::States::US_STONE_DEATH_01;
                         MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
-                            DAT_EntityState::ptr)(0, 0, 0, DAT_UnitsState::instance.units[unitID].microXPosition, DAT_UnitsState::instance.units[unitID].microYPosition,
-                            DAT_UnitsState::instance.units[unitID].buildingHeight + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight, DAT_UnitsState::instance.units[unitID].microXPosition + 1,
-                            DAT_UnitsState::instance.units[unitID].microYPosition + 1, DAT_UnitsState::instance.units[unitID].buildingHeight + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight, (OpenSHC::Map::Entities::EntityType)0x1e, 0);
+                            DAT_EntityState::ptr)(0, 0, 0, DAT_UnitsState::instance.units[unitID].microXPosition,
+                            DAT_UnitsState::instance.units[unitID].microYPosition,
+                            DAT_UnitsState::instance.units[unitID].buildingHeight
+                                + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight,
+                            DAT_UnitsState::instance.units[unitID].microXPosition + 1,
+                            DAT_UnitsState::instance.units[unitID].microYPosition + 1,
+                            DAT_UnitsState::instance.units[unitID].buildingHeight
+                                + DAT_UnitsState::instance.units[unitID].terrainOrClimbHeight,
+                            (OpenSHC::Map::Entities::EntityType)0x1e, 0);
                         MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                            DAT_UnitsState::instance.units[unitID].x, DAT_UnitsState::instance.units[unitID].y, OpenSHC::DE::SHCDE::eSFX(0x97));
+                            DAT_UnitsState::instance.units[unitID].x, DAT_UnitsState::instance.units[unitID].y,
+                            OpenSHC::DE::SHCDE::eSFX(0x97));
                         return;
                     }
                 }
                 DAT_TileMapState::instance.buildingPlacementFailReason = 0;
-                if (MACRO_CALL_MEMBER(OpenSHC::Map::TileMapState_Func::spreadFlagPlacementAlgorithm,
-                        DAT_TileMapState::ptr)(
-                        playerID, DAT_TileMapState::instance.DAT_ClickedTileX, DAT_TileMapState::instance.DAT_ClickedTileY)) {
+                if (MACRO_CALL_MEMBER(
+                        OpenSHC::Map::TileMapState_Func::spreadFlagPlacementAlgorithm, DAT_TileMapState::ptr)(playerID,
+                        DAT_TileMapState::instance.DAT_ClickedTileX, DAT_TileMapState::instance.DAT_ClickedTileY)) {
                     DAT_WallAndPitchState::instance.countdown = 0;
-                    DAT_GameSynchronyState::instance.DAT_GameCommandParam0 = DAT_TileMapState::instance.DAT_ClickedTileX;
-                    DAT_GameSynchronyState::instance.DAT_GameCommandParam1 = DAT_TileMapState::instance.DAT_ClickedTileY;
+                    DAT_GameSynchronyState::instance.DAT_GameCommandParam0
+                        = DAT_TileMapState::instance.DAT_ClickedTileX;
+                    DAT_GameSynchronyState::instance.DAT_GameCommandParam1
+                        = DAT_TileMapState::instance.DAT_ClickedTileY;
                     MACRO_CALL_MEMBER(OpenSHC::Synchrony::GameSynchronyState_Func::queueCommand,
                         DAT_GameSynchronyState::ptr)((OpenSHC::Commands::GameCommandType)0x61);
                     return;

@@ -14,12 +14,12 @@ namespace Synchrony {
 
     // FUNCTION: STRONGHOLDCRUSADER 0x00480210
     void GameSynchronyState::scheduleReceivedCommand(
-        GameCommandType commandCategory, DWORD dxPlayerHandle, dword time, void* address)
+        char commandCategory, DWORD dxPlayerHandle, dword time, void* address)
     {
         if (this->DAT_GameCommandArrayIndex >= 200) {
             return;
         }
-        if ((char)commandCategory == 0x4d) {
+        if (commandCategory == 0x4d) {
             DAT_GameSynchronyState::instance.unknownIncrementBy40_01 += 40;
             if (MACRO_CALL_MEMBER(GameSynchronyState_Func::translateMultiplayerIDsIntoPlayerIDs, this)(dxPlayerHandle)
                 == DAT_GameSynchronyState::instance.currentPlayerSlotID) {
@@ -41,7 +41,7 @@ namespace Synchrony {
             1260, '\0', &this->DAT_GameCommandArray[this->DAT_GameCommandArrayIndex].parameters);
         this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].stateUnk = Commands::GCS_UNPROCESSED;
         this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].playerUnk = dxPlayerHandle;
-        this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType = (char)commandCategory;
+        this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType = commandCategory;
         this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].time = time;
         this->DAT_CommandParameterOffset = 0;
         this->DAT_CommandActionPlan = Commands::GCS_SCHEDULE_RECEIVED_COMMAND;

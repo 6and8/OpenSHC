@@ -45,8 +45,7 @@ namespace Synchrony {
         this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].time = time;
         this->DAT_CommandParameterOffset = 0;
         this->DAT_CommandActionPlan = Commands::GCS_SCHEDULE_RECEIVED_COMMAND;
-        (&DAT_ProtocolDefinedData::instance
-                .commandFunctions)[this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType]();
+        DAT_ProtocolDefinedData::instance.commandFunctions[this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType]();
         if (0 < (int)this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].time) {
             MACRO_CALL_MEMBER(IO::LowLevelMemory_Func::copyData, DAT_LowLevelMemory::ptr)(
                 this->DAT_CommandSize, address, &this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].parameters);
@@ -69,7 +68,7 @@ namespace Synchrony {
         this->DAT_GameCommandParam0 = 0;
         this->DAT_CommandActionPlan = Commands::GCS_EXECUTE;
         this->DAT_CommandParameterOffset = 0;
-        (&DAT_ProtocolDefinedData::instance.commandFunctions)[command.commandType]();
+        DAT_ProtocolDefinedData::instance.commandFunctions[command.commandType]();
         MACRO_CALL_MEMBER(GameSynchronyState_Func::clearGameCommandEntry, this)(this->DAT_CurrentGameCommandID);
     }
 

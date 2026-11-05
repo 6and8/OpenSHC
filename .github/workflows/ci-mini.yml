@@ -1,0 +1,46 @@
+# Variant sweep with minimal closure builds (win/cimini.py): one matrix job per folder ci-mini/jobs/<job>/. Each job
+# builds only its targets + their /GL callees (list.txt), then each variant in turn (one compile + a small link,
+# ~2 min), and uploads every DLL/PDB as artifact mini-<job>. No game files here: reccmp runs locally.
+name: ci-mini
+on:
+  push:
+    branches: ['civar/**']
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      jobs: ${{ steps.l.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: echo "jobs=$(ls ci-mini/jobs | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
+  build:
+    needs: list
+    runs-on: windows-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJson(needs.list.outputs.jobs) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: jom
+        shell: pwsh
+        run: |
+          Invoke-WebRequest https://download.qt.io/official_releases/jom/jom_1_1_4.zip -OutFile jom.zip
+          Expand-Archive jom.zip -DestinationPath "$env:RUNNER_TEMP\jom"
+      - name: build base + variants
+        shell: cmd
+        run: python ci-mini\mini_job.py ${{ matrix.job }} "%RUNNER_TEMP%\jom\jom.exe"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mini-${{ matrix.job }}
+          path: out
+          retention-days: 2

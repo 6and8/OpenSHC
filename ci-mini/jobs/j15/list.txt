@@ -1,0 +1,3 @@
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp

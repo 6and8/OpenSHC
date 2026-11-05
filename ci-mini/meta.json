@@ -1,0 +1,898 @@
+{
+"j00/v000": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt00_L30.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt01_L34.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt02_L35.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt03_L36.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt04_L37.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt05_L38.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt06_L40.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt07_L41.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt08_L42.cpp"
+],
+"j00/v009": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt09_L43.cpp"
+],
+"j00/v010": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt10_L47.cpp"
+],
+"j00/v011": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt11_L48.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"cmp00_L51.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"cmp01_L54.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"cmp02_L57.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse03_L64.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse04_L89.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse05_L123.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse06_L160.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse07_L182.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"ifelse08_L232.cpp"
+],
+"j01/v009": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"stmt09_L146.cpp"
+],
+"j01/v010": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"stmt10_L185.cpp"
+],
+"j01/v011": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"stmt11_L192.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse00_L60.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse01_L66.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse02_L78.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse03_L97.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse04_L104.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse05_L117.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse06_L123.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse07_L149.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse08_L171.cpp"
+],
+"j02/v009": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse09_L178.cpp"
+],
+"j02/v010": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse10_L188.cpp"
+],
+"j02/v011": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse11_L199.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse00_L62.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse01_L77.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse02_L98.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse03_L126.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse04_L144.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse05_L195.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse06_L212.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse07_L229.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse08_L242.cpp"
+],
+"j03/v009": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse09_L285.cpp"
+],
+"j03/v010": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse10_L297.cpp"
+],
+"j03/v011": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse11_L310.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse12_L323.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse13_L336.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse14_L355.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse15_L381.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse16_L414.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse17_L445.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse18_L458.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"ifelse19_L471.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt20_L70.cpp"
+],
+"j04/v009": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt21_L78.cpp"
+],
+"j04/v010": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt22_L91.cpp"
+],
+"j04/v011": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt23_L99.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt24_L119.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt25_L127.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt26_L145.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt27_L187.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt28_L196.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt29_L204.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt30_L213.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt31_L221.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt32_L230.cpp"
+],
+"j05/v009": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt33_L243.cpp"
+],
+"j05/v010": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt34_L298.cpp"
+],
+"j05/v011": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt35_L311.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"cmp00_L23.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"cmp01_L30.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"cmp02_L36.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"cmp03_L42.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"ifelse04_L23.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"ifelse05_L30.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"ifelse06_L36.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"ifelse07_L42.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"stmt08_L13.cpp"
+],
+"j06/v009": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"stmt09_L14.cpp"
+],
+"j06/v010": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"stmt10_L15.cpp"
+],
+"j06/v011": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"stmt11_L16.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp00_L106.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp01_L111.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp02_L111.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp03_L208.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp04_L221.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp05_L227.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"cmp06_L243.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"ifelse07_L30.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"ifelse08_L31.cpp"
+],
+"j07/v009": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"ifelse09_L106.cpp"
+],
+"j07/v010": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"ifelse10_L171.cpp"
+],
+"j07/v011": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt11_L96.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt12_L103.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt13_L104.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt14_L107.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt15_L108.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt16_L115.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt17_L116.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt18_L119.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt19_L120.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt20_L123.cpp"
+],
+"j08/v009": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt21_L124.cpp"
+],
+"j08/v010": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt22_L127.cpp"
+],
+"j08/v011": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt23_L130.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp00_L23.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp01_L27.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp02_L33.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp03_L43.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp04_L50.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp05_L59.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp06_L74.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp07_L83.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"cmp08_L110.cpp"
+],
+"j09/v009": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"ifelse09_L73.cpp"
+],
+"j09/v010": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"stmt10_L102.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse00_L27.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse01_L34.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse02_L42.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse03_L54.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse04_L68.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse05_L78.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse06_L92.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse07_L102.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"ifelse08_L138.cpp"
+],
+"j10/v009": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"stmt09_L36.cpp"
+],
+"j10/v010": [
+"src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp",
+"ifelse00_L22.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse00_L13.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse01_L32.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse02_L42.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse03_L51.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse04_L81.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse05_L92.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse06_L107.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/Map/Trees/UpdateAppleTree.cpp",
+"ifelse07_L120.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/Game/Skirmish/SkirmishLeaderboard_DeleteEntry.cpp",
+"cmp00_L14.cpp"
+],
+"j11/v009": [
+"src/OpenSHC/Game/Skirmish/SkirmishLeaderboard_DeleteEntry.cpp",
+"stmt01_L20.cpp"
+],
+"j11/v010": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"stmt12_L17.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse12_L206.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse13_L217.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse14_L236.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse15_L248.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse16_L260.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse17_L272.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse18_L284.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"ifelse19_L296.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"stmt12_L204.cpp"
+],
+"j12/v009": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"stmt13_L213.cpp"
+],
+"j12/v010": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"stmt24_L250.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"cmp00_L24.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"cmp01_L26.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"cmp02_L42.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"cmp03_L49.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"cmp04_L59.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"stmt05_L29.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"stmt06_L43.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOxTether.cpp",
+"ifelse00_L44.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/Map/Buildings/UpdateOxTether.cpp",
+"stmt01_L47.cpp"
+],
+"j13/v009": [
+"src/OpenSHC/Map/Buildings/UpdateOxTether.cpp",
+"stmt02_L92.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"cmp00_L32.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"cmp01_L38.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"cmp02_L144.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"ifelse03_L103.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"stmt04_L76.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"stmt05_L109.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"stmt06_L142.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"cmp00_L115.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"cmp01_L139.cpp"
+],
+"j14/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"stmt02_L79.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"cmp00_L22.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"cmp01_L35.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"cmp02_L47.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"stmt03_L56.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"stmt04_L68.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"stmt05_L76.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"stmt06_L93.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"ifelse00_L39.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"ifelse01_L58.cpp"
+],
+"j15/v009": [
+"src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp",
+"stmt00_L71.cpp"
+],
+"j15/v010": [
+"src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp",
+"stmt01_L72.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"cmp00_L162.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"cmp01_L170.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse02_L57.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse03_L85.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse04_L143.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"stmt05_L99.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/Map/LandscapeState/createTree.cpp",
+"cmp00_L26.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/Map/LandscapeState/createTree.cpp",
+"stmt01_L69.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/Map/LandscapeState/createTree.cpp",
+"stmt02_L135.cpp"
+],
+"j16/v009": [
+"src/OpenSHC/Map/LandscapeState/createTree.cpp",
+"stmt03_L136.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"cmp00_L101.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"cmp01_L146.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"cmp02_L154.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"ifelse03_L55.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"ifelse04_L86.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/Map/Buildings/UpdateFireBallistaBuilding.cpp",
+"ifelse05_L128.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/UI/Helpers/ClearSiegeInformationArray2.cpp",
+"stmt00_L15.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/UI/Helpers/ClearSiegeInformationArray2.cpp",
+"stmt01_L16.cpp"
+],
+"j17/v008": [
+"src/OpenSHC/UI/Helpers/ClearSiegeInformationArray2.cpp",
+"stmt02_L17.cpp"
+],
+"j17/v009": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"cmp00_L28.cpp"
+],
+"j17/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"stmt01_L34.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp",
+"cmp00_L78.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp",
+"ifelse01_L145.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp",
+"ifelse02_L153.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp",
+"stmt03_L146.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp",
+"stmt04_L166.cpp"
+],
+"j18/v005": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt12_L49.cpp"
+],
+"j18/v006": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt13_L50.cpp"
+],
+"j18/v007": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt14_L51.cpp"
+],
+"j18/v008": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"stmt15_L73.cpp"
+],
+"j18/v009": [
+"src/OpenSHC/Global/TestOSVersion.cpp",
+"cmp00_L13.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"cmp00_L20.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"cmp01_L33.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"cmp02_L42.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"cmp03_L54.cpp"
+],
+"j19/v004": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"ifelse04_L18.cpp"
+],
+"j19/v005": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt36_L324.cpp"
+],
+"j19/v006": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt37_L337.cpp"
+],
+"j19/v007": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt38_L356.cpp"
+],
+"j19/v008": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"stmt39_L382.cpp"
+],
+"j19/v009": [
+"src/OpenSHC/Map/Buildings/UpdateKillingPit.cpp",
+"cmp00_L21.cpp"
+]
+}

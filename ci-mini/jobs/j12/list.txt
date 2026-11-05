@@ -1,0 +1,5 @@
+src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp

@@ -1,0 +1,3 @@
+src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/Global/TestOSVersion.cpp

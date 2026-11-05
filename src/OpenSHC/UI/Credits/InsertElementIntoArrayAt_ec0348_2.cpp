@@ -15,7 +15,7 @@ namespace UI {
             }
             int index = -1;
             for (int i = 0; i < 24; i++) {
-                if (DAT_ARRAY_00ec0348::instance[i].isValid == 0) {
+                if (DAT_ARRAY_00ec0348::instance[i].type == 0) {
                     index = i;
                     break;
                 }
@@ -31,7 +31,7 @@ namespace UI {
             DAT_ARRAY_00ec0348::instance[index].width = width;
             DAT_ARRAY_00ec0348::instance[index].field_0x24 = field9;
             DAT_ARRAY_00ec0348::instance[index].field_0x28 = field10;
-            DAT_ARRAY_00ec0348::instance[index].isValid = 2;
+            DAT_ARRAY_00ec0348::instance[index].type = 2;
             DAT_ARRAY_00ec0348::instance[index].fadeMode = fadeMode;
             DAT_ARRAY_00ec0348::instance[index].field_0x1c = 7;
             if (fadeMode == 1) {

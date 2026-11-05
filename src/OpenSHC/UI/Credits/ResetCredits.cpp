@@ -20,7 +20,7 @@ namespace UI {
         void ResetCredits()
         {
             for (int i = 0; i < 24; i++) {
-                DAT_ARRAY_00ec0348::instance[i].isValid = 0;
+                DAT_ARRAY_00ec0348::instance[i].type = 0;
             }
             DAT_UnknownBinkCount::instance = 0;
             INT_00ec083c::instance = 0.0f;

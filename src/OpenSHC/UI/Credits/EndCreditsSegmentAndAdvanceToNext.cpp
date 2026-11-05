@@ -42,7 +42,7 @@ namespace UI {
             INT_00eb9ac0::instance = 0;
             DAT_00ed2bd8::instance = 0;
             for (int i = 0; i < 24; i++) {
-                DAT_ARRAY_00ec0348::instance[i].isValid = 0;
+                DAT_ARRAY_00ec0348::instance[i].type = 0;
             }
             for (DAT_UnknownBinkIndex::instance += 1; DAT_UnknownBinkIndex::instance < DAT_UnknownBinkCount::instance;
                 DAT_UnknownBinkIndex::instance += 1) {

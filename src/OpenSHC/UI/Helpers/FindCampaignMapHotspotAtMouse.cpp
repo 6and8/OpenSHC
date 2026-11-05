@@ -8,12 +8,12 @@ namespace OpenSHC {
 namespace UI {
 
     // FUNCTION: STRONGHOLDCRUSADER 0x004DC140
-    undefined4 Helpers::FindCampaignMapHotspotAtMouse()
+    int Helpers::FindCampaignMapHotspotAtMouse()
     {
         int const mouseY = DAT_MouseState::instance.screenSpaceY;
         int const mouseX = DAT_MouseState::instance.screenSpaceX;
         for (int i = 0; i < 24; ++i) {
-            if ((DAT_ARRAY_00ec0348::instance[i].isValid == 3 || DAT_ARRAY_00ec0348::instance[i].isValid == 1)
+            if ((DAT_ARRAY_00ec0348::instance[i].type == 3 || DAT_ARRAY_00ec0348::instance[i].type == 1)
                 && mouseX - DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth >= DAT_ARRAY_00ec0348::instance[i].x
                 && mouseX - DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth
                     < DAT_ARRAY_00ec0348::instance[i].x + DAT_ARRAY_00ec0348::instance[i].width

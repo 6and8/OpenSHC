@@ -15,7 +15,7 @@ namespace UI {
             }
             int index = -1;
             for (int i = 0; i < 24; i++) {
-                if (DAT_ARRAY_00ec0348::instance[i].isValid == 0) {
+                if (DAT_ARRAY_00ec0348::instance[i].type == 0) {
                     index = i;
                     break;
                 }
@@ -23,7 +23,7 @@ namespace UI {
             if (index == -1) {
                 return;
             }
-            DAT_ARRAY_00ec0348::instance[index].isValid = 3;
+            DAT_ARRAY_00ec0348::instance[index].type = 3;
             DAT_ARRAY_00ec0348::instance[index].blendStrength = 0.0f;
             DAT_ARRAY_00ec0348::instance[index].xSpace = xSpace;
             DAT_ARRAY_00ec0348::instance[index].x = x;

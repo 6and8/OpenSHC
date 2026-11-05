@@ -72,7 +72,7 @@ namespace Map {
             short pathError; // 0x00000072 length: 2
             short pathAxisCase; // 0x00000074 length: 2
             byte unused_0x76[2]; // 0x00000076 length: 2
-            int speedUnk; // 0x00000078 length: 4
+            float speedUnk; // 0x00000078 length: 4
             float vCos; // 0x0000007C length: 4
             float vSin; // 0x00000080 length: 4
             short travelledDistance; // 0x00000084 length: 2

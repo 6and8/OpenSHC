@@ -2449,7 +2449,7 @@ SHC_3BB0A8C1_0x004082A0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004083A0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004084A0 | 88.8% | Pending
+SHC_3BB0A8C1_0x004084A0 | 89.1% | Pending
 
 SHC_3BB0A8C1_0x00408770 | 0.0% | Pending
 
@@ -5539,7 +5539,7 @@ SHC_3BB0A8C1_0x004179B0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00417AA0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00417B90 | 99.2% | Register allocation differs
+SHC_3BB0A8C1_0x00417B90 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00417FD0 | 100.0% | Reimplemented
 
@@ -6083,13 +6083,13 @@ SHC_3BB0A8C1_0x0041A860 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041A8D0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041ADE0 | 71.7% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041ADE0 | 74.5% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B11E | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041B190 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041B2B0 | 81.8% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041B2B0 | 84.7% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B6A0 | 0.0% | Pending
 
@@ -13407,7 +13407,7 @@ SHC_3BB0A8C1_0x0043A8E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0043A960 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0043A9F0 | 74.1% | Reimplemented, asm differs
+SHC_3BB0A8C1_0x0043A9F0 | 90.9% | Reimplemented, asm differs
 
 SHC_3BB0A8C1_0x0043AF40 | 100.0% | Reimplemented
 
@@ -36193,7 +36193,7 @@ SHC_3BB0A8C1_0x004DB180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DB210 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
-SHC_3BB0A8C1_0x004DB300 | 71.1% | Reimplemented, asm differs (store order of the parameter globals)
+SHC_3BB0A8C1_0x004DB300 | 76.3% | Reimplemented, asm differs (store order of the parameter globals)
 
 SHC_3BB0A8C1_0x004DB390 | 100.0% | Reimplemented (counted: only the 100.0 constant and _ftol2 symbol names differ)
 

@@ -25,8 +25,8 @@ namespace UI {
         INT_00eb9b20::instance = 1;
         INT_00eb9b24::instance = strlen(DAT_ArrayOfStoredMenuStrings::instance[storedMenuStringIndex]);
         DAT_00eb9b30::instance = param_2;
-        DAT_00eb9b3c::instance = param_5;
         DAT_00eb9b34::instance = param_3;
+        DAT_00eb9b3c::instance = param_5;
         DAT_00eb9b40::instance = fontSize;
         DAT_00eb9b28::instance = 0;
         DAT_00eb9b38::instance = allowedWidth;

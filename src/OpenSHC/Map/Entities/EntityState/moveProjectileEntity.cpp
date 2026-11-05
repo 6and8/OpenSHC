@@ -18,8 +18,8 @@ namespace Map {
         BOOLEnum EntityState::moveProjectileEntity(int entityID)
         {
             double speed = this->entityArray[entityID].speedUnk;
-            double vCos = this->entityArray[entityID].vCos;
             double vSin = this->entityArray[entityID].vSin;
+            double vCos = this->entityArray[entityID].vCos;
             int curHeight = this->entityArray[entityID].height - this->entityArray[entityID].startingHeight;
             int heightStep = 0;
             if (this->entityArray[entityID].someCounter_OR_hitGround != 0) {

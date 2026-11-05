@@ -88,18 +88,7 @@ namespace UI {
         }
         rateOrPosition = (int)(short)DAT_BuildingsState::instance.buildings[_displayNumber].buildingType;
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
-        if (rateOrPosition - 0x47U <= 2) {
-            rateOrPosition = (int)(short)DAT_BuildingsState::instance.buildings[_displayNumber].quarryStockpileID;
-            if ((rateOrPosition != 0)
-                && (DAT_BuildingsState::instance.buildings[rateOrPosition].uid
-                    == DAT_BuildingsState::instance.buildings[_displayNumber].uidWhenPlaced)) {
-                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
-                    OpenSHC::DE::SHCDE::TEXT_IN_KEEP,
-                    (int)((short)DAT_BuildingsState::instance.buildings[rateOrPosition].buildingType * 2 - 0x50),
-                    DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
-                    OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE);
-            }
-        } else {
+        if (rateOrPosition - 0x47U > 2) {
             _blendStrength = 0;
             _keepOffsetX = FALSE;
             _fontSize = 0x10;
@@ -111,6 +100,17 @@ namespace UI {
                 MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                     DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_KEEP, rateOrPosition * 2 - 0x50),
                 _xPos, _displayNumber, _alignment, _color, _fontSize, _keepOffsetX, _blendStrength);
+        } else {
+            rateOrPosition = (int)(short)DAT_BuildingsState::instance.buildings[_displayNumber].quarryStockpileID;
+            if ((rateOrPosition != 0)
+                && (DAT_BuildingsState::instance.buildings[rateOrPosition].uid
+                    == DAT_BuildingsState::instance.buildings[_displayNumber].uidWhenPlaced)) {
+                MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
+                    OpenSHC::DE::SHCDE::TEXT_IN_KEEP,
+                    (int)((short)DAT_BuildingsState::instance.buildings[rateOrPosition].buildingType * 2 - 0x50),
+                    DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3,
+                    OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE);
+            }
         }
         _displayNumber = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                              .taxesSliderUI;

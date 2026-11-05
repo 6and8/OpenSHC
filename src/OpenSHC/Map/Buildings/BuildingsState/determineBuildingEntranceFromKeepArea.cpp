@@ -133,11 +133,11 @@ namespace Map {
 
             // Accept any walkable tile next to the building
             tileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCount[size];
-            if (tileCount <= 0) {
-                index = 0;
-            } else {
+            if (tileCount > 0) {
                 index = (short)this->buildings[buildingID].entranceAttemptTileIndex % tileCount;
                 this->buildings[buildingID].entranceAttemptTileIndex = index;
+            } else {
+                index = 0;
             }
             for (int tries = 0; tries < tileCount; ++tries) {
                 MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::setupBuildingEntrancesOffset, this)(

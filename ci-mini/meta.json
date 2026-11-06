@@ -1,0 +1,170 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp00_L41.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp01_L65.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp02_L113.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp03_L127.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp04_L129.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp05_L139.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp06_L149.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp07_L172.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp08_L209.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp09_L227.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp10_L232.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp11_L237.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp12_L270.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp13_L299.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp14_L379.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp15_L379.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp16_L388.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp17_L399.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp18_L415.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"cmp19_L464.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse20_L74.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse21_L106.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse22_L376.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse23_L399.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse24_L429.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse25_L489.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse26_L518.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ifelse27_L537.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"intcast40_L237.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"intcast41_L270.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ne36_L175.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ne37_L191.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ne38_L305.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"ne39_L524.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt28_L39.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt29_L330.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt30_L348.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt31_L372.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt32_L465.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt33_L470.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt34_L478.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"stmt35_L485.cpp"
+]
+}

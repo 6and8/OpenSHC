@@ -36259,7 +36259,7 @@ SHC_3BB0A8C1_0x004DC9E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DCC70 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DCC90 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DCC90 | 79.3% | Reimplemented, asm differs (compare loop: original indexes one record pointer, ours biases it)
 
 SHC_3BB0A8C1_0x004DD0C0 | 0.0% | Pending
 

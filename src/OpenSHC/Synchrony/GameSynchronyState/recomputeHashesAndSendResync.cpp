@@ -40,8 +40,8 @@ namespace Synchrony {
                 int const hash = MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::computeHash, DAT_DirectionAlgorithmState::ptr)(1028, (int*)&DAT_UnitsState::instance.units[i].logicalState)
                     + (DAT_UnitsState::instance.units[i].animationLeapTicksTotal + DAT_UnitsState::instance.units[i].animationSpeed + DAT_UnitsState::instance.units[i].animationTicker);
                 unitSum += hash;
-                this->HASH_Units[this->currentPlayerSlotID][i] = hash;
                 DAT_UnitsState::instance.units[i].field_0x41c = saved41c;
+                this->HASH_Units[this->currentPlayerSlotID][i] = hash;
                 DAT_UnitsState::instance.units[i].field_0x420 = saved420;
             }
             this->HASH_PartialHashPerPlayer.player[this->currentPlayerSlotID].domain[0] = unitSum;

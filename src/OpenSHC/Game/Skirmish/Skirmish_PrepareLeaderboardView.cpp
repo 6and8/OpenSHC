@@ -42,7 +42,8 @@ namespace Game {
                 if (DAT_MissionDefinedData::instance.descending == 1) {
                     for (int i = 0; i < count; ++i) {
                         if (INT_ARRAY_00eb0e48::instance[i] != 0) {
-                            INT_ARRAY_00eb96d8::instance[DAT_00eb9b60::instance++] = i;
+                            int* slotPtr = &INT_ARRAY_00eb96d8::instance[DAT_00eb9b60::instance++];
+                            *slotPtr = i;
                         }
                     }
                 } else if (DAT_MissionDefinedData::instance.descending == 0) {

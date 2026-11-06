@@ -70,7 +70,9 @@ namespace Map {
                 DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
             }
         } else {
-            DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 0;
+            // assignment via a local stack pointer is required for 100% match
+            short* renderAnimationPtr = &DAT_BuildingsState::instance.buildings[buildingID].renderAnimation;
+            *renderAnimationPtr = 0;
             DAT_BuildingsState::instance.buildings[buildingID].displayOwnerFlag = 0;
             DAT_TileMapState::instance.showNoRubbleWhenDestroyingBuilding = 1;
             MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::destroyBuilding, DAT_BuildingsState::ptr)(

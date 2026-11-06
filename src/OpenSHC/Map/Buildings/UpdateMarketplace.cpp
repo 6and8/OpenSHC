@@ -35,7 +35,9 @@ namespace Map {
             DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive = 1;
             DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
         } else if (DAT_GameState::instance.mapAndTime.traderRelated2 == 2) {
-            DAT_BuildingsState::instance.buildings[buildingID].renderAnimation = 1;
+            // assignment via a local stack pointer is required for 100% match
+            short* renderAnimationPtr = &DAT_BuildingsState::instance.buildings[buildingID].renderAnimation;
+            *renderAnimationPtr = 1;
             if (DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive != 1) {
                 DAT_BuildingsState::instance.buildings[buildingID].buildingIsVisuallyActive = 1;
                 DAT_BuildingsState::instance.buildings[buildingID].animationFrame = 0;

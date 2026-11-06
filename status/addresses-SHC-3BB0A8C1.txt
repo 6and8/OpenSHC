@@ -5509,7 +5509,7 @@ SHC_3BB0A8C1_0x00415A80 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00415BF0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00415C90 | 99.1% | Register allocation differs
+SHC_3BB0A8C1_0x00415C90 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00415E80 | 99.7% | Only a backward branch offset differs (3 bytes of alignment padding)
 
@@ -6229,7 +6229,7 @@ SHC_3BB0A8C1_0x004205B0 | 75.7% | Register allocation differs
 
 SHC_3BB0A8C1_0x00420760 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00420A30 | 99.1% | Register allocation differs
+SHC_3BB0A8C1_0x00420A30 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00420BF0 | 100.0% | Reimplemented
 
@@ -34147,7 +34147,7 @@ SHC_3BB0A8C1_0x004C6820 | 95.7% | Reimplemented, sub eax, 1 is add eax, -1
 
 SHC_3BB0A8C1_0x004C6880 | 95.7% | Reimplemented, sub esi, 1 is add esi, -1
 
-SHC_3BB0A8C1_0x004C68D0 | 51.2% | Pending
+SHC_3BB0A8C1_0x004C68D0 | 74.2% | Pending
 
 SHC_3BB0A8C1_0x004C6B20 | 95.3% | Pending
 
@@ -35567,7 +35567,7 @@ SHC_3BB0A8C1_0x004D5180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D52A0 | 43.3% | Reimplemented, asm differs (register allocation around the count; the count and array are one struct in the original)
 
-SHC_3BB0A8C1_0x004D5370 | 12.0% | Reimplemented, asm differs (count and array are one struct in the original: count is reloaded after each copy)
+SHC_3BB0A8C1_0x004D5370 | 34.5% | Reimplemented, asm differs (count and array are one struct in the original: count is reloaded after each copy)
 
 SHC_3BB0A8C1_0x004D53A0 | 0.0% | Pending
 
@@ -36023,7 +36023,7 @@ SHC_3BB0A8C1_0x004D9270 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D9290 | 76.4% | Pending
 
-SHC_3BB0A8C1_0x004D9400 | 84.0% | Pending
+SHC_3BB0A8C1_0x004D9400 | 85.4% | Pending
 
 SHC_3BB0A8C1_0x004D9520 | 0.0% | Pending
 

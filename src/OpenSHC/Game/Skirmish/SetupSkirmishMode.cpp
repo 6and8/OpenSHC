@@ -45,7 +45,7 @@ namespace Game {
                 MACRO_CALL_MEMBER(Text::UserTextHandler_Func::getTextArrayPointer, DAT_UserTextHandlerState::ptr)(0));
             MACRO_CALL_MEMBER(Synchrony::GameSynchronyState_Func::queueCommand, DAT_GameSynchronyState::ptr)(
                 Commands::GCT_ASK_FOR_SLOT_ASSIGNMENT);
-            for (int i = 0; i < 9; ++i) {
+            for (int i = 0; i != 9; ++i) {
                 DAT_GameSynchronyState::instance.DAT_PlayerSlotArraySomeValue[i] = 1;
             }
             DAT_GameSynchronyState::instance.skirmishRelated1 = -1;

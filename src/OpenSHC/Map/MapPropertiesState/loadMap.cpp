@@ -87,8 +87,8 @@ namespace Map {
         }
         DAT_GameState::instance.mapAndTime.unitJesterRelated = (short)jester;
         DAT_GameSynchronyState::instance.currentPlayerSlotID = playerSlot;
-        DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerSlot] = 1;
         memcpy(&DAT_GameState::instance.mapAndTime.field43_0xf0, hintsRevealed, sizeof(hintsRevealed));
+        DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerSlot] = 1;
         for (int player = 1; player < 9; ++player) {
             DAT_GameState::instance.playerDataArray[player].tacticalPowersBarLevel = 0;
         }
@@ -190,8 +190,8 @@ namespace Map {
         DAT_GameCore::instance.swordProducible_logic = DAT_MapPropertiesState::instance.SEC_SwordProducible_save;
         DAT_GameCore::instance.maceProducible_logic = DAT_MapPropertiesState::instance.SEC_MaceProducible_save;
         DAT_GameCore::instance.gameDuration = 0;
-        TIME_ReceivedMessage_2::instance = 0;
         DAT_GameCore::instance.timeSum_2 = timeGetTime();
+        TIME_ReceivedMessage_2::instance = 0;
     }
 
 }

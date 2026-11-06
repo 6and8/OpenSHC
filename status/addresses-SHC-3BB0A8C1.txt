@@ -36239,7 +36239,7 @@ SHC_3BB0A8C1_0x004DBEEC | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DBEF0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DBF00 | 0.0% | Pending
+SHC_3BB0A8C1_0x004DBF00 | 96.7% | Reimplemented, code identical; reccmp cannot name the original's float constants (no .reloc in the exe)
 
 SHC_3BB0A8C1_0x004DC12C | 0.0% | Pending
 

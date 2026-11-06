@@ -1,0 +1,90 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"cmp19_L98.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"cmp20_L100.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"cmp21_L112.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt00_L52.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt01_L58.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt02_L59.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt03_L88.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt04_L90.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt05_L96.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt06_L129.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt07_L130.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt08_L131.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt09_L132.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt10_L134.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt11_L180.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt12_L181.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt13_L182.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt14_L183.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt15_L184.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt16_L185.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt17_L192.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"stmt18_L193.cpp"
+]
+}

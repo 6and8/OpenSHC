@@ -142,7 +142,7 @@ namespace Map {
                 undefined4 microX, undefined4 microY, undefined4 height, undefined4 entityType, int gmLookupValue);
 
             uint spawnEntityEffect1(
-                short x, short y, undefined4 height, undefined4 entityType, int graphicType1, int graphicType2);
+                int x, int y, undefined4 height, undefined4 entityType, int graphicType1, int graphicType2);
 
             BOOLEnum moveProjectileEntity(int entityID);
 

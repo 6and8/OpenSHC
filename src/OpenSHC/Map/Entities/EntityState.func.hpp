@@ -190,7 +190,7 @@ namespace Map {
                 Address::SHC_3BB0A8C1_0x004082A0, &EntityState::spawnEntityEffect2)
             spawnEntityEffect2;
 
-            MACRO_FUNCTION_RESOLVER(uint (EntityState::*)(short, short, undefined4, undefined4, int, int), false,
+            MACRO_FUNCTION_RESOLVER(uint (EntityState::*)(int, int, undefined4, undefined4, int, int), false,
                 Address::SHC_3BB0A8C1_0x004083A0, &EntityState::spawnEntityEffect1)
             spawnEntityEffect1;
 

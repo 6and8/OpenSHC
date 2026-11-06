@@ -467,8 +467,8 @@ namespace Map {
                 } else if (this->entityArray[entityID].entityType == ET_CATAPULT) {
                     damage = 20;
                 } else if (this->entityArray[entityID].entityType == ET_MANGONEL) {
-                    damage = 5;
                     collateral = 0;
+                    damage = 5;
                 }
                 int const buildingID = DAT_TileMapState::instance.BuildingLayer[tile];
                 if (buildingID != 0) {

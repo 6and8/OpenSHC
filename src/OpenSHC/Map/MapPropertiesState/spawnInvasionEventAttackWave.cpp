@@ -159,24 +159,24 @@ namespace Map {
                     groupSizeDivisor = 10;
                     break;
             }
+            byte* score = DAT_TroopValueState::instance.attackInfo
+                              .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count];
+            int scoreSlot = -1;
             if (tribeType == 22) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][0] += remaining;
+                scoreSlot = 0;
             } else if (tribeType == 23) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][1] += remaining;
+                scoreSlot = 1;
             } else if (tribeType == 19) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][2] += remaining;
+                scoreSlot = 2;
             } else if (tribeType == 20) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][3] += remaining;
+                scoreSlot = 3;
             } else if (tribeType == 21) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][4] += remaining;
+                scoreSlot = 4;
             } else if (tribeType == 24) {
-                DAT_TroopValueState::instance.attackInfo
-                    .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count][8] += remaining;
+                scoreSlot = 8;
+            }
+            if (scoreSlot >= 0) {
+                score[scoreSlot] += remaining;
             } else {
                 int groupSize = remaining / (remaining / groupSizeDivisor + 1);
                 while (remaining > 0) {

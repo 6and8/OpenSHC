@@ -33195,7 +33195,7 @@ SHC_3BB0A8C1_0x004C1370 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004C1390 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004C13F0 | 47.7% | Reimplemented, asm differs (ours jump-threads the score cases of the switch into the score adds; original keeps the compare chain)
+SHC_3BB0A8C1_0x004C13F0 | 74.2% | Reimplemented, asm differs (score adds: ours via one pointer, original re-reads inv_count per branch)
 
 SHC_3BB0A8C1_0x004C1708 | 0.0% | Pending
 

@@ -1,14 +1,12 @@
 #include "../EntityState.func.hpp"
 
-#include <stdlib.h>
-
 #include "OpenSHC/Audio/SFX/SFXState.func.hpp"
-#include "OpenSHC/DE/SHCDE/eSFX.hpp"
-#include "OpenSHC/Map/Buildings/BuildingType.hpp"
 #include "OpenSHC/Map/Buildings/BuildingsState.func.hpp"
 #include "OpenSHC/Map/Entities.func.hpp"
 #include "OpenSHC/Map/TileMapState.func.hpp"
 #include "OpenSHC/Map/Units/UnitsState.func.hpp"
+#include "OpenSHC/DE/SHCDE/eSFX.hpp"
+#include "OpenSHC/Map/Buildings/BuildingType.hpp"
 
 #include "OpenSHC/Globals/DAT_BuildingsState.hpp"
 #include "OpenSHC/Globals/DAT_EntityDefinedData.hpp"
@@ -21,6 +19,8 @@
 #include "OpenSHC/Globals/DAT_UnitsState.hpp"
 #include "OpenSHC/Globals/DAT_ViewportRenderState.hpp"
 #include "OpenSHC/Globals/SEC_RNG.hpp"
+
+#include <stdlib.h>
 
 namespace OpenSHC {
 namespace Map {
@@ -116,8 +116,7 @@ namespace Map {
                     MACRO_CALL_MEMBER(BuildingsState_Func::getBuildingCost, DAT_BuildingsState::ptr)(
                         Commands::M_MAPPER_BRAZIER, &stone, &gold);
                     DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                        .startResources[Game::Resources::RT_GOLD]
-                        += gold;
+                        .startResources[Game::Resources::RT_GOLD] += gold;
                 }
                 MACRO_CALL_MEMBER(EntityState_Func::markEntityDestroyed, this)(entityID);
                 goto end;
@@ -151,11 +150,12 @@ namespace Map {
                         || this->entityArray[entityID].entityType == ET_MANGONEL
                         || this->entityArray[entityID].velocityUnk > 80) {
                         for (int dir = 1; dir < 8; dir += 2) {
-                            int const neighbour = DAT_TileMapState::instance
-                                                      .directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
+                            int const neighbour
+                                = DAT_TileMapState::instance
+                                      .directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
                                 + tile;
                             for (int other = DAT_TileMapState::instance.UnitLayer[neighbour]; other != 0;
-                                 other = DAT_UnitsState::instance.units[other].nextUnitOnTheSameTile) {
+                                other = DAT_UnitsState::instance.units[other].nextUnitOnTheSameTile) {
                                 if (DAT_UnitsState::instance.units[other].field_0x90 != 0
                                     && this->entityArray[entityID].logicalState == 2
                                     && MACRO_CALL_MEMBER(Units::UnitsState_Func::processEntityDamageToUnit,
@@ -173,14 +173,14 @@ namespace Map {
                 int const cloudHeight
                     = MACRO_CALL_MEMBER(TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(tile);
                 for (int dir = 0; dir < 8; dir++) {
-                    int const neighbour
-                        = DAT_TileMapState::instance.directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
+                    int const neighbour = DAT_TileMapState::instance
+                                              .directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
                         + tile;
                     for (int unitID = DAT_TileMapState::instance.UnitLayer[neighbour]; unitID != 0;
-                         unitID = DAT_UnitsState::instance.units[unitID].nextUnitOnTheSameTile) {
+                        unitID = DAT_UnitsState::instance.units[unitID].nextUnitOnTheSameTile) {
                         if (abs(cloudHeight
-                                - (int)MACRO_CALL_MEMBER(TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(
-                                    neighbour))
+                                - (int)MACRO_CALL_MEMBER(
+                                    TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(neighbour))
                                 < 120
                             && this->entityArray[entityID].logicalState == 2) {
                             MACRO_CALL_MEMBER(Units::UnitsState_Func::processEntityDamageToUnit, DAT_UnitsState::ptr)(
@@ -189,15 +189,14 @@ namespace Map {
                     }
                 }
                 for (int i = 0; i < 16; i++) {
-                    int const blastTile
-                        = MACRO_CALL_MEMBER(TileMapState_Func::computeTileAlongAxisOffset, DAT_TileMapState::ptr)(tile,
-                            DAT_EntityDefinedData::instance.EntityBlastTileOffsets[i].xOffset,
-                            DAT_EntityDefinedData::instance.EntityBlastTileOffsets[i].yOffset);
+                    int const blastTile = MACRO_CALL_MEMBER(TileMapState_Func::computeTileAlongAxisOffset,
+                        DAT_TileMapState::ptr)(tile, DAT_EntityDefinedData::instance.EntityBlastTileOffsets[i].xOffset,
+                        DAT_EntityDefinedData::instance.EntityBlastTileOffsets[i].yOffset);
                     for (int unitID = DAT_TileMapState::instance.UnitLayer[blastTile]; unitID != 0;
-                         unitID = DAT_UnitsState::instance.units[unitID].nextUnitOnTheSameTile) {
+                        unitID = DAT_UnitsState::instance.units[unitID].nextUnitOnTheSameTile) {
                         if (abs(cloudHeight
-                                - (int)MACRO_CALL_MEMBER(TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(
-                                    blastTile))
+                                - (int)MACRO_CALL_MEMBER(
+                                    TileMapState_Func::getTotalHeightAtTile, DAT_TileMapState::ptr)(blastTile))
                                 < 120
                             && this->entityArray[entityID].logicalState == 2) {
                             MACRO_CALL_MEMBER(Units::UnitsState_Func::processEntityDamageToUnit, DAT_UnitsState::ptr)(
@@ -214,7 +213,8 @@ namespace Map {
                     MACRO_CALL(Entities_Func::SetPlaceOnFire)(this->entityArray[entityID].owner,
                         DAT_TileMapState::instance.pitchDitches[pitchID].x * 8,
                         DAT_TileMapState::instance.pitchDitches[pitchID].y * 8,
-                        DAT_TileMapState::instance.HeightLayer[DAT_TileMapState::instance.pitchDitches[pitchID].tile], 3);
+                        DAT_TileMapState::instance.HeightLayer[DAT_TileMapState::instance.pitchDitches[pitchID].tile],
+                        3);
                     DAT_TileMapState::instance.pitchDitches[pitchID].state = 2;
                 }
             }
@@ -256,7 +256,8 @@ namespace Map {
                     goto end;
                 }
                 MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_IGNITE_PITCH);
+                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                    DE::SHCDE::FX_IGNITE_PITCH);
                 MACRO_CALL(Entities_Func::SetPlaceOnFire)(this->entityArray[entityID].owner,
                     DAT_TileMapState::instance.pitchDitches[pitchID].x * 8,
                     DAT_TileMapState::instance.pitchDitches[pitchID].y * 8,
@@ -286,7 +287,8 @@ namespace Map {
                         (EntityType)31, 0);
                 }
                 MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_MED_PLOP);
+                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                    DE::SHCDE::FX_MED_PLOP);
                 goto end;
             }
             if (this->entityArray[entityID].entityType == 8) {
@@ -303,12 +305,13 @@ namespace Map {
                 || this->entityArray[entityID].entityType == ET_FIRETHROWER) {
                 if (this->entityArray[entityID].rng_2 == 2) {
                     for (int dir = 0; dir < 8; dir++) {
-                        int const neighbour = DAT_TileMapState::instance
-                                                  .directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
+                        int const neighbour
+                            = DAT_TileMapState::instance
+                                  .directionTranslationMatrix[this->entityArray[entityID].yPosition][dir]
                             + tile;
                         if ((DAT_TileMapState::instance.LogicLayer[neighbour] & 8) != 0) {
-                            pitchID = MACRO_CALL_MEMBER(TileMapState_Func::getPitchDitchIDForTile, DAT_TileMapState::ptr)(
-                                neighbour);
+                            pitchID = MACRO_CALL_MEMBER(
+                                TileMapState_Func::getPitchDitchIDForTile, DAT_TileMapState::ptr)(neighbour);
                             if (pitchID != 0) {
                                 goto ignitePitch;
                             }
@@ -316,7 +319,8 @@ namespace Map {
                     }
                 }
                 int buildingID = DAT_TileMapState::instance.BuildingLayer[tile];
-                if (this->entityArray[entityID].travelledDistance <= this->entityArray[entityID].totalFlightDistance / 2) {
+                if (this->entityArray[entityID].travelledDistance
+                    <= this->entityArray[entityID].totalFlightDistance / 2) {
                     goto end;
                 }
                 uint logic = DAT_TileMapState::instance.LogicLayer[tile];
@@ -330,7 +334,8 @@ namespace Map {
                     this->entityArray[entityID].logicalState = 3;
                     result = 0;
                     MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_LITTLE_PLOP);
+                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                        DE::SHCDE::FX_LITTLE_PLOP);
                     goto end;
                 }
                 if ((logic & 0x10000100) != 0
@@ -351,8 +356,8 @@ namespace Map {
                 }
                 if ((logic & 8) != 0) {
                     if (this->entityArray[entityID].rng_2 == 2) {
-                        pitchID = MACRO_CALL_MEMBER(TileMapState_Func::getPitchDitchIDForTile, DAT_TileMapState::ptr)(
-                            tile);
+                        pitchID
+                            = MACRO_CALL_MEMBER(TileMapState_Func::getPitchDitchIDForTile, DAT_TileMapState::ptr)(tile);
                         if (pitchID != 0) {
                         ignitePitch:
                             MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
@@ -389,8 +394,8 @@ namespace Map {
                         MACRO_CALL_MEMBER(TileMapState_Func::processDamageToBuilding, DAT_TileMapState::ptr)(tile,
                             this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, 10, 0,
                             this->entityArray[entityID].owner, FALSE, shooterID);
-                        if (MACRO_CALL_MEMBER(
-                                TileMapState_Func::getNonFarmFieldBuildingHealthAtTileOr1000, DAT_TileMapState::ptr)(tile)
+                        if (MACRO_CALL_MEMBER(TileMapState_Func::getNonFarmFieldBuildingHealthAtTileOr1000,
+                                DAT_TileMapState::ptr)(tile)
                             < 50) {
                             MACRO_CALL(Entities_Func::SetPlaceOnFire)(this->entityArray[entityID].owner,
                                 this->entityArray[entityID].xPosition * 8, this->entityArray[entityID].yPosition * 8,
@@ -421,7 +426,8 @@ namespace Map {
                 int collateral = 10;
                 if ((logic & 0x40100001) != 0) {
                     MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_ROCK_SPLASH);
+                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                        DE::SHCDE::FX_ROCK_SPLASH);
                 }
                 uint const wall = logic & 0x100;
                 if (wall == 0 && (logic & 0x10000400) == 0 && DAT_TileMapState::instance.BuildingLayer[tile] == 0) {
@@ -481,7 +487,7 @@ namespace Map {
                 } else if (wall != 0) {
                     if (DAT_GameState::instance.mapAndTime.playerTeams[this->entityArray[entityID].owner]
                         == DAT_GameState::instance.mapAndTime
-                               .playerTeams[(DAT_TileMapState::instance.WallOwnerLayer[tile] & 7) + 1]) {
+                            .playerTeams[(DAT_TileMapState::instance.WallOwnerLayer[tile] & 7) + 1]) {
                         damage = 0;
                         collateral = 0;
                     }
@@ -490,20 +496,21 @@ namespace Map {
                     MACRO_CALL_MEMBER(TileMapState_Func::processDamageToBuilding, DAT_TileMapState::ptr)(tile,
                         this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, damage, 0,
                         -this->entityArray[entityID].owner, FALSE, this->entityArray[entityID].unitID_OR_seaGullID);
-                    MACRO_CALL_MEMBER(TileMapState_Func::processEntityDamageToBuildingCollateral, DAT_TileMapState::ptr)(
-                        tile, this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, collateral,
+                    MACRO_CALL_MEMBER(
+                        TileMapState_Func::processEntityDamageToBuildingCollateral, DAT_TileMapState::ptr)(tile,
+                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, collateral,
                         -this->entityArray[entityID].owner, 0, this->entityArray[entityID].unitID_OR_seaGullID);
                 } else {
                     MACRO_CALL_MEMBER(TileMapState_Func::processDamageToBuilding, DAT_TileMapState::ptr)(tile,
                         this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, damage, 0,
                         this->entityArray[entityID].owner, FALSE, this->entityArray[entityID].unitID_OR_seaGullID);
-                    MACRO_CALL_MEMBER(
-                        TileMapState_Func::processEntityDamageToBuildingCollateralThunk, DAT_TileMapState::ptr)(tile,
-                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, collateral,
-                        this->entityArray[entityID].owner, 0);
+                    MACRO_CALL_MEMBER(TileMapState_Func::processEntityDamageToBuildingCollateralThunk,
+                        DAT_TileMapState::ptr)(tile, this->entityArray[entityID].xPosition,
+                        this->entityArray[entityID].yPosition, collateral, this->entityArray[entityID].owner, 0);
                 }
                 MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_ROCK_HIT_WALL);
+                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                    DE::SHCDE::FX_ROCK_HIT_WALL);
                 result = 0;
                 goto end;
             }
@@ -513,7 +520,8 @@ namespace Map {
         cowHit:
             if (this->entityArray[entityID].hasDoneEffectUnk == 0) {
                 MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_COW_SPLAT);
+                    this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                    DE::SHCDE::FX_COW_SPLAT);
                 this->entityArray[entityID].hasDoneEffectUnk = 1;
                 if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x401000b1) != 0) {
                     this->entityArray[entityID].someCounter_OR_hitGround = 1;
@@ -528,7 +536,8 @@ namespace Map {
                             ET_COW_POISON_CLOUD, 0);
                     }
                     MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, DE::SHCDE::FX_FLIES);
+                        this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                        DE::SHCDE::FX_FLIES);
                 }
             }
             result = 0;

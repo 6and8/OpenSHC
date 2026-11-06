@@ -41,10 +41,9 @@ namespace Map {
             }
             if (this->scenarioEvents[i].data.scenario.conditions[6].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[6].subType;
-                int const index = this->objectiveGoodsCount;
-                this->objectiveGoodsSurplus[index]
+                this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                          .currentResources[this->objectiveGoodsType[index]]
+                          .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
                     - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[6].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
@@ -76,10 +75,9 @@ namespace Map {
             }
             if (this->scenarioEvents[i].data.scenario.conditions[17].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[17].subType;
-                int const index = this->objectiveGoodsCount;
-                this->objectiveGoodsSurplus[index]
+                this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                          .currentResources[this->objectiveGoodsType[index]]
+                          .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
                     - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[17].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
@@ -111,10 +109,9 @@ namespace Map {
             }
             if (this->scenarioEvents[i].data.scenario.conditions[5].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[5].subType;
-                int const index = this->objectiveGoodsCount;
-                this->objectiveGoodsSurplus[index]
+                this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                          .currentResources[this->objectiveGoodsType[index]]
+                          .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
                     - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[5].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
@@ -146,10 +143,9 @@ namespace Map {
             }
             if (this->scenarioEvents[i].data.scenario.conditions[7].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[7].subType;
-                int const index = this->objectiveGoodsCount;
-                this->objectiveGoodsSurplus[index]
+                this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                          .currentResources[this->objectiveGoodsType[index]]
+                          .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
                     - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[7].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:

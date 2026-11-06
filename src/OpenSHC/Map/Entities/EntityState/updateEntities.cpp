@@ -24,11 +24,12 @@ namespace Map {
             DAT_CurrentEntityID::instance = 1;
             int highestEntityID = 0;
             for (; (int)DAT_CurrentEntityID::instance < (int)this->maxEntityCount; DAT_CurrentEntityID::instance++) {
-                if (this->entityArray[DAT_CurrentEntityID::instance].logicalState == 0) {
+                uint const entityID = DAT_CurrentEntityID::instance;
+                if (this->entityArray[entityID].logicalState == 0) {
                     continue;
                 }
                 this->totalEntityCount += 1;
-                highestEntityID = DAT_CurrentEntityID::instance + 1;
+                highestEntityID = entityID + 1;
                 switch (this->entityArray[DAT_CurrentEntityID::instance].logicalState) {
                 case 1:
                     this->entityArray[DAT_CurrentEntityID::instance].logicalState = 2;

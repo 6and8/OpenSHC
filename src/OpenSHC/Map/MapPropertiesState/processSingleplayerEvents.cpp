@@ -523,25 +523,14 @@ namespace Map {
                                     }
                                 }
                             } else {
-                                int totalHits = DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[0]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[1]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[2]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[3]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[4]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[5]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[6]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[7]
-                                    + DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[8];
+                                int totalHits = 0;
+                                for (int i = 0; i < 9; ++i) {
+                                    totalHits += DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[i];
+                                }
                                 if (totalHits >= this->scenarioEvents[eventIdx].data.scenario.conditions[13].value) {
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[0] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[1] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[2] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[3] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[4] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[5] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[6] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[7] = 0;
-                                    DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[8] = 0;
+                                    for (int i = 0; i < 9; ++i) {
+                                        DAT_GameState::instance.mapAndTime.hitsDealtToPlayerArray[i] = 0;
+                                    }
                                     matchedConditions += 1;
                                     this->SEC_EventsExtra[eventIdx].conditionIsTrue[13] = 1;
                                 }
@@ -560,25 +549,14 @@ namespace Map {
                                     }
                                 }
                             } else {
-                                int totalHits = DAT_GameState::instance.mapAndTime.emenyHitArray[0]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[1]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[2]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[3]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[4]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[5]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[6]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[7]
-                                    + DAT_GameState::instance.mapAndTime.emenyHitArray[8];
+                                int totalHits = 0;
+                                for (int i = 0; i < 9; ++i) {
+                                    totalHits += DAT_GameState::instance.mapAndTime.emenyHitArray[i];
+                                }
                                 if (totalHits >= this->scenarioEvents[eventIdx].data.scenario.conditions[14].value) {
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[0] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[1] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[2] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[3] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[4] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[5] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[6] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[7] = 0;
-                                    DAT_GameState::instance.mapAndTime.emenyHitArray[8] = 0;
+                                    for (int i = 0; i < 9; ++i) {
+                                        DAT_GameState::instance.mapAndTime.emenyHitArray[i] = 0;
+                                    }
                                     matchedConditions += 1;
                                     this->SEC_EventsExtra[eventIdx].conditionIsTrue[14] = 1;
                                 }

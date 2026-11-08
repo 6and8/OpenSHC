@@ -47,7 +47,7 @@ namespace UI {
             DAT_TileMapState::instance.DAT_BuildingSize
                 = MACRO_CALL_MEMBER(Map::TileMapState_Func::getBuildingSizeForCommandBuildingType,
                     DAT_TileMapState::ptr)(DAT_TileMapState::instance.currentMapperCommand);
-            if (DAT_TileMapState::instance.DAT_BuildingSize < 0) {
+            if ((int)DAT_TileMapState::instance.DAT_BuildingSize < 0) {
                 DAT_TileMapState::instance.DAT_BuildingSize = 0;
                 return;
             }
@@ -430,8 +430,8 @@ namespace UI {
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
                             DAT_PathFindingState::ptr)(playerID,
-                            DAT_TileMapState::instance.PathConnectionLayer[startTile],
-                            DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
                         canNavigate = 0;
                     }
@@ -492,8 +492,8 @@ namespace UI {
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
                             DAT_PathFindingState::ptr)(playerID,
-                            DAT_TileMapState::instance.PathConnectionLayer[startTile],
-                            DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
                         canNavigate = 0;
                     }
@@ -547,8 +547,8 @@ namespace UI {
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
                             DAT_PathFindingState::ptr)(playerID,
-                            DAT_TileMapState::instance.PathConnectionLayer[startTile],
-                            DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
                         canNavigate = 0;
                     }
@@ -601,8 +601,8 @@ namespace UI {
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
                             DAT_PathFindingState::ptr)(playerID,
-                            DAT_TileMapState::instance.PathConnectionLayer[startTile],
-                            DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
+                            (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
                         canNavigate = 0;
                     }
@@ -648,8 +648,9 @@ namespace UI {
                 int canNavigate = 1;
                 if (MACRO_CALL_MEMBER(
                         Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                        DAT_PathFindingState::ptr)(playerID, DAT_TileMapState::instance.PathConnectionLayer[startTile],
-                        DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
+                        DAT_PathFindingState::ptr)(playerID,
+                        (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
+                        (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                     == 0) {
                     canNavigate = 0;
                 }

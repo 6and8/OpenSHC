@@ -23,14 +23,14 @@ namespace UI {
             int* countPtr
                 = &DAT_MapPropertiesState::instance.scenarioEvents[DAT_MapPropertiesState::instance.currentEventID]
                        .data.invasion.unitCountsPerUnitType[unitTypeMenuID];
-            int curCount = *countPtr;
-            int limit = DAT_MissionAestheticsDefinedData::instance.InvasionUnitLimits[unitTypeMenuID];
-            int maxVal = curCount - DAT_MapPropertiesState::instance.DAT_InvasionEventItemUnitCountSum + 500;
-            if (limit < maxVal) {
-                maxVal = limit;
-            }
-            MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(
-                0, maxVal, curCount, (undefined*)countPtr, (void*)MACRO_CALL(Global_Func::DoNothing));
+            // the slider maximum is a min() of the unit limit and the room left below 500 units: written as the
+            // expanded macro (both operands repeated), which gives the original's register choice
+            MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(0,
+                DAT_MissionAestheticsDefinedData::instance.InvasionUnitLimits[unitTypeMenuID]
+                        < *countPtr - (int)DAT_MapPropertiesState::instance.DAT_InvasionEventItemUnitCountSum + 500
+                    ? DAT_MissionAestheticsDefinedData::instance.InvasionUnitLimits[unitTypeMenuID]
+                    : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_InvasionEventItemUnitCountSum + 500,
+                *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(Global_Func::DoNothing));
 
             switch (unitTypeMenuID) {
             case 0:

@@ -20,7 +20,8 @@ namespace UI {
         // FUNCTION: STRONGHOLDCRUSADER 0x004bfe20
         void __cdecl Unused::MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk(int param_1, ...)
         {
-            if (param_1 == -1) {
+            switch (param_1) {
+            case -1:
                 DAT_MapPropertiesState::instance.scenarioEvents[DAT_MapPropertiesState::instance.currentEventID]
                     .header.month += 1;
                 if (DAT_MapPropertiesState::instance.scenarioEvents[DAT_MapPropertiesState::instance.currentEventID]
@@ -29,7 +30,8 @@ namespace UI {
                     DAT_MapPropertiesState::instance.scenarioEvents[DAT_MapPropertiesState::instance.currentEventID]
                         .header.month = 0;
                 }
-            } else if (param_1 == 19) {
+                break;
+            case 19:
                 if (DAT_MapPropertiesState::instance.flag == 0) {
                     MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::removeEventAtIndex, DAT_MapPropertiesState::ptr)(
                         DAT_MapPropertiesState::instance.currentEventID);
@@ -38,7 +40,8 @@ namespace UI {
                     MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sortEventsByDate, DAT_MapPropertiesState::ptr)();
                     MACRO_CALL_MEMBER(Text::UserTextHandler_Func::resetToTextIndex, DAT_UserTextHandlerState::ptr)(15);
                 }
-            } else if (param_1 == 37) {
+                break;
+            case 37: {
                 int flag = DAT_MapPropertiesState::instance.flag;
                 if (flag == 0) {
                     if (DAT_MapPropertiesState::instance.value == -1) {
@@ -69,6 +72,8 @@ namespace UI {
                     DAT_MenuView_TriggerPrepare::instance = TRUE;
                     MACRO_CALL_MEMBER(Text::UserTextHandler_Func::resetToTextIndex, DAT_UserTextHandlerState::ptr)(15);
                 }
+                break;
+            }
             }
         }
 

@@ -48,19 +48,21 @@ namespace UI {
                         UI::Enums::MMT_OVERLAY_SLIDER, DAT_ButtonX::instance - 37, DAT_ButtonY::instance + 25);
                     return;
                 }
+                // slider maximum = min(unit limit, room left below 500 points), written as the expanded macro with
+                // indexStored re-read each time: that gives the original's register choice
                 if (idx < 30) {
                     MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sumUnitPoints, DAT_MapPropertiesState::ptr)();
-                    int stored = DAT_MapPropertiesState::instance.indexStored;
-                    int* countPtr = &DAT_MapPropertiesState::instance.SEC_StartingResources[stored + 5];
-                    int curCount = *countPtr;
-                    int limit = DAT_MissionAestheticsDefinedData::instance.field_0x3554[stored];
-                    int maxVal = curCount - DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500;
-                    if (limit < maxVal) {
-                        maxVal = limit;
-                    }
+                    int* countPtr = &DAT_MapPropertiesState::instance
+                                         .SEC_StartingResources[DAT_MapPropertiesState::instance.indexStored + 5];
                     MACRO_CALL_MEMBER(
-                        UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(
-                        0, maxVal, curCount, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
+                        UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(0,
+                        DAT_MissionAestheticsDefinedData::instance
+                                    .field_0x3554[DAT_MapPropertiesState::instance.indexStored]
+                                < *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500
+                            ? DAT_MissionAestheticsDefinedData::instance
+                                  .field_0x3554[DAT_MapPropertiesState::instance.indexStored]
+                            : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500,
+                        *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
                     DAT_MenuModalComposition2::instance.textIndex
                         = DAT_MissionAestheticsDefinedData::instance
                               .InvasionUnitLimits[DAT_MapPropertiesState::instance.indexStored + 4];
@@ -68,19 +70,25 @@ namespace UI {
                     MACRO_CALL_MEMBER(
                         UI::MenuModalComposition_Func::setExtraActiveModalDialog, DAT_MenuModalComposition2::ptr)(
                         UI::Enums::MMT_OVERLAY_SLIDER, DAT_ButtonX::instance - 37, DAT_ButtonY::instance + 25);
-                } else if (idx >= 40 && idx < 50) {
-                    MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sumUnitPoints, DAT_MapPropertiesState::ptr)();
-                    int stored = DAT_MapPropertiesState::instance.indexStored;
-                    int* countPtr = &DAT_MapPropertiesState::instance.SEC_StartingResources[stored + 5];
-                    int curCount = *countPtr;
-                    int limit = (int)DAT_MissionAestheticsDefinedData::instance.field_0x184[30][11 + stored];
-                    int maxVal = curCount - DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500;
-                    if (limit < maxVal) {
-                        maxVal = limit;
+                } else {
+                    if (idx == 30) {
+                        return;
                     }
+                    if (idx < 40 || idx >= 50) {
+                        return;
+                    }
+                    MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sumUnitPoints, DAT_MapPropertiesState::ptr)();
+                    int* countPtr = &DAT_MapPropertiesState::instance
+                                         .SEC_StartingResources[DAT_MapPropertiesState::instance.indexStored + 5];
                     MACRO_CALL_MEMBER(
-                        UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(
-                        0, maxVal, curCount, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
+                        UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(0,
+                        (int)DAT_MissionAestheticsDefinedData::instance
+                                    .field_0x184[30][11 + DAT_MapPropertiesState::instance.indexStored]
+                                < *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500
+                            ? (int)DAT_MissionAestheticsDefinedData::instance
+                                  .field_0x184[30][11 + DAT_MapPropertiesState::instance.indexStored]
+                            : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500,
+                        *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
                     DAT_MenuModalComposition2::instance.textIndex
                         = (int)DAT_MissionAestheticsDefinedData::instance
                               .field_0xa64[30][11 + DAT_MapPropertiesState::instance.indexStored];

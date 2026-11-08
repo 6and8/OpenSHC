@@ -99,12 +99,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 130) {
+                    case 128:
+                        first = 100;
+                        break;
                     case 0:
                     case 2:
                         second = 100;
-                        break;
-                    case 128:
-                        first = 100;
                         break;
                     case 130:
                         goto reverse;
@@ -123,12 +123,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 130) {
+                    case 128:
+                        first = 100;
+                        break;
                     case 0:
                     case 2:
                         second = 100;
-                        break;
-                    case 128:
-                        first = 100;
                         break;
                     case 130:
                         goto reverse;
@@ -171,12 +171,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 160) {
+                    case 32:
+                        first = 100;
+                        break;
                     case 0:
                     case 128:
                         second = 100;
-                        break;
-                    case 32:
-                        first = 100;
                         break;
                     case 160:
                         goto reverse;
@@ -195,12 +195,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 160) {
+                    case 32:
+                        first = 100;
+                        break;
                     case 0:
                     case 128:
                         second = 100;
-                        break;
-                    case 32:
-                        first = 100;
                         break;
                     case 160:
                         goto reverse;
@@ -320,11 +320,12 @@ namespace Map {
                 break;
             }
             for (int i = 0; i < this->entityArray[entityID].rng_1 % 8 + 5; ++i) {
-                MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(
-                    0, 0, 0, microX, microY, this->entityArray[entityID].height, targetX, targetY, 8, (EntityType)27, 0);
+                MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(0, 0, 0, microX, microY,
+                    this->entityArray[entityID].height, targetX, targetY, 8, (EntityType)27, 0);
             }
-            MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(
-                0, 0, 0, microX, microY, this->entityArray[entityID].height, microX + 1, microY + 1, this->entityArray[entityID].height, (EntityType)30, 0);
+            MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(0, 0, 0, microX, microY,
+                this->entityArray[entityID].height, microX + 1, microY + 1, this->entityArray[entityID].height,
+                (EntityType)30, 0);
         }
 
     } // namespace Entities

@@ -105,12 +105,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 130) {
+                    case 128:
+                        first = 100;
+                        break;
                     case 0:
                     case 2:
                         second = 100;
-                        break;
-                    case 128:
-                        first = 100;
                         break;
                     case 130:
                         goto reverse;
@@ -129,12 +129,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 130) {
+                    case 128:
+                        first = 100;
+                        break;
                     case 0:
                     case 2:
                         second = 100;
-                        break;
-                    case 128:
-                        first = 100;
                         break;
                     case 130:
                         goto reverse;
@@ -177,12 +177,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 160) {
+                    case 32:
+                        first = 100;
+                        break;
                     case 0:
                     case 128:
                         second = 100;
-                        break;
-                    case 32:
-                        first = 100;
                         break;
                     case 160:
                         goto reverse;
@@ -201,12 +201,12 @@ namespace Map {
                 second = subY;
                 if (first == second) {
                     switch (flags & 160) {
+                    case 32:
+                        first = 100;
+                        break;
                     case 0:
                     case 128:
                         second = 100;
-                        break;
-                    case 32:
-                        first = 100;
                         break;
                     case 160:
                         goto reverse;
@@ -357,7 +357,8 @@ namespace Map {
             if (this->entityArray[entityID].pathAxisCase == 3) {
                 short const errorStep = deltaX * 2;
                 this->entityArray[entityID].pathErrorStepStraight = errorStep;
-                this->entityArray[entityID].pathErrorStepDiagonal = errorStep - this->entityArray[entityID].pathDeltaY * 2;
+                this->entityArray[entityID].pathErrorStepDiagonal
+                    = errorStep - this->entityArray[entityID].pathDeltaY * 2;
                 this->entityArray[entityID].pathError = errorStep - this->entityArray[entityID].pathDeltaY;
             } else if (this->entityArray[entityID].pathAxisCase == 4) {
                 short const errorStep = this->entityArray[entityID].pathDeltaY * 2;
@@ -377,10 +378,12 @@ namespace Map {
             this->entityArray[entityID].travelledDistance = 0;
             this->entityArray[entityID].vCos = cos(angle) * this->entityArray[entityID].velocityUnk;
             this->entityArray[entityID].vSin = sin(angle) * this->entityArray[entityID].velocityUnk;
-            this->entityArray[entityID].rotationFrameIndex = MACRO_CALL_MEMBER(EntityState_Func::angleToRotationFrameIndex, this)(startingAngle);
+            this->entityArray[entityID].rotationFrameIndex
+                = MACRO_CALL_MEMBER(EntityState_Func::angleToRotationFrameIndex, this)(startingAngle);
             this->entityArray[entityID].gmLookupValue = 0;
             MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
-                this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition, (OpenSHC::DE::SHCDE::eSFX)0x40);
+                this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
+                (OpenSHC::DE::SHCDE::eSFX)0x40);
         }
 
     } // namespace Entities

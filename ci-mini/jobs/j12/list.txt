@@ -1,0 +1,2 @@
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/Global/WindowMsgProcessingFunc.cpp

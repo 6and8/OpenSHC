@@ -1,0 +1,2 @@
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp

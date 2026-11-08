@@ -1,0 +1,2 @@
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp

@@ -1,0 +1,2 @@
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp

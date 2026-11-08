@@ -1,0 +1,2 @@
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp
+src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp

@@ -1,0 +1,119 @@
+#include "OpenSHC/Map/MapPropertiesState.func.hpp"
+#include "OpenSHC/Rendering.func.hpp"
+#include "OpenSHC/UI/Helpers.func.hpp"
+#include "OpenSHC/UI/MenuModalComposition.func.hpp"
+#include "OpenSHC/UI/MenuViews/ScenarioDescription.func.hpp"
+#include "OpenSHC/UI/Rendering/TextureRenderCore.func.hpp"
+#include "OpenSHC/Game/GameMode2.hpp"
+#include "OpenSHC/UI/Enums/MenuModalType.hpp"
+
+#include "OpenSHC/Globals/DAT_00eb0b24.hpp"
+#include "OpenSHC/Globals/DAT_00ed2794.hpp"
+#include "OpenSHC/Globals/DAT_00ed2798.hpp"
+#include "OpenSHC/Globals/DAT_00ed27bc.hpp"
+#include "OpenSHC/Globals/DAT_ARRAY_00ed26d0.hpp"
+#include "OpenSHC/Globals/DAT_GameCore.hpp"
+#include "OpenSHC/Globals/DAT_GameState.hpp"
+#include "OpenSHC/Globals/DAT_MapPropertiesState.hpp"
+#include "OpenSHC/Globals/DAT_MenuModalComposition2.hpp"
+#include "OpenSHC/Globals/DAT_MenuView_TriggerPrepare.hpp"
+#include "OpenSHC/Globals/DAT_MouseState.hpp"
+#include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
+#include "OpenSHC/Globals/DAT_VideoBikQueue.hpp"
+#include "OpenSHC/Globals/INT_00ed27c4.hpp"
+
+namespace OpenSHC {
+namespace UI {
+    namespace MenuViews {
+        namespace ScenarioDescription {
+
+            // FUNCTION: STRONGHOLDCRUSADER 0x004DD100
+            void MenuView_ScenarioDescription_Prepare()
+            {
+                DAT_GameCore::instance.currentlyInGameUnk_0xa4 = FALSE;
+                DAT_TextureRenderCoreObject::instance.totalLoadedGfx = 0;
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_screen_background.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back0.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back1.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back2.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back3.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back4.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back5.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back6.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back7.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back8.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back9.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back10.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back11.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
+                    DAT_TextureRenderCoreObject::ptr)("briefing_back12.tgx");
+                if (DAT_MenuView_TriggerPrepare::instance != 2) {
+                    if (DAT_GameCore::instance.gameMode_2 == Game::GM_CAMPAIGN_MISSION) {
+                        DAT_00ed2798::instance = 0;
+                    } else {
+                        DAT_00ed2798::instance = 1;
+                        if (DAT_GameCore::instance.gameMode_2 == Game::GM_ECONOMIC_CAMPAIGN_SH1) {
+                            DAT_00ed2798::instance = 0;
+                        }
+                    }
+                }
+                if (DAT_MenuModalComposition2::instance.activeModalDialogID == UI::Enums::MMT_DISPLAY_AI_LORD_MESSAGE) {
+                    MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::activateModalDialog,
+                        DAT_MenuModalComposition2::ptr)(UI::Enums::MMT_NONE, FALSE);
+                }
+                int* storedMessages_0x924Ptr = &DAT_VideoBikQueue::instance.storedMessages_0x924;
+                *storedMessages_0x924Ptr = 0;
+                MACRO_CALL(OpenSHC::Rendering_Func::TicksStartCounter)();
+                if (DAT_GameCore::instance.missionNumber1to20 <= 0) {
+                    DAT_GameCore::instance.missionNumber1to20 = 1;
+                }
+                if (DAT_GameCore::instance.gameSuspended == 0) {
+                    if (DAT_GameCore::instance.gameMode_2 != Game::GM_BUILDERUnk) {
+                        MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::loadMapSiegeHeaderForMissionIndex,
+                            DAT_MapPropertiesState::ptr)(DAT_GameCore::instance.missionNumber1to20);
+                    }
+                    int* events = (int*)DAT_MapPropertiesState::instance.SEC_EventsExtra;
+                    for (int i = 0; i < 8000; ++i) {
+                        events[i] = 0;
+                    }
+                    DAT_GameState::instance.mapAndTime.field43_0xf0 = 0;
+                    DAT_GameState::instance.mapAndTime.field44_0xf4 = 0;
+                }
+                if (DAT_GameCore::instance.gameMode_2 == Game::GM_CAMPAIGN_MISSION
+                    && DAT_GameCore::instance.gameSuspended == 0) {
+                    if (DAT_GameCore::instance.missionNumber1to20 < 4) {
+                        DAT_GameState::instance.mapAndTime.difficulty = 1;
+                    } else {
+                        DAT_GameState::instance.mapAndTime.difficulty = DAT_GameCore::instance.missionDifficulty;
+                    }
+                }
+                DAT_MouseState::instance.waitCursorToggle = 0;
+                MACRO_CALL(UI::Helpers_Func::ResetEventStatusUnk)();
+                DAT_00eb0b24::instance = 0;
+                INT_00ed27c4::instance = 1;
+                DAT_ARRAY_00ed26d0::instance[0].y = 0;
+                DAT_00ed27bc::instance = 0;
+                DAT_00ed2794::instance = 0;
+                if (DAT_MenuView_TriggerPrepare::instance != 2 && DAT_GameCore::instance.gameSuspended == 0) {
+                    DAT_00ed2794::instance = timeGetTime();
+                }
+                MACRO_CALL(UI::Helpers_Func::LoadTGX_shc_back)();
+            }
+
+        }
+    }
+}
+}

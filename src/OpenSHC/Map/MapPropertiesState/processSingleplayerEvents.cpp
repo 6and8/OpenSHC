@@ -348,7 +348,8 @@ namespace Map {
                             }
                             break;
                         }
-                        case 6: {
+                        case 6:
+                        case 17: {
                             int reqWeapons = MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue,
                                 this)(this->scenarioEvents[eventIdx].data.scenario.conditions[condIdx].value);
                             char subType = this->scenarioEvents[eventIdx].data.scenario.conditions[condIdx].subType;
@@ -411,7 +412,7 @@ namespace Map {
                             }
                             break;
                         }
-                        case 8: {
+                        case 15: {
                             int slot = DAT_GameSynchronyState::instance.currentPlayerSlotID;
                             if (DAT_GameState::instance.playerDataArray[slot].totalEnemyUnitsCount == 0) {
                                 matchedConditions += 1;
@@ -426,7 +427,7 @@ namespace Map {
                             }
                             break;
                         }
-                        case 9: {
+                        case 8: {
                             if (DAT_GameState::instance
                                     .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                                     .totalEnemyUnitsCount
@@ -453,7 +454,7 @@ namespace Map {
                             }
                             break;
                         }
-                        case 10:
+                        case 9:
                             if (MACRO_CALL_MEMBER(Game::GameStateStructures_Func::checkKeepEnclosed,
                                     DAT_GameState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID)
                                 != 0) {
@@ -461,7 +462,7 @@ namespace Map {
                                 this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
                             }
                             break;
-                        case 11: {
+                        case 10: {
                             int wolfCount = 0;
                             for (int u = 1; u < DAT_UnitsState::instance.maxUnitCount; ++u) {
                                 if (DAT_UnitsState::instance.units[u].logicalState == 2
@@ -475,6 +476,15 @@ namespace Map {
                             }
                             break;
                         }
+                        case 11:
+                            if (DAT_GameState::instance
+                                    .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                                    .totalEnemyUnitsCount
+                                != 0) {
+                                matchedConditions += 1;
+                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
+                            }
+                            break;
                         case 12: {
                             int troopCount = 0;
                             for (int u = 1; u < DAT_UnitsState::instance.maxUnitCount; ++u) {
@@ -575,61 +585,6 @@ namespace Map {
                             }
                             break;
                         }
-                        case 15:
-                            if (DAT_GameState::instance
-                                    .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                                    .totalEnemyUnitsCount
-                                != 0) {
-                                matchedConditions += 1;
-                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                            }
-                            break;
-                        case 16:
-                            if (DAT_GameCore::instance.gameMode_2 != 2) {
-                                int dairyCount = 0;
-                                for (int b = 1; b < DAT_BuildingsState::instance.maxBuildingsCount; ++b) {
-                                    if (DAT_BuildingsState::instance.buildings[b].logicalState != 0
-                                        && DAT_BuildingsState::instance.buildings[b].buildingType
-                                            == Buildings::BT_DAIRYFARM
-                                        && DAT_BuildingsState::instance.buildings[b].currentlyNeededEmployeeCount
-                                            == 0) {
-                                        dairyCount += 1;
-                                    }
-                                }
-                                if (dairyCount >= 4) {
-                                    matchedConditions += 1;
-                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                                } else {
-                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
-                                }
-                            }
-                            break;
-                        case 17:
-                            if (DAT_GameCore::instance.gameMode_2 != 2) {
-                                int innCount = 0;
-                                for (int b = 1; b < DAT_BuildingsState::instance.maxBuildingsCount; ++b) {
-                                    if (DAT_BuildingsState::instance.buildings[b].logicalState != 0
-                                        && DAT_BuildingsState::instance.buildings[b].buildingType == Buildings::BT_INN
-                                        && DAT_BuildingsState::instance.buildings[b].currentlyNeededEmployeeCount == 0
-                                        && DAT_BuildingsState::instance.buildings[b].flagonsOfAleOrCheeseOrReleaseDogs
-                                            > 0) {
-                                        innCount += 1;
-                                    }
-                                }
-                                if (innCount >= 2) {
-                                    matchedConditions += 1;
-                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                                } else {
-                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
-                                }
-                            }
-                            break;
-                        case 19:
-                            if (DAT_GameState::instance.mapAndTime.cathedralRelated1 == 1) {
-                                matchedConditions += 1;
-                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                            }
-                            break;
                         case 20:
                             if (DAT_GameState::instance
                                     .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
@@ -639,17 +594,6 @@ namespace Map {
                                 this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
                             }
                             break;
-                        case 21: {
-                            int aleCov = MACRO_CALL_MEMBER(Game::GameStateStructures_Func::computeAleCoverage,
-                                DAT_GameState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
-                            if (aleCov >= this->scenarioEvents[eventIdx].data.scenario.conditions[21].value) {
-                                matchedConditions += 1;
-                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                            } else {
-                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
-                            }
-                            break;
-                        }
                         case 22:
                             if (DAT_GameState::instance
                                     .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
@@ -670,6 +614,17 @@ namespace Map {
                                 this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
                             }
                             break;
+                        case 21: {
+                            int aleCov = MACRO_CALL_MEMBER(Game::GameStateStructures_Func::computeAleCoverage,
+                                DAT_GameState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
+                            if (aleCov >= this->scenarioEvents[eventIdx].data.scenario.conditions[21].value) {
+                                matchedConditions += 1;
+                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
+                            } else {
+                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
+                            }
+                            break;
+                        }
                         case 39:
                             if (matchedConditions == enabledConditions - 1) {
                                 MACRO_CALL(UI::DisplayElements_Func::CheckDisplayElementByIDAndSetForUnlimitedDisplay)(
@@ -693,6 +648,52 @@ namespace Map {
                                 this->SEC_Section1081 = 0;
                             }
                             break;
+                        case 16:
+                            if (DAT_GameState::instance.mapAndTime.cathedralRelated1 == 1) {
+                                matchedConditions += 1;
+                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
+                            }
+                            break;
+                        case 18:
+                            if (DAT_GameCore::instance.gameMode_2 != 2) {
+                                int dairyCount = 0;
+                                for (int b = 1; b < DAT_BuildingsState::instance.maxBuildingsCount; ++b) {
+                                    if (DAT_BuildingsState::instance.buildings[b].logicalState != 0
+                                        && DAT_BuildingsState::instance.buildings[b].buildingType
+                                            == Buildings::BT_DAIRYFARM
+                                        && DAT_BuildingsState::instance.buildings[b].currentlyNeededEmployeeCount
+                                            == 0) {
+                                        dairyCount += 1;
+                                    }
+                                }
+                                if (dairyCount >= 4) {
+                                    matchedConditions += 1;
+                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
+                                } else {
+                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
+                                }
+                            }
+                            break;
+                        case 19:
+                            if (DAT_GameCore::instance.gameMode_2 != 2) {
+                                int innCount = 0;
+                                for (int b = 1; b < DAT_BuildingsState::instance.maxBuildingsCount; ++b) {
+                                    if (DAT_BuildingsState::instance.buildings[b].logicalState != 0
+                                        && DAT_BuildingsState::instance.buildings[b].buildingType == Buildings::BT_INN
+                                        && DAT_BuildingsState::instance.buildings[b].currentlyNeededEmployeeCount == 0
+                                        && DAT_BuildingsState::instance.buildings[b].flagonsOfAleOrCheeseOrReleaseDogs
+                                            > 0) {
+                                        innCount += 1;
+                                    }
+                                }
+                                if (innCount >= 2) {
+                                    matchedConditions += 1;
+                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
+                                } else {
+                                    this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
+                                }
+                            }
+                            break;
                         }
                     }
                 }
@@ -708,6 +709,38 @@ namespace Map {
                     .scenarioEventTimers[this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType] = 1;
 
                 switch (this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType) {
+                case 26: {
+                    if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                            .playerDeathRelated
+                        == 0) {
+                        int hasLaterWinEvent = 0;
+                        for (int k = eventIdx + 1; k < this->eventsCount; ++k) {
+                            if (this->scenarioEvents[k].header.tl_type == 3
+                                && (this->scenarioEvents[k].data.scenario.ScenarioEventType == 0
+                                    || this->scenarioEvents[k].data.scenario.ScenarioEventType == 26)) {
+                                if (DAT_GameState::instance.mapAndTime.year < this->scenarioEvents[k].header.year
+                                    || (DAT_GameState::instance.mapAndTime.year == this->scenarioEvents[k].header.year
+                                        && DAT_GameState::instance.mapAndTime.month
+                                            < this->scenarioEvents[k].header.month)) {
+                                    break;
+                                }
+                                hasLaterWinEvent = 1;
+                                break;
+                            }
+                        }
+                        if (hasLaterWinEvent == 0) {
+                            this->scenarioEvents[eventIdx].header.done = 0;
+                            this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType = 0;
+                            this->scenarioEvents[eventIdx].header.year = DAT_GameState::instance.mapAndTime.year;
+                            this->scenarioEvents[eventIdx].header.month = DAT_GameState::instance.mapAndTime.month + 1;
+                            if (this->scenarioEvents[eventIdx].header.month >= 12) {
+                                this->scenarioEvents[eventIdx].header.year += 1;
+                                this->scenarioEvents[eventIdx].header.month -= 12;
+                            }
+                        }
+                    }
+                    break;
+                }
                 case 0: {
                     if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                             .playerDeathRelated
@@ -763,6 +796,21 @@ namespace Map {
                             } else {
                                 this->field133_0x145d8 = 3;
                             }
+                        }
+                    }
+                    break;
+                }
+                case 27: {
+                    if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                            .playerDeathRelated
+                        == 0) {
+                        this->scenarioEvents[eventIdx].header.done = 0;
+                        this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType = 1;
+                        this->scenarioEvents[eventIdx].header.year = DAT_GameState::instance.mapAndTime.year;
+                        this->scenarioEvents[eventIdx].header.month = DAT_GameState::instance.mapAndTime.month + 1;
+                        if (this->scenarioEvents[eventIdx].header.month >= 12) {
+                            this->scenarioEvents[eventIdx].header.year += 1;
+                            this->scenarioEvents[eventIdx].header.month -= 12;
                         }
                     }
                     break;
@@ -889,13 +937,13 @@ namespace Map {
                     }
                     break;
                 }
-                case 7:
+                case 6:
                     DAT_GameCore::instance.isTimeHalted = 1;
                     break;
-                case 8:
+                case 7:
                     DAT_GameCore::instance.isTimeHalted = 0;
                     break;
-                case 9: {
+                case 8: {
                     MACRO_CALL_MEMBER(Game::GameStateStructures_Func::switchPlayerOwnership, DAT_GameState::ptr)(
                         DAT_GameSynchronyState::instance.currentPlayerSlotID);
                     MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::setupBarracksCampgroundPositions,
@@ -936,7 +984,7 @@ namespace Map {
                     }
                     break;
                 }
-                case 10:
+                case 9:
                     DAT_GameCore::instance.xbowProducible_logic = 1;
                     break;
                 case 11: {
@@ -1436,84 +1484,6 @@ namespace Map {
                         (char*)s_Random_Events13_wav_005aa89c);
                     break;
                 }
-                case 23:
-                    for (int k = 0; k < this->eventsCount; ++k) {
-                        if (this->scenarioEvents[k].header.tl_type == 1
-                            && this->scenarioEvents[k].data.invasion.repeatMonths != 0) {
-                            this->scenarioEvents[k].data.invasion.repeatMonths = 0;
-                            this->scenarioEvents[k].header.done = 1;
-                            this->scenarioEvents[k].header.month = 1181;
-                        }
-                    }
-                    break;
-                case 24:
-                    DAT_GameCore::instance.section1076 = 1;
-                    break;
-                case 25:
-                    DAT_GameCore::instance.section1076 = 0;
-                    break;
-                case 26: {
-                    if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                            .playerDeathRelated
-                        == 0) {
-                        int hasLaterWinEvent = 0;
-                        for (int k = eventIdx + 1; k < this->eventsCount; ++k) {
-                            if (this->scenarioEvents[k].header.tl_type == 3
-                                && (this->scenarioEvents[k].data.scenario.ScenarioEventType == 0
-                                    || this->scenarioEvents[k].data.scenario.ScenarioEventType == 26)) {
-                                if (DAT_GameState::instance.mapAndTime.year < this->scenarioEvents[k].header.year
-                                    || (DAT_GameState::instance.mapAndTime.year == this->scenarioEvents[k].header.year
-                                        && DAT_GameState::instance.mapAndTime.month
-                                            < this->scenarioEvents[k].header.month)) {
-                                    break;
-                                }
-                                hasLaterWinEvent = 1;
-                                break;
-                            }
-                        }
-                        if (hasLaterWinEvent == 0) {
-                            this->scenarioEvents[eventIdx].header.done = 0;
-                            this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType = 0;
-                            this->scenarioEvents[eventIdx].header.year = DAT_GameState::instance.mapAndTime.year;
-                            this->scenarioEvents[eventIdx].header.month = DAT_GameState::instance.mapAndTime.month + 1;
-                            if (this->scenarioEvents[eventIdx].header.month >= 12) {
-                                this->scenarioEvents[eventIdx].header.year += 1;
-                                this->scenarioEvents[eventIdx].header.month -= 12;
-                            }
-                        }
-                    }
-                    break;
-                }
-                case 27: {
-                    if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                            .playerDeathRelated
-                        == 0) {
-                        this->scenarioEvents[eventIdx].header.done = 0;
-                        this->scenarioEvents[eventIdx].data.scenario.ScenarioEventType = 1;
-                        this->scenarioEvents[eventIdx].header.year = DAT_GameState::instance.mapAndTime.year;
-                        this->scenarioEvents[eventIdx].header.month = DAT_GameState::instance.mapAndTime.month + 1;
-                        if (this->scenarioEvents[eventIdx].header.month >= 12) {
-                            this->scenarioEvents[eventIdx].header.year += 1;
-                            this->scenarioEvents[eventIdx].header.month -= 12;
-                        }
-                    }
-                    break;
-                }
-                case 28: {
-                    if (DAT_GameCore::instance.gameMode_2 != 0 && this->scenarioEvents[eventIdx].header.year == 1085
-                        && this->scenarioEvents[eventIdx].header.month == 11) {
-                        int tribeId = MACRO_CALL_MEMBER(
-                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0, 4, 133, 278,
-                            DAT_GameSynchronyState::instance.currentPlayerSlotID, Units::UT_E_ARCHER, 20);
-                        DAT_TribesState::instance.tribes[tribeId].pendingScatterMove = 3;
-                        for (int u = 0; u < DAT_TribesState::instance.tribes[tribeId].size; ++u) {
-                            int unitId = MACRO_CALL_MEMBER(
-                                Units::TribesState_Func::getUnitIDForIndexInTribe, DAT_TribesState::ptr)(tribeId, u);
-                            DAT_UnitsState::instance.units[unitId].calculatedOwnerPlayerIndex = 6;
-                        }
-                    }
-                    break;
-                }
                 case 29: {
                     int slot = DAT_GameSynchronyState::instance.currentPlayerSlotID;
                     if (DAT_GameState::instance.playerDataArray[slot].totalFood != 0) {
@@ -1606,6 +1576,37 @@ namespace Map {
                     }
                     break;
                 }
+                case 23: {
+                    if (DAT_GameCore::instance.gameMode_2 != 0 && this->scenarioEvents[eventIdx].header.year == 1085
+                        && this->scenarioEvents[eventIdx].header.month == 11) {
+                        int tribeId = MACRO_CALL_MEMBER(
+                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0, 4, 133, 278,
+                            DAT_GameSynchronyState::instance.currentPlayerSlotID, Units::UT_E_ARCHER, 20);
+                        DAT_TribesState::instance.tribes[tribeId].pendingScatterMove = 3;
+                        for (int u = 0; u < DAT_TribesState::instance.tribes[tribeId].size; ++u) {
+                            int unitId = MACRO_CALL_MEMBER(
+                                Units::TribesState_Func::getUnitIDForIndexInTribe, DAT_TribesState::ptr)(tribeId, u);
+                            DAT_UnitsState::instance.units[unitId].calculatedOwnerPlayerIndex = 6;
+                        }
+                    }
+                    break;
+                }
+                case 25:
+                    DAT_GameCore::instance.section1076 = 1;
+                    break;
+                case 24:
+                    DAT_GameCore::instance.section1076 = 0;
+                    break;
+                case 28:
+                    for (int k = 0; k < this->eventsCount; ++k) {
+                        if (this->scenarioEvents[k].header.tl_type == 1
+                            && this->scenarioEvents[k].data.invasion.repeatMonths != 0) {
+                            this->scenarioEvents[k].data.invasion.repeatMonths = 0;
+                            this->scenarioEvents[k].header.done = 1;
+                            this->scenarioEvents[k].header.month = 1181;
+                        }
+                    }
+                    break;
                 }
 
                 MACRO_CALL_MEMBER(MapPropertiesState_Func::sortEventsByDate, this)();

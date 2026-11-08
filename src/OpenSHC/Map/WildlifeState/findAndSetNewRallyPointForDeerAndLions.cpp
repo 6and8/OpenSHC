@@ -45,25 +45,27 @@ namespace Map {
             }
             int nextVal = curVal - 1;
             for (int dir = 0; dir < 8; ++dir) {
-                int nx = curX + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset;
-                int ny = curY + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset;
-                if ((uint)nx <= 39 && (uint)ny <= 39) {
-                    WildlifeGridElement* nCell = &this->grid[nx][ny];
-                    if (nCell->firstMember > 0 && nCell->separateAreaID == startArea) {
+                unsigned int const nx
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset + curX;
+                unsigned int const ny
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset + curY;
+                if (nx <= 39 && ny <= 39) {
+                    if (this->grid[nx][ny].firstMember > 0 && this->grid[nx][ny].separateAreaID == startArea) {
                         bool ok;
                         if (always0or1 == 0) {
-                            if (nCell->field_0x34 != 0) {
+                            if (this->grid[nx][ny].field_0x34 != 0) {
                                 ok = false;
                             } else if (DAT_TribesState::instance.tribes[tribeID].tribeType == 13) {
-                                ok = (nCell->deerCount == 0 && nCell->lionCount == 0);
+                                ok = (this->grid[nx][ny].deerCount == 0 && this->grid[nx][ny].lionCount == 0);
                             } else {
                                 ok = true;
                             }
                         } else {
-                            ok = (nCell->unstalkedUnitCount == 0 && nCell->buildingTiles == 0 && nCell->lionCount == 0);
+                            ok = (this->grid[nx][ny].unstalkedUnitCount == 0 && this->grid[nx][ny].buildingTiles == 0
+                                && this->grid[nx][ny].lionCount == 0);
                         }
-                        if (ok && nCell->casDisRelated2 < nextVal) {
-                            nCell->casDisRelated2 = nextVal;
+                        if (ok && this->grid[nx][ny].casDisRelated2 < nextVal) {
+                            this->grid[nx][ny].casDisRelated2 = nextVal;
                             this->DAT_X10_Array_Section1034[this->candidateIndex2] = (short)nx;
                             this->DAT_Y10_Array_Section1034[this->candidateIndex2] = (short)ny;
                             this->candidateIndex2 += 1;

@@ -102,10 +102,10 @@ namespace Map {
                     } else if (mode == 1) {
                         if (this->grid[gx][gy].separateAreaID == 0) {
                             col = (ushort)COL_BLUE::instance.shortValue;
-                        } else if (this->grid[gx][gy].chimps != 0) {
-                            col = (ushort)COL_RED::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].chimps == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_RED::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -119,10 +119,10 @@ namespace Map {
                             col = (ushort)COL_RED::instance.shortValue;
                         } else if (this->grid[gx][gy].field_0x3c != 0) {
                             col = (ushort)COL_WHITE::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x50 != 0) {
-                            col = (ushort)COL_DARK_CYAN_GREY::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x50 == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_DARK_CYAN_GREY::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -130,10 +130,10 @@ namespace Map {
                     } else if (mode == 3) {
                         if (this->grid[gx][gy].separateAreaID == 0) {
                             col = (ushort)COL_BLUE::instance.shortValue;
-                        } else if (this->grid[gx][gy].unstalkedUnitCount != 0) {
-                            col = (ushort)COL_RED::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].unstalkedUnitCount == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_RED::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -145,10 +145,10 @@ namespace Map {
                             col = (ushort)COL_RED::instance.shortValue;
                         } else if (this->grid[gx][gy].buildingTiles != 0) {
                             col = (ushort)COL_RED::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x34 != 0) {
-                            col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x34 == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -166,10 +166,10 @@ namespace Map {
                             col = (ushort)COL_BLACK::instance.shortValue;
                         } else if (this->grid[gx][gy].deerCount != 0) {
                             col = (ushort)COL_MODERATE_GREEN::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x34 != 0) {
-                            col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x34 == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -185,10 +185,10 @@ namespace Map {
                             col = (ushort)COL_WHITE::instance.shortValue;
                         } else if (this->grid[gx][gy].casDisRelated2 != 0) {
                             col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x34 != 0) {
-                            col = (ushort)COL_BLACK::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x34 == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_BLACK::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(
@@ -219,10 +219,10 @@ namespace Map {
                             col = (ushort)COL_BLUE::instance.shortValue;
                         } else if (this->grid[gx][gy].unknownNonZero01 != 0) {
                             col = (ushort)COL_VIVID_BLUE::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x6c != 0) {
-                            col = (ushort)COL_RED::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x6c == 0) {
                             col = (ushort)COL_LIME::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_RED::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(

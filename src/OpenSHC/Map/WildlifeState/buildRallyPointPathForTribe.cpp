@@ -44,7 +44,7 @@ namespace Map {
                 unsigned int const ny
                     = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset + curY;
                 if (nx <= 39 && ny <= 39) {
-                    if (this->grid[nx][ny].firstMember > 0 && this->grid[nx][ny].separateAreaID == startArea
+                    if (this->grid[nx][ny].firstMember > 0 && startArea == this->grid[nx][ny].separateAreaID
                         && this->grid[nx][ny].field_0x50 > 0 && this->grid[nx][ny].casDisRelated2 == 0) {
                         this->grid[nx][ny].casDisRelated2 = this->grid[nx][ny].field_0x50;
                         this->DAT_X10_Array_Section1034[this->candidateIndex2] = (short)nx;

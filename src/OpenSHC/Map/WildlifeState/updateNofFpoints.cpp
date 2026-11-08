@@ -44,7 +44,7 @@ namespace Map {
                     int tileX = x10 * 10 + 5;
                     int tile = DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile + tileX;
                     int areaId = (short)DAT_TileMapState::instance.PathConnectionLayer[tile];
-                    if (areaId == spArea && (uint)tileX <= 399 && (uint)tileY <= 399
+                    if (spArea == areaId && (uint)tileX <= 399 && (uint)tileY <= 399
                         && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[tileY * 400 + tileX] != 0) {
                         int idx = DAT_TroopValueState::instance.attackInfo.nof_fpoints;
                         DAT_TroopValueState::instance.attackInfo.nof_fpointsArray[idx][0] = (short)tileX;

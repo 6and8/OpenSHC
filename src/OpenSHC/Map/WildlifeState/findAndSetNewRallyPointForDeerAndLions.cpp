@@ -50,9 +50,12 @@ namespace Map {
                 unsigned int const ny
                     = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset + curY;
                 if (nx <= 39 && ny <= 39) {
-                    if (this->grid[nx][ny].firstMember > 0 && this->grid[nx][ny].separateAreaID == startArea) {
+                    if (this->grid[nx][ny].firstMember > 0 && startArea == this->grid[nx][ny].separateAreaID) {
                         bool ok;
-                        if (always0or1 == 0) {
+                        if (always0or1 != 0) {
+                            ok = (this->grid[nx][ny].unstalkedUnitCount == 0 && this->grid[nx][ny].buildingTiles == 0
+                                && this->grid[nx][ny].lionCount == 0);
+                        } else {
                             if (this->grid[nx][ny].field_0x34 != 0) {
                                 ok = false;
                             } else if (DAT_TribesState::instance.tribes[tribeID].tribeType == 13) {
@@ -60,9 +63,6 @@ namespace Map {
                             } else {
                                 ok = true;
                             }
-                        } else {
-                            ok = (this->grid[nx][ny].unstalkedUnitCount == 0 && this->grid[nx][ny].buildingTiles == 0
-                                && this->grid[nx][ny].lionCount == 0);
                         }
                         if (ok && this->grid[nx][ny].casDisRelated2 < nextVal) {
                             this->grid[nx][ny].casDisRelated2 = nextVal;

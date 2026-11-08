@@ -96,13 +96,15 @@ namespace Map {
                 if (dir >= 8) {
                     dir -= 8;
                 }
-                int nx = x10 + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset;
-                int ny = y10 + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset;
-                if ((uint)nx <= 39 && (uint)ny <= 39) {
-                    WildlifeGridElement* nCell = &this->grid[nx][ny];
-                    if (nCell->firstMember > 0 && nCell->casDisRelated2 != 0 && nCell->casDisRelated2 < bestVal) {
-                        bestVal = nCell->casDisRelated2;
-                        nCell->casDisRelated2 = 0;
+                unsigned int const nx
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset + x10;
+                unsigned int const ny
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset + y10;
+                if (nx <= 39 && ny <= 39) {
+                    if (this->grid[nx][ny].firstMember > 0 && this->grid[nx][ny].casDisRelated2 != 0
+                        && this->grid[nx][ny].casDisRelated2 < bestVal) {
+                        bestVal = this->grid[nx][ny].casDisRelated2;
+                        this->grid[nx][ny].casDisRelated2 = 0;
                         bestDir = dir;
                     }
                 }

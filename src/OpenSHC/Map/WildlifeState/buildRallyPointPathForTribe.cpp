@@ -39,13 +39,14 @@ namespace Map {
             int curY = this->DAT_Y10_Array_Section1034[this->candidateIndex];
             int curX = this->DAT_X10_Array_Section1034[this->candidateIndex];
             for (int dir = 0; dir < 8; ++dir) {
-                int nx = curX + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset;
-                int ny = curY + DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset;
-                if ((uint)nx <= 39 && (uint)ny <= 39) {
-                    WildlifeGridElement* nCell = &this->grid[nx][ny];
-                    if (nCell->firstMember > 0 && nCell->separateAreaID == startArea && nCell->field_0x50 > 0
-                        && nCell->casDisRelated2 == 0) {
-                        nCell->casDisRelated2 = nCell->field_0x50;
+                unsigned int const nx
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset + curX;
+                unsigned int const ny
+                    = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.yOffset + curY;
+                if (nx <= 39 && ny <= 39) {
+                    if (this->grid[nx][ny].firstMember > 0 && this->grid[nx][ny].separateAreaID == startArea
+                        && this->grid[nx][ny].field_0x50 > 0 && this->grid[nx][ny].casDisRelated2 == 0) {
+                        this->grid[nx][ny].casDisRelated2 = this->grid[nx][ny].field_0x50;
                         this->DAT_X10_Array_Section1034[this->candidateIndex2] = (short)nx;
                         this->DAT_Y10_Array_Section1034[this->candidateIndex2] = (short)ny;
                         this->candidateIndex2 += 1;
@@ -80,8 +81,9 @@ namespace Map {
                 if ((uint)nx <= 39 && (uint)ny <= 39) {
                     WildlifeGridElement* nCell = &this->grid[nx][ny];
                     if (nCell->firstMember > 0 && nCell->casDisRelated2 != 0 && nCell->casDisRelated2 > bestVal) {
-                        bestVal = nCell->casDisRelated2;
+                        int val = nCell->casDisRelated2;
                         nCell->casDisRelated2 = 0;
+                        bestVal = val;
                         bestDir = dir;
                     }
                 }

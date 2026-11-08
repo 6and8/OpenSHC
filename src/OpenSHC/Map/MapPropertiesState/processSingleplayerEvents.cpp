@@ -229,10 +229,10 @@ namespace Map {
                     }
                 }
                 if (hasWaterBuilding == 0) {
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 18);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, (char*)s_ap_civil12_bik_005aaae8, (char*)s_general_message3_wav_005aa2c0);
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 18),
+                        (char*)s_ap_civil12_bik_005aaae8, (char*)s_general_message3_wav_005aa2c0);
                 }
             }
         }
@@ -909,10 +909,10 @@ namespace Map {
                             [DAT_GameState::instance.playerDataArray[slot5].buildingEntryInfos[8].tileEntry],
                         Units::UT_FIREEATER);
 
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 1);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, DAT_MissionAestheticsDefinedData::instance.RandomEvent1VideoName,
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 1),
+                        DAT_MissionAestheticsDefinedData::instance.RandomEvent1VideoName,
                         (char*)s_Random_Events1_wav_005aa8ec);
 
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
@@ -996,10 +996,10 @@ namespace Map {
                     }
                     MACRO_CALL_MEMBER(Game::GameStateStructures_Func::spawnPoisonCloudsAtRandomStorageOrArmyBuilding,
                         DAT_GameState::ptr)(slot, this->scenarioEvents[eventIdx].data.scenario.actionData);
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 2);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, DAT_MissionAestheticsDefinedData::instance.RandomEvent2VideoName,
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 2),
+                        DAT_MissionAestheticsDefinedData::instance.RandomEvent2VideoName,
                         (char*)s_Random_Events2_wav_005aa888);
 
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
@@ -1031,10 +1031,10 @@ namespace Map {
                         != 0) {
                         MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::harmWheatFarmsOfPlayer,
                             DAT_BuildingsState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 3);
                         MACRO_CALL_MEMBER(
-                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(text,
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 3),
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent3VideoName,
                             (char*)s_Random_Events3_wav_005aaad4);
                     }
@@ -1067,10 +1067,10 @@ namespace Map {
                         != 0) {
                         MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::harmHopFarmsOfPlayer,
                             DAT_BuildingsState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 4);
                         MACRO_CALL_MEMBER(
-                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(text,
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 4),
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent4VideoName,
                             (char*)s_Random_Events4_wav_005aaac0);
                     }
@@ -1103,10 +1103,11 @@ namespace Map {
                         != 0) {
                         MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::harmAppleFarmTreesOfPlayer,
                             DAT_BuildingsState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 5);
-                        MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
-                            DAT_VideoBikQueue::ptr)(text, (char*)s__005a5339, (char*)s_Random_Events5_wav_005aaaac);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 5),
+                            (char*)s__005a5339, (char*)s_Random_Events5_wav_005aaaac);
                         MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
                             DAT_VideoBikQueue::ptr)((char*)s__005a5339,
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent5VideoName, (char*)s__005a5339);
@@ -1135,10 +1136,10 @@ namespace Map {
                 }
                 case 15: {
                     MACRO_CALL_MEMBER(LandscapeState_Func::killEveryFifthTree, DAT_LandscapeState::ptr)();
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 6);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, DAT_MissionAestheticsDefinedData::instance.RandomEvent6VideoName,
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 6),
+                        DAT_MissionAestheticsDefinedData::instance.RandomEvent6VideoName,
                         (char*)s_Random_Events6_wav_005aa8c4);
 
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
@@ -1180,10 +1181,10 @@ namespace Map {
                             Units::TribesState_Func::spawnRabbitAtFirstFreeSpawnPoint, DAT_TribesState::ptr)();
                         MACRO_CALL_MEMBER(UI::MinimapViewState_Func::setSpawnMoment, DAT_MinimapViewState::ptr)(
                             DAT_TribesState::instance.unknownX_01, DAT_TribesState::instance.unknownY_01);
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 7);
                         MACRO_CALL_MEMBER(
-                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(text,
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 7),
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent7VideoName,
                             (char*)s_Random_Events7_wav_005aa8d8);
                     }
@@ -1237,10 +1238,11 @@ namespace Map {
                             DAT_TribesState::instance.tribes[tribeId].unknownBool02 = 0;
                             DAT_TribesState::instance.tribes[tribeId].unknownBool01 = 1;
                         }
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 8);
-                        MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
-                            DAT_VideoBikQueue::ptr)(text, (char*)s__005a5339, (char*)s__005a5339);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 8),
+                            (char*)s__005a5339, (char*)s__005a5339);
                     }
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
                         && this->scenarioEvents[eventIdx].data.scenario.repeatMonths != 1) {
@@ -1294,10 +1296,10 @@ namespace Map {
                             DAT_UnitsState::instance.units[unitId].logicalState = 2;
                         }
 
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 9);
                         MACRO_CALL_MEMBER(
-                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(text,
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 9),
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent9VideoName,
                             (char*)s_Random_Events9_wav_005aa860);
                     }
@@ -1332,10 +1334,11 @@ namespace Map {
                             DAT_GameSynchronyState::instance.currentPlayerSlotID);
                         MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::setDairyFarmCheeseCounter,
                             DAT_BuildingsState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID);
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 10);
-                        MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
-                            DAT_VideoBikQueue::ptr)(text, (char*)s__005a5339, (char*)s_Random_Events10_wav_005aaa98);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 10),
+                            (char*)s__005a5339, (char*)s_Random_Events10_wav_005aaa98);
                         MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
                             DAT_VideoBikQueue::ptr)((char*)s__005a5339,
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent10VideoName, (char*)s__005a5339);
@@ -1425,10 +1428,10 @@ namespace Map {
                                 tribe2, targetX, targetY, 0, 0, Units::Instructions::UMSE_0);
                         }
 
-                        char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 11);
                         MACRO_CALL_MEMBER(
-                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(text,
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 11),
                             DAT_MissionAestheticsDefinedData::instance.RandomEvent11VideoName,
                             (char*)s_Random_Events11_wav_005aa84c);
                     }
@@ -1461,10 +1464,10 @@ namespace Map {
                     if (DAT_GameState::instance.playerDataArray[slot].popularity > 10000) {
                         DAT_GameState::instance.playerDataArray[slot].popularity = 10000;
                     }
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 12);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, DAT_MissionAestheticsDefinedData::instance.RandomEvent12VideoName,
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 12),
+                        DAT_MissionAestheticsDefinedData::instance.RandomEvent12VideoName,
                         (char*)s_Random_Events12_wav_005aa8b0);
                     MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::setUpSFXToPlayUnk, DAT_SFXState::ptr)(
                         (Audio::SFX::SoundEffectID)207);
@@ -1477,10 +1480,10 @@ namespace Map {
                     if (DAT_GameState::instance.playerDataArray[slot].popularity > 10000) {
                         DAT_GameState::instance.playerDataArray[slot].popularity = 10000;
                     }
-                    char* text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                        DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 13);
                     MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, DAT_MissionAestheticsDefinedData::instance.RandomEvent13VideoName,
+                        MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 13),
+                        DAT_MissionAestheticsDefinedData::instance.RandomEvent13VideoName,
                         (char*)s_Random_Events13_wav_005aa89c);
                     break;
                 }
@@ -1489,19 +1492,21 @@ namespace Map {
                     if (DAT_GameState::instance.playerDataArray[slot].totalFood != 0) {
                         MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::applyFoodLossPercentageToPlayer,
                             DAT_BuildingsState::ptr)(slot, this->scenarioEvents[eventIdx].data.scenario.actionData);
-                        char* text;
-                        char* video;
                         if (this->scenarioEvents[eventIdx].data.scenario.actionData == 100) {
-                            video = DAT_MissionAestheticsDefinedData::instance.RandomEvent14VideoName;
-                            text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 16);
+                            MACRO_CALL_MEMBER(
+                                Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                                MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                    DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 16),
+                                DAT_MissionAestheticsDefinedData::instance.RandomEvent14VideoName,
+                                (char*)s_general_message3_wav_005aa2c0);
                         } else {
-                            video = DAT_MissionAestheticsDefinedData::instance.RandomEvent14VideoName;
-                            text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 14);
+                            MACRO_CALL_MEMBER(
+                                Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                                MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                    DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 14),
+                                DAT_MissionAestheticsDefinedData::instance.RandomEvent14VideoName,
+                                (char*)s_general_message3_wav_005aa2c0);
                         }
-                        MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik,
-                            DAT_VideoBikQueue::ptr)(text, video, (char*)s_general_message3_wav_005aa2c0);
                     }
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
                         && this->scenarioEvents[eventIdx].data.scenario.repeatMonths != 1) {
@@ -1530,29 +1535,34 @@ namespace Map {
                     DAT_GameState::instance.playerDataArray[slot].eventFireCountdown = 8;
                     MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::spreadFireRandomlyToBuildings,
                         DAT_BuildingsState::ptr)(slot, this->scenarioEvents[eventIdx].data.scenario.actionData);
-                    char* text;
-                    char* video;
                     if (MACRO_CALL_MEMBER(
                             Buildings::BuildingsState_Func::findFirstBuildingOfType, DAT_BuildingsState::ptr)(
                             DAT_GameSynchronyState::instance.currentPlayerSlotID, Buildings::BT_WELL)
                         != 0) {
-                        video = DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName;
-                        text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 15);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 15),
+                            DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName,
+                            (char*)s_general_warning16_wav_005aaa80);
                     } else if (MACRO_CALL_MEMBER(
                                    Buildings::BuildingsState_Func::findFirstBuildingOfType, DAT_BuildingsState::ptr)(
                                    DAT_GameSynchronyState::instance.currentPlayerSlotID, Buildings::BT_WATERPOT)
                         != 0) {
-                        video = DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName;
-                        text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 15);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 15),
+                            DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName,
+                            (char*)s_general_warning16_wav_005aaa80);
                     } else {
-                        video = DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName;
-                        text = MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
-                            DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 17);
+                        MACRO_CALL_MEMBER(
+                            Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
+                            MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
+                                DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_ACTION, 17),
+                            DAT_MissionAestheticsDefinedData::instance.RandomEvent15VideoName,
+                            (char*)s_general_warning16_wav_005aaa80);
                     }
-                    MACRO_CALL_MEMBER(Rendering::Bink::AIMessageQueue_Func::playEventVideoBik, DAT_VideoBikQueue::ptr)(
-                        text, video, (char*)s_general_warning16_wav_005aaa80);
 
                     if (this->scenarioEvents[eventIdx].data.scenario.repeat != 0
                         && this->scenarioEvents[eventIdx].data.scenario.repeatMonths != 1) {

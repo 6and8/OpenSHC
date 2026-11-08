@@ -1,0 +1,2 @@
+src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp

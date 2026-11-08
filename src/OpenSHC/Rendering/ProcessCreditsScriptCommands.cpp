@@ -41,7 +41,7 @@ void __cdecl Rendering::ProcessCreditsScriptCommands()
         case 1:
             INT_00ec083c::instance += FLOAT_Between1And5::instance;
             if (INT_00ec083c::instance
-                >= (float)DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkIndex::instance].soundStream) {
+                > (float)DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkIndex::instance].soundStream) {
                 INT_00ec083c::instance = 0.0f;
                 DAT_UnknownBinkIndex::instance += 1;
             }
@@ -49,7 +49,7 @@ void __cdecl Rendering::ProcessCreditsScriptCommands()
         case 44:
             INT_00ec083c::instance += FLOAT_Between1And5::instance;
             if (INT_00ec083c::instance
-                >= (float)DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkIndex::instance].soundStream) {
+                > (float)DAT_ARRAY_00eb9b68::instance[DAT_UnknownBinkIndex::instance].soundStream) {
                 INT_00ec083c::instance = 0.0f;
                 DAT_UnknownBinkIndex::instance += 1;
             } else if (DAT_MouseState::instance.draggingStopped != 0) {

@@ -23,7 +23,7 @@ namespace Map {
             return;
         }
         int spTile = DAT_ViewportRenderState::instance.translationMatrix[spY].addXgetTile + spX;
-        int spArea = DAT_TileMapState::instance.PathConnectionLayer[spTile];
+        int spArea = (short)DAT_TileMapState::instance.PathConnectionLayer[spTile];
         if (DAT_GameSynchronyState::instance.currentGameMode != 0) {
             return;
         }
@@ -43,7 +43,7 @@ namespace Map {
                 if (this->grid[x10][y10].field_0x6c != 0 && this->grid[x10][y10].firstMember > 0) {
                     int tileX = x10 * 10 + 5;
                     int tile = DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile + tileX;
-                    int areaId = DAT_TileMapState::instance.PathConnectionLayer[tile];
+                    int areaId = (short)DAT_TileMapState::instance.PathConnectionLayer[tile];
                     if (areaId == spArea && (uint)tileX <= 399 && (uint)tileY <= 399
                         && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[tileY * 400 + tileX] != 0) {
                         int idx = DAT_TroopValueState::instance.attackInfo.nof_fpoints;

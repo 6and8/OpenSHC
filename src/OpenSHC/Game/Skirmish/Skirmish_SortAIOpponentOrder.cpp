@@ -17,7 +17,7 @@ namespace Game {
         {
             int buffer[250];
             memset(buffer, 0, sizeof(buffer));
-            for (int i = 0; i < (int)DAT_00eb9b60::instance; ++i) {
+            for (int i = 0; i != (int)DAT_00eb9b60::instance; ++i) {
                 uint maxValue;
                 int best = -1;
                 for (int j = 0; j < (int)DAT_00eb9b60::instance; ++j) {

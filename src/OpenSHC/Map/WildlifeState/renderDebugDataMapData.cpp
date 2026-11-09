@@ -145,10 +145,10 @@ namespace Map {
                             col = (ushort)COL_RED::instance.shortValue;
                         } else if (this->grid[gx][gy].buildingTiles != 0) {
                             col = (ushort)COL_RED::instance.shortValue;
-                        } else if (this->grid[gx][gy].field_0x34 == 0) {
-                            col = (ushort)COL_LIME::instance.shortValue;
-                        } else {
+                        } else if (this->grid[gx][gy].field_0x34 != 0) {
                             col = (ushort)COL_BRIGHT_YELLOW::instance.shortValue;
+                        } else {
+                            col = (ushort)COL_LIME::instance.shortValue;
                         }
                         MACRO_CALL_MEMBER(
                             UI::Rendering::PencilRenderCore_Func::drawColorBox, DAT_PencilRenderCore::ptr)(

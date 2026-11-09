@@ -523,7 +523,7 @@ SHC_3BB0A8C1_0x00402C50 | 65.1% | Pending
 
 SHC_3BB0A8C1_0x00402DA0 | 80.0% | Pending
 
-SHC_3BB0A8C1_0x00402E20 | 29.6% | Pending
+SHC_3BB0A8C1_0x00402E20 | 29.8% | Pending
 
 SHC_3BB0A8C1_0x00403200 | 0.0% | Pending
 
@@ -545,7 +545,7 @@ SHC_3BB0A8C1_0x004039F0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00403A20 | 65.6% | Pending
 
-SHC_3BB0A8C1_0x00403FF0 | 89.4% | Pending
+SHC_3BB0A8C1_0x00403FF0 | 89.6% | Pending
 
 SHC_3BB0A8C1_0x004044E4 | 0.0% | Pending
 
@@ -13685,7 +13685,7 @@ SHC_3BB0A8C1_0x004410D0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00441140 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00441270 | 47.3% | Pending
+SHC_3BB0A8C1_0x00441270 | 52.2% | Pending
 
 SHC_3BB0A8C1_0x00441D00 | 0.0% | Pending
 
@@ -15485,7 +15485,7 @@ SHC_3BB0A8C1_0x004451BD | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004451BE | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004451C0 | 56.0% | Pending
+SHC_3BB0A8C1_0x004451C0 | 56.2% | Pending
 
 SHC_3BB0A8C1_0x0044544B | 0.0% | Pending
 
@@ -25865,7 +25865,7 @@ SHC_3BB0A8C1_0x004AE010 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004AE070 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004AE0F0 | 45.3% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
+SHC_3BB0A8C1_0x004AE0F0 | 46.7% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
 
 SHC_3BB0A8C1_0x004AE4F0 | 0.0% | Pending
 
@@ -32105,7 +32105,7 @@ SHC_3BB0A8C1_0x004BFE12 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004BFE13 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004BFE20 | 78.0% | Pending
+SHC_3BB0A8C1_0x004BFE20 | 92.0% | Pending
 
 SHC_3BB0A8C1_0x004BFFA0 | 0.0% | Pending
 
@@ -33901,7 +33901,7 @@ SHC_3BB0A8C1_0x004C2280 | 99.9% | Pending
 
 SHC_3BB0A8C1_0x004C3110 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004C31A0 | 70.7% | Pending
+SHC_3BB0A8C1_0x004C31A0 | 71.1% | Pending
 
 SHC_3BB0A8C1_0x004C35B0 | 0.0% | Pending
 
@@ -36267,7 +36267,7 @@ SHC_3BB0A8C1_0x004DD100 | 96.3% | Reimplemented, asm differs (register: original
 
 SHC_3BB0A8C1_0x004DD300 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DD350 | 83.8% | Reimplemented, asm differs (scheduling: mission number load in the hints block)
+SHC_3BB0A8C1_0x004DD350 | 84.1% | Reimplemented, asm differs (scheduling: mission number load in the hints block)
 
 SHC_3BB0A8C1_0x004DD750 | 0.0% | Pending
 

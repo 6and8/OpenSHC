@@ -1,0 +1,14 @@
+src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceGain.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingStorageTypeForResourceType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getResourceSpace.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToGranary.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getResourceCountThatCanBeDeposited.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeArmoryRemainingCapacity.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp

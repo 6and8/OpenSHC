@@ -1,0 +1,3 @@
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLeaderboard_DeleteEntry.cpp

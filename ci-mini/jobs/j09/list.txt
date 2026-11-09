@@ -1,0 +1,3 @@
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp
+src/OpenSHC/Map/LandscapeState/createRock.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp

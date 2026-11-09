@@ -1,0 +1,4 @@
+src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp
+src/OpenSHC/Map/Entities/UpdateFlag_1_2_4_Entity.cpp

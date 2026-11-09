@@ -1,0 +1,3 @@
+src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp

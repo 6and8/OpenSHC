@@ -1,0 +1,67 @@
+#include "OpenSHC/Game/Skirmish.func.hpp"
+
+#include "OpenSHC/Globals/DAT_00eb9b60.hpp"
+#include "OpenSHC/Globals/DAT_00ed3124.hpp"
+#include "OpenSHC/Globals/DAT_MissionDefinedData.hpp"
+#include "OpenSHC/Globals/DAT_SkMasters2DataArray.hpp"
+#include "OpenSHC/Globals/INT_ARRAY_00eb96d8.hpp"
+#include "OpenSHC/Globals/INT_ARRAY_00ed27f0.hpp"
+#include "OpenSHC/Globals/INT_ARRAY_00ed2be0.hpp"
+
+namespace OpenSHC {
+namespace Game {
+    namespace Skirmish {
+
+        // FUNCTION: STRONGHOLDCRUSADER 0x004D9290
+        void Skirmish_SortAIOpponentOrder(int reverseOrder)
+        {
+            int buffer[250];
+            memset(buffer, 0, sizeof(buffer));
+            for (int i = 0; i < (int)DAT_00eb9b60::instance; ++i) {
+                uint maxValue;
+                int best = -1;
+                for (int j = 0; j < (int)DAT_00eb9b60::instance; ++j) {
+                    if (buffer[j] == 0 && (best == -1 || (uint)INT_ARRAY_00ed2be0::instance[j] > maxValue)) {
+                        maxValue = INT_ARRAY_00ed2be0::instance[j];
+                        best = j;
+                    }
+                }
+                if (best < 0) {
+                    best = 0;
+                }
+                buffer[best] = 1;
+                INT_ARRAY_00eb96d8::instance[i] = INT_ARRAY_00ed27f0::instance[best];
+            }
+
+            if (DAT_MissionDefinedData::instance.sortColumn == 2 && (int)DAT_00eb9b60::instance > 1
+                && DAT_00ed3124::instance != 1) {
+                for (int pass = 0; pass < 2500; ++pass) {
+                    int swaps = 0;
+                    for (int i = 1; i < (int)DAT_00eb9b60::instance; ++i) {
+                        if (_stricmp(DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i - 1]].mapName,
+                                DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i]].mapName)
+                            > 0) {
+                            int const swap = INT_ARRAY_00eb96d8::instance[i];
+                            INT_ARRAY_00eb96d8::instance[i] = INT_ARRAY_00eb96d8::instance[i - 1];
+                            INT_ARRAY_00eb96d8::instance[i - 1] = swap;
+                            ++swaps;
+                        }
+                    }
+                    if (swaps == 0) {
+                        break;
+                    }
+                }
+            }
+
+            if (reverseOrder != 0) {
+                return;
+            }
+            memcpy(buffer, INT_ARRAY_00eb96d8::instance, sizeof(buffer));
+            for (int i = 0; i < (int)DAT_00eb9b60::instance; ++i) {
+                INT_ARRAY_00eb96d8::instance[i] = buffer[DAT_00eb9b60::instance - 1 - i];
+            }
+        }
+
+    }
+}
+}

@@ -1,0 +1,13 @@
+src/OpenSHC/Map/Buildings/UpdateBrewery.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/MapPropertiesState/adjustEventMonthAndYearForSection1047.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/UI/MenuViews/HistoricCampaignIntro/MenuView_HistoricCampaignIntro_DoEveryFrame.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp
+src/OpenSHC/Global/DetectDXVersionByLoadingDDRAW.cpp
+src/OpenSHC/UI/MenuViews/HistoricCampaignOutro/MenuView_HistoricCampaignOutro_DoEveryFrame.cpp
+src/OpenSHC/Synchrony/Actions/SelectionReplenishAmmo.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceLoss.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingStorageTypeForResourceType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp

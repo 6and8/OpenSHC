@@ -1,0 +1,15 @@
+src/OpenSHC/Map/Buildings/UpdateArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLeaderboard_DeleteEntry.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionPicture/MenuView_HistoricMissionPicture_DoEveryFrame.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp

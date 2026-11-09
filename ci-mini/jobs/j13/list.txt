@@ -1,0 +1,7 @@
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp
+src/OpenSHC/Map/Buildings/UpdateTower1.cpp
+src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp
+src/OpenSHC/Map/Entities/UpdateCrossbowArrowEntity.cpp
+src/OpenSHC/Map/Entities/EntityState/updateEntities.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp

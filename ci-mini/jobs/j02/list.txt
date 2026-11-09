@@ -1,0 +1,12 @@
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/Buildings/UpdateOxTether.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setBuildingInitialEntryTileTry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp

@@ -1,0 +1,5 @@
+src/OpenSHC/UI/MenuItems/WaitingForHost/MenuItemActionHandler_WaitingForHost_ConnectToLobby.cpp
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp
+src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp

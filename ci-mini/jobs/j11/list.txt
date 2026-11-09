@@ -1,0 +1,10 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/Map/Buildings/UpdateStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/buildingHasSpaceForResource.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp

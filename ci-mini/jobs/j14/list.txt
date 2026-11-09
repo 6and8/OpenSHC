@@ -1,0 +1,15 @@
+src/OpenSHC/Map/Trees/UpdateAppleTree.cpp
+src/OpenSHC/Map/Buildings/UpdateTower3.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/resolveBuildingEntryAccessibility.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setBuildingInitialEntryTileTry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp

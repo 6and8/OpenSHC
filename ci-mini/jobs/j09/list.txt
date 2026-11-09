@@ -1,0 +1,10 @@
+src/OpenSHC/Synchrony/Actions/ProcessRecruitUnit.cpp
+src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/Map/Entities/UpdateArrowEntity.cpp

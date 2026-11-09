@@ -1,0 +1,8 @@
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseLarge.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/LandscapeState/createRock.cpp
+src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp

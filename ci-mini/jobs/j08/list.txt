@@ -1,0 +1,9 @@
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/UI/Helpers/TrimStoredMenuString.cpp

@@ -1,0 +1,8 @@
+src/OpenSHC/UI/Helpers/ClearSiegeInformationArray2.cpp
+src/OpenSHC/Map/Entities/UpdateFireEntity.cpp
+src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/UI/MenuItems/BuildMenu/MenuItemActionHandler_BuildMenu_DeleteAction.cpp

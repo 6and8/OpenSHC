@@ -19,10 +19,12 @@ namespace UI {
         {
             char name[100];
             int offset = 0;
+            int x = posX;
             for (int player = 1; player < 9; ++player) {
                 if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[player] == -1) {
                     continue;
                 }
+                BOOL digitShown = FALSE;
                 strncpy(name, DAT_GameSynchronyState::instance.DAT_PlayerNames[player], 99);
                 name[99] = 0;
                 int length = strlen(name);
@@ -40,10 +42,10 @@ namespace UI {
                 }
                 DAT_PencilRenderCore::instance.surfaceTarget = 1;
                 MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(
-                    posX - 95 + offset, posY - 5, posX - 95 + offset + 190, posY + 50, 16);
+                    x - 95, posY - 5, x + 95, posY + 50, 16);
                 DAT_PencilRenderCore::instance.surfaceTarget = 0;
                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderInGameTextWithShadow, DAT_TextManagerObject::ptr)(name,
-                    posX - 95 + offset + 95, posY, Text::TTA_CENTER,
+                    x, posY, Text::TTA_CENTER,
                     DAT_RenderingDefinedData::instance
                         .ColorArray[DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player]],
                     0, 18, FALSE, 0);
@@ -63,7 +65,6 @@ namespace UI {
                 } else {
                     numberWidth = 11;
                 }
-                BOOL digitShown = FALSE;
                 int divisor = 10000000;
                 for (int digitIndex = 7; digitIndex >= 0; --digitIndex) {
                     int digit = DAT_GameState::instance.playerDataArray[player].field_0x229c / divisor % 10;
@@ -81,6 +82,7 @@ namespace UI {
                     }
                 }
                 offset += 200;
+                x += 200;
             }
         }
 

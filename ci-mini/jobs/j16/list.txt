@@ -1,0 +1,4 @@
+src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp
+src/OpenSHC/Synchrony/Actions/ProcessRecruitUnit.cpp
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp

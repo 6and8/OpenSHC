@@ -1,0 +1,3 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp
+src/OpenSHC/UI/MenuViews/HistoricCampaignIntro/MenuView_HistoricCampaignIntro_DoEveryFrame.cpp
+src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp

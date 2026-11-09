@@ -1,0 +1,4 @@
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp
+src/OpenSHC/Map/LandscapeState/createTree.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp

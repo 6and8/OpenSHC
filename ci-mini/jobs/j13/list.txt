@@ -1,0 +1,3 @@
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/Map/Entities/UpdateArrowEntity.cpp
+src/OpenSHC/UI/MenuViews/HistoricCampaignOutro/MenuView_HistoricCampaignOutro_DoEveryFrame.cpp

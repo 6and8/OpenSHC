@@ -1,0 +1,8 @@
+src/OpenSHC/Map/Buildings/UpdateTower3.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/UpdateBadBuildingStocks.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp

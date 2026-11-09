@@ -1,0 +1,3 @@
+src/OpenSHC/UI/MenuItems/WaitingForHost/MenuItemActionHandler_WaitingForHost_ConnectToLobby.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applySnoozedStateBasedOnPlayerData.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLobbySetupStructure/restoreSkirmishLobbySetup.cpp

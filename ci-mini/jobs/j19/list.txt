@@ -1,0 +1,7 @@
+src/OpenSHC/Map/MapPropertiesState/updateEventYearsAndCommitBuildingAvailability.cpp
+src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp
+src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Trade.cpp

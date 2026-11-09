@@ -1,0 +1,7 @@
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Entities/UpdateCrossbowArrowEntity.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionPicture/MenuView_HistoricMissionPicture_DoEveryFrame.cpp

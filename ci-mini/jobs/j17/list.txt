@@ -1,0 +1,3 @@
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp

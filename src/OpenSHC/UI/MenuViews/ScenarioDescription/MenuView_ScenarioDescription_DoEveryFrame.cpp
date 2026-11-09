@@ -54,8 +54,9 @@ namespace UI {
                     DAT_00ed2794::instance = 0;
                     int missionIndex = DAT_GameCore::instance.missionNumber1to20 - 1;
                     if (missionIndex < 20) {
-                        MACRO_CALL_MEMBER(Audio::MSS::SoundSystem_Func::playSoundOnStream3Unk,
-                            DAT_SoundSystemState::ptr)(DAT_MissionDefinedData::instance.MissionSpeechFileNames[missionIndex], 1);
+                        MACRO_CALL_MEMBER(
+                            Audio::MSS::SoundSystem_Func::playSoundOnStream3Unk, DAT_SoundSystemState::ptr)(
+                            DAT_MissionDefinedData::instance.MissionSpeechFileNames[missionIndex], 1);
                     }
                 }
                 int frame = (now - INT_00ed3130::instance) / 250;
@@ -73,8 +74,8 @@ namespace UI {
                         MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
                             DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_MISSION_BUTTONS, 6),
                         DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 30,
-                        DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight + 50, Text::TTA_LEFT, 0xccfaff, 17, FALSE,
-                        0);
+                        DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight + 50, Text::TTA_LEFT, 0xccfaff, 17,
+                        FALSE, 0);
                     textY = 40;
                 } else {
                     if (DAT_00ed2798::instance == 0) {
@@ -98,19 +99,21 @@ namespace UI {
                             Text::TTA_LEFT, 0xccfaff, 17, FALSE);
                         y += 30;
                         MACRO_CALL_MEMBER(Text::TextManager_Func::renderMultilineText2Unk, DAT_TextManagerObject::ptr)(
-                            (eTextSections)hintSection, 1, DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 40, y,
-                            720, 0xc2f0eb, 18);
+                            (eTextSections)hintSection, 1, DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 40,
+                            y, 720, 0xc2f0eb, 18);
                         y += DAT_TextManagerObject::instance.field_0x4 + 30;
                         if (hintCount > 0) {
                             DAT_TextManagerObject::instance.field_0x24 = 1;
                             if (hintCount == 1) {
                                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
-                                    DE::SHCDE::TEXT_HINTS, 3, DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 30,
-                                    y, Text::TTA_LEFT, 0xccfaff, 17, FALSE);
+                                    DE::SHCDE::TEXT_HINTS, 3,
+                                    DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 30, y, Text::TTA_LEFT,
+                                    0xccfaff, 17, FALSE);
                             } else if (hintCount > 1) {
                                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderText2, DAT_TextManagerObject::ptr)(
-                                    DE::SHCDE::TEXT_HINTS, 2, DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 30,
-                                    y, Text::TTA_LEFT, 0xccfaff, 17, FALSE);
+                                    DE::SHCDE::TEXT_HINTS, 2,
+                                    DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 30, y, Text::TTA_LEFT,
+                                    0xccfaff, 17, FALSE);
                             }
                             y += 30;
                             char* hintRevealed = (char*)&DAT_GameState::instance.mapAndTime.field43_0xf0;
@@ -122,20 +125,23 @@ namespace UI {
                                 DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = 1;
                                 int x = DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 65;
                                 if (hintRevealed[i] == 0) {
-                                    MACRO_CALL_MEMBER(Text::TextManager_Func::renderTextToScreen,
-                                        DAT_TextManagerObject::ptr)(
+                                    MACRO_CALL_MEMBER(
+                                        Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                                         MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
                                             DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_HINTS, 4),
                                         x, y, Text::TTA_LEFT, 0xc2f0eb, 18, FALSE, 0);
                                     if (DAT_MouseState::instance.draggingStopped != FALSE
-                                        && MACRO_CALL_MEMBER(Input::MouseState_Func::isMouseInsideBox, DAT_MouseState::ptr)(
-                                            DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 40, y - 2, 19, 19)) {
+                                        && MACRO_CALL_MEMBER(
+                                            Input::MouseState_Func::isMouseInsideBox, DAT_MouseState::ptr)(
+                                            DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 40, y - 2, 19,
+                                            19)) {
                                         hintRevealed[i] = 1;
                                     }
                                     break;
                                 }
-                                MACRO_CALL_MEMBER(Text::TextManager_Func::renderMultilineText2Unk,
-                                    DAT_TextManagerObject::ptr)((eTextSections)hintSection, i + 2, x, y, 695, 0xc2f0eb, 18);
+                                MACRO_CALL_MEMBER(
+                                    Text::TextManager_Func::renderMultilineText2Unk, DAT_TextManagerObject::ptr)(
+                                    (eTextSections)hintSection, i + 2, x, y, 695, 0xc2f0eb, 18);
                                 y += DAT_TextManagerObject::instance.field_0x4;
                             }
                         }
@@ -147,8 +153,8 @@ namespace UI {
                 int briefingSection;
                 int briefingNum;
                 if (DAT_GameCore::instance.gameMode_2 == Game::GM_ECONOMIC_CAMPAIGN_SH1) {
-                    briefingNum = DAT_GameCore::instance.missionNumber1to20 - 32;
                     briefingSection = DE::SHCDE::TEXT_ECO_MISSION_BRIEFINGS;
+                    briefingNum = DAT_GameCore::instance.missionNumber1to20 - 32;
                 } else {
                     briefingSection = DAT_00ed2798::instance + DAT_GameCore::instance.missionNumber1to20 * 4 + 96;
                     briefingNum = 1;

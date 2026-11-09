@@ -236,7 +236,7 @@ namespace Map {
                         goto reverse;
                     }
                 }
-                if (first > second) {
+                if (second < first) {
                     targetX = this->entityArray[entityID].microX * 2 - this->entityArray[entityID].x_2;
                     targetY = this->entityArray[entityID].y_2;
                 } else {

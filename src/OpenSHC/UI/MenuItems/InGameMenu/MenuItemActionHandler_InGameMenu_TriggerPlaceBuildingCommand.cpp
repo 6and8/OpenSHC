@@ -200,8 +200,8 @@ namespace UI {
                 int yOff;
                 switch (DAT_TileMapState::instance.currentMapperCommand) {
                 case 120:
-                    spriteIdx = 9;
                     xOff = 15;
+                    spriteIdx = 9;
                     yOff = 7;
                     break;
                 case 121:
@@ -253,8 +253,8 @@ namespace UI {
                             (DE::SHCDE::eSFX)203);
                         break;
                     case 121:
-                        entityType = 11;
                         px = DAT_TileMapState::instance.DAT_ClickedTileX * 8;
+                        entityType = 11;
                         py = DAT_TileMapState::instance.DAT_ClickedTileY * 8;
                         MACRO_CALL_MEMBER(Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                             DAT_TileMapState::instance.DAT_ClickedTileX, DAT_TileMapState::instance.DAT_ClickedTileY,
@@ -332,8 +332,8 @@ namespace UI {
                         = DAT_TileMapState::instance.decorationVariantIndex;
                     MACRO_CALL_MEMBER(Synchrony::GameSynchronyState_Func::queueCommand, DAT_GameSynchronyState::ptr)(
                         (Commands::GameCommandType)69);
-                    DAT_TileMapState::instance.decorationVariantIndex = SEC_RNG::instance.currentNumber1 % 7;
                     MACRO_CALL_MEMBER(Random::RNG_Func::nextRandomNumber1, SEC_RNG::ptr)();
+                    DAT_TileMapState::instance.decorationVariantIndex = SEC_RNG::instance.currentNumber1 % 7;
                 }
                 return;
             }

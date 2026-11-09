@@ -120,8 +120,8 @@ namespace UI {
             int aiVariations[9];
             int lordTypes[9];
             for (int i = 0; i < 9; i++) {
-                teams[i] = DAT_GameState::instance.mapAndTime.playerTeams[i];
                 groups[i] = DAT_GameState::instance.mapAndTime.playerGroupArray[i];
+                teams[i] = DAT_GameState::instance.mapAndTime.playerTeams[i];
                 ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];
                 aiVariations[i] = DAT_GameSynchronyState::instance.aiVariationArray[i];
                 lordTypes[i] = DAT_GameCore::instance.selectedLordTypes[i];
@@ -241,7 +241,7 @@ namespace UI {
                 }
             }
             for (int pass = 8; pass != 0; pass--) {
-                for (int playerID = 1; playerID < 9; playerID++) {
+                for (int playerID = 1; playerID != 9; playerID++) {
                     if ((DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] != -1
                             || DAT_GameSynchronyState::instance.currentAIArray[playerID] != 0)
                         && positions[playerID] != 0) {

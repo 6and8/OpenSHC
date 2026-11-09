@@ -37,8 +37,8 @@ namespace UI {
                         DAT_MapPropertiesState::instance.currentEventID);
                     MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::activateModalDialog,
                         DAT_MenuModalComposition1::ptr)(UI::Enums::MMT_NONE, FALSE);
-                    MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sortEventsByDate, DAT_MapPropertiesState::ptr)();
                     MACRO_CALL_MEMBER(Text::UserTextHandler_Func::resetToTextIndex, DAT_UserTextHandlerState::ptr)(15);
+                    MACRO_CALL_MEMBER(Map::MapPropertiesState_Func::sortEventsByDate, DAT_MapPropertiesState::ptr)();
                 }
                 break;
             case 37: {

@@ -60,8 +60,8 @@ namespace UI {
                             }
                         }
                         MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGMWithAlphaMask,
-                            DAT_TextureRenderCoreObject::ptr)(IO::Graphics::GID_INTERFACE_ICONS_3, tile, column + x + 24,
-                            row + y + 24, IO::Graphics::GID_INTERFACE_ICONS_3, tile + 3, 0);
+                            DAT_TextureRenderCoreObject::ptr)(IO::Graphics::GID_INTERFACE_ICONS_3, tile,
+                            column + x + 24, row + y + 24, IO::Graphics::GID_INTERFACE_ICONS_3, tile + 3, 0);
                     }
                 }
                 MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(
@@ -79,7 +79,8 @@ namespace UI {
                         if (MACRO_CALL_MEMBER(Map::Units::UnitsState_Func::getAliveLordForPlayer, DAT_UnitsState::ptr)(
                                 player)
                                 == 0
-                            && (int)DAT_GameCore::instance.mapTimeInTicks > (int)(DAT_GameCore::instance.section1127 + 200)) {
+                            && (int)DAT_GameCore::instance.mapTimeInTicks
+                                > (int)(DAT_GameCore::instance.section1127 + 200)) {
                             lordDead[player] = 1;
                             rows[count].primary = 0;
                             rows[count].secondary = 0;
@@ -102,13 +103,15 @@ namespace UI {
                         if (MACRO_CALL_MEMBER(Map::Units::UnitsState_Func::getAliveLordForPlayer, DAT_UnitsState::ptr)(
                                 player)
                                 == 0
-                            && (int)DAT_GameCore::instance.mapTimeInTicks > (int)(DAT_GameCore::instance.section1127 + 200)) {
+                            && (int)DAT_GameCore::instance.mapTimeInTicks
+                                > (int)(DAT_GameCore::instance.section1127 + 200)) {
                             lordDead[player] = 1;
                             rows[count].primary = 0;
                             rows[count].secondary = 0;
                         } else {
                             rows[count].primary = DAT_GameState::instance.playerDataArray[player].armySize;
-                            rows[count].secondary = DAT_GameState::instance.playerDataArray[player].currentResources[15];
+                            rows[count].secondary
+                                = DAT_GameState::instance.playerDataArray[player].currentResources[15];
                             if (rows[count].secondary < 0) {
                                 rows[count].secondary = 0;
                             }
@@ -125,7 +128,8 @@ namespace UI {
                         if (MACRO_CALL_MEMBER(Map::Units::UnitsState_Func::getAliveLordForPlayer, DAT_UnitsState::ptr)(
                                 player)
                                 == 0
-                            && (int)DAT_GameCore::instance.mapTimeInTicks > (int)(DAT_GameCore::instance.section1127 + 200)) {
+                            && (int)DAT_GameCore::instance.mapTimeInTicks
+                                > (int)(DAT_GameCore::instance.section1127 + 200)) {
                             lordDead[player] = 1;
                             rows[count].primary = 0;
                         } else {
@@ -136,11 +140,11 @@ namespace UI {
                     }
                 }
                 // selection sort by primary, then secondary, both descending
-                for (int rank = 0; rank < count; ++rank) {
+                for (int rank = 0; rank != count; ++rank) {
                     int best = -1;
                     int bestPrimary;
                     int bestSecondary;
-                    for (int i = 0; i < count; ++i) {
+                    for (int i = 0; count > i; ++i) {
                         if (rows[i].player == 0) {
                             continue;
                         }
@@ -169,13 +173,15 @@ namespace UI {
                     int dead = lordDead[player];
                     int nameOffset = 0;
                     if (dead != 0) {
-                        MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM,
-                            DAT_TextureRenderCoreObject::ptr)(DE::SHCDE::GM_INTERFACE_ICONS2, 665, nameX - 20, lineY + 2);
+                        MACRO_CALL_MEMBER(
+                            UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
+                            DE::SHCDE::GM_INTERFACE_ICONS2, 665, nameX - 20, lineY + 2);
                         nameOffset = 6;
                     } else if (DAT_GameState::instance.mapAndTime.playerGroupArray[player] > 0) {
                         MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM,
                             DAT_TextureRenderCoreObject::ptr)(DE::SHCDE::GM_INTERFACE_ICONS2,
-                            DAT_GameState::instance.mapAndTime.playerGroupArray[player] * 2 + 492, nameX - 20, lineY - 2);
+                            DAT_GameState::instance.mapAndTime.playerGroupArray[player] * 2 + 492, nameX - 20,
+                            lineY - 2);
                     }
                     DAT_TextManagerObject::instance.field_0x30 = 1;
                     MACRO_CALL_MEMBER(Text::TextManager_Func::renderMultilineText6Unk, DAT_TextManagerObject::ptr)(
@@ -200,8 +206,8 @@ namespace UI {
                         MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
                             DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_MP_RANK, 2),
                         nameX, y + 360, Text::TTA_LEFT, 0xccfaff, 17, FALSE, 0);
-                    MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
-                        DE::SHCDE::GM_INTERFACE_ICONS2, 730,
+                    MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM,
+                        DAT_TextureRenderCoreObject::ptr)(DE::SHCDE::GM_INTERFACE_ICONS2, 730,
                         DAT_TextManagerObject::instance.currentXOffset_0x0 + nameX + 10, y + 355);
                 }
                 if (DAT_GreatestLordDefinedData::instance.tableSortBy == 0) {
@@ -209,8 +215,8 @@ namespace UI {
                         MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
                             DAT_TextManagerObject::ptr)(DE::SHCDE::TEXT_MP_RANK, 3),
                         nameX, y + 360, Text::TTA_LEFT, 0xccfaff, 17, FALSE, 0);
-                    MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(
-                        DE::SHCDE::GM_INTERFACE_ICONS2, 664,
+                    MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::renderGM,
+                        DAT_TextureRenderCoreObject::ptr)(DE::SHCDE::GM_INTERFACE_ICONS2, 664,
                         DAT_TextManagerObject::instance.currentXOffset_0x0 + nameX + 10, y + 350);
                 }
                 if (DAT_GreatestLordDefinedData::instance.tableSortBy == -1) {

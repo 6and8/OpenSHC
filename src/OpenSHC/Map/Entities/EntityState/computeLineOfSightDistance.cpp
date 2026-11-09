@@ -29,7 +29,8 @@ namespace Map {
             int curY = y;
             int const startTileY = y / 8;
             int const startTileX = x / 8;
-            int const startTile = DAT_ViewportRenderState::instance.translationMatrix[startTileY].addXgetTile + startTileX;
+            int const startTile
+                = DAT_ViewportRenderState::instance.translationMatrix[startTileY].addXgetTile + startTileX;
             if (DAT_TileMapState::instance.LogicLayer[startTile] & 0x10000000) {
                 height += 10;
             }
@@ -52,7 +53,8 @@ namespace Map {
                 for (i = 0; i < 1000; ++i) {
                     curY += stepY;
                     if ((i & 1) != 0 && param_7 == 0) {
-                        int const tile = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + startTileX;
+                        int const tile
+                            = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + startTileX;
                         if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x400300) == 0) {
                             stillClear = 0;
                             this->lineOfSightClearanceSteps = i;
@@ -63,9 +65,11 @@ namespace Map {
                             heightChecked = 0;
                             if ((char)DAT_TileMapState::instance.LogicLayer[tile] < 0
                                 || (DAT_TileMapState::instance.BuildingLayer[tile] != buildingID
-                                    && (stillClear == 0 || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
+                                    && (stillClear == 0
+                                        || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
                                 heightChecked = 1;
-                                lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
+                                lastHeight = MACRO_CALL_MEMBER(
+                                    TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
                                 if (abs(curY - y) * (targetHeight - height) / distY + height < lastHeight) {
                                     return 0;
                                 }
@@ -95,7 +99,9 @@ namespace Map {
                         }
                         for (int k = 1; k < scanCount; ++k) {
                             lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(
-                                DAT_ViewportRenderState::instance.translationMatrix[targetY / 8 - k * stepY].addXgetTile + targetX / 8, 1);
+                                DAT_ViewportRenderState::instance.translationMatrix[targetY / 8 - k * stepY].addXgetTile
+                                    + targetX / 8,
+                                1);
                             if (lastHeight > targetHeight) {
                                 steps = 28;
                             }
@@ -112,7 +118,8 @@ namespace Map {
                             err += errStraight;
                         }
                         if ((i & 1) != 0 && param_7 == 0) {
-                            int const tile = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + curX / 8;
+                            int const tile
+                                = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + curX / 8;
                             if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x400300) == 0) {
                                 stillClear = 0;
                                 this->lineOfSightClearanceSteps = i;
@@ -123,9 +130,11 @@ namespace Map {
                                 heightChecked = 0;
                                 if ((char)DAT_TileMapState::instance.LogicLayer[tile] < 0
                                     || (DAT_TileMapState::instance.BuildingLayer[tile] != buildingID
-                                        && (stillClear == 0 || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
+                                        && (stillClear == 0
+                                            || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
                                     heightChecked = 1;
-                                    lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
+                                    lastHeight = MACRO_CALL_MEMBER(
+                                        TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
                                     if (abs(curY - y) * (targetHeight - height) / distY + height < lastHeight) {
                                         return 0;
                                     }
@@ -153,7 +162,9 @@ namespace Map {
                     }
                     for (int k = 1; k < scanCount; ++k) {
                         lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(
-                            DAT_ViewportRenderState::instance.translationMatrix[targetY / 8].addXgetTile + targetX / 8 - k * stepX, 1);
+                            DAT_ViewportRenderState::instance.translationMatrix[targetY / 8].addXgetTile + targetX / 8
+                                - k * stepX,
+                            1);
                         if (lastHeight > targetHeight) {
                             steps = 28;
                         }
@@ -163,14 +174,15 @@ namespace Map {
                 this->lineOfSightClearanceSteps = steps;
                 for (i = 0; i < 1000; ++i) {
                     curX += stepX;
-                    if (err > 0) {
+                    if (!(err > 0)) {
+                        err += errStraight;
+                    } else {
                         curY += stepY;
                         err += errDiagonal;
-                    } else {
-                        err += errStraight;
                     }
                     if ((i & 1) != 0 && param_7 == 0) {
-                        int const tile = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + curX / 8;
+                        int const tile
+                            = DAT_ViewportRenderState::instance.translationMatrix[curY / 8].addXgetTile + curX / 8;
                         if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x400300) == 0) {
                             stillClear = 0;
                             this->lineOfSightClearanceSteps = i;
@@ -181,9 +193,11 @@ namespace Map {
                             heightChecked = 0;
                             if ((char)DAT_TileMapState::instance.LogicLayer[tile] < 0
                                 || (DAT_TileMapState::instance.BuildingLayer[tile] != buildingID
-                                    && (stillClear == 0 || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
+                                    && (stillClear == 0
+                                        || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
                                 heightChecked = 1;
-                                lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
+                                lastHeight = MACRO_CALL_MEMBER(
+                                    TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
                                 if (abs(curX - x) * (targetHeight - height) / distX + height < lastHeight) {
                                     return 0;
                                 }
@@ -201,44 +215,47 @@ namespace Map {
                 }
                 return i;
             }
-                if (steps >= 28) {
-                    steps = 28;
-                }
-                this->lineOfSightClearanceSteps = steps;
-                int skipSteps = steps / 2;
-                for (i = 0; i < 1000; ++i) {
-                    curX += stepX;
-                    if ((i & 1) != 0 && param_7 == 0) {
-                        int const tile = DAT_ViewportRenderState::instance.translationMatrix[startTileY].addXgetTile + curX / 8;
-                        if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x400300) == 0) {
-                            stillClear = 0;
-                            this->lineOfSightClearanceSteps = i;
-                        }
-                        if (skipSteps != 0) {
-                            skipSteps -= 1;
-                        } else if (lastTile != tile) {
-                            heightChecked = 0;
-                            if ((char)DAT_TileMapState::instance.LogicLayer[tile] < 0
-                                || (DAT_TileMapState::instance.BuildingLayer[tile] != buildingID
-                                    && (stillClear == 0 || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
-                                heightChecked = 1;
-                                lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(tile, 1);
-                                if (abs(curX - x) * (targetHeight - height) / distX + height < lastHeight) {
-                                    return 0;
-                                }
-                            }
-                        } else if (heightChecked != 0) {
+            if (steps >= 28) {
+                steps = 28;
+            }
+            this->lineOfSightClearanceSteps = steps;
+            int skipSteps = steps / 2;
+            for (i = 0; i < 1000; ++i) {
+                curX += stepX;
+                if ((i & 1) != 0 && param_7 == 0) {
+                    int const tile
+                        = DAT_ViewportRenderState::instance.translationMatrix[startTileY].addXgetTile + curX / 8;
+                    if ((DAT_TileMapState::instance.LogicLayer[tile] & 0x400300) == 0) {
+                        stillClear = 0;
+                        this->lineOfSightClearanceSteps = i;
+                    }
+                    if (skipSteps != 0) {
+                        skipSteps -= 1;
+                    } else if (lastTile != tile) {
+                        heightChecked = 0;
+                        if ((char)DAT_TileMapState::instance.LogicLayer[tile] < 0
+                            || (DAT_TileMapState::instance.BuildingLayer[tile] != buildingID
+                                && (stillClear == 0
+                                    || (DAT_TileMapState::instance.LogicLayer[tile] & 0x400200) == 0))) {
+                            heightChecked = 1;
+                            lastHeight = MACRO_CALL_MEMBER(TileMapState_Func::returnSomeHeight, DAT_TileMapState::ptr)(
+                                tile, 1);
                             if (abs(curX - x) * (targetHeight - height) / distX + height < lastHeight) {
                                 return 0;
                             }
                         }
-                        lastTile = tile;
+                    } else if (heightChecked != 0) {
+                        if (abs(curX - x) * (targetHeight - height) / distX + height < lastHeight) {
+                            return 0;
+                        }
                     }
-                    if (curX == targetX && y == targetY) {
-                        return i;
-                    }
+                    lastTile = tile;
                 }
-                return i;
+                if (curX == targetX && y == targetY) {
+                    return i;
+                }
+            }
+            return i;
         }
 
     } // namespace Entities

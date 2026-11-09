@@ -476,8 +476,11 @@ namespace UI {
                     (&DAT_GameSynchronyState::instance.finalResults.yearStart)[playerID] = 0;
                 }
             }
-            memset(DAT_GameSynchronyState::instance.finalResults.finalKillMatrix, 0,
-                sizeof(DAT_GameSynchronyState::instance.finalResults.finalKillMatrix));
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    DAT_GameSynchronyState::instance.finalResults.finalKillMatrix[i][j] = 0;
+                }
+            }
             DAT_GameSynchronyState::instance.finalResults.monthStart = DAT_GameState::instance.mapAndTime.month;
             DAT_GameSynchronyState::instance.finalResults.yearStart = DAT_GameState::instance.mapAndTime.year;
             MACRO_CALL_MEMBER(Map::Units::TroopValueState_Func::clearAttackInfo, DAT_TroopValueState::ptr)();

@@ -419,7 +419,7 @@ SHC_3BB0A8C1_0x00401400 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00401430 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00401460 | 49.4% | Pending
+SHC_3BB0A8C1_0x00401460 | 66.7% | Reimplemented, asm differs (esi/edi and eax/edx swaps) (minibuild)
 
 SHC_3BB0A8C1_0x00401540 | 100.0% | Reimplemented
 

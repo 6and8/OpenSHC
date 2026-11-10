@@ -419,7 +419,7 @@ SHC_3BB0A8C1_0x00401400 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00401430 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00401460 | 66.7% | Reimplemented, asm differs (esi/edi and eax/edx swaps) (minibuild)
+SHC_3BB0A8C1_0x00401460 | 66.7% | Reimplemented, asm differs (esi/edi and eax/edx swaps)
 
 SHC_3BB0A8C1_0x00401540 | 100.0% | Reimplemented
 
@@ -36193,7 +36193,7 @@ SHC_3BB0A8C1_0x004DB180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DB210 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
-SHC_3BB0A8C1_0x004DB300 | 97.4% | Reimplemented, only the float constant label differs (reccmp#235) (minibuild)
+SHC_3BB0A8C1_0x004DB300 | 97.4% | Reimplemented, only the float constant label differs (reccmp#235)
 
 SHC_3BB0A8C1_0x004DB390 | 100.0% | Reimplemented (counted: only the 100.0 constant and _ftol2 symbol names differ)
 
@@ -36279,7 +36279,7 @@ SHC_3BB0A8C1_0x004DF2E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DFB90 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004E0A50 | 60.0% | Pending
+SHC_3BB0A8C1_0x004E0A50 | 98.1% | Reimplemented, only data symbol labels differ (float constant reccmp#235, loop end addresses) (minibuild)
 
 SHC_3BB0A8C1_0x004E0A90 | 0.0% | Pending
 

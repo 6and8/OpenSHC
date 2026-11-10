@@ -42,29 +42,25 @@ namespace Map {
                     == 123) {
                     int const targetX = microX + this->entityArray[entityID].someMicroX;
                     int const targetY = this->entityArray[entityID].microY + this->entityArray[entityID].someMicroY;
-                    int const tileY = targetY / 8;
-                    int const tileX = targetX / 8;
                     if (MACRO_CALL_MEMBER(OpenSHC::Rendering::ViewportRenderState_Func::xyAreValid,
-                            DAT_ViewportRenderState::ptr)(tileX, tileY)) {
+                            DAT_ViewportRenderState::ptr)((targetX / 8), (targetY / 8))) {
                         int const centerTileY = this->entityArray[entityID].microY / 8;
                         int const centerTileX = this->entityArray[entityID].microX / 8;
                         if (MACRO_CALL_MEMBER(OpenSHC::Rendering::ViewportRenderState_Func::xyAreValid,
                                 DAT_ViewportRenderState::ptr)(centerTileX, centerTileY)
-                            && (DAT_TileMapState::instance
-                                       .LogicLayer[DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile
-                                           + tileX]
-                                   & 1)
-                            && (DAT_TileMapState::instance
-                                       .LogicLayer[DAT_ViewportRenderState::instance.translationMatrix[centerTileY]
-                                                       .addXgetTile
-                                           + centerTileX]
-                                   & 1)) {
+                            && (DAT_TileMapState::instance.LogicLayer
+                                    [DAT_ViewportRenderState::instance.translationMatrix[(targetY / 8)].addXgetTile
+                                        + (targetX / 8)]
+                                & 1)
+                            && (DAT_TileMapState::instance.LogicLayer
+                                    [DAT_ViewportRenderState::instance.translationMatrix[centerTileY].addXgetTile
+                                        + centerTileX]
+                                & 1)) {
                             this->seagullArray[seagullID].someCountDown = 160;
                             MACRO_CALL_MEMBER(EntityState_Func::setProjectileTargetPosition, this)(entityID,
                                 this->entityArray[entityID].microX, this->entityArray[entityID].microY, 250, targetX,
                                 targetY, 0);
-                            MACRO_CALL_MEMBER(
-                                OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
+                            MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playSFXAtLocation, DAT_SFXState::ptr)(
                                 this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
                                 (OpenSHC::DE::SHCDE::eSFX)0xc9);
                             return;
@@ -117,7 +113,7 @@ namespace Map {
                 }
                 int const offsetX = (int)(sin(angleRadians) * this->seagullArray[seagullID].unknownCounter_0x16);
                 int const offsetY = (int)(cos(angleRadians) * this->seagullArray[seagullID].unknownCounter_0x16);
-                double angleRadians2 = (this->seagullArray[seagullID].angle_2 - 180) * 3.1415926535 / 180.0;
+                angleRadians = (this->seagullArray[seagullID].angle_2 - 180) * 3.1415926535 / 180.0;
                 this->seagullArray[seagullID].angle_2 += this->seagullArray[seagullID].angleStep;
                 if (this->seagullArray[seagullID].angle_2 >= 360) {
                     this->seagullArray[seagullID].angle_2 -= 360;
@@ -125,11 +121,11 @@ namespace Map {
                 if (this->seagullArray[seagullID].angle_2 < 0) {
                     this->seagullArray[seagullID].angle_2 += 360;
                 }
-                this->seagullArray[seagullID].x_2 = (int)(sin(angleRadians2)
-                                                        * this->seagullArray[seagullID].numberBetween60And100)
+                this->seagullArray[seagullID].x_2
+                    = (int)(sin(angleRadians) * this->seagullArray[seagullID].numberBetween60And100)
                     + this->seagullArray[seagullID].x;
-                this->seagullArray[seagullID].y_2 = (int)(cos(angleRadians2)
-                                                        * this->seagullArray[seagullID].numberBetween60And100)
+                this->seagullArray[seagullID].y_2
+                    = (int)(cos(angleRadians) * this->seagullArray[seagullID].numberBetween60And100)
                     + this->seagullArray[seagullID].y;
                 MACRO_CALL_MEMBER(EntityState_Func::setProjectileTargetPosition, this)(entityID,
                     this->entityArray[entityID].microX, this->entityArray[entityID].microY,
@@ -150,8 +146,8 @@ namespace Map {
                 this->seagullArray[seagullID].x_3 = DAT_PathFindingState::instance.ALG_ResultX * 8;
                 this->seagullArray[seagullID].y_3 = DAT_PathFindingState::instance.ALG_ResultY * 8;
                 MACRO_CALL_MEMBER(EntityState_Func::initializeSeagullMovementVector, this)(seagullID,
-                    this->seagullArray[seagullID].x, this->seagullArray[seagullID].y,
-                    this->seagullArray[seagullID].x_3, this->seagullArray[seagullID].y_3);
+                    this->seagullArray[seagullID].x, this->seagullArray[seagullID].y, this->seagullArray[seagullID].x_3,
+                    this->seagullArray[seagullID].y_3);
                 this->seagullArray[seagullID].pathStepDelay = 10;
                 return;
             }
@@ -165,29 +161,33 @@ namespace Map {
                 return;
             }
             if (this->seagullArray[seagullID].pathAxisCase == 2) {
-                this->seagullArray[seagullID].x = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
+                this->seagullArray[seagullID].x
+                    = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
             } else if (this->seagullArray[seagullID].pathAxisCase == 1) {
                 this->seagullArray[seagullID].y += this->seagullArray[seagullID].pathStepY;
             } else if (this->seagullArray[seagullID].pathAxisCase == 4) {
                 if (this->seagullArray[seagullID].pathError > 0) {
-                    this->seagullArray[seagullID].x = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
+                    this->seagullArray[seagullID].x
+                        = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
                     this->seagullArray[seagullID].y += this->seagullArray[seagullID].pathStepY;
-                    this->seagullArray[seagullID].pathError =
-                        this->seagullArray[seagullID].pathErrorStepDiagonal + this->seagullArray[seagullID].pathError;
+                    this->seagullArray[seagullID].pathError
+                        = this->seagullArray[seagullID].pathErrorStepDiagonal + this->seagullArray[seagullID].pathError;
                 } else {
-                    this->seagullArray[seagullID].x = this->entityArray[entityID].someMicroX + this->seagullArray[seagullID].x;
-                    this->seagullArray[seagullID].pathError =
-                        this->seagullArray[seagullID].pathErrorStepStraight + this->seagullArray[seagullID].pathError;
+                    this->seagullArray[seagullID].x
+                        = this->entityArray[entityID].someMicroX + this->seagullArray[seagullID].x;
+                    this->seagullArray[seagullID].pathError
+                        = this->seagullArray[seagullID].pathErrorStepStraight + this->seagullArray[seagullID].pathError;
                 }
             } else if (this->seagullArray[seagullID].pathAxisCase == 3) {
                 this->seagullArray[seagullID].y += this->seagullArray[seagullID].pathStepY;
                 if (this->seagullArray[seagullID].pathError > 0) {
-                    this->seagullArray[seagullID].x = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
-                    this->seagullArray[seagullID].pathError =
-                        this->seagullArray[seagullID].pathErrorStepDiagonal + this->seagullArray[seagullID].pathError;
+                    this->seagullArray[seagullID].x
+                        = this->seagullArray[seagullID].pathStepX + this->seagullArray[seagullID].x;
+                    this->seagullArray[seagullID].pathError
+                        = this->seagullArray[seagullID].pathErrorStepDiagonal + this->seagullArray[seagullID].pathError;
                 } else {
-                    this->seagullArray[seagullID].pathError =
-                        this->seagullArray[seagullID].pathErrorStepStraight + this->seagullArray[seagullID].pathError;
+                    this->seagullArray[seagullID].pathError
+                        = this->seagullArray[seagullID].pathErrorStepStraight + this->seagullArray[seagullID].pathError;
                 }
             }
         }

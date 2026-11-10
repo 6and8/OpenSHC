@@ -505,7 +505,7 @@ SHC_3BB0A8C1_0x00402A20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00402AB0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00402AE0 | 78.6% | Reimplemented, asm differs (jump table starts at 1 in ours, 0 in the original)
+SHC_3BB0A8C1_0x00402AE0 | 100% | Reimplemented, asm differs (jump table starts at 1 in ours, 0 in the original)
 
 SHC_3BB0A8C1_0x00402BBC | 0.0% | Pending
 
@@ -36193,7 +36193,7 @@ SHC_3BB0A8C1_0x004DB180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DB210 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
-SHC_3BB0A8C1_0x004DB300 | 76.3% | Reimplemented, asm differs (store order of the parameter globals)
+SHC_3BB0A8C1_0x004DB300 | 97.4% | Reimplemented, only the float constant label differs (reccmp#235) (minibuild)
 
 SHC_3BB0A8C1_0x004DB390 | 100.0% | Reimplemented (counted: only the 100.0 constant and _ftol2 symbol names differ)
 

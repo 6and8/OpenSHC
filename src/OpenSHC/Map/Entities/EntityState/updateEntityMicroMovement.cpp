@@ -14,24 +14,23 @@ namespace Map {
             }
             switch (this->entityArray[entityID].pathAxisCase) {
             case 0:
-                break;
+                return;
             case 2:
                 this->entityArray[entityID].microX += this->entityArray[entityID].someMicroX;
                 break;
             case 1:
                 this->entityArray[entityID].microY += this->entityArray[entityID].someMicroY;
                 break;
-            case 4: {
-                short const error = this->entityArray[entityID].pathError;
-                this->entityArray[entityID].microX += this->entityArray[entityID].someMicroX;
-                if (error > 0) {
+            case 4:
+                if (this->entityArray[entityID].pathError > 0) {
+                    this->entityArray[entityID].microX += this->entityArray[entityID].someMicroX;
                     this->entityArray[entityID].microY += this->entityArray[entityID].someMicroY;
-                    this->entityArray[entityID].pathError = error + this->entityArray[entityID].pathErrorStepDiagonal;
+                    this->entityArray[entityID].pathError += this->entityArray[entityID].pathErrorStepDiagonal;
                 } else {
-                    this->entityArray[entityID].pathError = error + this->entityArray[entityID].pathErrorStepStraight;
+                    this->entityArray[entityID].microX += this->entityArray[entityID].someMicroX;
+                    this->entityArray[entityID].pathError += this->entityArray[entityID].pathErrorStepStraight;
                 }
                 break;
-            }
             case 3:
                 if (this->entityArray[entityID].pathError > 0) {
                     this->entityArray[entityID].microX += this->entityArray[entityID].someMicroX;

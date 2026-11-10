@@ -31,7 +31,10 @@ namespace Map {
                     previousID = nextID;
                     nextID = this->entityArray[previousID].nextEntityOnThisTileByID;
                     if (nextID == entityID) {
-                        break;
+                        this->entityArray[previousID].nextEntityOnThisTileByID
+                            = this->entityArray[entityID].nextEntityOnThisTileByID;
+                        this->entityArray[entityID].nextEntityOnThisTileByID = 0;
+                        return;
                     }
                     if (nextID == 0) {
                         return;
@@ -52,7 +55,10 @@ namespace Map {
                     previousID = nextID;
                     nextID = this->entityArray[previousID].nextEntityOnThisTileByID;
                     if (nextID == entityID) {
-                        break;
+                        this->entityArray[previousID].nextEntityOnThisTileByID
+                            = this->entityArray[entityID].nextEntityOnThisTileByID;
+                        this->entityArray[entityID].nextEntityOnThisTileByID = 0;
+                        return;
                     }
                     if (nextID == 0) {
                         return;

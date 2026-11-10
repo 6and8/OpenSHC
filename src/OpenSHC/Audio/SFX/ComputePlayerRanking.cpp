@@ -54,10 +54,11 @@ namespace Audio {
                 if (best < 0) {
                     return 0;
                 }
-                if (entries[best].playerID == playerID) {
+                int id = entries[best].playerID;
+                entries[best].playerID = 0;
+                if (id == playerID) {
                     return rank + 1;
                 }
-                entries[best].playerID = 0;
             }
             return 0;
         }

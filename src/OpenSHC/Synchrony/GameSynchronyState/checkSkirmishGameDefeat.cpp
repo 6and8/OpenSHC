@@ -65,10 +65,9 @@ namespace Synchrony {
             if (this->currentPlayerFullIDArray[player] == -1 && this->currentAIArray[player] == 0) {
                 continue;
             }
-            int const team = DAT_GameState::instance.mapAndTime.playerTeams[player];
-            teams[team].players += 1;
+            teams[DAT_GameState::instance.mapAndTime.playerTeams[player]].players += 1;
             if (DAT_GameState::instance.playerDataArray[player].lordKilledByPlayerID != 0) {
-                teams[team].lordsKilled += 1;
+                teams[DAT_GameState::instance.mapAndTime.playerTeams[player]].lordsKilled += 1;
             }
         }
         int winningTeam = 0;

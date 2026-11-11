@@ -24,6 +24,11 @@ namespace Synchrony {
     // FUNCTION: STRONGHOLDCRUSADER 0x00486600
     void GameSynchronyState::checkSkirmishGameDefeat()
     {
+        // declared at the top for the match: the original reserves stack slots for these three and copies them from
+        // the zero register
+        int activeTeams = 0;
+        int defeatedTeams = 0;
+        BOOLEnum found = FALSE;
         if (this->currentGameMode == Game::GM_SOLITARY) {
             return;
         }
@@ -71,8 +76,6 @@ namespace Synchrony {
             }
         }
         int winningTeam = 0;
-        int activeTeams = 0;
-        int defeatedTeams = 0;
         for (int team = 1; team < 9; ++team) {
             if (teams[team].players == 0) {
                 continue;
@@ -84,19 +87,17 @@ namespace Synchrony {
                 winningTeam = team;
             }
         }
-        activeTeams -= 1;
 
         int won[9];
         for (int player = 1; player < 9; ++player) {
             won[player] = 0;
         }
-        if (defeatedTeams >= activeTeams) {
+        if (defeatedTeams >= activeTeams - 1) {
             DAT_GameCore::instance.unknownAlwaysZero = 0;
         } else {
             if (DAT_GameCore::instance.mapU4Int0 == 0) {
                 return;
             }
-            BOOLEnum found = FALSE;
             for (int player = 1; player < 9; ++player) {
                 if ((this->currentPlayerFullIDArray[player] != -1 || this->currentAIArray[player] != 0)
                     && DAT_GameState::instance.playerDataArray[player].field_0x229c == 0) {

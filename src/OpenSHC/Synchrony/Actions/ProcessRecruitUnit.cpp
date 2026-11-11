@@ -16,8 +16,8 @@ namespace Synchrony {
     // FUNCTION: STRONGHOLDCRUSADER 0x00464EF0
     void Actions::ProcessRecruitUnit(int playerID, int unitType, undefined4 recruitmentBuildingID)
     {
-        if (DAT_GameState::instance.playerDataArray[playerID].count_2
-                + DAT_GameState::instance.playerDataArray[playerID].armySize
+        if (DAT_GameState::instance.playerDataArray[playerID].armySize
+                + DAT_GameState::instance.playerDataArray[playerID].count_2
             >= DAT_GameState::instance.mapAndTime.armySizeLimit) {
             return;
         }

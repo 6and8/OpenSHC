@@ -451,7 +451,7 @@ SHC_3BB0A8C1_0x00401B20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00401B60 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00401BA0 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x00401BA0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00401C30 | 0.0% | Pending
 
@@ -461,7 +461,7 @@ SHC_3BB0A8C1_0x00401D20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00401D70 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00401DB0 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x00401DB0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00401E20 | 0.0% | Pending
 
@@ -5555,7 +5555,7 @@ SHC_3BB0A8C1_0x00418500 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418530 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00418640 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x00418640 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418740 | 100.0% | Reimplemented
 
@@ -6129,7 +6129,7 @@ SHC_3BB0A8C1_0x0041C570 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041C6F0 | 53.2% | stack slot layout of the idle timers
 
-SHC_3BB0A8C1_0x0041C810 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x0041C810 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041C9D0 | 0.0% | Pending
 
@@ -6199,15 +6199,15 @@ SHC_3BB0A8C1_0x0041E860 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041E870 | 95.9% | Register allocation differs
 
-SHC_3BB0A8C1_0x0041EB00 | 95.0% | Pending (minibuild)
+SHC_3BB0A8C1_0x0041EB00 | 95.0% | Pending
 
 SHC_3BB0A8C1_0x0041EC80 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041EDA0 | 80.2% | Pending (minibuild)
+SHC_3BB0A8C1_0x0041EDA0 | 80.2% | Pending
 
 SHC_3BB0A8C1_0x0041EF30 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041F110 | 95.0% | Pending (minibuild)
+SHC_3BB0A8C1_0x0041F110 | 95.0% | Pending
 
 SHC_3BB0A8C1_0x0041F290 | 0.0% | Pending
 
@@ -19853,7 +19853,7 @@ SHC_3BB0A8C1_0x00464DA0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00464E80 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00464EF0 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x00464EF0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00465040 | 100.0% | Reimplemented
 
@@ -22421,7 +22421,7 @@ SHC_3BB0A8C1_0x004800B0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004800E0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00480210 | 96.9% | Pending (minibuild)
+SHC_3BB0A8C1_0x00480210 | 96.9% | Pending
 
 SHC_3BB0A8C1_0x00480440 | 0.0% | Pending
 
@@ -25789,7 +25789,7 @@ SHC_3BB0A8C1_0x004AC440 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004AC4C0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004AC570 | 100% | Reimplemented (minibuild)
+SHC_3BB0A8C1_0x004AC570 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004AC650 | 100.0% | Reimplemented
 
@@ -34149,7 +34149,7 @@ SHC_3BB0A8C1_0x004C6880 | 95.7% | Reimplemented, sub esi, 1 is add esi, -1
 
 SHC_3BB0A8C1_0x004C68D0 | 74.2% | Pending
 
-SHC_3BB0A8C1_0x004C6B20 | 96.9% | Pending (minibuild)
+SHC_3BB0A8C1_0x004C6B20 | 96.9% | Pending
 
 SHC_3BB0A8C1_0x004C6B90 | 0.0% | Pending
 

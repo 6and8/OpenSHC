@@ -1,0 +1,5 @@
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Buildings/UpdateBadBuildingDunkingStool.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp

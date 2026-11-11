@@ -1,0 +1,7 @@
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp
+src/OpenSHC/Map/Buildings/UpdateTower3.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp

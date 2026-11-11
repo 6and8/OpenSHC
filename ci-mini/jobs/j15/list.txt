@@ -1,0 +1,5 @@
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp
+src/OpenSHC/Map/Buildings/UpdateStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/buildingHasSpaceForResource.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp

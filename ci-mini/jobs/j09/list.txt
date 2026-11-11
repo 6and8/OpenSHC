@@ -1,0 +1,7 @@
+src/OpenSHC/Map/Buildings/UpdateArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionPicture/MenuView_HistoricMissionPicture_DoEveryFrame.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp

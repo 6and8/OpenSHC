@@ -1,0 +1,2 @@
+src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp

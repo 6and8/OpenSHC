@@ -1,0 +1,382 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_all.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_first2.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_first3.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_first4.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_first5.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_first6.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_apples.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_bread.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_cheese.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_meat.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_all.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_first2.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_first3.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_one_activeTeams.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_one_defeatedTeams.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_all.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_first2.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_first3.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_first4.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_one_buildingID.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"updateGateDr_all.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"updateGateDr_first2.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"updateGateDr_one_attacker.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"updateGateDr_one_enemyNear.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"updateGateDr_one_flagEntityID.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"updateWheatF_all.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"updateWheatF_first2.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"updateWheatF_one_frame.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"updateWheatF_one_start.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"updateWheatF_one_unchangedLeft.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_one_heightChecked.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_one_lastHeight.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_one_steps.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"computeLineO_one_stillClear.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp",
+"computeMissi_one_deadlineMonth.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"LaunchSkirmi_all.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"LaunchSkirmi_one_keepCount.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"LaunchSkirmi_one_playerCount.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/UI/MenuViews/HistoricCampaignOutro/MenuView_HistoricCampaignOutro_DoEveryFrame.cpp",
+"MenuView_His_one_blendStrength.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"determineBui_one_heightStep.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp",
+"StoreGameInt_all.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp",
+"StoreGameInt_one_count.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp",
+"StoreGameInt_one_insertAt.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp",
+"MenuView_His_one_blendStrength.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"determineBui_one_heightStep.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"UpdateArmory_all.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"UpdateArmory_one_resourceGiven.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"UpdateArmory_one_sprite.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/UI/MenuViews/HistoricMissionPicture/MenuView_HistoricMissionPicture_DoEveryFrame.cpp",
+"MenuView_His_one_blendStrength.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"doSomethingW_one_count.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_resourceGiven.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_sprite.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"UpdateGranar_one_totalFood.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"RenderUnknow_one_offset.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"moveProjecti_one_heightStep.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"UpdateMill_all.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"UpdateMill_one_cycleDone.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"UpdateMill_one_stageDone.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBadBuildingDunkingStool.cpp",
+"UpdateBadBui_one_buildingID.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp",
+"renderChatMe_one_lines.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"UpdateOutpos_all.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"UpdateOutpos_one_batchSize.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"UpdateOutpos_one_choices.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"UpdateBrewer_one_animationDone.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/resolveBuildingEntryAccessibility.cpp",
+"resolveBuild_one_blocked.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"handleProjec_all.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"handleProjec_one_targetX.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"handleProjec_one_targetY.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/Map/Buildings/UpdateOxTether.cpp",
+"UpdateOxTeth_one_buildingID.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"spawnInvasio_one_spawnedGroups.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"processSingl_all.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"processSingl_one_prevWinEventIdx.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"processSingl_one_signpostIndex.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"UpdateQuarry_one_workerCount.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/Map/Entities/EntityState/updateEntities.cpp",
+"updateEntiti_one_highestEntityID.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"spawnProject_all.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"spawnProject_one_targetX.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"spawnProject_one_targetY.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/Map/Buildings/UpdateStockpile.cpp",
+"UpdateStockp_one_resourceGiven.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"updateHopsFi_all.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"updateHopsFi_one_start.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"updateHopsFi_one_unchangedLeft.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTower2.cpp",
+"UpdateTower2_one_buildingID.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_one_found.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"checkSkirmis_one_winningTeam.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"MenuModalRen_one_count.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTower3.cpp",
+"UpdateTower3_one_buildingID.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp",
+"ComputePlaye_one_count.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"LoadSkirmish_one_highestTeam.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp",
+"MenuView_Cam_one_changedCount.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"UpdateTower4_one_buildingID.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp",
+"InsertElemen_one_index.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"MenuItemActi_one_shouldPlace.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/UI/MenuViews/HistoricCampaignIntro/MenuView_HistoricCampaignIntro_DoEveryFrame.cpp",
+"MenuView_His_one_blendStrength.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTower5.cpp",
+"UpdateTower5_one_buildingID.cpp"
+]
+}

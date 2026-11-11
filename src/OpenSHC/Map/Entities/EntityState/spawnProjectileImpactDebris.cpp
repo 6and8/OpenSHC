@@ -11,12 +11,12 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x00405DA0
         void EntityState::spawnProjectileImpactDebris(int entityID)
         {
+            int targetY = 0;
+            int targetX = 0;
             int const microX = this->entityArray[entityID].microX;
             int const microY = this->entityArray[entityID].microY;
             int const subY = microY & 7;
             int const subX = microX & 7;
-            int targetY = 0;
-            int targetX = 0;
             int const flags = MACRO_CALL_MEMBER(TileMapState_Func::setBitFlagBasedOnWallTowerGatehouseOrKeep,
                 DAT_TileMapState::ptr)(microX / 8, microY / 8);
             int first;

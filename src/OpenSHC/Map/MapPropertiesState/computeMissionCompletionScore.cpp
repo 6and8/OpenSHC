@@ -1,5 +1,4 @@
 #include "OpenSHC/Map/MapPropertiesState.func.hpp"
-
 #include "OpenSHC/Map/Units/TroopValueState.func.hpp"
 #include "OpenSHC/Map/Units/UnitType.hpp"
 
@@ -17,19 +16,21 @@ namespace Map {
     // FUNCTION: STRONGHOLDCRUSADER 0x004BDE40
     void MapPropertiesState::computeMissionCompletionScore()
     {
-        int deadlineYear = 0;
         int deadlineMonth = 0;
+        int deadlineYear = 0;
         this->missionScore = -1;
         this->objectiveGoodsCount = 0;
         for (int i = 0; i < this->eventsCount; ++i) {
             if (this->scenarioEvents[i].header.tl_type == 3
-                && (this->scenarioEvents[i].data.scenario.ScenarioEventType == 1 || this->scenarioEvents[i].data.scenario.ScenarioEventType == 27)
+                && (this->scenarioEvents[i].data.scenario.ScenarioEventType == 1
+                    || this->scenarioEvents[i].data.scenario.ScenarioEventType == 27)
                 && this->scenarioEvents[i].data.scenario.conditions[0].enabled != 0) {
                 deadlineMonth = this->scenarioEvents[i].header.month;
                 deadlineYear = this->scenarioEvents[i].header.year;
             }
             if (this->scenarioEvents[i].header.tl_type != 3
-                || (this->scenarioEvents[i].data.scenario.ScenarioEventType != 0 && this->scenarioEvents[i].data.scenario.ScenarioEventType != 26)) {
+                || (this->scenarioEvents[i].data.scenario.ScenarioEventType != 0
+                    && this->scenarioEvents[i].data.scenario.ScenarioEventType != 26)) {
                 continue;
             }
             for (int j = i + 1; j < this->eventsCount; ++j) {
@@ -40,18 +41,21 @@ namespace Map {
                 }
             }
             if (this->scenarioEvents[i].data.scenario.conditions[6].enabled != 0) {
-                this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[6].subType;
+                this->objectiveGoodsType[this->objectiveGoodsCount]
+                    = this->scenarioEvents[i].data.scenario.conditions[6].subType;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                           .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[6].value);
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[6].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
                 case 10:
                 case 11:
                 case 12:
                 case 13:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
                     break;
                 case 17:
                 case 18:
@@ -61,31 +65,37 @@ namespace Map {
                 case 22:
                 case 23:
                 case 24:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
                     break;
                 case 6:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
                     break;
                 default:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
                 }
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
                 }
             }
             if (this->scenarioEvents[i].data.scenario.conditions[17].enabled != 0) {
-                this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[17].subType;
+                this->objectiveGoodsType[this->objectiveGoodsCount]
+                    = this->scenarioEvents[i].data.scenario.conditions[17].subType;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                           .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[17].value);
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[17].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
                 case 10:
                 case 11:
                 case 12:
                 case 13:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
                     break;
                 case 17:
                 case 18:
@@ -95,31 +105,37 @@ namespace Map {
                 case 22:
                 case 23:
                 case 24:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
                     break;
                 case 6:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
                     break;
                 default:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
                 }
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
                 }
             }
             if (this->scenarioEvents[i].data.scenario.conditions[5].enabled != 0) {
-                this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[5].subType;
+                this->objectiveGoodsType[this->objectiveGoodsCount]
+                    = this->scenarioEvents[i].data.scenario.conditions[5].subType;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                           .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[5].value);
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[5].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
                 case 10:
                 case 11:
                 case 12:
                 case 13:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
                     break;
                 case 17:
                 case 18:
@@ -129,31 +145,37 @@ namespace Map {
                 case 22:
                 case 23:
                 case 24:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
                     break;
                 case 6:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
                     break;
                 default:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
                 }
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
                 }
             }
             if (this->scenarioEvents[i].data.scenario.conditions[7].enabled != 0) {
-                this->objectiveGoodsType[this->objectiveGoodsCount] = this->scenarioEvents[i].data.scenario.conditions[7].subType;
+                this->objectiveGoodsType[this->objectiveGoodsCount]
+                    = this->scenarioEvents[i].data.scenario.conditions[7].subType;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
                     = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                           .currentResources[this->objectiveGoodsType[this->objectiveGoodsCount]]
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[7].value);
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[7].value);
                 switch (this->objectiveGoodsType[this->objectiveGoodsCount]) {
                 case 2:
                 case 10:
                 case 11:
                 case 12:
                 case 13:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 5;
                     break;
                 case 17:
                 case 18:
@@ -163,13 +185,16 @@ namespace Map {
                 case 22:
                 case 23:
                 case 24:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 50;
                     break;
                 case 6:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 20;
                     break;
                 default:
-                    this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
+                    this->objectiveGoodsScore[this->objectiveGoodsCount]
+                        = this->objectiveGoodsSurplus[this->objectiveGoodsCount] * 10;
                 }
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
@@ -178,9 +203,12 @@ namespace Map {
             if (this->scenarioEvents[i].data.scenario.conditions[4].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = 15;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
-                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID].currentResources[15]
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[4].value);
-                this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount];
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .currentResources[15]
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[4].value);
+                this->objectiveGoodsScore[this->objectiveGoodsCount]
+                    = this->objectiveGoodsSurplus[this->objectiveGoodsCount];
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
                 }
@@ -188,9 +216,12 @@ namespace Map {
             if (this->scenarioEvents[i].data.scenario.conditions[1].enabled != 0) {
                 this->objectiveGoodsType[this->objectiveGoodsCount] = -1;
                 this->objectiveGoodsSurplus[this->objectiveGoodsCount]
-                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID].currentPopulation
-                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(this->scenarioEvents[i].data.scenario.conditions[1].value);
-                this->objectiveGoodsScore[this->objectiveGoodsCount] = this->objectiveGoodsSurplus[this->objectiveGoodsCount];
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .currentPopulation
+                    - MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
+                        this->scenarioEvents[i].data.scenario.conditions[1].value);
+                this->objectiveGoodsScore[this->objectiveGoodsCount]
+                    = this->objectiveGoodsSurplus[this->objectiveGoodsCount];
                 if (this->objectiveGoodsSurplus[this->objectiveGoodsCount] > 0) {
                     this->objectiveGoodsCount += 1;
                 }
@@ -217,10 +248,13 @@ namespace Map {
             || (DAT_GameCore::instance.gameMode_2 == 2 && DAT_MapPropertiesState::instance.SEC_U3_MapType2_1 < 2)) {
             int troopValue = 0;
             for (int unitID = 1; unitID < 2500; ++unitID) {
-                if (DAT_UnitsState::instance.units[unitID].logicalState != 0 && DAT_UnitsState::instance.units[unitID].owner == DAT_GameSynchronyState::instance.currentPlayerSlotID
+                if (DAT_UnitsState::instance.units[unitID].logicalState != 0
+                    && DAT_UnitsState::instance.units[unitID].owner
+                        == DAT_GameSynchronyState::instance.currentPlayerSlotID
                     && DAT_UnitsState::instance.units[unitID].isSelectable_OR_matchTime != 0) {
-                    troopValue += MACRO_CALL_MEMBER(Map::Units::TroopValueState_Func::getValueOfTroopType,
-                        DAT_TroopValueState::ptr)((Map::Units::UnitType)DAT_UnitsState::instance.units[unitID].unitType);
+                    troopValue += MACRO_CALL_MEMBER(
+                        Map::Units::TroopValueState_Func::getValueOfTroopType, DAT_TroopValueState::ptr)(
+                        (Map::Units::UnitType)DAT_UnitsState::instance.units[unitID].unitType);
                 }
             }
             int const losses
@@ -238,10 +272,12 @@ namespace Map {
         if (DAT_GameCore::instance.mapU4Int1 != 0) {
             int enemyValue = 0;
             for (int unitID = 1; unitID < 2500; ++unitID) {
-                if (DAT_UnitsState::instance.units[unitID].logicalState != 0 && DAT_UnitsState::instance.units[unitID].owner == 1
+                if (DAT_UnitsState::instance.units[unitID].logicalState != 0
+                    && DAT_UnitsState::instance.units[unitID].owner == 1
                     && DAT_UnitsState::instance.units[unitID].isSelectable_OR_matchTime != 0) {
-                    enemyValue += MACRO_CALL_MEMBER(Map::Units::TroopValueState_Func::getValueOfTroopType,
-                        DAT_TroopValueState::ptr)((Map::Units::UnitType)DAT_UnitsState::instance.units[unitID].unitType);
+                    enemyValue += MACRO_CALL_MEMBER(
+                        Map::Units::TroopValueState_Func::getValueOfTroopType, DAT_TroopValueState::ptr)(
+                        (Map::Units::UnitType)DAT_UnitsState::instance.units[unitID].unitType);
                 }
             }
             this->enemyTroopValueSurviving = enemyValue;

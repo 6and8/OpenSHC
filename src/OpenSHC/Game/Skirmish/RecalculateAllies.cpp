@@ -16,7 +16,7 @@ namespace Game {
         // FUNCTION: STRONGHOLDCRUSADER 0x004AC570
         void RecalculateAllies()
         {
-            if (DAT_GameCore::instance.mapTimeInTicks - (int)DAT_GameCore::instance.section1127 > 400
+            if ((int)DAT_GameCore::instance.mapTimeInTicks - (int)DAT_GameCore::instance.section1127 > 400
                 && MACRO_CALL_MEMBER(Map::Units::UnitsState_Func::getAliveLordForPlayer, DAT_UnitsState::ptr)(
                        DAT_GameSynchronyState::instance.currentPlayerSlotID)
                     == 0) {
@@ -34,7 +34,7 @@ namespace Game {
                     && DAT_GameSynchronyState::instance.currentAIArray[player] == 0) {
                     continue;
                 }
-                if (DAT_GameCore::instance.mapTimeInTicks - (int)DAT_GameCore::instance.section1127 > 400
+                if ((int)DAT_GameCore::instance.mapTimeInTicks - (int)DAT_GameCore::instance.section1127 > 400
                     && MACRO_CALL_MEMBER(Map::Units::UnitsState_Func::getAliveLordForPlayer, DAT_UnitsState::ptr)(
                            player)
                         == 0) {

@@ -24,7 +24,6 @@ namespace Map {
         int const variant = SEC_RNG::instance.currentNumber2 & 3;
         int const stockpileID
             = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].quarryStockpileID;
-        int workerCount = 0;
         DAT_GameState::instance
             .playerDataArray[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner]
             .countStoneQuarries += 1;
@@ -42,6 +41,7 @@ namespace Map {
             && DAT_GameSynchronyState::instance.currentGameMode == 0) {
             return;
         }
+        int workerCount = 0;
         if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].workers[0] != 0) {
             workerCount = 1;
         }
@@ -252,27 +252,21 @@ namespace Map {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].killingPitField == 7) {
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 1;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 1) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 1) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 2;
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 2) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 2) {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].killingPitField == 9) {
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 3;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 3) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 3) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 4;
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 4) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 4) {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e == 0) {
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 5;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 5) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 5) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 6;
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a
-                    == 6) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 6) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a = 0;
                 }
             }
@@ -645,8 +639,7 @@ namespace Map {
                     if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11a == 6) {
                         DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e = 1;
                     }
-                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e
-                    <= 4) {
+                } else if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e <= 4) {
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x11e = 0;
                     MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::addResourceToStockpile,
                         DAT_BuildingsState::ptr)(stockpileID, DAT_BuildingsState::instance.buildings[stockpileID].uid,

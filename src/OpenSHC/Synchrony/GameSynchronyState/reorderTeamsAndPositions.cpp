@@ -10,6 +10,7 @@ namespace Synchrony {
     // FUNCTION: STRONGHOLDCRUSADER 0x0048C7B0
     BOOLEnum GameSynchronyState::reorderTeamsAndPositions()
     {
+        int playerCount = 0;
         int positionTaken[9];
         int teamSizes[5];
         for (int player = 1; player < 9; ++player) {
@@ -20,7 +21,6 @@ namespace Synchrony {
             teamSizes[team] = 0;
         }
 
-        int playerCount = 0;
         for (int player = 1; player < 9; ++player) {
             if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[player] == -1
                 && DAT_GameSynchronyState::instance.currentAIArray[player] == 0) {

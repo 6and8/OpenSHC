@@ -6179,7 +6179,7 @@ SHC_3BB0A8C1_0x0041CA00 | 81.2% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041CC70 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041D510 | 94.3% | Register allocation differs
+SHC_3BB0A8C1_0x0041D510 | 94.8% | Register allocation differs (minibuild)
 
 SHC_3BB0A8C1_0x0041E240 | 99.6% | Reimplemented, asm differs (one load scheduled elsewhere)
 
@@ -6529,7 +6529,7 @@ SHC_3BB0A8C1_0x00422A70 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00422B80 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00422C60 | 85.1% | playerID kept in a register in the first loop; the original compares it from the stack
+SHC_3BB0A8C1_0x00422C60 | 100.0% | Reimplemented (minibuild)
 
 SHC_3BB0A8C1_0x00422D10 | 0.0% | Pending
 
@@ -23181,7 +23181,7 @@ SHC_3BB0A8C1_0x0048C660 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0048C750 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0048C7B0 | 91.5% | Pending
+SHC_3BB0A8C1_0x0048C7B0 | 91.8% | Pending (minibuild)
 
 SHC_3BB0A8C1_0x0048CB00 | 100.0% | Reimplemented
 

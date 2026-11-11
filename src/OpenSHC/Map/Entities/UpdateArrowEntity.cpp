@@ -11,8 +11,8 @@ namespace Map {
     {
         DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2
             = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].rotationFrameIndex * 16
-            + DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].screenDirection
-            + DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2RelatedOffset;
+            + DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2RelatedOffset
+            + DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].screenDirection;
         if (DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].someCounter_OR_hitGround != 0) {
             DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].someCounter_OR_hitGround -= 1;
             if (DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].rng_2 != 0) {

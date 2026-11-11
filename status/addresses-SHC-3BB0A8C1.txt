@@ -451,7 +451,7 @@ SHC_3BB0A8C1_0x00401B20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00401B60 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00401BA0 | 92.3% | Pending
+SHC_3BB0A8C1_0x00401BA0 | 100% | Reimplemented (minibuild)
 
 SHC_3BB0A8C1_0x00401C30 | 0.0% | Pending
 
@@ -461,7 +461,7 @@ SHC_3BB0A8C1_0x00401D20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00401D70 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00401DB0 | 91.3% | Pending
+SHC_3BB0A8C1_0x00401DB0 | 100% | Reimplemented (minibuild)
 
 SHC_3BB0A8C1_0x00401E20 | 0.0% | Pending
 

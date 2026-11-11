@@ -28,9 +28,9 @@ namespace Synchrony {
             }
         }
         if (time != 0) {
-            if ((int)time <= DAT_GameCore::instance.mapTimeInTicks) {
+            if ((int)time <= (int)DAT_GameCore::instance.mapTimeInTicks) {
                 this->lateCommandPenalty += 2;
-            } else if ((int)time - DAT_GameCore::instance.mapTimeInTicks
+            } else if ((int)time - (int)DAT_GameCore::instance.mapTimeInTicks
                 < this->DAT_LagIndicatorPerPlayer[this->currentPlayerSlotID]) {
                 this->DAT_LagIndicatorPerPlayer[this->currentPlayerSlotID]
                     = (short)(time - DAT_GameCore::instance.mapTimeInTicks);
@@ -45,7 +45,8 @@ namespace Synchrony {
         this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].time = time;
         this->DAT_CommandParameterOffset = 0;
         this->DAT_CommandActionPlan = Commands::GCS_SCHEDULE_RECEIVED_COMMAND;
-        DAT_ProtocolDefinedData::instance.commandFunctions[this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType]();
+        DAT_ProtocolDefinedData::instance
+            .commandFunctions[this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].commandType]();
         if (0 < (int)this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].time) {
             MACRO_CALL_MEMBER(IO::LowLevelMemory_Func::copyData, DAT_LowLevelMemory::ptr)(
                 this->DAT_CommandSize, address, &this->DAT_GameCommandArray[this->DAT_CurrentGameCommandID].parameters);

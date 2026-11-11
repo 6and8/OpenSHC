@@ -6199,15 +6199,15 @@ SHC_3BB0A8C1_0x0041E860 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041E870 | 95.9% | Register allocation differs
 
-SHC_3BB0A8C1_0x0041EB00 | 93.1% | Register allocation differs
+SHC_3BB0A8C1_0x0041EB00 | 95.0% | Pending (minibuild)
 
 SHC_3BB0A8C1_0x0041EC80 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041EDA0 | 79.2% | Register allocation differs
+SHC_3BB0A8C1_0x0041EDA0 | 80.2% | Pending (minibuild)
 
 SHC_3BB0A8C1_0x0041EF30 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041F110 | 93.1% | Register allocation differs
+SHC_3BB0A8C1_0x0041F110 | 95.0% | Pending (minibuild)
 
 SHC_3BB0A8C1_0x0041F290 | 0.0% | Pending
 
@@ -34149,7 +34149,7 @@ SHC_3BB0A8C1_0x004C6880 | 95.7% | Reimplemented, sub esi, 1 is add esi, -1
 
 SHC_3BB0A8C1_0x004C68D0 | 74.2% | Pending
 
-SHC_3BB0A8C1_0x004C6B20 | 95.3% | Pending
+SHC_3BB0A8C1_0x004C6B20 | 96.9% | Pending (minibuild)
 
 SHC_3BB0A8C1_0x004C6B90 | 0.0% | Pending
 

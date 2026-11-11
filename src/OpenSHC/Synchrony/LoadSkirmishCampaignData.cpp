@@ -3,10 +3,10 @@
 
 #include "../Synchrony.func.hpp"
 
-#include "OpenSHC/Game/GameMode.hpp"
-#include "OpenSHC/Game/TrailType.hpp"
 #include "OpenSHC/Synchrony/GameSynchronyState.func.hpp"
 #include "OpenSHC/Text/UserTextHandler.func.hpp"
+#include "OpenSHC/Game/GameMode.hpp"
+#include "OpenSHC/Game/TrailType.hpp"
 
 #include "OpenSHC/Globals/CHAR_ARRAY_00eb0ab0.hpp"
 #include "OpenSHC/Globals/DAT_GameCore.hpp"
@@ -27,7 +27,8 @@ void Synchrony::LoadSkirmishCampaignData(int missionID)
         mission = &DAT_SkirmishDefinedData::instance.WarchestTrailMissions[missionID];
     }
     strcpy(CHAR_ARRAY_00eb0ab0::instance, (char*)mission->mapNameAddress);
-    memset(DAT_GameSynchronyState::instance.DAT_PlayerNames, 0, sizeof(DAT_GameSynchronyState::instance.DAT_PlayerNames));
+    memset(
+        DAT_GameSynchronyState::instance.DAT_PlayerNames, 0, sizeof(DAT_GameSynchronyState::instance.DAT_PlayerNames));
     for (int i = 0; i != 9; ++i) {
         DAT_GameSynchronyState::instance.currentPlayerFullIDArray[i] = -1;
         DAT_GameSynchronyState::instance.currentAIArray[i] = 0;
@@ -44,7 +45,7 @@ void Synchrony::LoadSkirmishCampaignData(int missionID)
         MACRO_CALL(Synchrony_Func::ResetAiVariationArrayValue)(i + 1);
     }
     MACRO_CALL(Synchrony_Func::SetAIPlayerNickNames)();
-    for (int i = 0; i != 8; ++i) {
+    for (int i = 0; i < 8; ++i) {
         DAT_GameSynchronyState::instance.DAT_PlayerGroupArray[i + 1] = (char)mission->team[i];
         if (i >= mission->numberOfPlayers) {
             DAT_GameSynchronyState::instance.DAT_PlayerGroupArray[i + 1] = -1;
@@ -71,7 +72,7 @@ void Synchrony::LoadSkirmishCampaignData(int missionID)
     DAT_GameSynchronyState::instance.skirmishGameIntensityType = mission->startLevels;
     memset(DAT_GameSynchronyState::instance.playerPositionsArray, -10,
         sizeof(DAT_GameSynchronyState::instance.playerPositionsArray));
-    for (int i = 0; i != 8; ++i) {
+    for (int i = 0; i < 8; ++i) {
         if (mission->position[i] != 0) {
             DAT_GameSynchronyState::instance.playerPositionsArray[mission->position[i] - 1] = (char)i;
         }

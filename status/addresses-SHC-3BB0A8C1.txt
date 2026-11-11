@@ -2343,7 +2343,7 @@ SHC_3BB0A8C1_0x00406648 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00406650 | 96.4% | Pending
 
-SHC_3BB0A8C1_0x00406900 | 95.6% | Pending (minibuild)
+SHC_3BB0A8C1_0x00406900 | 95.6% | Pending
 
 SHC_3BB0A8C1_0x00406FD0 | 0.0% | Pending
 
@@ -36279,7 +36279,7 @@ SHC_3BB0A8C1_0x004DF2E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DFB90 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004E0A50 | 98.1% | Reimplemented, only data symbol labels differ (float constant reccmp#235, loop end addresses) (minibuild)
+SHC_3BB0A8C1_0x004E0A50 | 98.1% | Reimplemented, only data symbol labels differ (float constant reccmp#235, loop end addresses)
 
 SHC_3BB0A8C1_0x004E0A90 | 0.0% | Pending
 

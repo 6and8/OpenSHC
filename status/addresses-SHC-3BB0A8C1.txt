@@ -521,7 +521,7 @@ SHC_3BB0A8C1_0x00402BD0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00402C50 | 65.1% | Pending
 
-SHC_3BB0A8C1_0x00402DA0 | 80.0% | Pending
+SHC_3BB0A8C1_0x00402DA0 | 100.0% | Reimplemented (counted: only float constant names and the CRT math helpers (_CIcos, _CItan, _CIsqrt) differ)
 
 SHC_3BB0A8C1_0x00402E20 | 29.8% | Pending
 
@@ -2341,7 +2341,7 @@ SHC_3BB0A8C1_0x00406640 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00406648 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00406650 | 96.4% | Pending
+SHC_3BB0A8C1_0x00406650 | 100.0% | Reimplemented (counted: only float constant names and the CRT math helpers (_CIsin, _CIcos, _ftol2_sse) differ)
 
 SHC_3BB0A8C1_0x00406900 | 95.6% | Pending
 
@@ -5597,7 +5597,7 @@ SHC_3BB0A8C1_0x00419670 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004196D0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00419780 | 94.7% | only the loop end address differs: past-the-end of BuildingCost lands on a different symbol in the DLL data layout
+SHC_3BB0A8C1_0x00419780 | 100.0% | Reimplemented (counted: only the loop-end symbol differs)
 
 SHC_3BB0A8C1_0x00419790 | 0.0% | Pending
 
@@ -6919,7 +6919,7 @@ SHC_3BB0A8C1_0x00429A38 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00429A3C | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00429A40 | 97.6% | Pending
+SHC_3BB0A8C1_0x00429A40 | 100.0% | Reimplemented (counted: only callback trampolines, sprintf, the jump-table label and the 0xB8E6F5 buffer label differ)
 
 SHC_3BB0A8C1_0x0042A380 | 0.0% | Pending
 
@@ -21187,7 +21187,7 @@ SHC_3BB0A8C1_0x0046F533 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0046F550 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0046F570 | 90.5% | Pending
+SHC_3BB0A8C1_0x0046F570 | 100.0% | Reimplemented (counted: only the security cookie and memset symbols differ)
 
 SHC_3BB0A8C1_0x0046F610 | 0.0% | Pending
 
@@ -23387,7 +23387,7 @@ SHC_3BB0A8C1_0x004909E0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00490C20 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00490D90 | 94.8% | Pending
+SHC_3BB0A8C1_0x00490D90 | 100.0% | Reimplemented (counted: only the security cookie and callback trampolines differ)
 
 SHC_3BB0A8C1_0x0049102D | 0.0% | Pending
 
@@ -23401,7 +23401,7 @@ SHC_3BB0A8C1_0x00491130 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00491270 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004914D0 | 97.2% | Pending
+SHC_3BB0A8C1_0x004914D0 | 100.0% | Reimplemented (counted: only the security cookie and a callback trampoline differ)
 
 SHC_3BB0A8C1_0x00491680 | 100.0% | Reimplemented
 
@@ -29081,7 +29081,7 @@ SHC_3BB0A8C1_0x004BA559 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004BA560 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004BA5C0 | 97.3% | Pending
+SHC_3BB0A8C1_0x004BA5C0 | 100.0% | Reimplemented (counted: only the pushed SumUnitPoints callback (trampoline) differs)
 
 SHC_3BB0A8C1_0x004BA780 | 100.0% | Reimplemented
 
@@ -30477,7 +30477,7 @@ SHC_3BB0A8C1_0x004BE585 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004BE586 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004BE590 | 98.4% | Pending
+SHC_3BB0A8C1_0x004BE590 | 100.0% | Reimplemented (counted: only the security cookie symbols differ)
 
 SHC_3BB0A8C1_0x004BE7E0 | 100.0% | Reimplemented
 
@@ -30489,7 +30489,7 @@ SHC_3BB0A8C1_0x004BEA20 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004BEA90 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004BEB20 | 96.9% | Pending
+SHC_3BB0A8C1_0x004BEB20 | 100.0% | Reimplemented (counted: only the security cookie symbols differ)
 
 SHC_3BB0A8C1_0x004BEC10 | 100.0% | Reimplemented
 
@@ -36203,7 +36203,7 @@ SHC_3BB0A8C1_0x004DB4F0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DB5C0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004DB600 | 94.3% | Reimplemented, code identical; reccmp cannot name the original's float constants (no .reloc in the exe)
+SHC_3BB0A8C1_0x004DB600 | 100.0% | Reimplemented (counted: only float constant names and _ftol2_sse differ)
 
 SHC_3BB0A8C1_0x004DB7B0 | 100.0% | Reimplemented
 
@@ -36219,7 +36219,7 @@ SHC_3BB0A8C1_0x004DBBAC | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DBBB0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DBBC0 | 95.8% | Reimplemented, code identical; reccmp cannot name the original's float constants (no .reloc in the exe)
+SHC_3BB0A8C1_0x004DBBC0 | 100.0% | Reimplemented (counted: only float constant names, _ftol2_sse and the intro_04.wav string label differ)
 
 SHC_3BB0A8C1_0x004DBE20 | 0.0% | Pending
 
@@ -36239,7 +36239,7 @@ SHC_3BB0A8C1_0x004DBEEC | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004DBEF0 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004DBF00 | 96.7% | Reimplemented, code identical; reccmp cannot name the original's float constants (no .reloc in the exe)
+SHC_3BB0A8C1_0x004DBF00 | 100.0% | Reimplemented (counted: only float constant names and _ftol2_sse differ)
 
 SHC_3BB0A8C1_0x004DC12C | 0.0% | Pending
 
@@ -36279,7 +36279,7 @@ SHC_3BB0A8C1_0x004DF2E0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004DFB90 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004E0A50 | 98.1% | Reimplemented, only data symbol labels differ (float constant reccmp#235, loop end addresses)
+SHC_3BB0A8C1_0x004E0A50 | 100.0% | Reimplemented (counted: only the 31.0f constant name and the loop-end symbols differ)
 
 SHC_3BB0A8C1_0x004E0A90 | 0.0% | Pending
 

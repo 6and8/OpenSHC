@@ -202,7 +202,8 @@ namespace Map {
                     if (groupSize > remaining) {
                         groupSize = remaining;
                     }
-                    MACRO_CALL_MEMBER(Units::TribesState_Func::spawnUnitsForAITribe, DAT_TribesState::ptr)(tribeType,
+                    MACRO_CALL_MEMBER(Units::TribesState_Func::spawnUnitsForAITribe, DAT_TribesState::ptr)(
+                        (AI::Tribes::AITribeType)tribeType,
                         DAT_GameState::instance.mapAndTime
                             .signpostsMapEdge[DAT_TroopValueState::instance.attackInfo
                                     .unknownSignpostRelatedArray[DAT_TroopValueState::instance.attackInfo.inv_count]]

@@ -32,9 +32,8 @@ namespace Map {
             }
         }
         if (this->SEC_U3_MapType2_1 == 0) {
-            // the siege information is a block of 20 unit counts
             for (int i = 0; i < 20; ++i) {
-                if ((&this->SEC_SiegeInformation.archers)[i] != 0) {
+                if (this->SEC_SiegeInformation[i] != 0) {
                     hasAttackers = TRUE;
                     break;
                 }

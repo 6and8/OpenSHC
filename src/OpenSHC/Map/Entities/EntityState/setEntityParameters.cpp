@@ -22,12 +22,11 @@ namespace Map {
                                                       .gmFileHeaderColorpaletteArray[this->entityArray[entityID].gmID]
                                                       .originY;
             this->entityArray[entityID].unkOne_1 = (short)DAT_EntityDefinedData::instance.field_0x8a4[gmLookupValue];
-            this->entityArray[entityID].unkThree_1
-                = (short)DAT_EntityDefinedData::instance.field_0x7ec[gmLookupValue];
+            this->entityArray[entityID].unkThree_1 = (short)DAT_EntityDefinedData::instance.field_0x7ec[gmLookupValue];
             if (gmLookupValue == 1) {
                 this->entityArray[entityID].unkThree_1 = 5;
                 this->entityArray[entityID].unkOne_1 = 3;
-                this->entityArray[entityID].unkMinusOne = 0x10;
+                this->entityArray[entityID].unkMinusOne = 16;
             }
         }
 

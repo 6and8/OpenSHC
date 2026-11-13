@@ -7,7 +7,7 @@ namespace Map {
         // FUNCTION: STRONGHOLDCRUSADER 0x00402AE0
         void EntityState::updateEntityMicroMovement(int entityID)
         {
-            if (this->entityArray[entityID].entityType == 0x1d && this->entityArray[entityID].targetZ == 0
+            if (this->entityArray[entityID].entityType == 29 && this->entityArray[entityID].targetZ == 0
                 && this->entityArray[entityID].microX == this->entityArray[entityID].targetX
                 && this->entityArray[entityID].microY == this->entityArray[entityID].targetY) {
                 return;

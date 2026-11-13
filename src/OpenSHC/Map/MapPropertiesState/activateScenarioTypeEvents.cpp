@@ -12,7 +12,7 @@ namespace Map {
             if (DAT_MapPropertiesState::instance.scenarioEvents[i].header.tl_type == 3) {
                 int const eventType
                     = DAT_MapPropertiesState::instance.scenarioEvents[i].data.scenario.ScenarioEventType;
-                if (eventType == 1 || eventType == 0x1b || eventType == 0 || eventType == 0x1a) {
+                if (eventType == 1 || eventType == 27 || eventType == 0 || eventType == 26) {
                     DAT_MapPropertiesState::instance.scenarioEvents[i].header.done = 1;
                 }
             }

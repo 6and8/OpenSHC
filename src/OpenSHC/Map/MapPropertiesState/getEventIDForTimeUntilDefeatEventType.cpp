@@ -16,7 +16,7 @@ namespace Map {
         for (int i = 0; i < DAT_MapPropertiesState::instance.eventsCount; ++i) {
             if (DAT_MapPropertiesState::instance.scenarioEvents[i].header.tl_type == 3
                 && (DAT_MapPropertiesState::instance.scenarioEvents[i].data.scenario.ScenarioEventType == 1
-                    || DAT_MapPropertiesState::instance.scenarioEvents[i].data.scenario.ScenarioEventType == 0x1b)
+                    || DAT_MapPropertiesState::instance.scenarioEvents[i].data.scenario.ScenarioEventType == 27)
                 && DAT_MapPropertiesState::instance.scenarioEvents[i].data.scenario.conditions[0].enabled != 0) {
                 return i;
             }

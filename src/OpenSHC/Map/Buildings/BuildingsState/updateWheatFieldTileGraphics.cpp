@@ -13,7 +13,7 @@ namespace Map {
         void BuildingsState::updateWheatFieldTileGraphics(int buildingID)
         {
             // Unless all tiles are refreshed (field_0x18e024), only one tile is updated per call and the position to
-            // continue from is stored in padding_0x2fc
+            // continue from is stored in wheatFieldIndexToGrow
             int start = 0;
             int frame = 0;
             int unchangedLeft = 3;
@@ -66,7 +66,7 @@ namespace Map {
                     DAT_TileMapState::instance.GfxLayer[tile] = gfx;
                 }
                 if (DAT_BuildingsState::instance.field_0x18e024 == 0) {
-                    *(short*)DAT_BuildingsState::instance.buildings[buildingID].padding_0x2fc = (i + 1 + start) % 36;
+                    DAT_BuildingsState::instance.buildings[buildingID].wheatFieldIndexToGrow = (i + 1 + start) % 36;
                     return;
                 }
             }

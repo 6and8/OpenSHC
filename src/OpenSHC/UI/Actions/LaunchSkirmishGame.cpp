@@ -473,7 +473,7 @@ namespace UI {
                     DAT_GameSynchronyState::instance.finalResults.finalKilledLords[playerID] = 0;
                     DAT_GameSynchronyState::instance.finalResults.finalTroopsKilledWeighted[playerID] = 0;
                     DAT_GameSynchronyState::instance.finalResults.finalBuildingsDestroyedWeighted[playerID] = 0;
-                    (&DAT_GameSynchronyState::instance.finalResults.yearStart)[playerID] = 0;
+                    DAT_GameSynchronyState::instance.finalResults.tail.tail2.field_0x0[playerID] = 0;
                 }
             }
             for (int i = 0; i < 9; i++) {
@@ -481,8 +481,10 @@ namespace UI {
                     DAT_GameSynchronyState::instance.finalResults.finalKillMatrix[i][j] = 0;
                 }
             }
-            DAT_GameSynchronyState::instance.finalResults.monthStart = DAT_GameState::instance.mapAndTime.month;
-            DAT_GameSynchronyState::instance.finalResults.yearStart = DAT_GameState::instance.mapAndTime.year;
+            DAT_GameSynchronyState::instance.finalResults.tail.tail1.monthStart
+                = DAT_GameState::instance.mapAndTime.month;
+            DAT_GameSynchronyState::instance.finalResults.tail.tail1.yearStart
+                = DAT_GameState::instance.mapAndTime.year;
             MACRO_CALL_MEMBER(Map::Units::TroopValueState_Func::clearAttackInfo, DAT_TroopValueState::ptr)();
             MACRO_CALL_MEMBER(AI::AIVState_Func::recomputeHeatmaps, DAT_AIVState::ptr)(1);
             MACRO_CALL_MEMBER(AI::AICState_Func::recomputeAttackAIZone, DAT_AICState::ptr)();

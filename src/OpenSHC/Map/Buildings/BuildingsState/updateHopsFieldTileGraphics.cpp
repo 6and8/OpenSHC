@@ -12,11 +12,11 @@ namespace Map {
         void BuildingsState::updateHopsFieldTileGraphics(int buildingID)
         {
             // Unless all tiles are refreshed (field_0x18e024), only one tile is updated per call and the position to
-            // continue from is stored in padding_0x2fc
+            // continue from is stored in wheatFieldIndexToGrow
             int start = 0;
             int unchangedLeft = 3;
             if (DAT_BuildingsState::instance.field_0x18e024 == 0) {
-                start = *(short*)DAT_BuildingsState::instance.buildings[buildingID].padding_0x2fc;
+                start = DAT_BuildingsState::instance.buildings[buildingID].wheatFieldIndexToGrow;
             }
             for (int i = 0; i < 24; ++i) {
                 int tile = this->buildings[buildingID].tileRefs[(i + start) % 24];
@@ -57,7 +57,7 @@ namespace Map {
                 }
                 if (DAT_BuildingsState::instance.field_0x18e024 == 0) {
                     // Note: wraps at 36 instead of 24 like the tile index above
-                    *(short*)DAT_BuildingsState::instance.buildings[buildingID].padding_0x2fc = (i + 1 + start) % 36;
+                    DAT_BuildingsState::instance.buildings[buildingID].wheatFieldIndexToGrow = (i + 1 + start) % 36;
                     return;
                 }
             }

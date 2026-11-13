@@ -30,7 +30,8 @@ namespace UI {
                         < *countPtr - (int)DAT_MapPropertiesState::instance.DAT_InvasionEventItemUnitCountSum + 500
                     ? DAT_MissionAestheticsDefinedData::instance.InvasionUnitLimits[unitTypeMenuID]
                     : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_InvasionEventItemUnitCountSum + 500,
-                *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(Global_Func::DoNothing));
+                *countPtr, (undefined*)countPtr,
+                (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(Global_Func::DoNothing));
 
             switch (unitTypeMenuID) {
             case 0:

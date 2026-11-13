@@ -55,7 +55,8 @@ namespace UI {
                     MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters,
                         DAT_MenuModalComposition2::ptr)(0, 10000, DAT_GameSynchronyState::instance.skirmishStartGold,
                         (undefined*)&DAT_GameSynchronyState::instance.skirmishStartGold,
-                        (void*)MACRO_CALL(Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
+                        (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(
+                            Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
                     MACRO_CALL_MEMBER(
                         UI::MenuModalComposition_Func::setExtraActiveModalDialog, DAT_MenuModalComposition2::ptr)(
                         (UI::Enums::MenuModalType)23, DAT_ButtonX::instance + 72, DAT_ButtonY::instance + 4);
@@ -64,7 +65,8 @@ namespace UI {
                 MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(0,
                     100, DAT_GameSynchronyState::instance.skirmishDefaultPopularity,
                     (undefined*)&DAT_GameSynchronyState::instance.skirmishDefaultPopularity,
-                    (void*)MACRO_CALL(Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
+                    (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(
+                        Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
                 MACRO_CALL_MEMBER(
                     UI::MenuModalComposition_Func::setExtraActiveModalDialog, DAT_MenuModalComposition2::ptr)(
                     (UI::Enums::MenuModalType)23, DAT_ButtonX::instance + 23, DAT_ButtonY::instance + 35);
@@ -74,7 +76,8 @@ namespace UI {
                     MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters,
                         DAT_MenuModalComposition2::ptr)(20, 90, DAT_GameSynchronyState::instance.skirmishGameSpeedLevel,
                         (undefined*)&DAT_GameSynchronyState::instance.skirmishGameSpeedLevel,
-                        (void*)MACRO_CALL(UI::Helpers_Func::CallbackSetMultiplayerSpeedLevel));
+                        (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(
+                            UI::Helpers_Func::CallbackSetMultiplayerSpeedLevel));
                     MACRO_CALL_MEMBER(
                         UI::MenuModalComposition_Func::setExtraActiveModalDialog, DAT_MenuModalComposition2::ptr)(
                         (UI::Enums::MenuModalType)23, DAT_ButtonX::instance + 72, DAT_ButtonY::instance + 4);
@@ -88,8 +91,9 @@ namespace UI {
             } else if (param_1 == 36) {
                 MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setModalSliderParameters,
                     DAT_MenuModalComposition1::ptr)(79, 51, 2, DAT_GameSynchronyState::instance.skirmishWinCondition,
-                    (undefined*)&DAT_GameSynchronyState::instance.skirmishWinCondition,
-                    (undefined*)MACRO_CALL(Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
+                    (int*)&DAT_GameSynchronyState::instance.skirmishWinCondition,
+                    (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(
+                        Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
                 MACRO_CALL_MEMBER(
                     UI::MenuModalComposition_Func::setExtraActiveModalDialog, DAT_MenuModalComposition1::ptr)(
                     (UI::Enums::MenuModalType)24, DAT_ButtonX::instance + 5, DAT_ButtonY::instance + 35);
@@ -197,7 +201,8 @@ namespace UI {
                 MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(
                     2000, 150000, DAT_GameSynchronyState::instance.skirmishPoints,
                     (undefined*)&DAT_GameSynchronyState::instance.skirmishPoints,
-                    (void*)MACRO_CALL(Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
+                    (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(
+                        Synchrony::Commands_Func::QueueChangeGameIntensityOrBalance));
                 DAT_MenuModalComposition2::instance.textGroup = 79;
                 DAT_MenuModalComposition2::instance.textIndex = 88;
                 MACRO_CALL_MEMBER(

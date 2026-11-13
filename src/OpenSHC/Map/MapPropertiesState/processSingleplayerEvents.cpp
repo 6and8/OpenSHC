@@ -933,11 +933,10 @@ namespace Map {
                     MACRO_CALL_MEMBER(Buildings::BuildingsState_Func::countPlayerResources, DAT_BuildingsState::ptr)(
                         DAT_GameSynchronyState::instance.currentPlayerSlotID);
 
-                    DAT_GameCore::instance.buildmenuMenuTabToSwitchTo.buildMenuTab
-                        = (UI::Enums::BuildMenuTabTypeShort)10;
+                    DAT_GameCore::instance.buildmenuMenuTabToSwitchTo.buildMenuTab = (UI::Enums::BuildMenuTabTypeInt)10;
                     DAT_GameCore::instance.secondaryActiveMenuTabToSwitchTo.buildMenuTab
-                        = (UI::Enums::BuildMenuTabTypeShort)10;
-                    DAT_GameCore::instance.tabTypeSiegeSubset = (UI::Enums::BuildMenuTabTypeShort)10;
+                        = (UI::Enums::BuildMenuTabTypeInt)10;
+                    DAT_GameCore::instance.tabTypeSiegeSubset = (UI::Enums::BuildMenuTabTypeInt)10;
                     if (DAT_GameCore::instance.currentMenuViewType == UI::Enums::MVT_BUILD_MENU) {
                         if (DAT_GameCore::instance.activeMenuTab.buildMenuTab == 48) {
                             MACRO_CALL_MEMBER(Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
@@ -947,7 +946,7 @@ namespace Map {
                             && (DAT_GameCore::instance.activeMenuTab.buildMenuTab == 61
                                 || DAT_GameCore::instance.activeMenuTab.buildMenuTab == 62)) {
                             DAT_GameCore::instance.buildmenuMenuTabToSwitchTo.buildMenuTab
-                                = (UI::Enums::BuildMenuTabTypeShort)61;
+                                = (UI::Enums::BuildMenuTabTypeInt)61;
                             MACRO_CALL_MEMBER(Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                                 UI::Enums::MVT_BUILD_MENU, 0);
                         }
@@ -1259,8 +1258,9 @@ namespace Map {
 
                         int spIdx = MACRO_CALL_MEMBER(
                             Game::GameStateStructures_Func::pickRandomAccessibleSignpostEntry, DAT_GameState::ptr)();
-                        int tribeId = MACRO_CALL_MEMBER(Units::TribesState_Func::createTribeWithSpawnedUnit,
-                            DAT_TribesState::ptr)(0, 16, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
+                        int tribeId = MACRO_CALL_MEMBER(
+                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0,
+                            (AI::Tribes::AITribeType)16, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
                             DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].y, 8, Units::UT_E_MACE,
                             this->scenarioEvents[eventIdx].data.scenario.actionData + 1);
                         MACRO_CALL_MEMBER(UI::MinimapViewState_Func::setSpawnMoment, DAT_MinimapViewState::ptr)(
@@ -1347,13 +1347,15 @@ namespace Map {
                     if (MACRO_CALL_MEMBER(Game::GameStateStructures_Func::hasAnySignpost, DAT_GameState::ptr)() != 0) {
                         int spIdx = MACRO_CALL_MEMBER(
                             Game::GameStateStructures_Func::pickRandomAccessibleSignpostEntry, DAT_GameState::ptr)();
-                        int tribe1 = MACRO_CALL_MEMBER(Units::TribesState_Func::createTribeWithSpawnedUnit,
-                            DAT_TribesState::ptr)(0, 4, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
+                        int tribe1 = MACRO_CALL_MEMBER(
+                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0,
+                            (AI::Tribes::AITribeType)4, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
                             DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].y,
                             DAT_GameSynchronyState::instance.currentPlayerSlotID, Units::UT_E_ARCHER,
                             this->scenarioEvents[eventIdx].data.scenario.actionData);
-                        int tribe2 = MACRO_CALL_MEMBER(Units::TribesState_Func::createTribeWithSpawnedUnit,
-                            DAT_TribesState::ptr)(0, 14, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
+                        int tribe2 = MACRO_CALL_MEMBER(
+                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0,
+                            (AI::Tribes::AITribeType)14, DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].x,
                             DAT_GameState::instance.mapAndTime.signpostEntryData[spIdx].y,
                             DAT_GameSynchronyState::instance.currentPlayerSlotID, Units::UT_E_MONK, 1);
                         MACRO_CALL_MEMBER(UI::MinimapViewState_Func::setSpawnMoment, DAT_MinimapViewState::ptr)(
@@ -1567,8 +1569,8 @@ namespace Map {
                 case 23: {
                     if (DAT_GameCore::instance.gameMode_2 != 0 && this->scenarioEvents[eventIdx].header.year == 1085
                         && this->scenarioEvents[eventIdx].header.month == 11) {
-                        int tribeId = MACRO_CALL_MEMBER(
-                            Units::TribesState_Func::createTribeWithSpawnedUnit, DAT_TribesState::ptr)(0, 4, 133, 278,
+                        int tribeId = MACRO_CALL_MEMBER(Units::TribesState_Func::createTribeWithSpawnedUnit,
+                            DAT_TribesState::ptr)(0, (AI::Tribes::AITribeType)4, 133, 278,
                             DAT_GameSynchronyState::instance.currentPlayerSlotID, Units::UT_E_ARCHER, 20);
                         DAT_TribesState::instance.tribes[tribeId].pendingScatterMove = 3;
                         for (int u = 0; u < DAT_TribesState::instance.tribes[tribeId].size; ++u) {
@@ -1856,10 +1858,10 @@ namespace Map {
                             if (DAT_GameCore::instance.buildmenuMenuTabToSwitchTo.buildMenuTab == 60) {
                                 if (DAT_GameCore::instance.currentMenuViewType == UI::Enums::MVT_BUILD_MENU) {
                                     DAT_GameCore::instance.buildmenuMenuTabToSwitchTo.buildMenuTab
-                                        = (UI::Enums::BuildMenuTabTypeShort)10;
+                                        = (UI::Enums::BuildMenuTabTypeInt)10;
                                 } else if (DAT_GameCore::instance.currentMenuViewType == 12) {
                                     DAT_GameCore::instance.landscapingmenuMenuTabToSwitchTo.buildMenuTab
-                                        = (UI::Enums::BuildMenuTabTypeShort)231;
+                                        = (UI::Enums::BuildMenuTabTypeInt)231;
                                 }
                             }
                             MACRO_CALL_MEMBER(Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(

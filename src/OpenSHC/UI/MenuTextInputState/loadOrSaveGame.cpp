@@ -73,7 +73,7 @@ namespace UI {
         }
         this->lastListClickTime = 0;
         this->lastClickedListIndex = -1;
-        this->DAT_ArrayOfMapU3EndInt2[0] = 0;
+        this->DAT_ArrayOfMapU3EndInt2 = 0;
         this->previewedListIndex = -1;
         this->fileListVisibleRowCount = 16;
         if (action == OpenSHC::UI::Enums::MMT_LOAD_MAP) {

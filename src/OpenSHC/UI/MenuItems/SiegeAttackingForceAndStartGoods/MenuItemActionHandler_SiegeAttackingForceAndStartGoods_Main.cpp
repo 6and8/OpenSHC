@@ -36,9 +36,9 @@ namespace UI {
                     int resIdx = DAT_MissionAestheticsDefinedData::instance.field_0x345c[idx];
                     int maxVal = DAT_MissionAestheticsDefinedData::instance.field_0x34b4[idx];
                     int* resPtr = &DAT_MapPropertiesState::instance.SEC_StartingResources[resIdx];
-                    MACRO_CALL_MEMBER(
-                        UI::MenuModalComposition_Func::setSliderParameters, DAT_MenuModalComposition2::ptr)(
-                        0, maxVal, *resPtr, (undefined*)resPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
+                    MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::setSliderParameters,
+                        DAT_MenuModalComposition2::ptr)(0, maxVal, *resPtr, (undefined*)resPtr,
+                        (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
                     DAT_MenuModalComposition2::instance.textIndex
                         = DAT_MissionAestheticsDefinedData::instance
                               .field_0x3554[DAT_MapPropertiesState::instance.indexStored];
@@ -62,7 +62,8 @@ namespace UI {
                             ? DAT_MissionAestheticsDefinedData::instance
                                   .field_0x3554[DAT_MapPropertiesState::instance.indexStored]
                             : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500,
-                        *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
+                        *countPtr, (undefined*)countPtr,
+                        (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
                     DAT_MenuModalComposition2::instance.textIndex
                         = DAT_MissionAestheticsDefinedData::instance
                               .InvasionUnitLimits[DAT_MapPropertiesState::instance.indexStored + 4];
@@ -88,7 +89,8 @@ namespace UI {
                             ? (int)DAT_MissionAestheticsDefinedData::instance
                                   .field_0x184[30][11 + DAT_MapPropertiesState::instance.indexStored]
                             : *countPtr - (int)DAT_MapPropertiesState::instance.DAT_MapEditorUnitPointsSum + 500,
-                        *countPtr, (undefined*)countPtr, (void*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
+                        *countPtr, (undefined*)countPtr,
+                        (Util::FunctionTypes::NoArgCallback*)MACRO_CALL(UI::Helpers_Func::SumUnitPoints));
                     DAT_MenuModalComposition2::instance.textIndex
                         = (int)DAT_MissionAestheticsDefinedData::instance
                               .field_0xa64[30][11 + DAT_MapPropertiesState::instance.indexStored];

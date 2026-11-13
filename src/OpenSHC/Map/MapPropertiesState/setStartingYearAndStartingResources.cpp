@@ -26,7 +26,7 @@ namespace Map {
         DAT_MapPropertiesState::instance.eventsCount = 0;
         // the siege information is a block of 20 unit counts
         for (int i = 0; i < 20; ++i) {
-            (&DAT_MapPropertiesState::instance.SEC_SiegeInformation.archers)[i] = 0;
+            DAT_MapPropertiesState::instance.SEC_SiegeInformation[i] = 0;
         }
         for (int i = 0; i < 6; ++i) {
             DAT_MapPropertiesState::instance.SEC_Section1067.siegeEngineCounts[i] = 0;

@@ -59,7 +59,7 @@ namespace Map {
         using OpenSHC::WindowsHelper::Enums::BOOLEnum;
 
         // FUNCTION: STRONGHOLDCRUSADER 0x00420D20
-        int BuildingsState::setupBuildingData(int playerID, uint x, uint y, undefined4 averageHeight,
+        int BuildingsState::setupBuildingData(int playerID, uint x, uint y, int averageHeight,
             BuildingType buildingType, uint width, int playerID_dup, int variationIndex)
         {
             // Matching note: The remaining differences are mostly register and stack slot allocation in the

@@ -3,12 +3,12 @@
 
 #include "../Skirmish.func.hpp"
 
-#include "OpenSHC/Game/GameMode.hpp"
-#include "OpenSHC/Game/TrailType.hpp"
 #include "OpenSHC/Synchrony.func.hpp"
 #include "OpenSHC/Synchrony/GameSynchronyState.func.hpp"
 #include "OpenSHC/Text/UserTextHandler.func.hpp"
 #include "OpenSHC/UI/Actions.func.hpp"
+#include "OpenSHC/Game/GameMode.hpp"
+#include "OpenSHC/Game/TrailType.hpp"
 
 #include "OpenSHC/Globals/DAT_GameCore.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
@@ -23,7 +23,8 @@ namespace Game {
         // FUNCTION: STRONGHOLDCRUSADER 0x004C68D0
         void SetupSkirmishMode(int skirmishTrailMission)
         {
-            CampaignTrailMission* mission = &DAT_SkirmishDefinedData::instance.SkirmishTrailMissions[skirmishTrailMission];
+            CampaignTrailMission* mission
+                = &DAT_SkirmishDefinedData::instance.SkirmishTrailMissions[skirmishTrailMission];
             if (DAT_GameCore::instance.currentTrailType == TT_EXTREME) {
                 mission = &DAT_SkirmishDefinedData::instance.ExtremeTrailMissions[skirmishTrailMission];
             } else if (DAT_GameCore::instance.currentTrailType == TT_WARCHEST) {
@@ -75,26 +76,26 @@ namespace Game {
             if (DAT_GameCore::instance.currentTrailType == TT_EXTREME) {
                 DAT_GameCore::instance.extremeTrailProgress = skirmishTrailMission;
                 MACRO_CALL(UI::Actions_Func::LaunchSkirmishGame)((int)mission->aiv);
-                startMonths
-                    = DAT_GameCore::instance.extremeTrailStartDatesInMonths[DAT_GameCore::instance.extremeTrailProgress];
+                startMonths = DAT_GameCore::instance
+                                  .extremeTrailStartDatesInMonths[DAT_GameCore::instance.extremeTrailProgress];
                 DAT_GameCore::instance.extremeTrailStartDateMonths = startMonths;
             } else if (DAT_GameCore::instance.currentTrailType == TT_WARCHEST) {
                 DAT_GameCore::instance.warchestTrailProgress = skirmishTrailMission;
                 MACRO_CALL(UI::Actions_Func::LaunchSkirmishGame)((int)mission->aiv);
-                startMonths
-                    = DAT_GameCore::instance.warchestTrailStartDatesInMonths[DAT_GameCore::instance.warchestTrailProgress];
+                startMonths = DAT_GameCore::instance
+                                  .warchestTrailStartDatesInMonths[DAT_GameCore::instance.warchestTrailProgress];
                 DAT_GameCore::instance.warchestTrailStartDateMonths = startMonths;
             } else {
                 DAT_GameCore::instance.skirmishTrailProgress = skirmishTrailMission;
                 MACRO_CALL(UI::Actions_Func::LaunchSkirmishGame)((int)mission->aiv);
-                startMonths
-                    = DAT_GameCore::instance.skirmishTrailStartDateInMonths[DAT_GameCore::instance.skirmishTrailProgress];
+                startMonths = DAT_GameCore::instance
+                                  .skirmishTrailStartDateInMonths[DAT_GameCore::instance.skirmishTrailProgress];
                 DAT_GameCore::instance.skirmishTrailStartDateMonths = startMonths;
             }
             DAT_GameState::instance.mapAndTime.year = startMonths / 12;
             DAT_GameState::instance.mapAndTime.month = startMonths % 12;
-            DAT_GameSynchronyState::instance.finalResults.yearStart = startMonths / 12;
-            DAT_GameSynchronyState::instance.finalResults.monthStart = startMonths % 12;
+            DAT_GameSynchronyState::instance.finalResults.tail.tail1.yearStart = startMonths / 12;
+            DAT_GameSynchronyState::instance.finalResults.tail.tail1.monthStart = startMonths % 12;
         }
 
     } // namespace Skirmish

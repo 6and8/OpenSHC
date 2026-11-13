@@ -34446,6 +34446,8 @@ enum {
     // location: OpenSHC/UI/Helpers
     // type: function
     SHC_3BB0A8C1_0x004BC6C0 = 0x004BC6C0,
+    // label: InitTutorialState
+    // location: OpenSHC/UI/Helpers
     // type: function
     SHC_3BB0A8C1_0x004BC6F0 = 0x004BC6F0,
     // label: SetTutorialHintActiveWithTimestamp
@@ -82653,6 +82655,8 @@ enum {
     // type: /string
     SHC_3BB0A8C1_0x005A22C4 = 0x005A22C4,
     // type: /string
+    SHC_3BB0A8C1_0x005A22D0 = 0x005A22D0,
+    // type: /string
     SHC_3BB0A8C1_0x005A22D8 = 0x005A22D8,
     // type: /string
     SHC_3BB0A8C1_0x005A22E4 = 0x005A22E4,
@@ -95338,7 +95342,7 @@ enum {
     SHC_3BB0A8C1_0x00B95948 = 0x00B95948,
     // type: /int
     SHC_3BB0A8C1_0x00B95950 = 0x00B95950,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B95954 = 0x00B95954,
     // type: /int
     SHC_3BB0A8C1_0x00B95958 = 0x00B95958,
@@ -95346,7 +95350,7 @@ enum {
     // location:
     // type: /int
     SHC_3BB0A8C1_0x00B9595C = 0x00B9595C,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B95960 = 0x00B95960,
     // label: DAT_MainMenuSwingSwordBool
     // location:
@@ -95400,13 +95404,13 @@ enum {
     SHC_3BB0A8C1_0x00B95B6C = 0x00B95B6C,
     // type: /undefined4
     SHC_3BB0A8C1_0x00B95B70 = 0x00B95B70,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B95B74 = 0x00B95B74,
     // label: DAT_MapNameCache
     // location:
     // type: /char[1004]
     SHC_3BB0A8C1_0x00B95B78 = 0x00B95B78,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B95F64 = 0x00B95F64,
     // type: /int
     SHC_3BB0A8C1_0x00B95F68 = 0x00B95F68,
@@ -95426,7 +95430,7 @@ enum {
     SHC_3BB0A8C1_0x00B960B8 = 0x00B960B8,
     // label: DAT_SH1_SiegeAdvancedMode
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B960C8 = 0x00B960C8,
     // type: /int
     SHC_3BB0A8C1_0x00B960CC = 0x00B960CC,
@@ -95446,7 +95450,7 @@ enum {
     SHC_3BB0A8C1_0x00B960E4 = 0x00B960E4,
     // label: DAT_ButtonBackgroundBlendStrength
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B960E8 = 0x00B960E8,
     // type: /int
     SHC_3BB0A8C1_0x00B960EC = 0x00B960EC,
@@ -95474,11 +95478,11 @@ enum {
     SHC_3BB0A8C1_0x00B96114 = 0x00B96114,
     // label: DAT_IntroBlendStrength
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B96118 = 0x00B96118,
     // label: DAT_IntroStep
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B9611C = 0x00B9611C,
     // type: /int
     SHC_3BB0A8C1_0x00B96120 = 0x00B96120,
@@ -96112,7 +96116,7 @@ enum {
     // location:
     // type: OpenSHC/WindowsHelper/Enums/BOOLEnum
     SHC_3BB0A8C1_0x00B98408 = 0x00B98408,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00B9840C = 0x00B9840C,
     // type: WinDef/DWORD
     SHC_3BB0A8C1_0x00B98410 = 0x00B98410,
@@ -96392,6 +96396,8 @@ enum {
     SHC_3BB0A8C1_0x00B98790 = 0x00B98790,
     // type: /pointer[32]
     SHC_3BB0A8C1_0x00C9A490 = 0x00C9A490,
+    // label: TGX_RepeatRunHandlers
+    // location:
     // type: /pointer[32]
     SHC_3BB0A8C1_0x00C9A510 = 0x00C9A510,
     // label: DAT_GMImageSizes
@@ -96406,6 +96412,8 @@ enum {
     // location:
     // type: /int[240]
     SHC_3BB0A8C1_0x00D7CE90 = 0x00D7CE90,
+    // label: TGX_StreamRunHandlers
+    // location:
     // type: /pointer[32]
     SHC_3BB0A8C1_0x00D7D250 = 0x00D7D250,
     // label: DAT_LoadingBarProgress
@@ -96450,7 +96458,7 @@ enum {
     SHC_3BB0A8C1_0x00DF3348 = 0x00DF3348,
     // type: /undefined4
     SHC_3BB0A8C1_0x00DF334C = 0x00DF334C,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF3350 = 0x00DF3350,
     // label: DAT_DisableMercPostPortraits
     // location:
@@ -96581,7 +96589,7 @@ enum {
     SHC_3BB0A8C1_0x00DF33E0 = 0x00DF33E0,
     // label: DAT_PerformanceCounterFrequency
     // location:
-    // type: winnt/LARGE_INTEGER
+    // type: ntddk_32/_LARGE_INTEGER
     SHC_3BB0A8C1_0x00DF33E8 = 0x00DF33E8,
     // label: COL_LIGHT_GREY
     // location:
@@ -96690,7 +96698,7 @@ enum {
     SHC_3BB0A8C1_0x00DF4234 = 0x00DF4234,
     // label: DAT_CurrentClimbDataID
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF4238 = 0x00DF4238,
     // type: /undefined4
     SHC_3BB0A8C1_0x00DF423C = 0x00DF423C,
@@ -96732,7 +96740,7 @@ enum {
     SHC_3BB0A8C1_0x00DF4298 = 0x00DF4298,
     // label: DAT_AlliesCount
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF429C = 0x00DF429C,
     // label: BOOL_RelatedToInitialGranaryAndKeepPlacement
     // location:
@@ -97199,15 +97207,15 @@ enum {
     SHC_3BB0A8C1_0x00DF5544 = 0x00DF5544,
     // type: WinDef/DWORD
     SHC_3BB0A8C1_0x00DF5548 = 0x00DF5548,
-    // label: INT_DisableTutorialRestrictions
+    // label: DAT_DisableTutorialRestrictions
     // location:
-    // type: /int
+    // type: OpenSHC/WindowsHelper/Enums/BOOLEnum
     SHC_3BB0A8C1_0x00DF554C = 0x00DF554C,
     // label: DAT_TutorialCurrentStep
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF5550 = 0x00DF5550,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF5554 = 0x00DF5554,
     // label: DAT_00df5558
     // location:
@@ -97219,7 +97227,7 @@ enum {
     SHC_3BB0A8C1_0x00DF555C = 0x00DF555C,
     // type: /undefined4
     SHC_3BB0A8C1_0x00DF5560 = 0x00DF5560,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF5564 = 0x00DF5564,
     // type: WinDef/DWORD
     SHC_3BB0A8C1_0x00DF5568 = 0x00DF5568,
@@ -97263,7 +97271,7 @@ enum {
     SHC_3BB0A8C1_0x00DF563C = 0x00DF563C,
     // type: /int
     SHC_3BB0A8C1_0x00DF5640 = 0x00DF5640,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00DF5644 = 0x00DF5644,
     // type: /int
     SHC_3BB0A8C1_0x00DF5648 = 0x00DF5648,
@@ -97313,7 +97321,7 @@ enum {
     SHC_3BB0A8C1_0x00EB0B18 = 0x00EB0B18,
     // type: /undefined4
     SHC_3BB0A8C1_0x00EB0B20 = 0x00EB0B20,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00EB0B24 = 0x00EB0B24,
     // type: /int[48][4]
     SHC_3BB0A8C1_0x00EB0B28 = 0x00EB0B28,
@@ -97331,7 +97339,7 @@ enum {
     // location:
     // type: /int
     SHC_3BB0A8C1_0x00EB0E40 = 0x00EB0E40,
-    // type: /int
+    // type: /char
     SHC_3BB0A8C1_0x00EB0E44 = 0x00EB0E44,
     // type: /int[250]
     SHC_3BB0A8C1_0x00EB0E48 = 0x00EB0E48,
@@ -97401,9 +97409,9 @@ enum {
     SHC_3BB0A8C1_0x00EB9B50 = 0x00EB9B50,
     // label: DAT_StoredGameMode
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00EB9B58 = 0x00EB9B58,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00EB9B60 = 0x00EB9B60,
     // label: DAT_FinalResultsOrderByColumn
     // location:
@@ -97423,7 +97431,7 @@ enum {
     SHC_3BB0A8C1_0x00EC0348 = 0x00EC0348,
     // type: /int
     SHC_3BB0A8C1_0x00EC0828 = 0x00EC0828,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00EC082C = 0x00EC082C,
     // label: DAT_CurrentMenuID_3
     // location:
@@ -97435,7 +97443,7 @@ enum {
     SHC_3BB0A8C1_0x00EC0838 = 0x00EC0838,
     // type: /int
     SHC_3BB0A8C1_0x00EC083C = 0x00EC083C,
-    // type: OpenSHC/IO/Graphics/GFXRelatedBuffer1
+    // type: OpenSHC/IO/Graphics/GFXRelatedBuffer1[600]
     SHC_3BB0A8C1_0x00EC0840 = 0x00EC0840,
     // type: /int[40]
     SHC_3BB0A8C1_0x00ED2630 = 0x00ED2630,
@@ -97461,7 +97469,7 @@ enum {
     SHC_3BB0A8C1_0x00ED2794 = 0x00ED2794,
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED2798 = 0x00ED2798,
-    // type: /int
+    // type: OpenSHC/WindowsHelper/Enums/BOOLEnum
     SHC_3BB0A8C1_0x00ED279C = 0x00ED279C,
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED27A0 = 0x00ED27A0,
@@ -97475,11 +97483,11 @@ enum {
     SHC_3BB0A8C1_0x00ED27B4 = 0x00ED27B4,
     // type: /int
     SHC_3BB0A8C1_0x00ED27B8 = 0x00ED27B8,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED27BC = 0x00ED27BC,
     // label: DAT_SkirmishTrailRelated1
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED27C0 = 0x00ED27C0,
     // type: /int
     SHC_3BB0A8C1_0x00ED27C4 = 0x00ED27C4,
@@ -97513,7 +97521,7 @@ enum {
     SHC_3BB0A8C1_0x00ED3118 = 0x00ED3118,
     // type: /dword
     SHC_3BB0A8C1_0x00ED311C = 0x00ED311C,
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED3120 = 0x00ED3120,
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED3124 = 0x00ED3124,
@@ -97543,7 +97551,7 @@ enum {
     SHC_3BB0A8C1_0x00ED3154 = 0x00ED3154,
     // label: DAT_RenderedUnitOwner
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED3158 = 0x00ED3158,
     // type: /int
     SHC_3BB0A8C1_0x00ED315C = 0x00ED315C,
@@ -97559,9 +97567,11 @@ enum {
     // location:
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED3168 = 0x00ED3168,
+    // label: DAT_RenderMap_SecondBlitImageIndex
+    // location:
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED316C = 0x00ED316C,
-    // label: DAT_00ed3170
+    // label: DAT_RenderMap_RowsLeft
     // location:
     // type: /int
     SHC_3BB0A8C1_0x00ED3170 = 0x00ED3170,
@@ -97574,11 +97584,13 @@ enum {
     // location:
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED3178 = 0x00ED3178,
+    // label: DAT_RenderMap_WhatToDraw
+    // location:
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED317C = 0x00ED317C,
     // label: DAT_CurrentlyRenderedSpriteID
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED3180 = 0x00ED3180,
     // label: DAT_CurrentRockID
     // location:
@@ -97596,11 +97608,11 @@ enum {
     SHC_3BB0A8C1_0x00ED31A4 = 0x00ED31A4,
     // label: DAT_ButtonX
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED31A8 = 0x00ED31A8,
     // label: DAT_ButtonY
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00ED31AC = 0x00ED31AC,
     // label: DAT_ButtonW
     // location:
@@ -97632,7 +97644,7 @@ enum {
     SHC_3BB0A8C1_0x00ED31C8 = 0x00ED31C8,
     // label: DAT_ButtonUnknownZero
     // location:
-    // type: /int
+    // type: OpenSHC/WindowsHelper/Enums/BOOLEnum
     SHC_3BB0A8C1_0x00ED31CC = 0x00ED31CC,
     // type: /undefined4
     SHC_3BB0A8C1_0x00ED31D0 = 0x00ED31D0,
@@ -97654,7 +97666,7 @@ enum {
     SHC_3BB0A8C1_0x00ED31E0 = 0x00ED31E0,
     // label: DAT_CurrentTribeID
     // location:
-    // type: /undefined4
+    // type: /int
     SHC_3BB0A8C1_0x00EE0FB0 = 0x00EE0FB0,
     // type: /undefined4
     SHC_3BB0A8C1_0x00EE0FB4 = 0x00EE0FB4,

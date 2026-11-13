@@ -14,7 +14,8 @@ namespace Synchrony {
     {
         DAT_MouseState::instance.waitCursorToggle = 1;
         MACRO_CALL(UI::Helpers_Func::SetCursorDependingOnProgramState)();
-        MACRO_CALL_MEMBER(GameSynchronyState_Func::clearSessionsList, this)();
+        MACRO_CALL_MEMBER(Synchrony::GameSynchronyState_Func::clearSessionsList, this)();
+        // The original reads the provider and modem lists through the global instance, not this.
         for (int provider = 0; provider < this->scrollBarItemCount; ++provider) {
             MACRO_CALL(OS_Func::_free_base)((void*)DAT_GameSynchronyState::instance.providerNames[provider]);
             GlobalUnlock(GlobalHandle(DAT_GameSynchronyState::instance.guids[provider]));
@@ -22,12 +23,14 @@ namespace Synchrony {
             DAT_GameSynchronyState::instance.providerNames[provider] = NULL;
             DAT_GameSynchronyState::instance.guids[provider] = NULL;
         }
+        // Reset here and again at the end, as the original does.
         this->scrollBarItemCount = 0;
         for (int modem = 0; modem < this->modemScrollbarCount; ++modem) {
             MACRO_CALL(OS_Func::_free_base)(DAT_GameSynchronyState::instance.stringPointerArray[modem]);
         }
         this->modemScrollbarCount = 0;
         if (this->DPLAYX_4A != NULL) {
+            // Message ID 0 cancels every pending message.
             this->DPLAYX_4A->CancelMessage(0, 0);
             this->DPLAYX_4A->DestroyPlayer(this->DPLAYX_PlayerHandle);
             this->DPLAYX_4A->Close();

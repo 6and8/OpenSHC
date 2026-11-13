@@ -1,4 +1,4 @@
-#include "OpenSHC/UI/Helpers.func.hpp"
+#include "../Helpers.func.hpp"
 
 #include "OpenSHC/Globals/DAT_ARRAY_00ec0348.hpp"
 #include "OpenSHC/Globals/DAT_MouseState.hpp"
@@ -13,13 +13,18 @@ namespace UI {
         int const mouseY = DAT_MouseState::instance.screenSpaceY;
         int const mouseX = DAT_MouseState::instance.screenSpaceX;
         for (int i = 0; i < 24; ++i) {
-            if ((DAT_ARRAY_00ec0348::instance[i].type == 3 || DAT_ARRAY_00ec0348::instance[i].type == 1)
-                && mouseX - DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth >= DAT_ARRAY_00ec0348::instance[i].x
-                && mouseX - DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth
-                    < DAT_ARRAY_00ec0348::instance[i].x + DAT_ARRAY_00ec0348::instance[i].width
-                && mouseY - DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight >= DAT_ARRAY_00ec0348::instance[i].y
-                && mouseY - DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight
-                    < DAT_ARRAY_00ec0348::instance[i].y + DAT_ARRAY_00ec0348::instance[i].height) {
+            // Only image (1) and hover image (3) elements can be hit.
+            if (DAT_ARRAY_00ec0348::instance[i].type != 3 && DAT_ARRAY_00ec0348::instance[i].type != 1) {
+                continue;
+            }
+            int const menuX = mouseX - DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth;
+            if (menuX < DAT_ARRAY_00ec0348::instance[i].x
+                || menuX >= DAT_ARRAY_00ec0348::instance[i].width + DAT_ARRAY_00ec0348::instance[i].x) {
+                continue;
+            }
+            int const menuY = mouseY - DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight;
+            if (menuY >= DAT_ARRAY_00ec0348::instance[i].y
+                && menuY < DAT_ARRAY_00ec0348::instance[i].height + DAT_ARRAY_00ec0348::instance[i].y) {
                 return DAT_ARRAY_00ec0348::instance[i].xSpace;
             }
         }

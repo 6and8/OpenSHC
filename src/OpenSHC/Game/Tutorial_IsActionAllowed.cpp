@@ -3,10 +3,10 @@
 #include "OpenSHC/Globals/DAT_00df5558.hpp"
 #include "OpenSHC/Globals/DAT_00df5560.hpp"
 #include "OpenSHC/Globals/DAT_00df5590.hpp"
+#include "OpenSHC/Globals/DAT_DisableTutorialRestrictions.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
 #include "OpenSHC/Globals/DAT_GameSynchronyState.hpp"
 #include "OpenSHC/Globals/DAT_TutorialCurrentStep.hpp"
-#include "OpenSHC/Globals/INT_DisableTutorialRestrictions.hpp"
 
 namespace OpenSHC {
 
@@ -15,7 +15,7 @@ using WindowsHelper::Enums::BOOLEnum;
 // FUNCTION: STRONGHOLDCRUSADER 0x004BD800
 BOOLEnum __cdecl Game::Tutorial_IsActionAllowed(undefined4 actionType, int actionParam)
 {
-    if (INT_DisableTutorialRestrictions::instance != 0) {
+    if (DAT_DisableTutorialRestrictions::instance != 0) {
         return TRUE;
     }
     switch (actionType) {
@@ -80,7 +80,7 @@ BOOLEnum __cdecl Game::Tutorial_IsActionAllowed(undefined4 actionType, int actio
             return FALSE;
         }
         if (DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID].taxesSetting
-                != 7) {
+            != 7) {
             return TRUE;
         }
         if (actionParam != 7) {

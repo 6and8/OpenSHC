@@ -1,12 +1,12 @@
 #include "OpenSHC/Game/Skirmish.func.hpp"
 #include "OpenSHC/Text/TextManager.func.hpp"
 
-#include "OpenSHC/Globals/DAT_00eb9b60.hpp"
 #include "OpenSHC/Globals/DAT_00ed3124.hpp"
 #include "OpenSHC/Globals/DAT_MissionDefinedData.hpp"
 #include "OpenSHC/Globals/DAT_SkMasters2DataArray.hpp"
 #include "OpenSHC/Globals/DAT_SkMasters2Data_Count.hpp"
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
+#include "OpenSHC/Globals/INT_00eb9b60.hpp"
 #include "OpenSHC/Globals/INT_ARRAY_00eb0e48.hpp"
 #include "OpenSHC/Globals/INT_ARRAY_00eb96d8.hpp"
 #include "OpenSHC/Globals/INT_ARRAY_00ed27f0.hpp"
@@ -38,11 +38,11 @@ namespace Game {
             }
 
             if (DAT_MissionDefinedData::instance.sortColumn <= 1) {
-                DAT_00eb9b60::instance = 0;
+                INT_00eb9b60::instance = 0;
                 if (DAT_MissionDefinedData::instance.descending == 1) {
                     for (int i = 0; i < count; ++i) {
                         if (INT_ARRAY_00eb0e48::instance[i] != 0) {
-                            int* slotPtr = &INT_ARRAY_00eb96d8::instance[DAT_00eb9b60::instance++];
+                            int* slotPtr = &INT_ARRAY_00eb96d8::instance[INT_00eb9b60::instance++];
                             *slotPtr = i;
                         }
                     }
@@ -50,34 +50,34 @@ namespace Game {
                     int entry = count - 1;
                     for (int k = 0; k < count; ++k) {
                         if (INT_ARRAY_00eb0e48::instance[entry] != 0) {
-                            INT_ARRAY_00eb96d8::instance[DAT_00eb9b60::instance++] = entry;
+                            INT_ARRAY_00eb96d8::instance[INT_00eb9b60::instance++] = entry;
                         }
                         --entry;
                     }
                 }
             } else if (DAT_MissionDefinedData::instance.sortColumn == 4) {
-                DAT_00eb9b60::instance = 0;
+                INT_00eb9b60::instance = 0;
                 for (int i = 0; i < count; ++i) {
                     if (INT_ARRAY_00eb0e48::instance[i] != 0) {
-                        INT_ARRAY_00ed27f0::instance[DAT_00eb9b60::instance] = i;
-                        INT_ARRAY_00ed2be0::instance[DAT_00eb9b60::instance]
+                        INT_ARRAY_00ed27f0::instance[INT_00eb9b60::instance] = i;
+                        INT_ARRAY_00ed2be0::instance[INT_00eb9b60::instance]
                             = ((DAT_SkMasters2DataArray::instance[i].localTimeYear - 2000) * 16
                                   + DAT_SkMasters2DataArray::instance[i].localTimeMonth)
                                 * 32
                             + DAT_SkMasters2DataArray::instance[i].localTimeDay;
-                        ++DAT_00eb9b60::instance;
+                        ++INT_00eb9b60::instance;
                     }
                 }
                 MACRO_CALL(Skirmish_Func::Skirmish_SortAIOpponentOrder)(DAT_MissionDefinedData::instance.descending);
             } else if (DAT_MissionDefinedData::instance.sortColumn == 2) {
-                DAT_00eb9b60::instance = 0;
+                INT_00eb9b60::instance = 0;
                 if (DAT_00ed3124::instance == 1) {
                     for (int i = 0; i < count; ++i) {
                         if (INT_ARRAY_00eb0e48::instance[i] != 0) {
-                            INT_ARRAY_00ed27f0::instance[DAT_00eb9b60::instance] = i;
-                            INT_ARRAY_00ed2be0::instance[DAT_00eb9b60::instance]
+                            INT_ARRAY_00ed27f0::instance[INT_00eb9b60::instance] = i;
+                            INT_ARRAY_00ed2be0::instance[INT_00eb9b60::instance]
                                 = 80 - DAT_SkMasters2DataArray::instance[i].score;
-                            ++DAT_00eb9b60::instance;
+                            ++INT_00eb9b60::instance;
                         }
                     }
                 } else {
@@ -100,20 +100,20 @@ namespace Game {
                         if ((uchar)(second - 'A') <= 'Z' - 'A') {
                             second += 'a' - 'A';
                         }
-                        INT_ARRAY_00ed2be0::instance[DAT_00eb9b60::instance] = -1 - (first << 8) - second;
-                        INT_ARRAY_00ed27f0::instance[DAT_00eb9b60::instance] = i;
-                        ++DAT_00eb9b60::instance;
+                        INT_ARRAY_00ed2be0::instance[INT_00eb9b60::instance] = -1 - (first << 8) - second;
+                        INT_ARRAY_00ed27f0::instance[INT_00eb9b60::instance] = i;
+                        ++INT_00eb9b60::instance;
                     }
                 }
                 MACRO_CALL(Skirmish_Func::Skirmish_SortAIOpponentOrder)(DAT_MissionDefinedData::instance.descending);
             } else if (DAT_MissionDefinedData::instance.sortColumn == 3) {
-                DAT_00eb9b60::instance = 0;
+                INT_00eb9b60::instance = 0;
                 for (int i = 0; i < count; ++i) {
                     if (INT_ARRAY_00eb0e48::instance[i] != 0) {
-                        INT_ARRAY_00ed27f0::instance[DAT_00eb9b60::instance] = i;
-                        INT_ARRAY_00ed2be0::instance[DAT_00eb9b60::instance]
+                        INT_ARRAY_00ed27f0::instance[INT_00eb9b60::instance] = i;
+                        INT_ARRAY_00ed2be0::instance[INT_00eb9b60::instance]
                             = -1 - DAT_SkMasters2DataArray::instance[i].gameDurationInMinutes;
-                        ++DAT_00eb9b60::instance;
+                        ++INT_00eb9b60::instance;
                     }
                 }
                 MACRO_CALL(Skirmish_Func::Skirmish_SortAIOpponentOrder)(DAT_MissionDefinedData::instance.descending);

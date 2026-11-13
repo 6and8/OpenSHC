@@ -7,7 +7,6 @@
 #include "OpenSHC/UI/Enums/MenuModalType.hpp"
 #include "OpenSHC/UI/Enums/MenuViewType.hpp"
 
-#include "OpenSHC/Globals/DAT_00b95954.hpp"
 #include "OpenSHC/Globals/DAT_00b95b3c.hpp"
 #include "OpenSHC/Globals/DAT_00b95b70.hpp"
 #include "OpenSHC/Globals/DAT_00b9610c.hpp"
@@ -20,6 +19,7 @@
 #include "OpenSHC/Globals/DAT_TextEditorState.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 #include "OpenSHC/Globals/DAT_WindowAndDirectDraw.hpp"
+#include "OpenSHC/Globals/INT_00b95954.hpp"
 #include "OpenSHC/Globals/INT_00b960d0.hpp"
 #include "OpenSHC/Globals/INT_00b960d4.hpp"
 
@@ -53,7 +53,7 @@ namespace UI {
                             DAT_00b95b3c::instance = 0;
                         }
                     }
-                } else if ((int)(now - INT_00b960d0::instance) > 20000 && DAT_00b95954::instance == 0) {
+                } else if ((int)(now - INT_00b960d0::instance) > 20000 && INT_00b95954::instance == 0) {
                     DAT_00b9610c::instance = -1;
                     INT_00b960d0::instance = now;
                 }
@@ -84,23 +84,21 @@ namespace UI {
                             / 2);
                     if ((int)DAT_00b95b70::instance < 32) {
                         timeGetTime();
-                        if (DAT_00b95954::instance == 0) {
-                            MACRO_CALL_MEMBER(
-                                UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(
-                                DAT_MenuHandlerState::instance.x, DAT_MenuHandlerState::instance.y,
-                                DAT_MenuHandlerState::instance.x + 800, DAT_MenuHandlerState::instance.y + 600,
-                                DAT_00b95b70::instance);
+                        if (INT_00b95954::instance == 0) {
+                            MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox,
+                                DAT_PencilRenderCore::ptr)(DAT_MenuHandlerState::instance.x,
+                                DAT_MenuHandlerState::instance.y, DAT_MenuHandlerState::instance.x + 800,
+                                DAT_MenuHandlerState::instance.y + 600, DAT_00b95b70::instance);
                         } else {
-                            MACRO_CALL_MEMBER(
-                                UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(0,
-                                0, DAT_WindowAndDirectDraw::instance.resolutionX / 2,
+                            MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox,
+                                DAT_PencilRenderCore::ptr)(0, 0, DAT_WindowAndDirectDraw::instance.resolutionX / 2,
                                 DAT_WindowAndDirectDraw::instance.resolutionY, DAT_00b95b70::instance);
                         }
                     }
                 }
                 if (DAT_MouseState::instance.leftClickStart != 0) {
-                    MACRO_CALL_MEMBER(Text::TextEditorState_Func::closeHelpDialogAndReturnToMenu,
-                        DAT_TextEditorState::ptr)();
+                    MACRO_CALL_MEMBER(
+                        Text::TextEditorState_Func::closeHelpDialogAndReturnToMenu, DAT_TextEditorState::ptr)();
                     MACRO_CALL_MEMBER(Game::GameCore_Func::switchToMenuView, DAT_GameCore::ptr)(
                         UI::Enums::MVT_MAIN_MENU, 0);
                     MACRO_CALL_MEMBER(UI::MenuModalComposition_Func::activateModalDialog,

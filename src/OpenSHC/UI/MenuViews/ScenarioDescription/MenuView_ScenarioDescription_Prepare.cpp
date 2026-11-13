@@ -7,10 +7,8 @@
 #include "OpenSHC/Game/GameMode2.hpp"
 #include "OpenSHC/UI/Enums/MenuModalType.hpp"
 
-#include "OpenSHC/Globals/DAT_00eb0b24.hpp"
 #include "OpenSHC/Globals/DAT_00ed2794.hpp"
 #include "OpenSHC/Globals/DAT_00ed2798.hpp"
-#include "OpenSHC/Globals/DAT_00ed27bc.hpp"
 #include "OpenSHC/Globals/DAT_ARRAY_00ed26d0.hpp"
 #include "OpenSHC/Globals/DAT_GameCore.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
@@ -20,6 +18,8 @@
 #include "OpenSHC/Globals/DAT_MouseState.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 #include "OpenSHC/Globals/DAT_VideoBikQueue.hpp"
+#include "OpenSHC/Globals/INT_00eb0b24.hpp"
+#include "OpenSHC/Globals/INT_00ed27bc.hpp"
 #include "OpenSHC/Globals/INT_00ed27c4.hpp"
 
 namespace OpenSHC {
@@ -32,34 +32,34 @@ namespace UI {
             {
                 DAT_GameCore::instance.currentlyInGameUnk_0xa4 = FALSE;
                 DAT_TextureRenderCoreObject::instance.totalLoadedGfx = 0;
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_screen_background.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back0.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back1.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back2.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back3.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back4.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back5.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back6.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back7.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back8.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back9.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back10.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back11.tgx");
-                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile,
-                    DAT_TextureRenderCoreObject::ptr)("briefing_back12.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_screen_background.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back0.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back1.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back2.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back3.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back4.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back5.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back6.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back7.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back8.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back9.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back10.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back11.tgx");
+                MACRO_CALL_MEMBER(UI::Rendering::TextureRenderCore_Func::loadGfxFile, DAT_TextureRenderCoreObject::ptr)(
+                    "briefing_back12.tgx");
                 if (DAT_MenuView_TriggerPrepare::instance != 2) {
                     if (DAT_GameCore::instance.gameMode_2 == Game::GM_CAMPAIGN_MISSION) {
                         DAT_00ed2798::instance = 0;
@@ -101,10 +101,10 @@ namespace UI {
                 }
                 DAT_MouseState::instance.waitCursorToggle = 0;
                 MACRO_CALL(UI::Helpers_Func::ResetEventStatusUnk)();
-                DAT_00eb0b24::instance = 0;
+                INT_00eb0b24::instance = 0;
                 INT_00ed27c4::instance = 1;
                 DAT_ARRAY_00ed26d0::instance[0].y = 0;
-                DAT_00ed27bc::instance = 0;
+                INT_00ed27bc::instance = 0;
                 DAT_00ed2794::instance = 0;
                 if (DAT_MenuView_TriggerPrepare::instance != 2 && DAT_GameCore::instance.gameSuspended == 0) {
                     DAT_00ed2794::instance = timeGetTime();

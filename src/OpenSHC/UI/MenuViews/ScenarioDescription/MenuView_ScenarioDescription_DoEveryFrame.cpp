@@ -14,7 +14,6 @@
 #include "OpenSHC/Globals/COL_BLACK.hpp"
 #include "OpenSHC/Globals/DAT_00ed2794.hpp"
 #include "OpenSHC/Globals/DAT_00ed2798.hpp"
-#include "OpenSHC/Globals/DAT_00ed27bc.hpp"
 #include "OpenSHC/Globals/DAT_ARRAY_00ed26d0.hpp"
 #include "OpenSHC/Globals/DAT_GameCore.hpp"
 #include "OpenSHC/Globals/DAT_GameState.hpp"
@@ -24,6 +23,7 @@
 #include "OpenSHC/Globals/DAT_TextManagerObject.hpp"
 #include "OpenSHC/Globals/DAT_TextureRenderCoreObject.hpp"
 #include "OpenSHC/Globals/DAT_WindowAndDirectDraw.hpp"
+#include "OpenSHC/Globals/INT_00ed27bc.hpp"
 #include "OpenSHC/Globals/INT_00ed3130.hpp"
 #include "OpenSHC/Globals/INT_00ed3134.hpp"
 
@@ -68,7 +68,7 @@ namespace UI {
                     MACRO_CALL(UI::Rendering_Func::RenderGfxHelperUnk)(
                         DAT_MissionDefinedData::instance.ScenarioDescriptionSpriteIDs[frame] + 1, 0, 0);
                 }
-                if (DAT_00ed27bc::instance == 1) {
+                if (INT_00ed27bc::instance == 1) {
                     DAT_TextManagerObject::instance.field_0x24 = 1;
                     MACRO_CALL_MEMBER(Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
                         MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset,
@@ -164,7 +164,7 @@ namespace UI {
                     MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset, DAT_TextManagerObject::ptr)(
                         (eTextSections)briefingSection, briefingNum),
                     0, 0, 720, 0, 0, 1);
-                if (textHeight + textY + 50 > 420 && DAT_00ed27bc::instance != 1) {
+                if (textHeight + textY + 50 > 420 && INT_00ed27bc::instance != 1) {
                     DAT_ARRAY_00ed26d0::instance[0].y = 1;
                     return;
                 }

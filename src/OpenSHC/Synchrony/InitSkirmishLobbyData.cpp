@@ -5,7 +5,6 @@
 #include "OpenSHC/Map/TileMapState.func.hpp"
 #include "OpenSHC/Synchrony/GameSynchronyState.func.hpp"
 
-#include "OpenSHC/Globals/DAT_00b95960.hpp"
 #include "OpenSHC/Globals/DAT_00b960dc.hpp"
 #include "OpenSHC/Globals/DAT_00b960f8.hpp"
 #include "OpenSHC/Globals/DAT_AIVState.hpp"
@@ -19,6 +18,7 @@
 #include "OpenSHC/Globals/DWORD_00b95b1c.hpp"
 #include "OpenSHC/Globals/INT_00b95950.hpp"
 #include "OpenSHC/Globals/INT_00b95958.hpp"
+#include "OpenSHC/Globals/INT_00b95960.hpp"
 #include "OpenSHC/Globals/INT_00b95ab8.hpp"
 #include "OpenSHC/Globals/INT_00b960b0.hpp"
 
@@ -44,7 +44,7 @@ void Synchrony::InitSkirmishLobbyData()
     DWORD_00b95b1c::instance = timeGetTime();
     memset(DAT_GameSynchronyState::instance.playerPositionsArray, -10,
         sizeof(DAT_GameSynchronyState::instance.playerPositionsArray));
-    DAT_00b95960::instance = -1;
+    INT_00b95960::instance = -1;
     INT_00b95950::instance = -1;
     INT_00b960b0::instance = -1;
     DAT_GameCore::instance.gameMode_2 = Game::GM_SKIRMISH_AND_MULTIPLAYER;

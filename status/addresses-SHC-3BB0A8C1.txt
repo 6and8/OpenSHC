@@ -6181,7 +6181,7 @@ SHC_3BB0A8C1_0x0041CC70 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041D510 | 94.8% | Register allocation differs
 
-SHC_3BB0A8C1_0x0041E240 | 99.6% | Reimplemented, asm differs (one load scheduled elsewhere)
+SHC_3BB0A8C1_0x0041E240 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041E3F0 | 0.0% | Pending
 
@@ -6211,7 +6211,7 @@ SHC_3BB0A8C1_0x0041F110 | 95.0% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041F290 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041F3B0 | 99.6% | Register allocation differs
+SHC_3BB0A8C1_0x0041F3B0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041F7C0 | 62.8% | Register allocation differs
 

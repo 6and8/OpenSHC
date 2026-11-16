@@ -99,9 +99,9 @@ namespace Synchrony {
                     param_4, 0);
             }
         }
-        if (param_2 == DAT_GameState::instance.playerDataArray[param_4].requestedGoodsArray1Unk[param_1]) {
-            DAT_GameState::instance.playerDataArray[param_4].requestedGoodsArray1Unk[param_1] = 0;
-            DAT_GameState::instance.playerDataArray[param_4].requestedGoodsArray2Unk[param_1] = 0;
+        if (param_2 == DAT_GameState::instance.playerDataArray[param_4].goodsRequestTypeByPlayer[param_1]) {
+            DAT_GameState::instance.playerDataArray[param_4].goodsRequestTypeByPlayer[param_1] = 0;
+            DAT_GameState::instance.playerDataArray[param_4].goodsRequestAmountByPlayer[param_1] = 0;
         }
         MACRO_CALL_MEMBER(AI::AICState_Func::playThanksBikFromPlayerToPlayer, DAT_AICState::ptr)(param_1, param_4);
     }

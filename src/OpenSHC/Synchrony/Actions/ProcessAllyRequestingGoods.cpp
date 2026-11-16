@@ -24,9 +24,9 @@ namespace Synchrony {
             if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[askedPlayerID] == -1) {
                 return;
             }
-            DAT_GameState::instance.playerDataArray[askedPlayerID].requestedGoodsArray1Unk[askee]
+            DAT_GameState::instance.playerDataArray[askedPlayerID].goodsRequestTypeByPlayer[askee]
                 = (short)(param_2 + 1);
-            DAT_GameState::instance.playerDataArray[askedPlayerID].requestedGoodsArray2Unk[askee] = (short)amount;
+            DAT_GameState::instance.playerDataArray[askedPlayerID].goodsRequestAmountByPlayer[askee] = (short)amount;
             if (askedPlayerID == DAT_GameSynchronyState::instance.currentPlayerSlotID) {
                 strcpy(DAT_GameSynchronyState::instance.receivedChatMessage,
                     MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset, DAT_TextManagerObject::ptr)(
@@ -37,9 +37,9 @@ namespace Synchrony {
             return;
         }
         if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[askedPlayerID] != -1) {
-            DAT_GameState::instance.playerDataArray[askedPlayerID].requestedGoodsArray1Unk[askee]
+            DAT_GameState::instance.playerDataArray[askedPlayerID].goodsRequestTypeByPlayer[askee]
                 = (short)(param_2 + 1);
-            DAT_GameState::instance.playerDataArray[askedPlayerID].requestedGoodsArray2Unk[askee] = (short)amount;
+            DAT_GameState::instance.playerDataArray[askedPlayerID].goodsRequestAmountByPlayer[askee] = (short)amount;
             if (askedPlayerID == DAT_GameSynchronyState::instance.currentPlayerSlotID) {
                 strcpy(DAT_GameSynchronyState::instance.receivedChatMessage,
                     MACRO_CALL_MEMBER(Text::TextManager_Func::getTextStringInGroupAtOffset, DAT_TextManagerObject::ptr)(

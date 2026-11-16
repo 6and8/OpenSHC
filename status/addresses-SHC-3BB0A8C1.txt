@@ -2441,7 +2441,7 @@ SHC_3BB0A8C1_0x004081D4 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004081D5 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004081E0 | 95.0% | Reimplemented, asm differs (height reloaded into a register once)
+SHC_3BB0A8C1_0x004081E0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00408250 | 100.0% | Reimplemented
 

@@ -1,0 +1,5 @@
+src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp
+src/OpenSHC/Map/Entities/EntityState/updateProjectileHeightAndCollision.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp

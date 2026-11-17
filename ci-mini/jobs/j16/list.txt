@@ -1,0 +1,8 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasLessWoodThanTheCostOfAWoodcuttersHutAndNoWoodcutters.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findFirstBuildingOfType.cpp
+src/OpenSHC/Map/Entities/EntityState/createSeagull.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp

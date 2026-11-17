@@ -1,0 +1,3 @@
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/UI/MenuItems/NewInvasion/MenuItemActionHandler_NewInvasion_UnitButtons.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applySnoozedStateBasedOnPlayerData.cpp

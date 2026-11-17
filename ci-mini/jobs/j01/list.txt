@@ -1,0 +1,2 @@
+src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp

@@ -1,0 +1,3 @@
+src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp

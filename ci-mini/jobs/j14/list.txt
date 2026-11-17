@@ -1,0 +1,4 @@
+src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/UI/MenuItems/TriggerInvasion/MenuItemActionHandler_TriggerInvasion_Main.cpp
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp

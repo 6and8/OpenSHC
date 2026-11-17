@@ -1,0 +1,3 @@
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp

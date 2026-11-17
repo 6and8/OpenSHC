@@ -1,0 +1,7 @@
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp
+src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp

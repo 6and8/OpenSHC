@@ -1,0 +1,16 @@
+src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingData.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findFirstBuildingIDForPlayerAndType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setBuildingInitialEntryTileTry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp

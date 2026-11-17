@@ -1,0 +1,6 @@
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp
+src/OpenSHC/UI/MenuItems/TriggerInvasion/MenuItemActionHandler_TriggerInvasion_Main.cpp
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp

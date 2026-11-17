@@ -1,0 +1,8 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Trade.cpp
+src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasLessWoodThanTheCostOfAWoodcuttersHutAndNoWoodcutters.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findFirstBuildingOfType.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp
+src/OpenSHC/Map/MapPropertiesState/adjustEventMonthAndYearForSection1047.cpp

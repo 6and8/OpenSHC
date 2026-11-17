@@ -1,0 +1,10 @@
+src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp
+src/OpenSHC/UI/Credits/RenderScrollingCreditsTextFrame.cpp
+src/OpenSHC/UI/MenuItems/FindingNetworkSessions/MenuItemActionHandler_FindingNetworkSessions_Buttons.cpp
+src/OpenSHC/Map/Entities/UpdateFireEntity.cpp
+src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp

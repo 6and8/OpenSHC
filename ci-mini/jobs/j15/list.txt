@@ -1,0 +1,5 @@
+src/OpenSHC/UI/MenuItems/Unused/MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp
+src/OpenSHC/UI/MenuItems/NewInvasion/MenuItemActionHandler_NewInvasion_UnitButtons.cpp
+src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp

@@ -1,0 +1,9 @@
+src/OpenSHC/Global/WindowMsgProcessingFunc.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp

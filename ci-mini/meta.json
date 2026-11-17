@@ -1,0 +1,710 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld00_L271.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld01_L374.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld02_L359.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld03_L456.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld04_L181.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld05_L519.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld06_L519.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"fld00_L53.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp",
+"fld00_L16.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld00_L53.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld01_L129.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld02_L162.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld03_L167.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld04_L268.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp",
+"fld05_L329.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp",
+"fld00_L220.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp",
+"fld01_L312.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"fld00_L32.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld00_L109.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld01_L143.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld02_L162.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld03_L189.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld04_L201.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/Map/Buildings/UpdateMill.cpp",
+"fld05_L235.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/Map/Buildings/UpdateGateHouseLarge.cpp",
+"fld00_L31.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/Map/Buildings/UpdateGateHouseLarge.cpp",
+"fld01_L31.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp",
+"fld00_L67.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld00_L69.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld01_L343.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld02_L482.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld03_L619.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld04_L1368.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"fld05_L1397.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp",
+"fld00_L31.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp",
+"fld01_L31.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"fld00_L481.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld00_L108.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld01_L124.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld02_L222.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld03_L242.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld04_L255.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"fld00_L40.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp",
+"fld01_L42.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/Game/Tutorial_IsActionAllowed.cpp",
+"fld00_L72.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/processResourceGain.cpp",
+"fld00_L56.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"fld00_L85.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"fld01_L846.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"fld02_L940.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"fld03_L200.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"fld04_L1476.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"fld00_L149.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"fld01_L194.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp",
+"fld00_L114.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp",
+"fld00_L49.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"fld00_L41.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"fld01_L41.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"fld02_L45.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp",
+"fld03_L69.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp",
+"fld00_L26.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp",
+"fld01_L57.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld00_L47.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld01_L294.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"fld00_L31.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"fld00_L24.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"fld01_L30.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"fld02_L30.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp",
+"fld03_L73.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp",
+"fld00_L167.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp",
+"fld01_L167.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp",
+"fld00_L23.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp",
+"fld01_L247.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp",
+"fld00_L35.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld00_L941.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld01_L67.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld02_L778.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld03_L954.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Food.cpp",
+"fld00_L31.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Food.cpp",
+"fld01_L32.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"fld00_L58.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"fld01_L58.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp",
+"fld00_L29.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"fld00_L61.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"fld01_L65.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"fld02_L66.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"fld03_L188.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp",
+"fld00_L29.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp",
+"fld01_L30.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"fld00_L60.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"fld01_L60.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp",
+"fld00_L42.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld01_L105.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld02_L110.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld03_L134.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"fld00_L42.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"fld01_L43.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp",
+"fld00_L59.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp",
+"fld01_L59.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingData.cpp",
+"fld00_L68.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld01_L105.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld02_L110.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld03_L135.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp",
+"fld00_L29.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp",
+"fld01_L30.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"fld00_L22.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"fld01_L186.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"fld00_L12.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld01_L105.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld02_L110.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld03_L134.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"fld00_L39.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"fld01_L40.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"fld00_L47.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"fld01_L220.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/Map/MapPropertiesState/updateEventYearsAndCommitBuildingAvailability.cpp",
+"fld00_L22.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld00_L109.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld01_L111.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld02_L116.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld03_L140.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"fld00_L26.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"fld01_L27.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp",
+"fld00_L33.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp",
+"fld01_L100.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"fld00_L18.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp",
+"fld00_L35.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp",
+"fld01_L35.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp",
+"fld02_L69.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp",
+"fld03_L45.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/UI/Credits/RenderScrollingCreditsTextFrame.cpp",
+"fld00_L35.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/UI/Credits/RenderScrollingCreditsTextFrame.cpp",
+"fld01_L35.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/UI/MenuItems/FindingNetworkSessions/MenuItemActionHandler_FindingNetworkSessions_Buttons.cpp",
+"fld00_L48.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/Map/Entities/UpdateFireEntity.cpp",
+"fld00_L132.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"fld00_L18.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/UI/MenuItems/Unused/MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk.cpp",
+"fld00_L25.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/UI/MenuItems/Unused/MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk.cpp",
+"fld01_L35.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/UI/MenuItems/Unused/MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk.cpp",
+"fld02_L47.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp",
+"fld00_L51.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp",
+"fld01_L52.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp",
+"fld02_L62.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/UI/MenuItems/NewInvasion/MenuItemActionHandler_NewInvasion_UnitButtons.cpp",
+"fld00_L28.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp",
+"fld00_L348.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"fld00_L88.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"fld00_L73.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"fld01_L73.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"fld02_L104.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp",
+"fld00_L28.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp",
+"fld01_L38.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp",
+"fld02_L58.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/UI/MenuItems/TriggerInvasion/MenuItemActionHandler_TriggerInvasion_Main.cpp",
+"fld00_L26.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"fld00_L45.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"fld00_L20.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"fld00_L53.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"fld01_L54.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"fld02_L62.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"fld00_L33.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"fld01_L37.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"fld02_L42.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"fld00_L73.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/Map/Buildings/UpdateOxTether.cpp",
+"fld00_L49.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"fld00_L54.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"fld01_L97.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"fld02_L98.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"fld00_L98.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"fld01_L107.cpp"
+],
+"j18/v005": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"fld02_L108.cpp"
+],
+"j18/v006": [
+"src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp",
+"fld00_L39.cpp"
+],
+"j18/v007": [
+"src/OpenSHC/Map/Buildings/UpdateQuarry.cpp",
+"fld00_L654.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Trade.cpp",
+"fld00_L33.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Trade.cpp",
+"fld01_L41.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Trade.cpp",
+"fld02_L41.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"fld00_L64.cpp"
+],
+"j19/v004": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"fld01_L217.cpp"
+],
+"j19/v005": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"fld02_L226.cpp"
+],
+"j19/v006": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp",
+"fld00_L64.cpp"
+],
+"j19/v007": [
+"src/OpenSHC/Map/MapPropertiesState/adjustEventMonthAndYearForSection1047.cpp",
+"fld00_L17.cpp"
+]
+}

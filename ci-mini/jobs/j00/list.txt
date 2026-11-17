@@ -1,0 +1,9 @@
+src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuildingAndLinkedDuplicates.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/deleteBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/subtractResourcesStoredInBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp

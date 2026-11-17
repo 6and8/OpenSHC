@@ -1,0 +1,9 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/Map/MapPropertiesState/loadMap.cpp
+src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp
+src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp

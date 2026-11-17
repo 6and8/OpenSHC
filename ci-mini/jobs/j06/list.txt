@@ -1,0 +1,5 @@
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp
+src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp

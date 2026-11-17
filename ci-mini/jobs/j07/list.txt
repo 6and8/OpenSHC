@@ -1,0 +1,7 @@
+src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp

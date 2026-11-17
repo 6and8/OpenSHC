@@ -1,0 +1,70 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld00_L67.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld01_L778.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"fld02_L954.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"fld00_L55.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"fld01_L62.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld01_L110.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"fld02_L133.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld01_L110.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"fld02_L134.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld00_L103.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld01_L110.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"fld02_L133.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld00_L109.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld01_L116.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld02_L139.cpp"
+]
+}

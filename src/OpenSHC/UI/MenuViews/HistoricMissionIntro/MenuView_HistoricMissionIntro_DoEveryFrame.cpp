@@ -71,7 +71,7 @@ namespace UI {
                 if (DAT_00ed2780::instance == 2) {
                     MACRO_CALL_MEMBER(Text::TextManager_Func::renderMultilineText5Unk, DAT_TextManagerObject::ptr)(
                         DAT_ArrayOfStoredMenuStrings::instance[DAT_00eb9b2c::instance],
-                        DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + DAT_00eb9b30::instance,
+                        DAT_00eb9b30::instance + DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth,
                         DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight + DAT_00eb9b34::instance,
                         DAT_00eb9b38::instance, DAT_00eb9b3c::instance, DAT_00eb9b40::instance, blendStrength);
                 } else if (DAT_00ed2780::instance == 0) {
@@ -80,7 +80,8 @@ namespace UI {
                 MACRO_CALL(UI::Rendering_Func::DrawLoadedMenuStringHelperWithBlending)(
                     0, 350, 170, 400, 0, 17, FALSE, blendStrength);
                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderMultilineText5Unk, DAT_TextManagerObject::ptr)(
-                    DAT_ArrayOfStoredMenuStrings::instance[1], DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 350,
+                    DAT_ArrayOfStoredMenuStrings::instance[1],
+                    DAT_WindowAndDirectDraw::instance.mainMenuBorderWidth + 350,
                     DAT_WindowAndDirectDraw::instance.mainMenuBorderHeight + 210, 400, 0, 17, blendStrength);
                 if (DAT_00ed2780::instance == 0) {
                     return;
@@ -98,8 +99,8 @@ namespace UI {
                     DAT_00ed2780::instance = 0;
                     int missionIndex = DAT_GameCore::instance.missionNumber1to20 - 1;
                     if (missionIndex < 20) {
-                        MACRO_CALL_MEMBER(Audio::MSS::SoundSystem_Func::playSoundOnStream3Unk,
-                            DAT_SoundSystemState::ptr)(
+                        MACRO_CALL_MEMBER(
+                            Audio::MSS::SoundSystem_Func::playSoundOnStream3Unk, DAT_SoundSystemState::ptr)(
                             DAT_MissionDefinedData::instance.HistoricMissionIntroSoundNames[missionIndex], 1);
                     }
                 }

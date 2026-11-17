@@ -192,8 +192,7 @@ namespace Map {
                         MACRO_CALL_MEMBER(OpenSHC::Audio::SFX::SFXState_Func::playWAVSFX, DAT_SFXState::ptr)(
                             (char*)SFX_WeLostControlOfAGatehouse);
                     }
-                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x2c6
-                        = newController;
+                    DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].field_0x2c6 = newController;
                     DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].gateState = 11;
                     MACRO_CALL_MEMBER(
                         OpenSHC::Map::Buildings::BuildingsState_Func::applyGateOrDrawbridgeOpenCloseChange, this)(
@@ -256,10 +255,11 @@ namespace Map {
                     distanceX = DAT_UnitsState::instance.units[enemyID].microXPosition - gateMicroX;
                 }
                 int distance;
-                if (gateMicroY > DAT_UnitsState::instance.units[enemyID].microYPosition) {
-                    distance = gateMicroY - DAT_UnitsState::instance.units[enemyID].microYPosition;
+                short const enemyMicroY = DAT_UnitsState::instance.units[enemyID].microYPosition;
+                if (gateMicroY > enemyMicroY) {
+                    distance = gateMicroY - enemyMicroY;
                 } else {
-                    distance = DAT_UnitsState::instance.units[enemyID].microYPosition - gateMicroY;
+                    distance = enemyMicroY - gateMicroY;
                 }
                 if (distanceX >= distance) {
                     distance = distanceX;

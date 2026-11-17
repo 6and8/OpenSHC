@@ -6519,7 +6519,7 @@ SHC_3BB0A8C1_0x00422400 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00422430 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004224F0 | 88.1% | stack slot allocation differs
+SHC_3BB0A8C1_0x004224F0 | 89.6% | stack slot allocation differs
 
 SHC_3BB0A8C1_0x00422600 | 0.0% | Pending
 
@@ -25939,7 +25939,7 @@ SHC_3BB0A8C1_0x004B0390 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004B07C0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004B0820 | 63.8% | Reimplemented, asm differs (frame matches; posY kept in ebx where the original keeps x, numberWidth in ebp vs spilled)
+SHC_3BB0A8C1_0x004B0820 | 64.9% | Reimplemented, asm differs (frame matches; posY kept in ebx where the original keeps x, numberWidth in ebp vs spilled)
 
 SHC_3BB0A8C1_0x004B0AC0 | 100.0% | Reimplemented
 

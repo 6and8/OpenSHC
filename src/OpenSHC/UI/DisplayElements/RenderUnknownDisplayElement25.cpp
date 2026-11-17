@@ -44,11 +44,10 @@ namespace UI {
                 MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(
                     x - 95, posY - 5, x + 95, posY + 50, 16);
                 DAT_PencilRenderCore::instance.surfaceTarget = 0;
+                int const playerColor = DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player];
                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderInGameTextWithShadow, DAT_TextManagerObject::ptr)(name,
-                    x, posY, Text::TTA_CENTER,
-                    DAT_RenderingDefinedData::instance
-                        .ColorArray[DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player]],
-                    0, 18, FALSE, 0);
+                    x, posY, Text::TTA_CENTER, DAT_RenderingDefinedData::instance.ColorArray[playerColor], 0, 18, FALSE,
+                    0);
                 int numberWidth;
                 if ((int)DAT_GameSynchronyState::instance.skirmishPoints >= 1000000) {
                     numberWidth = 77;
@@ -71,9 +70,7 @@ namespace UI {
                     if (digit != 0 || digitShown || digitIndex == 0) {
                         MACRO_CALL_MEMBER(Text::TextManager_Func::renderNumber2, DAT_TextManagerObject::ptr)(digit,
                             numberWidth / 2 - digitIndex * 11 + offset + posX, posY + 25, (Text::TextAlignment)-1,
-                            DAT_RenderingDefinedData::instance
-                                .ColorArray[DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player]],
-                            0, 17, FALSE, 0);
+                            DAT_RenderingDefinedData::instance.ColorArray[playerColor], 0, 17, FALSE, 0);
                         digitShown = TRUE;
                     }
                     divisor /= 10;

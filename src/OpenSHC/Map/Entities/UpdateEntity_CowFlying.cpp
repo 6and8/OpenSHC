@@ -22,10 +22,11 @@ namespace Map {
             if (DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].someCounter_OR_hitGround <= 0) {
                 DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].logicalState = 7;
             }
-            DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2
+            short frameStep
                 = (DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].unknownAnimationFrameRelated
                       - 100)
-                    / 4
+                / 4;
+            DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2 = frameStep
                 + DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2RelatedOffset + 12;
             DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].imageID = 0;
         } else {

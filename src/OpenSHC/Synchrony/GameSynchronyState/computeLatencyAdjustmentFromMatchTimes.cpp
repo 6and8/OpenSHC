@@ -29,14 +29,15 @@ namespace Synchrony {
                 }
             }
         }
-        this->playerMapTimeSpread = this->mapTimeInTicksSinglePlayer - this->minPlayerMapTime;
+        int minTime = this->minPlayerMapTime;
+        this->playerMapTimeSpread = this->mapTimeInTicksSinglePlayer - minTime;
         this->localPlayerMapTime = this->matchTimes[param_1];
         this->ticksAheadOfSlowestPlayer = 0;
         this->ticksBehindFastestPlayer = 0;
-        if (this->localPlayerMapTime == this->minPlayerMapTime) {
+        if (this->localPlayerMapTime == minTime) {
             this->ticksBehindFastestPlayer = this->localPlayerMapTime - this->mapTimeInTicksSinglePlayer;
         } else {
-            this->ticksAheadOfSlowestPlayer = this->localPlayerMapTime - this->minPlayerMapTime;
+            this->ticksAheadOfSlowestPlayer = this->localPlayerMapTime - minTime;
         }
         if ((int)this->ticksBehindFastestPlayer < 0) {
             this->field_0x109eb8 = 1;

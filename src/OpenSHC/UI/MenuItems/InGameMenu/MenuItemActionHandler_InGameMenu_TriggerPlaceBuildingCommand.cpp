@@ -775,9 +775,10 @@ namespace UI {
                         DAT_BottomLeftTextDisplayState::ptr)(1, 8, 333, 0, 100, 6000);
                     return;
                 }
-                if ((DAT_MouseState::instance.leftClickState != 0 && (uint)tile != DAT_00b96110::instance)
+                int const leftClickStateValue = DAT_MouseState::instance.leftClickState;
+                if ((leftClickStateValue != 0 && (uint)tile != DAT_00b96110::instance)
                     || DAT_MouseState::instance.draggingStopped != 0) {
-                    if (DAT_MouseState::instance.leftClickState != 0 && (uint)tile != DAT_00b96110::instance) {
+                    if (leftClickStateValue != 0 && (uint)tile != DAT_00b96110::instance) {
                         DAT_00b96110::instance = tile;
                     }
                     if (MACRO_CALL_MEMBER(Map::Navigation::PathFindingState_Func::isSignPostWithinDistance,

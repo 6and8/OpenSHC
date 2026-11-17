@@ -50,13 +50,13 @@ namespace UI {
     // FUNCTION: STRONGHOLDCRUSADER 0x0043C840
     void BuildingMenus::RenderBuildingMenu_Armory()
     {
-        int x = DAT_MenuHandlerState::instance.x + 0x1e;
+        int const xValue = DAT_MenuHandlerState::instance.x;
+        int x = xValue + 0x1e;
         int iconsY = DAT_MenuHandlerState::instance.y + 0x1fb;
         MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::renderTextToScreen, DAT_TextManagerObject::ptr)(
             MACRO_CALL_MEMBER(OpenSHC::Text::TextManager_Func::getTextStringInGroupAtOffset,
                 DAT_TextManagerObject::ptr)(OpenSHC::DE::SHCDE::TEXT_IN_ARMOURY, 0),
-            DAT_MenuHandlerState::instance.x + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3, OpenSHC::Text::TTA_LEFT,
-            0, 0x10, FALSE, 0);
+            xValue + 0x19, DAT_MenuHandlerState::instance.y + 0x1d3, OpenSHC::Text::TTA_LEFT, 0, 0x10, FALSE, 0);
         DAT_TextureRenderCoreObject::instance.drawBufferChoiceValue = OpenSHC::Rendering::Enums::RT_SCREEN_MENU;
         for (int i = 0; i < 8; ++i) {
             int amount = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]

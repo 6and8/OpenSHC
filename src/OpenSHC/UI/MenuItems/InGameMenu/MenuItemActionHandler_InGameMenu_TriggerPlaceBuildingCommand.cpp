@@ -938,17 +938,17 @@ namespace UI {
                     return;
                 }
                 if (DAT_TileMapState::instance.buildingPlacementFail != 0) {
-                    if (DAT_TileMapState::instance.buildingPlacementFailReason == 1000) {
+                    int const buildingPlacementFailReasonValue = DAT_TileMapState::instance.buildingPlacementFailReason;
+                    if (buildingPlacementFailReasonValue == 1000) {
                         MACRO_CALL_MEMBER(UI::BottomLeftTextDisplayState_Func::setBottomLeftTextDisplayText,
                             DAT_BottomLeftTextDisplayState::ptr)(1, 257, 2, 0, 100, 6000);
                         return;
                     }
-                    if (DAT_TileMapState::instance.buildingPlacementFailReason != 0) {
+                    if (buildingPlacementFailReasonValue != 0) {
                         MACRO_CALL_MEMBER(UI::BottomLeftTextDisplayState_Func::setBottomLeftTextDisplayText,
-                            DAT_BottomLeftTextDisplayState::ptr)(
-                            1, 77, DAT_TileMapState::instance.buildingPlacementFailReason, 0, 100, 6000);
-                        MACRO_CALL(UI::Helpers_Func::PlayPlacementWarning)((Map::Buildings::BuildingFailReasonEnum)
-                                DAT_TileMapState::instance.buildingPlacementFailReason);
+                            DAT_BottomLeftTextDisplayState::ptr)(1, 77, buildingPlacementFailReasonValue, 0, 100, 6000);
+                        MACRO_CALL(UI::Helpers_Func::PlayPlacementWarning)(
+                            (Map::Buildings::BuildingFailReasonEnum)buildingPlacementFailReasonValue);
                         return;
                     }
                     if (DAT_TileMapState::instance.placementWarning != 0) {

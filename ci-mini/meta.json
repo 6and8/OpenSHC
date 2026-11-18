@@ -1,0 +1,358 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp21_L94.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp22_L220.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp23_L236.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp24_L252.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp25_L283.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"cmp26_L305.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld00_L271.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld01_L374.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld02_L359.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld03_L456.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld04_L181.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld05_L519.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"fld06_L519.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse66_L145.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse67_L305.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse68_L314.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse69_L377.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse70_L454.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ifelse71_L519.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne00_L79.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne01_L89.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne02_L99.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne03_L122.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne04_L150.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne05_L164.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne06_L189.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne07_L221.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne08_L230.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne09_L251.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne10_L262.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne11_L338.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne12_L364.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne13_L368.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne14_L384.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne15_L413.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne16_L423.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne17_L453.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne18_L479.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne19_L480.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"ne20_L491.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt27_L84.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt28_L123.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt29_L124.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt30_L125.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt31_L126.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt32_L134.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt33_L135.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt34_L136.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt35_L141.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt36_L155.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt37_L156.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt38_L158.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt39_L160.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt40_L161.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt41_L162.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt42_L166.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt43_L167.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt44_L176.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt45_L179.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt46_L194.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt47_L196.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt48_L231.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt49_L267.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt50_L343.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt51_L394.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt52_L395.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt53_L447.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt54_L488.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt55_L489.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt56_L513.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt57_L514.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt58_L515.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt59_L516.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt60_L526.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt61_L527.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"unl00_L77.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"unl01_L136.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"unl02_L660.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"unl03_L796.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"unl04_L960.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt62_L528.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt63_L537.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt64_L538.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"stmt65_L539.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"unl00_L20.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"unl01_L21.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"unl02_L374.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl00_L45.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl01_L67.cpp"
+]
+}

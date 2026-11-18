@@ -120,8 +120,8 @@ namespace UI {
             int aiVariations[9];
             int lordTypes[9];
             for (int i = 0; i < 9; i++) {
-                groups[i] = DAT_GameState::instance.mapAndTime.playerGroupArray[i];
                 teams[i] = DAT_GameState::instance.mapAndTime.playerTeams[i];
+                groups[i] = DAT_GameState::instance.mapAndTime.playerGroupArray[i];
                 aiVariations[i] = DAT_GameSynchronyState::instance.aiVariationArray[i];
                 lordTypes[i] = DAT_GameCore::instance.selectedLordTypes[i];
                 ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];

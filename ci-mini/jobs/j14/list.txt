@@ -1,0 +1,3 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp
+src/OpenSHC/Map/MapPropertiesState/updateEventYearsAndCommitBuildingAvailability.cpp

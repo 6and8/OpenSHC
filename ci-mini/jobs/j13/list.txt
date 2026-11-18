@@ -1,0 +1,6 @@
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp
+src/OpenSHC/Map/Entities/EntityState/updateProjectileHeightAndCollision.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp

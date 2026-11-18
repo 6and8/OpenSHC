@@ -1,0 +1,7 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/Map/Entities/SomeFireSpreadFunction.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp

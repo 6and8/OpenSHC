@@ -1,0 +1,7 @@
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp
+src/OpenSHC/UI/Credits/EndCreditsSegmentAndAdvanceToNext.cpp
+src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp

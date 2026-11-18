@@ -102,14 +102,17 @@ namespace Map {
                 if (lordID != 0
                     && DAT_GameState::instance.playerDataArray[p].lordUID == DAT_UnitsState::instance.units[lordID].uid
                     && DAT_UnitsState::instance.units[lordID].logicalState == OpenSHC::Map::Units::ULS_NORMAL) {
-                    int level = DAT_GameState::instance.playerDataArray[p].fearFactorLevel;
-                    if (level > 0) {
-                        if (level > DAT_GameSynchronyState::instance.finalResults.finalMaxGoodThings[p]) {
-                            DAT_GameSynchronyState::instance.finalResults.finalMaxGoodThings[p] = level;
+                    if (DAT_GameState::instance.playerDataArray[p].fearFactorLevel > 0) {
+                        if (DAT_GameState::instance.playerDataArray[p].fearFactorLevel
+                            > DAT_GameSynchronyState::instance.finalResults.finalMaxGoodThings[p]) {
+                            DAT_GameSynchronyState::instance.finalResults.finalMaxGoodThings[p]
+                                = DAT_GameState::instance.playerDataArray[p].fearFactorLevel;
                         }
-                    } else if (level < 0) {
-                        if (level < DAT_GameSynchronyState::instance.finalResults.finalMaxBadThings[p]) {
-                            DAT_GameSynchronyState::instance.finalResults.finalMaxBadThings[p] = level;
+                    } else if (DAT_GameState::instance.playerDataArray[p].fearFactorLevel < 0) {
+                        if (DAT_GameState::instance.playerDataArray[p].fearFactorLevel
+                            < DAT_GameSynchronyState::instance.finalResults.finalMaxBadThings[p]) {
+                            DAT_GameSynchronyState::instance.finalResults.finalMaxBadThings[p]
+                                = DAT_GameState::instance.playerDataArray[p].fearFactorLevel;
                         }
                     }
                 }

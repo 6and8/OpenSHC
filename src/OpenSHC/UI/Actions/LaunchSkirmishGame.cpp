@@ -123,8 +123,8 @@ namespace UI {
                 groups[i] = DAT_GameState::instance.mapAndTime.playerGroupArray[i];
                 teams[i] = DAT_GameState::instance.mapAndTime.playerTeams[i];
                 aiVariations[i] = DAT_GameSynchronyState::instance.aiVariationArray[i];
-                ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];
                 lordTypes[i] = DAT_GameCore::instance.selectedLordTypes[i];
+                ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];
             }
             Game::Skirmish::SkirmishStatistics const results = DAT_GameSynchronyState::instance.finalResults;
             MACRO_CALL_MEMBER(IO::FilePackager_Func::readMapOrSavFile, FilePackagerObj::ptr)(

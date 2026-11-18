@@ -1,0 +1,5 @@
+src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp
+src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp

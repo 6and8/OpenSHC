@@ -1,0 +1,10 @@
+src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/Map/Buildings/UpdateArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/Helpers/FindCampaignMapHotspotAtMouse.cpp
+src/OpenSHC/Map/Version/UpgradeMapLogicToVersion_102.cpp

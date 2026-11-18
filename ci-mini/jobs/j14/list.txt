@@ -1,0 +1,10 @@
+src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasLessWoodThanTheCostOfAWoodcuttersHutAndNoWoodcutters.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findFirstBuildingOfType.cpp
+src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp

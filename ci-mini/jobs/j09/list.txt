@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuildingAndLinkedDuplicates.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/deleteBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/subtractResourcesStoredInBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/UI/Credits/RenderScrollingCreditsTextFrame.cpp
+src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp

@@ -1,0 +1,5 @@
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp
+src/OpenSHC/UI/Helpers/TrimStoredMenuString.cpp
+src/OpenSHC/Game/Skirmish/Skirmish_SortAIOpponentOrder.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp

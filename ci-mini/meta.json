@@ -1,0 +1,1138 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"cmp00_L438.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"cmp01_L500.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"cmp02_L555.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"cmp03_L609.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse04_L60.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse05_L358.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse06_L421.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse07_L443.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse08_L481.cpp"
+],
+"j00/v009": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse09_L505.cpp"
+],
+"j00/v010": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse10_L538.cpp"
+],
+"j00/v011": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse11_L560.cpp"
+],
+"j00/v012": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse12_L592.cpp"
+],
+"j00/v013": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse13_L614.cpp"
+],
+"j00/v014": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse14_L662.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse15_L698.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse16_L830.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"ifelse17_L995.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"intcast33_L807.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"intcast34_L851.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"intcast35_L876.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt18_L203.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt19_L204.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt20_L208.cpp"
+],
+"j01/v009": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt21_L209.cpp"
+],
+"j01/v010": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt22_L213.cpp"
+],
+"j01/v011": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt23_L214.cpp"
+],
+"j01/v012": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt24_L218.cpp"
+],
+"j01/v013": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt25_L219.cpp"
+],
+"j01/v014": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt26_L248.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"cmp00_L161.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"cmp01_L169.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse02_L57.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse03_L85.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ifelse04_L142.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"intcast07_L41.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"intcast08_L70.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ne06_L161.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr09_L50.cpp"
+],
+"j02/v009": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr10_L53.cpp"
+],
+"j02/v010": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr11_L54.cpp"
+],
+"j02/v011": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr12_L56.cpp"
+],
+"j02/v012": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr13_L60.cpp"
+],
+"j02/v013": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr14_L62.cpp"
+],
+"j02/v014": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr15_L66.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld00_L35.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld01_L51.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld02_L55.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld03_L84.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld04_L108.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld05_L124.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld06_L222.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld07_L242.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"fld08_L255.cpp"
+],
+"j03/v009": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse00_L34.cpp"
+],
+"j03/v010": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse01_L38.cpp"
+],
+"j03/v011": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse02_L63.cpp"
+],
+"j03/v012": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse03_L102.cpp"
+],
+"j03/v013": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse04_L111.cpp"
+],
+"j03/v014": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse05_L127.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse06_L136.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse07_L152.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse08_L161.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse09_L170.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse10_L186.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse11_L216.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse12_L236.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ifelse13_L252.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"intcast14_L233.cpp"
+],
+"j04/v009": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr15_L32.cpp"
+],
+"j04/v010": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr16_L37.cpp"
+],
+"j04/v011": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr17_L40.cpp"
+],
+"j04/v012": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr18_L42.cpp"
+],
+"j04/v013": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr19_L45.cpp"
+],
+"j04/v014": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr20_L48.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"cmp00_L162.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"cmp01_L170.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ifelse02_L57.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ifelse03_L85.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ifelse04_L143.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"intcast07_L41.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"intcast08_L70.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ne06_L162.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr09_L50.cpp"
+],
+"j05/v009": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr10_L53.cpp"
+],
+"j05/v010": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr11_L54.cpp"
+],
+"j05/v011": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr12_L56.cpp"
+],
+"j05/v012": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr13_L60.cpp"
+],
+"j05/v013": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr14_L62.cpp"
+],
+"j05/v014": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr15_L66.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"cmp00_L161.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"cmp01_L169.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ifelse02_L57.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ifelse03_L85.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ifelse04_L142.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"intcast07_L41.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"intcast08_L70.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ne06_L161.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr09_L50.cpp"
+],
+"j06/v009": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr10_L53.cpp"
+],
+"j06/v010": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr11_L54.cpp"
+],
+"j06/v011": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr12_L56.cpp"
+],
+"j06/v012": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr13_L60.cpp"
+],
+"j06/v013": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr14_L62.cpp"
+],
+"j06/v014": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr15_L66.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld00_L47.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld01_L47.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld02_L47.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld03_L51.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld04_L87.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld05_L270.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld06_L284.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld07_L284.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"fld08_L294.cpp"
+],
+"j07/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse00_L46.cpp"
+],
+"j07/v010": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse01_L70.cpp"
+],
+"j07/v011": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse02_L107.cpp"
+],
+"j07/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse03_L111.cpp"
+],
+"j07/v013": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse04_L120.cpp"
+],
+"j07/v014": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse05_L130.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse06_L139.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse07_L166.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse08_L170.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse09_L179.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse10_L206.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse11_L269.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse12_L273.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ifelse13_L291.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"intcast14_L46.cpp"
+],
+"j08/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"intcast15_L261.cpp"
+],
+"j08/v010": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"intcast16_L263.cpp"
+],
+"j08/v011": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr17_L33.cpp"
+],
+"j08/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr18_L73.cpp"
+],
+"j08/v013": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr19_L76.cpp"
+],
+"j08/v014": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr20_L114.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"cmp00_L167.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"cmp01_L175.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld00_L42.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld01_L69.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld02_L74.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld03_L74.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld04_L107.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld05_L114.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"fld06_L137.cpp"
+],
+"j09/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ifelse02_L58.cpp"
+],
+"j09/v010": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ifelse03_L89.cpp"
+],
+"j09/v011": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ifelse04_L146.cpp"
+],
+"j09/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"intcast07_L71.cpp"
+],
+"j09/v013": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ne06_L167.cpp"
+],
+"j09/v014": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr08_L51.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr09_L54.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr10_L55.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr11_L57.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr12_L61.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr13_L63.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr14_L67.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr15_L100.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr16_L101.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr17_L102.cpp"
+],
+"j10/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr18_L103.cpp"
+],
+"j10/v010": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr19_L107.cpp"
+],
+"j10/v011": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr20_L108.cpp"
+],
+"j10/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr21_L110.cpp"
+],
+"j10/v013": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"ptr22_L111.cpp"
+],
+"j10/v014": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"stmt05_L103.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp00_L97.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp01_L103.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp02_L137.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp03_L179.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp04_L185.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp05_L243.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp06_L252.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp07_L259.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"cmp08_L264.cpp"
+],
+"j11/v009": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ifelse09_L108.cpp"
+],
+"j11/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ifelse10_L117.cpp"
+],
+"j11/v011": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ifelse11_L252.cpp"
+],
+"j11/v012": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ifelse12_L259.cpp"
+],
+"j11/v013": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast19_L103.cpp"
+],
+"j11/v014": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast20_L185.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"cmp00_L33.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"cmp01_L50.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"cmp02_L63.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"cmp03_L68.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"fld00_L79.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"fld01_L79.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"ifelse04_L63.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"ne09_L24.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"ne10_L49.cpp"
+],
+"j12/v009": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"stmt05_L69.cpp"
+],
+"j12/v010": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"stmt06_L70.cpp"
+],
+"j12/v011": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"stmt07_L75.cpp"
+],
+"j12/v012": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"stmt08_L76.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr21_L123.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr22_L133.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr23_L142.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr24_L151.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr25_L173.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr26_L182.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr27_L186.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr28_L189.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr29_L198.cpp"
+],
+"j13/v009": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr30_L209.cpp"
+],
+"j13/v010": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"ptr31_L212.cpp"
+],
+"j13/v011": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"reu00_L202.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast21_L212.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast22_L229.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast23_L232.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast24_L243.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"intcast25_L252.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ne17_L136.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"ne18_L243.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"stmt13_L111.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"stmt14_L112.cpp"
+],
+"j14/v009": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"stmt15_L138.cpp"
+],
+"j14/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"stmt16_L142.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"cmp00_L32.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ifelse01_L62.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ne03_L23.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ne04_L32.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ptr05_L29.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ptr06_L34.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ptr07_L39.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ptr08_L43.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"ptr09_L46.cpp"
+],
+"j15/v009": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"stmt02_L81.cpp"
+],
+"j15/v010": [
+"src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp",
+"ifelse00_L12.cpp"
+],
+"j15/v011": [
+"src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp",
+"inl02_L25.cpp"
+],
+"j15/v012": [
+"src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp",
+"intcast01_L22.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr16_L96.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr17_L97.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr18_L98.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr19_L99.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr20_L103.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr21_L104.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr22_L106.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"ptr23_L107.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"stmt05_L99.cpp"
+],
+"j16/v009": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"cmp00_L27.cpp"
+],
+"j16/v010": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"cmp01_L37.cpp"
+],
+"j16/v011": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"ifelse02_L21.cpp"
+],
+"j16/v012": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"ifelse03_L37.cpp"
+],
+"j16/v013": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"ne04_L14.cpp"
+],
+"j16/v014": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"ne05_L44.cpp"
+],
+"j16/v015": [
+"src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp",
+"ne06_L52.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr21_L50.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr22_L64.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr23_L69.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr24_L105.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr25_L114.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr26_L130.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr27_L139.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr28_L155.cpp"
+],
+"j17/v008": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"ptr29_L164.cpp"
+],
+"j17/v009": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt27_L249.cpp"
+],
+"j17/v010": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt28_L256.cpp"
+],
+"j17/v011": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt29_L257.cpp"
+],
+"j17/v012": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt30_L264.cpp"
+],
+"j17/v013": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt31_L265.cpp"
+],
+"j17/v014": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"stmt32_L272.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr16_L96.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr17_L97.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr18_L98.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr19_L99.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr20_L103.cpp"
+],
+"j18/v005": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr21_L104.cpp"
+],
+"j18/v006": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr22_L106.cpp"
+],
+"j18/v007": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"ptr23_L107.cpp"
+],
+"j18/v008": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"stmt05_L99.cpp"
+],
+"j18/v009": [
+"src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp",
+"stmt00_L48.cpp"
+],
+"j18/v010": [
+"src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp",
+"stmt01_L51.cpp"
+],
+"j18/v011": [
+"src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp",
+"stmt02_L58.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr16_L96.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr17_L97.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr18_L98.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr19_L99.cpp"
+],
+"j19/v004": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr20_L103.cpp"
+],
+"j19/v005": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr21_L104.cpp"
+],
+"j19/v006": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr22_L106.cpp"
+],
+"j19/v007": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"ptr23_L107.cpp"
+],
+"j19/v008": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"stmt05_L99.cpp"
+],
+"j19/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"cmp00_L81.cpp"
+],
+"j19/v010": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"ifelse01_L64.cpp"
+],
+"j19/v011": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"ne02_L61.cpp"
+]
+}

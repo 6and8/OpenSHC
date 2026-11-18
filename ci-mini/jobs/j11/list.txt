@@ -1,0 +1,2 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp

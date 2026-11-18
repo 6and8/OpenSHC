@@ -1,0 +1,3 @@
+src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp

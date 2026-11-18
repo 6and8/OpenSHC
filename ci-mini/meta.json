@@ -1,0 +1,162 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"reu00_L66.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"reu01_L202.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"reu00_L20.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"reu01_L21.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"reu00_L36.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"reu01_L37.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu00_L329.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu01_L358.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu02_L390.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu03_L845.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu04_L854.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu05_L863.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu06_L872.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu07_L1514.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"reu00_L59.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"reu01_L217.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"reu00_L16.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"reu01_L17.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"reu00_L359.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"reu00_L101.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"reu00_L30.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"reu00_L22.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"reu00_L38.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"reu00_L124.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"reu00_L24.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"reu00_L137.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp",
+"reu00_L39.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp",
+"reu00_L36.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp",
+"reu00_L35.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"reu08_L1613.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"reu00_L23.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp",
+"reu00_L29.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"reu00_L36.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"reu00_L45.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Buildings/UpdateShieldBuilding.cpp",
+"reu00_L39.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"reu00_L45.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp",
+"reu00_L39.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"reu00_L49.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp",
+"reu00_L42.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp",
+"reu00_L130.cpp"
+]
+}

@@ -1,0 +1,2 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp

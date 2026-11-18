@@ -1,0 +1,9 @@
+src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp

@@ -23185,7 +23185,7 @@ SHC_3BB0A8C1_0x0048C7B0 | 91.8% | Pending
 
 SHC_3BB0A8C1_0x0048CB00 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0048CC90 | 62.2% | Pending
+SHC_3BB0A8C1_0x0048CC90 | 62.3% | Pending
 
 SHC_3BB0A8C1_0x0048CCF0 | 0.0% | Pending
 
@@ -25865,7 +25865,7 @@ SHC_3BB0A8C1_0x004AE010 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004AE070 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004AE0F0 | 46.7% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
+SHC_3BB0A8C1_0x004AE0F0 | 46.9% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
 
 SHC_3BB0A8C1_0x004AE4F0 | 0.0% | Pending
 

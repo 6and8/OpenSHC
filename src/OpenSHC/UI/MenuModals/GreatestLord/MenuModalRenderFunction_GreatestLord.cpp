@@ -150,9 +150,9 @@ namespace UI {
                         }
                         if (best == -1 || rows[i].primary > bestPrimary
                             || (rows[i].primary == bestPrimary && rows[i].secondary > bestSecondary)) {
-                            bestSecondary = rows[i].secondary;
-                            bestPrimary = rows[i].primary;
                             best = i;
+                            bestPrimary = rows[i].primary;
+                            bestSecondary = rows[i].secondary;
                         }
                     }
                     if (best < 0) {

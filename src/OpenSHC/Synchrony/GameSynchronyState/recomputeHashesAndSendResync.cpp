@@ -65,9 +65,9 @@ namespace Synchrony {
                         + DAT_BuildingsState::instance.buildings[i].extraAnimationFrame1
                         + DAT_BuildingsState::instance.buildings[i].campgroundVclock
                         + DAT_BuildingsState::instance.buildings[i].animAdvanceThrottle);
-                DAT_BuildingsState::instance.buildings[i].wheatFieldIndexToGrow = saved;
                 buildingSum += hash;
                 this->HASH_Buildings[this->currentPlayerSlotID][i] = hash;
+                DAT_BuildingsState::instance.buildings[i].wheatFieldIndexToGrow = saved;
             }
             this->HASH_PartialHashPerPlayer.player[this->currentPlayerSlotID].domain[1] = buildingSum;
             this->HASH_HashTotal[this->currentPlayerSlotID] += buildingSum;

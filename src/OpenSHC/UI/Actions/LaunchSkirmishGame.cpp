@@ -530,7 +530,7 @@ namespace UI {
             MACRO_CALL_MEMBER(
                 Synchrony::GameSynchronyState_Func::recomputeHashesAndSendResync, DAT_GameSynchronyState::ptr)(0);
             DAT_GameSynchronyState::instance.DAT_TwoIfNotHost = 0;
-            for (int i = 0; i < 9; i++) {
+            for (int i = 0; i != 9; i++) {
                 DAT_GameSynchronyState::instance.DAT_PlayerSlotArraySomeValue[i] = 0;
             }
             DAT_GameCore::instance.timeSum_2 = timeGetTime();

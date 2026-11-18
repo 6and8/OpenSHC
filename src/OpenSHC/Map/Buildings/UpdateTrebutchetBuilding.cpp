@@ -41,11 +41,9 @@ namespace Map {
     {
         int const owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
         // nof_tribes is declared byte, but the original reads it signed
-        if (DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].attackWave > 0
-            && DAT_GameSynchronyState::instance.currentGameMode == 0
-            && (char)DAT_TroopValueState::instance.attackInfo
-                    .nof_tribes[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].attackWave]
-                <= 0) {
+        int const attackWave = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].attackWave;
+        if (attackWave > 0 && DAT_GameSynchronyState::instance.currentGameMode == 0
+            && (char)DAT_TroopValueState::instance.attackInfo.nof_tribes[attackWave] <= 0) {
             DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].logicalState
                 = OpenSHC::Map::Buildings::BLS_REMOVE;
         }
@@ -159,8 +157,7 @@ namespace Map {
             = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].unknownSiegeTentRelated01 + 1;
         DAT_UnitsState::instance.units[unitID].logicalState = 5;
         MACRO_CALL_MEMBER(OpenSHC::Map::Units::TroopValueState_Func::addUnitToNewTribe, DAT_TroopValueState::ptr)(
-            unitID, DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].attackWave,
-            (OpenSHC::AI::Tribes::AITribeType)23, owner);
+            unitID, attackWave, (OpenSHC::AI::Tribes::AITribeType)23, owner);
         if (DAT_GameSynchronyState::instance.currentGameMode == 99) {
             DAT_UnitsState::instance.units[unitID].siegeTargetPlayerID
                 = DAT_GameState::instance.playerDataArray[owner].attackedPlayerID;

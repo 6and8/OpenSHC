@@ -1,0 +1,142 @@
+{
+"j00/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"unl00_L27.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/Map/Buildings/UpdateBrewery.cpp",
+"unl01_L33.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp",
+"unl00_L29.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp",
+"unl01_L159.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"unl00_L66.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"unl01_L202.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp",
+"unl00_L16.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp",
+"unl01_L17.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"unl00_L30.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"unl01_L91.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"unl00_L34.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"unl01_L95.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"unl00_L37.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"unl01_L68.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp",
+"unl00_L66.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp",
+"unl01_L101.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl00_L45.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl01_L67.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl02_L120.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl03_L244.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"unl00_L18.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"unl01_L19.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp",
+"unl00_L42.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"unl00_L23.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"unl00_L24.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"unl02_L20.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/Buildings/UpdateBadBuildingDunkingStool.cpp",
+"unl00_L25.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp",
+"unl00_L82.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp",
+"unl00_L35.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"unl00_L27.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"unl00_L23.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp",
+"unl02_L268.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"unl00_L22.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp",
+"unl02_L105.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"unl04_L258.cpp"
+]
+}

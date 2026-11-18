@@ -29,35 +29,37 @@ namespace Map {
                 this->entityArray[entityID].pathDeltaZ
                     = this->entityArray[entityID].targetZ - this->entityArray[entityID].height;
             }
-            short const deltaX = this->entityArray[entityID].pathDeltaX;
             this->entityArray[entityID].pathTargetX = targetX;
             this->entityArray[entityID].pathTargetY = targetY;
             this->entityArray[entityID].someMicroX = (x <= targetX ? 1 : -1);
             this->entityArray[entityID].someMicroY = (y <= targetY ? 1 : -1);
-            if (deltaX == 0 && this->entityArray[entityID].pathDeltaY == deltaX) {
+            if (this->entityArray[entityID].pathDeltaX == 0
+                && this->entityArray[entityID].pathDeltaY == this->entityArray[entityID].pathDeltaX) {
                 this->entityArray[entityID].pathAxisCase = 0;
-            } else if (deltaX == 0) {
+            } else if (this->entityArray[entityID].pathDeltaX == 0) {
                 this->entityArray[entityID].pathAxisCase = 1;
             } else if (this->entityArray[entityID].pathDeltaY == 0) {
                 this->entityArray[entityID].pathAxisCase = 2;
-            } else if (this->entityArray[entityID].pathDeltaY > deltaX) {
+            } else if (this->entityArray[entityID].pathDeltaY > this->entityArray[entityID].pathDeltaX) {
                 this->entityArray[entityID].pathAxisCase = 3;
             } else {
                 this->entityArray[entityID].pathAxisCase = 4;
             }
             if (this->entityArray[entityID].pathAxisCase == 3) {
-                int const errorStep = deltaX * 2;
+                short const errorStep = this->entityArray[entityID].pathDeltaX * 2;
                 this->entityArray[entityID].pathErrorStepStraight = errorStep;
-                this->entityArray[entityID].pathErrorStepDiagonal = errorStep - this->entityArray[entityID].pathDeltaY * 2;
+                this->entityArray[entityID].pathErrorStepDiagonal
+                    = errorStep - this->entityArray[entityID].pathDeltaY * 2;
                 this->entityArray[entityID].pathError = errorStep - this->entityArray[entityID].pathDeltaY;
             } else if (this->entityArray[entityID].pathAxisCase == 4) {
-                short const errorStep = this->entityArray[entityID].pathDeltaY * 2;
+                int const errorStep = this->entityArray[entityID].pathDeltaY * 2;
                 this->entityArray[entityID].pathErrorStepStraight = errorStep;
-                this->entityArray[entityID].pathErrorStepDiagonal = errorStep - deltaX * 2;
-                this->entityArray[entityID].pathError = errorStep - deltaX;
+                this->entityArray[entityID].pathErrorStepDiagonal
+                    = errorStep - this->entityArray[entityID].pathDeltaX * 2;
+                this->entityArray[entityID].pathError = errorStep - this->entityArray[entityID].pathDeltaX;
             }
-            int const curveType
-                = DAT_EntityDefinedData::instance.EntityArrayCurveTypeForProjectileType[this->entityArray[entityID].entityType];
+            int const curveType = DAT_EntityDefinedData::instance
+                                      .EntityArrayCurveTypeForProjectileType[this->entityArray[entityID].entityType];
             int distance;
             if (curveType == 0) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
@@ -66,7 +68,8 @@ namespace Map {
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 this->entityArray[entityID].startingAngle = MACRO_CALL_MEMBER(EntityState_Func::math_atan_1, this)(
-                    this->entityArray[entityID].entityType, this->entityArray[entityID].velocityUnk, (short)distance, this->entityArray[entityID].heightDifference);
+                    this->entityArray[entityID].entityType, this->entityArray[entityID].velocityUnk, (short)distance,
+                    this->entityArray[entityID].heightDifference);
             } else if (curveType == 1) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
@@ -74,7 +77,8 @@ namespace Map {
                 this->entityArray[entityID].totalFlightDistance = distance;
                 this->entityArray[entityID].clearanceStepsRemaining = this->lineOfSightClearanceSteps;
                 this->entityArray[entityID].velocityUnk = MACRO_CALL_MEMBER(EntityState_Func::computeVelocity, this)(
-                    this->entityArray[entityID].entityType, this->entityArray[entityID].startingAngle, (short)distance, this->entityArray[entityID].heightDifference);
+                    this->entityArray[entityID].entityType, this->entityArray[entityID].startingAngle, (short)distance,
+                    this->entityArray[entityID].heightDifference);
             } else if (curveType == 2) {
                 distance = MACRO_CALL_MEMBER(EntityState_Func::computeLineOfSightDistance, this)(
                     x, y, height, targetX, targetY, targetZ, 1);
@@ -85,11 +89,13 @@ namespace Map {
                     this->entityArray[entityID].startingAngle = 3;
                 }
                 this->entityArray[entityID].velocityUnk = MACRO_CALL_MEMBER(EntityState_Func::computeVelocity, this)(
-                    this->entityArray[entityID].entityType, this->entityArray[entityID].startingAngle, (short)distance, this->entityArray[entityID].heightDifference);
+                    this->entityArray[entityID].entityType, this->entityArray[entityID].startingAngle, (short)distance,
+                    this->entityArray[entityID].heightDifference);
                 if (this->entityArray[entityID].velocityUnk <= 0) {
                     this->entityArray[entityID].startingAngle = 15;
-                    this->entityArray[entityID].velocityUnk = MACRO_CALL_MEMBER(EntityState_Func::computeVelocity, this)(
-                        this->entityArray[entityID].entityType, 15.0, (short)distance, this->entityArray[entityID].heightDifference);
+                    this->entityArray[entityID].velocityUnk = MACRO_CALL_MEMBER(
+                        EntityState_Func::computeVelocity, this)(this->entityArray[entityID].entityType, 15.0,
+                        (short)distance, this->entityArray[entityID].heightDifference);
                 }
             } else if (curveType == 3) {
                 this->entityArray[entityID].startingAngle = (this->entityArray[entityID].rng_1 & 0xf) + 8;
@@ -119,7 +125,8 @@ namespace Map {
                     this->entityArray[entityID].velocityUnk = 125;
                 }
                 this->entityArray[entityID].startingAngle = MACRO_CALL_MEMBER(EntityState_Func::math_atan_1, this)(
-                    this->entityArray[entityID].entityType, this->entityArray[entityID].velocityUnk, (short)distance, this->entityArray[entityID].heightDifference);
+                    this->entityArray[entityID].entityType, this->entityArray[entityID].velocityUnk, (short)distance,
+                    this->entityArray[entityID].heightDifference);
             } else if (curveType == 7 || curveType == 10) {
                 return;
             } else if (curveType == 8) {

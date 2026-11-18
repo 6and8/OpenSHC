@@ -14,7 +14,6 @@ namespace Map {
     void Entities::UpdateFlag_1_2_4_Entity()
     {
         int nextFlagState = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].someTracker;
-        int const owner = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner;
         DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2
             = DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].graphicType2RelatedOffset;
         if ((DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].yPosition & 0x1f)
@@ -22,14 +21,27 @@ namespace Map {
             nextFlagState = DAT_LandscapeState::instance.wind.value;
         }
         if (DAT_GameSynchronyState::instance.currentGameMode != Game::GM_SOLITARY
-            && DAT_GameSynchronyState::instance.currentPlayerFullIDArray[owner] == -1
-            && DAT_GameSynchronyState::instance.currentAIArray[owner] != 0) {
-            if (DAT_GameState::instance.playerDataArray[owner].aiBuildingDestroyChoiceTracker != 0) {
+            && DAT_GameSynchronyState::instance.currentPlayerFullIDArray
+                    [DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner]
+                == -1
+            && DAT_GameSynchronyState::instance
+                    .currentAIArray[DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner]
+                != 0) {
+            if (DAT_GameState::instance
+                    .playerDataArray[DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner]
+                    .aiBuildingDestroyChoiceTracker
+                != 0) {
                 nextFlagState = 3;
-            } else if (DAT_GameState::instance.playerDataArray[owner].aiNervousActionsTracker != 0) {
+            } else if (DAT_GameState::instance
+                           .playerDataArray[DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner]
+                           .aiNervousActionsTracker
+                != 0) {
                 nextFlagState = 3;
             } else {
-                int const recruitChoice = DAT_GameState::instance.playerDataArray[owner].aiRecruitUnitChoiceState;
+                int const recruitChoice
+                    = DAT_GameState::instance
+                          .playerDataArray[DAT_EntityState::instance.entityArray[DAT_CurrentEntityID::instance].owner]
+                          .aiRecruitUnitChoiceState;
                 nextFlagState = 0;
                 if (recruitChoice != 0) {
                     if (recruitChoice == 1) {

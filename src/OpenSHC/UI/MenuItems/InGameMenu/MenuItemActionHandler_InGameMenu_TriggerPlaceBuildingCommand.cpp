@@ -415,21 +415,26 @@ namespace UI {
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int playerID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-                int buildingID = DAT_GameState::instance.playerDataArray[playerID].buildingEntryInfos[5].id;
+                int buildingID
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .buildingEntryInfos[5]
+                          .id;
                 int canNavigate = 1;
                 if (buildingID <= 0) {
                     canNavigate = 0;
                 } else {
                     int startTile = DAT_ViewportRenderState::instance
-                                        .translationMatrix[DAT_GameState::instance.playerDataArray[playerID]
+                                        .translationMatrix[DAT_GameState::instance
+                                                .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                                                 .barracksParadegroundLocations[0][0]
                                                 .y]
                                         .addXgetTile
-                        + DAT_GameState::instance.playerDataArray[playerID].barracksParadegroundLocations[0][0].x;
+                        + DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                              .barracksParadegroundLocations[0][0]
+                              .x;
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                            DAT_PathFindingState::ptr)(playerID,
+                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID,
                             (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
                             (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
@@ -475,23 +480,26 @@ namespace UI {
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int playerID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-                int buildingID = DAT_GameState::instance.playerDataArray[playerID].buildingEntryInfos[11].id;
+                int buildingID
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .buildingEntryInfos[11]
+                          .id;
                 int canNavigate = 1;
                 if (buildingID <= 0) {
                     canNavigate = 0;
                 } else {
                     int startTile = DAT_ViewportRenderState::instance
-                                        .translationMatrix[DAT_GameState::instance.playerDataArray[playerID]
+                                        .translationMatrix[DAT_GameState::instance
+                                                .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                                                 .structure.mercenaryOutpostCampgroundLocations[0][0][0]
                                                 .y]
                                         .addXgetTile
-                        + DAT_GameState::instance.playerDataArray[playerID]
+                        + DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                               .structure.mercenaryOutpostCampgroundLocations[0][0][0]
                               .x;
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                            DAT_PathFindingState::ptr)(playerID,
+                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID,
                             (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
                             (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
@@ -532,21 +540,26 @@ namespace UI {
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int playerID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-                int buildingID = DAT_GameState::instance.playerDataArray[playerID].buildingEntryInfos[9].id;
+                int buildingID
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .buildingEntryInfos[9]
+                          .id;
                 int canNavigate = 1;
                 if (buildingID <= 0) {
                     canNavigate = 0;
                 } else {
                     int startTile = DAT_ViewportRenderState::instance
-                                        .translationMatrix[DAT_GameState::instance.playerDataArray[playerID]
+                                        .translationMatrix[DAT_GameState::instance
+                                                .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                                                 .engineersParadegroundLocations[0]
                                                 .y]
                                         .addXgetTile
-                        + DAT_GameState::instance.playerDataArray[playerID].engineersParadegroundLocations[0].x;
+                        + DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                              .engineersParadegroundLocations[0]
+                              .x;
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                            DAT_PathFindingState::ptr)(playerID,
+                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID,
                             (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
                             (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {
@@ -586,21 +599,26 @@ namespace UI {
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int playerID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-                int buildingID = DAT_GameState::instance.playerDataArray[playerID].buildingEntryInfos[10].id;
+                int buildingID
+                    = DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                          .buildingEntryInfos[10]
+                          .id;
                 int canNavigate = 1;
                 if (buildingID <= 0) {
                     canNavigate = 0;
                 } else {
                     int startTile = DAT_ViewportRenderState::instance
-                                        .translationMatrix[DAT_GameState::instance.playerDataArray[playerID]
+                                        .translationMatrix[DAT_GameState::instance
+                                                .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
                                                 .tunnelersGuildParadegroundLocations[0]
                                                 .y]
                                         .addXgetTile
-                        + DAT_GameState::instance.playerDataArray[playerID].tunnelersGuildParadegroundLocations[0].x;
+                        + DAT_GameState::instance.playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                              .tunnelersGuildParadegroundLocations[0]
+                              .x;
                     if (MACRO_CALL_MEMBER(
                             Map::Navigation::PathFindingState_Func::calculateCanPlayerUnitsNavigateToAreaFromArea,
-                            DAT_PathFindingState::ptr)(playerID,
+                            DAT_PathFindingState::ptr)(DAT_GameSynchronyState::instance.currentPlayerSlotID,
                             (short)DAT_TileMapState::instance.PathConnectionLayer[startTile],
                             (short)DAT_TileMapState::instance.PathConnectionLayer[tile], 0)
                         == 0) {

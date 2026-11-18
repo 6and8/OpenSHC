@@ -117,7 +117,6 @@ namespace Map {
                 } else if (attacker != 0) {
                     // Undefended and attacked, the strongest player captures the gatehouse
                     if (flagEntityID == 0) {
-                        int owner = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
                         int height
                             = DAT_TileMapState::instance
                                   .HeightLayer[DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance]
@@ -127,9 +126,11 @@ namespace Map {
                             = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].y * 8;
                         int microX
                             = (short)DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].x * 8;
-                        MACRO_CALL_MEMBER(OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity,
-                            DAT_EntityState::ptr)(0, owner, owner, microX, microY, height, microX, microY, height,
-                            OpenSHC::Map::Entities::ET_FLAG_1, 0);
+                        MACRO_CALL_MEMBER(
+                            OpenSHC::Map::Entities::EntityState_Func::spawnProjectileEntity, DAT_EntityState::ptr)(0,
+                            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner,
+                            DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner, microX,
+                            microY, height, microX, microY, height, OpenSHC::Map::Entities::ET_FLAG_1, 0);
                     }
                     int strongest = DAT_BuildingsState::instance.buildings[DAT_CurrentBuildingID::instance].owner;
                     int strongestStrength = 0;
@@ -241,21 +242,37 @@ namespace Map {
             // Close the gate when enemies come near, open it again when they are gone
             bool enemyNear = false;
             for (int i = 0; i < DAT_GameState::instance.playerDataArray[gateOwner].enemies; ++i) {
-                short enemyID = DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i];
-                if (DAT_UnitsState::instance.units[enemyID].uid
+                if (DAT_UnitsState::instance.units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                            .uid
                         != DAT_GameState::instance.mapAndTime.playerEnemenyUnitUIDShortList[gateOwner][i]
-                    || DAT_UnitsState::instance.units[enemyID].unitType == OpenSHC::Map::Units::UT_LIONSHWOLF
-                    || DAT_UnitsState::instance.units[enemyID].isSelectable_OR_matchTime == 0) {
+                    || DAT_UnitsState::instance
+                            .units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                            .unitType
+                        == OpenSHC::Map::Units::UT_LIONSHWOLF
+                    || DAT_UnitsState::instance
+                            .units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                            .isSelectable_OR_matchTime
+                        == 0) {
                     continue;
                 }
                 int distanceX;
-                if (gateMicroX > DAT_UnitsState::instance.units[enemyID].microXPosition) {
-                    distanceX = gateMicroX - DAT_UnitsState::instance.units[enemyID].microXPosition;
+                if (gateMicroX
+                    > DAT_UnitsState::instance.units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                        .microXPosition) {
+                    distanceX = gateMicroX
+                        - DAT_UnitsState::instance
+                              .units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                              .microXPosition;
                 } else {
-                    distanceX = DAT_UnitsState::instance.units[enemyID].microXPosition - gateMicroX;
+                    distanceX = DAT_UnitsState::instance
+                                    .units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                                    .microXPosition
+                        - gateMicroX;
                 }
                 int distance;
-                short const enemyMicroY = DAT_UnitsState::instance.units[enemyID].microYPosition;
+                short const enemyMicroY
+                    = DAT_UnitsState::instance.units[DAT_GameState::instance.playerDataArray[gateOwner].enemyIDArray[i]]
+                          .microYPosition;
                 if (gateMicroY > enemyMicroY) {
                     distance = gateMicroY - enemyMicroY;
                 } else {

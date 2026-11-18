@@ -23,8 +23,8 @@ namespace Map {
             }
             int const color = DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].rng1 & 7;
             DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].appleTreeColorVariation = color;
-            int const stage = DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].stage;
-            if (stage == 0 && DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].stageTracker < 250) {
+            if (DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].stage == 0
+                && DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].stageTracker < 250) {
                 if (color == 0) {
                     DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].appleTreeColorVariation = 2;
                 } else if (color == 1) {
@@ -34,7 +34,7 @@ namespace Map {
                 } else {
                     DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].appleTreeColorVariation = 7;
                 }
-            } else if (stage == 5) {
+            } else if (DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].stage == 5) {
                 if (color == 0) {
                     DAT_LandscapeState::instance.trees[DAT_CurrentTreeID::instance].appleTreeColorVariation = 2;
                 } else if (color == 1) {

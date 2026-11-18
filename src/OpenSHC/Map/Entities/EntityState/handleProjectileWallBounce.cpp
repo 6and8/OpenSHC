@@ -342,20 +342,20 @@ namespace Map {
             this->entityArray[entityID].someMicroX = (microX <= targetX ? 1 : -1);
             this->entityArray[entityID].pathTargetY = targetY;
             this->entityArray[entityID].someMicroY = (microY <= targetY ? 1 : -1);
-            short const deltaX = this->entityArray[entityID].pathDeltaX;
-            if (deltaX == 0 && this->entityArray[entityID].pathDeltaY == deltaX) {
+            if (this->entityArray[entityID].pathDeltaX == 0
+                && this->entityArray[entityID].pathDeltaY == this->entityArray[entityID].pathDeltaX) {
                 this->entityArray[entityID].pathAxisCase = 0;
-            } else if (deltaX == 0) {
+            } else if (this->entityArray[entityID].pathDeltaX == 0) {
                 this->entityArray[entityID].pathAxisCase = 1;
             } else if (this->entityArray[entityID].pathDeltaY == 0) {
                 this->entityArray[entityID].pathAxisCase = 2;
-            } else if (this->entityArray[entityID].pathDeltaY > deltaX) {
+            } else if (this->entityArray[entityID].pathDeltaY > this->entityArray[entityID].pathDeltaX) {
                 this->entityArray[entityID].pathAxisCase = 3;
             } else {
                 this->entityArray[entityID].pathAxisCase = 4;
             }
             if (this->entityArray[entityID].pathAxisCase == 3) {
-                short const errorStep = deltaX * 2;
+                short const errorStep = this->entityArray[entityID].pathDeltaX * 2;
                 this->entityArray[entityID].pathErrorStepStraight = errorStep;
                 this->entityArray[entityID].pathErrorStepDiagonal
                     = errorStep - this->entityArray[entityID].pathDeltaY * 2;
@@ -363,8 +363,9 @@ namespace Map {
             } else if (this->entityArray[entityID].pathAxisCase == 4) {
                 short const errorStep = this->entityArray[entityID].pathDeltaY * 2;
                 this->entityArray[entityID].pathErrorStepStraight = errorStep;
-                this->entityArray[entityID].pathErrorStepDiagonal = errorStep - deltaX * 2;
-                this->entityArray[entityID].pathError = errorStep - deltaX;
+                this->entityArray[entityID].pathErrorStepDiagonal
+                    = errorStep - this->entityArray[entityID].pathDeltaX * 2;
+                this->entityArray[entityID].pathError = errorStep - this->entityArray[entityID].pathDeltaX;
             }
             this->entityArray[entityID].startingAngle = this->entityArray[entityID].graphicRotationUnk;
             if (this->entityArray[entityID].startingAngle < -80) {

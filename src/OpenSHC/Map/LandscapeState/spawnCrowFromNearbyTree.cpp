@@ -76,9 +76,8 @@ namespace Map {
                 targetY = unitY + (SEC_RNG::instance.currentNumber2 >> 8) % 100 - 50;
                 MACRO_CALL_MEMBER(Random::RNG_Func::nextRandomNumber2, SEC_RNG::ptr)();
             }
-            MACRO_CALL_MEMBER(Entities::EntityState_Func::spawnProjectileEntity, DAT_EntityState::ptr)(unitID,
-                DAT_UnitsState::instance.units[unitID].owner, 0, this->trees[treeID].xPosition * 8,
-                this->trees[treeID].yPosition * 8,
+            MACRO_CALL_MEMBER(Entities::EntityState_Func::spawnProjectileEntity, DAT_EntityState::ptr)(unitID, owner, 0,
+                this->trees[treeID].xPosition * 8, this->trees[treeID].yPosition * 8,
                 DAT_TileMapState::instance.HeightLayer[this->trees[treeID].tile] + 30, targetX * 8, targetY * 8, 250,
                 Entities::EntityTypeInt__ET_CROW, 0);
             this->trees[treeID].rng200till300 = SEC_RNG::instance.currentNumber2 % 100 + 200;

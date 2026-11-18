@@ -23,7 +23,8 @@ namespace Map {
             // Matching note: The calls are written out in each branch. With one shared tail after the chain our
             // compiler also merges the three branches' wood/stone/iron calls (57%); per branch it keeps them like
             // the original. The original shares the pitch and gold calls (the siege branches jump into them) and
-            // spills this to one more stack slot; the goto for gold gets closest.
+            // spills this to one more stack slot; the goto for gold gets closest. In the building branch the original
+            // keeps stone and gold in registers and only stores them for the siege call: copies, not the locals.
             // param_3 is the percentage of the costs that is given back
             if (param_3 == 0) {
                 return;
@@ -136,19 +137,22 @@ namespace Map {
             } else {
                 int buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
                 int wood = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredWood * percentage / 100;
-                int iron = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredIron_0x8 * percentage / 100;
                 int stone
                     = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredStone_0x4 * percentage / 100;
+                int iron = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredIron_0x8 * percentage / 100;
                 pitch = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredPitch_0xc * percentage / 100;
-                gold = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredGold * percentage / 100;
+                int goldCost = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredGold * percentage / 100;
+                gold = goldCost;
+                int stoneCost = stone;
                 if (DAT_GameCore::instance.gameMode_2 == OpenSHC::Game::GM_SIEGE_THAT) {
                     MACRO_CALL_MEMBER(
                         OpenSHC::Map::Buildings::BuildingsState_Func::resourceGainForKillingPitAndPitchDitch, this)(
-                        (BuildingType)this->buildings[buildingIDORIfNegResourceType].buildingType, &stone, &gold);
+                        (BuildingType)this->buildings[buildingIDORIfNegResourceType].buildingType, &stoneCost,
+                        &goldCost);
                     DAT_GameState::instance.playerDataArray[playerID].startResources[OpenSHC::Game::Resources::RT_STONE]
-                        += stone;
+                        += stoneCost;
                     DAT_GameState::instance.playerDataArray[playerID].startResources[OpenSHC::Game::Resources::RT_GOLD]
-                        += gold;
+                        += goldCost;
                     return;
                 }
                 if (MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::processResourceGain,

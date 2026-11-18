@@ -205,8 +205,8 @@ namespace UI {
                     spriteIdx = 9;
                     break;
                 case 121:
-                    spriteIdx = 41;
                     xOff = 15;
+                    spriteIdx = 41;
                     yOff = -2;
                     break;
                 case 122:
@@ -215,8 +215,8 @@ namespace UI {
                     yOff = 6;
                     break;
                 case 123:
-                    spriteIdx = 1;
                     xOff = 6;
+                    spriteIdx = 1;
                     yOff = 7;
                     break;
                 }

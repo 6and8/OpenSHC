@@ -201,8 +201,8 @@ namespace UI {
                 switch (DAT_TileMapState::instance.currentMapperCommand) {
                 case 120:
                     xOff = 15;
-                    spriteIdx = 9;
                     yOff = 7;
+                    spriteIdx = 9;
                     break;
                 case 121:
                     spriteIdx = 41;

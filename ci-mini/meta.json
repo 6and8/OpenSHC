@@ -1,0 +1,954 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl000.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl001.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl002.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl003.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl004.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl005.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl006.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl007.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl008.cpp"
+],
+"j00/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl009.cpp"
+],
+"j00/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl010.cpp"
+],
+"j00/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl011.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl012.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl013.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl014.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl015.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl016.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl017.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl018.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl019.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl020.cpp"
+],
+"j01/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl021.cpp"
+],
+"j01/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl022.cpp"
+],
+"j01/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl023.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl024.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl025.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl026.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl027.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl028.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl029.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl030.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl031.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl032.cpp"
+],
+"j02/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl033.cpp"
+],
+"j02/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl034.cpp"
+],
+"j02/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl035.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl036.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl037.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl038.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl039.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl040.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl041.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl042.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl043.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl044.cpp"
+],
+"j03/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl045.cpp"
+],
+"j03/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl046.cpp"
+],
+"j03/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl047.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl048.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl049.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl050.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl051.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl052.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl053.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl054.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl055.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl056.cpp"
+],
+"j04/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl057.cpp"
+],
+"j04/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl058.cpp"
+],
+"j04/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl059.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl060.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl061.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl062.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl063.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl064.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl065.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl066.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl067.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl068.cpp"
+],
+"j05/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl069.cpp"
+],
+"j05/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl070.cpp"
+],
+"j05/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl071.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl072.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl073.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl074.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl075.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl076.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl077.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl078.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl079.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl080.cpp"
+],
+"j06/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl081.cpp"
+],
+"j06/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl082.cpp"
+],
+"j06/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl083.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl084.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl085.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl086.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl087.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl088.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl089.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl090.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl091.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl092.cpp"
+],
+"j07/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl093.cpp"
+],
+"j07/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl094.cpp"
+],
+"j07/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl095.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl096.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl097.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl098.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl099.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl100.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl101.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl102.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl103.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl104.cpp"
+],
+"j08/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl105.cpp"
+],
+"j08/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl106.cpp"
+],
+"j08/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl107.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl108.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl109.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl110.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl111.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl112.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl113.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl114.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl115.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl116.cpp"
+],
+"j09/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl117.cpp"
+],
+"j09/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl118.cpp"
+],
+"j09/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop000.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop001.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop002.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop003.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop004.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop005.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop006.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop007.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop008.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop009.cpp"
+],
+"j10/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop010.cpp"
+],
+"j10/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop011.cpp"
+],
+"j10/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop012.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop013.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop014.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop015.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop016.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop017.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop018.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop019.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop020.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop021.cpp"
+],
+"j11/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop022.cpp"
+],
+"j11/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop023.cpp"
+],
+"j11/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop024.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop025.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop026.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop027.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop028.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop029.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop030.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop031.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop032.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop033.cpp"
+],
+"j12/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop034.cpp"
+],
+"j12/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop035.cpp"
+],
+"j12/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop036.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop037.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop038.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop039.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop040.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop041.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop042.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop043.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop044.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop045.cpp"
+],
+"j13/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop046.cpp"
+],
+"j13/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop047.cpp"
+],
+"j13/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop048.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop049.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop050.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop051.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop052.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop053.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop054.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop055.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop056.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop057.cpp"
+],
+"j14/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop058.cpp"
+],
+"j14/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop059.cpp"
+],
+"j14/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop060.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop061.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop062.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop063.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop064.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop065.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop066.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop067.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop068.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop069.cpp"
+],
+"j15/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop070.cpp"
+],
+"j15/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop071.cpp"
+],
+"j15/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop072.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop073.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop074.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop075.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop076.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop077.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop078.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop079.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop080.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop081.cpp"
+],
+"j16/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop082.cpp"
+],
+"j16/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop083.cpp"
+],
+"j16/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop084.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop085.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop086.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop087.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop088.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop089.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop090.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop091.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop092.cpp"
+],
+"j17/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop093.cpp"
+],
+"j17/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop094.cpp"
+],
+"j17/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop095.cpp"
+],
+"j17/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop096.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop097.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop098.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop099.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop100.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop101.cpp"
+],
+"j18/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop102.cpp"
+],
+"j18/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop103.cpp"
+],
+"j18/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop104.cpp"
+],
+"j18/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop105.cpp"
+],
+"j18/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop106.cpp"
+],
+"j18/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop107.cpp"
+],
+"j18/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop108.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop109.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop110.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop111.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop112.cpp"
+],
+"j19/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop113.cpp"
+],
+"j19/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop114.cpp"
+],
+"j19/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop115.cpp"
+],
+"j19/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop116.cpp"
+],
+"j19/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop117.cpp"
+],
+"j19/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"loop118.cpp"
+]
+}

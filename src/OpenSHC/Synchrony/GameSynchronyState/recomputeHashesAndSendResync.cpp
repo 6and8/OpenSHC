@@ -341,8 +341,8 @@ namespace Synchrony {
                         = MACRO_CALL_MEMBER(OpenSHC::Map::Navigation::DirectionAlgorithmState_Func::computeHash,
                             DAT_DirectionAlgorithmState::ptr)(
                             2512, (int*)&DAT_TileMapState::instance.SEC_PathfindingCostTileMap1105[8][i * 2512]);
-                    this->HASH_LogicalTileMap[this->currentPlayerSlotID].hashDataArray[28].componentArray[i] = hash;
                     tileSum += hash;
+                    this->HASH_LogicalTileMap[this->currentPlayerSlotID].hashDataArray[28].componentArray[i] = hash;
                 }
             }
             this->HASH_PartialHashPerPlayer.player[this->currentPlayerSlotID].domain[6] = tileSum;

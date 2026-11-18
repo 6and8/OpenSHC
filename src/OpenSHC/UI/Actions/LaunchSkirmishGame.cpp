@@ -122,8 +122,8 @@ namespace UI {
             for (int i = 0; i < 9; i++) {
                 groups[i] = DAT_GameState::instance.mapAndTime.playerGroupArray[i];
                 teams[i] = DAT_GameState::instance.mapAndTime.playerTeams[i];
-                ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];
                 aiVariations[i] = DAT_GameSynchronyState::instance.aiVariationArray[i];
+                ais[i] = DAT_GameSynchronyState::instance.currentAIArray[i];
                 lordTypes[i] = DAT_GameCore::instance.selectedLordTypes[i];
             }
             Game::Skirmish::SkirmishStatistics const results = DAT_GameSynchronyState::instance.finalResults;
@@ -138,8 +138,8 @@ namespace UI {
             DAT_GameCore::instance.section1127 = 1;
             DAT_GameCore::instance.currentTrailType = trailType;
             DAT_GameCore::instance.isVictoryOrDefeatUnk = 0;
-            DAT_GameSynchronyState::instance.skirmishGameIntensityType = intensityType;
             DAT_GameCore::instance.isSkirmishTrail = isSkirmishTrail;
+            DAT_GameSynchronyState::instance.skirmishGameIntensityType = intensityType;
             if (trailType == 2) {
                 DAT_GameCore::instance.extremeTrailProgress = trailProgress;
             } else if (trailType == 1) {
@@ -228,8 +228,8 @@ namespace UI {
             }
             int positions[9];
             for (int playerID = 1; playerID < 9; playerID++) {
-                positions[playerID] = 0;
                 DAT_GameState::instance.playerDataArray[playerID].aiType = 0;
+                positions[playerID] = 0;
                 if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] != -1
                     || DAT_GameSynchronyState::instance.currentAIArray[playerID] != 0) {
                     positions[playerID] = MACRO_CALL(Synchrony_Func::GetPlayerPosition)(playerID);

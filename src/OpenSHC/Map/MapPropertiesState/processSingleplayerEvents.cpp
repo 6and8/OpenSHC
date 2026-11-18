@@ -271,14 +271,14 @@ namespace Map {
                         case 1: {
                             int reqPop = MACRO_CALL_MEMBER(MapPropertiesState_Func::getDifficultyMultipliedValue, this)(
                                 this->scenarioEvents[eventIdx].data.scenario.conditions[1].value);
-                            if (DAT_GameState::instance
-                                    .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                                    .currentPopulation
-                                >= reqPop) {
+                            if (!(DAT_GameState::instance
+                                        .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                                        .currentPopulation
+                                    >= reqPop)) {
+                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
+                            } else {
                                 matchedConditions += 1;
                                 this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 1;
-                            } else {
-                                this->SEC_EventsExtra[eventIdx].conditionIsTrue[condIdx] = 0;
                             }
                             break;
                         }

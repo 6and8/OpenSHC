@@ -315,8 +315,8 @@ namespace Map {
             case 68:
             case 72:
             reverse:
-                targetY = this->entityArray[entityID].y_2;
                 targetX = this->entityArray[entityID].x_2;
+                targetY = this->entityArray[entityID].y_2;
                 break;
             }
             for (int i = 0; i < this->entityArray[entityID].rng_1 % 8 + 5; ++i) {

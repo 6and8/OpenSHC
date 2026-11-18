@@ -1,0 +1,742 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm119_L155.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm120_L155.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm121_L155.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm122_L155.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm123_L155.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm124_L166.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm125_L166.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm126_L166.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm127_L166.cpp"
+],
+"j00/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm128_L166.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm129_L394.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm130_L394.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm131_L394.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm132_L394.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm133_L394.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm134_L488.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm135_L488.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm136_L488.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm137_L488.cpp"
+],
+"j01/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm138_L488.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm139_L513.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm140_L513.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm141_L513.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm142_L513.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm143_L513.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm144_L513.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm145_L513.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm146_L513.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm147_L513.cpp"
+],
+"j02/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm148_L513.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm149_L513.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm150_L513.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm151_L513.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm152_L513.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm153_L513.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm154_L513.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm155_L513.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm156_L513.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm157_L513.cpp"
+],
+"j03/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm158_L513.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm159_L513.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm160_L513.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm161_L513.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm162_L513.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm163_L513.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm164_L513.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm165_L513.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm166_L513.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm167_L513.cpp"
+],
+"j04/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm168_L513.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm169_L513.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm170_L513.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm171_L513.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm172_L513.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm173_L513.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm174_L513.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm175_L513.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm176_L513.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm177_L513.cpp"
+],
+"j05/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm178_L513.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm179_L513.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm180_L513.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm181_L513.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm182_L513.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm183_L513.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm184_L513.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm185_L513.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm186_L513.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm187_L513.cpp"
+],
+"j06/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm188_L513.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm189_L513.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm190_L513.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm191_L513.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm192_L513.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm193_L513.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm194_L513.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm195_L513.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm196_L513.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm197_L513.cpp"
+],
+"j07/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm198_L513.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm199_L513.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm200_L513.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm201_L513.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm202_L513.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm203_L513.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm204_L513.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm205_L513.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm206_L513.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm207_L513.cpp"
+],
+"j08/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm208_L513.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm209_L513.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm210_L513.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm211_L513.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm212_L513.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm213_L513.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm214_L513.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm215_L513.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm216_L513.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm217_L513.cpp"
+],
+"j09/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm218_L513.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm219_L513.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm220_L513.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm221_L513.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm222_L513.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm223_L513.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm224_L513.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm225_L513.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm226_L513.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm227_L513.cpp"
+],
+"j10/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm228_L513.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm229_L513.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm230_L513.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm231_L513.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm232_L513.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm233_L513.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm234_L513.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm235_L513.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm236_L513.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm237_L513.cpp"
+],
+"j11/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm238_L513.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm239_L513.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm240_L513.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm241_L513.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm242_L513.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm243_L513.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm244_L513.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm245_L513.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm246_L513.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm247_L513.cpp"
+],
+"j12/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm248_L513.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm249_L513.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm250_L513.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm251_L513.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm252_L513.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm253_L513.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm254_L513.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm255_L513.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm256_L513.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm257_L513.cpp"
+],
+"j13/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm258_L526.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm259_L526.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm260_L526.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm261_L526.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm262_L526.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm263_L526.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm264_L526.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm265_L526.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm266_L526.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm267_L526.cpp"
+],
+"j14/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm268_L526.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm269_L526.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm270_L526.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm271_L526.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm272_L526.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm273_L526.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm274_L526.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm275_L526.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm276_L526.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm277_L526.cpp"
+],
+"j15/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm278_L526.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm279_L526.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm280_L526.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm281_L537.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm282_L537.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm283_L537.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm284_L537.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm285_L537.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm286_L537.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm287_L537.cpp"
+],
+"j16/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm288_L537.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm289_L537.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm290_L537.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm291_L537.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm292_L537.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm293_L537.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm294_L537.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm295_L537.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm296_L537.cpp"
+],
+"j17/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm297_L537.cpp"
+],
+"j17/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm298_L537.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm299_L537.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm300_L537.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm301_L537.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm302_L537.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"perm303_L537.cpp"
+]
+}

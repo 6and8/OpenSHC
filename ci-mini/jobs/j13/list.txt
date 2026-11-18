@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Buildings/UpdateTower2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp
+src/OpenSHC/Map/Version/UpgradeMapLogicToVersion_102.cpp

@@ -1,0 +1,9 @@
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp
+src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp

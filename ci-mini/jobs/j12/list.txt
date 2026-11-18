@@ -1,0 +1,17 @@
+src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/createEntityForAssemblyPointsForActiveTabType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/UI/Credits/ResetCredits.cpp

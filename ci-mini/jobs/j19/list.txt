@@ -1,0 +1,12 @@
+src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp
+src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp
+src/OpenSHC/UI/Helpers/FindCampaignMapHotspotAtMouse.cpp
+src/OpenSHC/Map/Trees/UpdateAppleTree.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp

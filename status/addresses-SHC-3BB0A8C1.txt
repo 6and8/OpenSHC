@@ -1707,7 +1707,7 @@ SHC_3BB0A8C1_0x00405C00 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00405CF0 | 100.0% | Pending
 
-SHC_3BB0A8C1_0x00405DA0 | 91.6% | Pending
+SHC_3BB0A8C1_0x00405DA0 | 91.7% | Pending
 
 SHC_3BB0A8C1_0x0040612C | 0.0% | Pending
 
@@ -23185,7 +23185,7 @@ SHC_3BB0A8C1_0x0048C7B0 | 91.8% | Pending
 
 SHC_3BB0A8C1_0x0048CB00 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0048CC90 | 62.3% | Pending
+SHC_3BB0A8C1_0x0048CC90 | 62.4% | Pending
 
 SHC_3BB0A8C1_0x0048CCF0 | 0.0% | Pending
 
@@ -34141,7 +34141,7 @@ SHC_3BB0A8C1_0x004C6298 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004C62A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004C62C0 | 78.7% | Reimplemented, asm differs (order of the saved/restored settings)
+SHC_3BB0A8C1_0x004C62C0 | 81.3% | Reimplemented, asm differs (order of the saved/restored settings)
 
 SHC_3BB0A8C1_0x004C6820 | 95.7% | Reimplemented, sub eax, 1 is add eax, -1
 
@@ -49251,7 +49251,7 @@ SHC_3BB0A8C1_0x0052C810 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0052C870 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0052CAB0 | 65.8% | Pending
+SHC_3BB0A8C1_0x0052CAB0 | 66.4% | Pending
 
 SHC_3BB0A8C1_0x0052CBB0 | 0.0% | Pending
 
@@ -49259,7 +49259,7 @@ SHC_3BB0A8C1_0x0052CD40 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0052CD60 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0052CFE0 | 68.3% | Pending
+SHC_3BB0A8C1_0x0052CFE0 | 70.7% | Pending
 
 SHC_3BB0A8C1_0x0052D090 | 0.0% | Pending
 

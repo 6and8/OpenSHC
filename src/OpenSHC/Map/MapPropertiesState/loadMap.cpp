@@ -35,15 +35,15 @@ namespace Map {
     void MapPropertiesState::loadMap(char* mapName)
     {
         // the map file overwrites these: keep the current game's values
-        int difficulty = DAT_GameState::instance.mapAndTime.difficulty;
         int xbowProducible = DAT_GameCore::instance.xbowProducible_logic;
-        int gameMode = DAT_GameCore::instance.gameMode_2;
+        int difficulty = DAT_GameState::instance.mapAndTime.difficulty;
         int playerSlot = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-        int swordProducible = DAT_GameCore::instance.swordProducible_logic;
+        int gameMode = DAT_GameCore::instance.gameMode_2;
         int pikeProducible = DAT_GameCore::instance.pikeProducible_logic;
+        int swordProducible = DAT_GameCore::instance.swordProducible_logic;
         int bowProducible = DAT_GameCore::instance.bowProducible_logic;
-        int maceProducible = DAT_GameCore::instance.maceProducible_logic;
         int spearProducible = DAT_GameCore::instance.spearProducible_logic;
+        int maceProducible = DAT_GameCore::instance.maceProducible_logic;
         int jester = DAT_GameState::instance.mapAndTime.unitJesterRelated;
         char hintsRevealed[8];
         memcpy(hintsRevealed, &DAT_GameState::instance.mapAndTime.field43_0xf0, sizeof(hintsRevealed));
@@ -138,7 +138,8 @@ namespace Map {
             DAT_GameState::instance.mapAndTime.euroRecruitable[i] = barracks[i];
         }
         for (int i = 0; i < 7; ++i) {
-            DAT_GameState::instance.mapAndTime.mercRecruitable[i] = DAT_MapPropertiesState::instance.SEC_MercRecruitable[i];
+            DAT_GameState::instance.mapAndTime.mercRecruitable[i]
+                = DAT_MapPropertiesState::instance.SEC_MercRecruitable[i];
         }
         DAT_GameState::instance.mapAndTime.euroRecruitableCopy_index_0 = 0;
         DAT_GameState::instance.mapAndTime.euroRecruitableCopy_index_1_b = 0;

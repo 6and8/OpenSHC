@@ -14,8 +14,8 @@ namespace Map {
     BOOLEnum WildlifeState::buildRallyPointPathForTribe(int param_1, int param_2)
     {
         int unitId = DAT_TribesState::instance.tribes[param_1].selectionTargetUnitID;
-        int x10 = DAT_UnitsState::instance.units[unitId].x / 10;
         int y10 = DAT_UnitsState::instance.units[unitId].y / 10;
+        int x10 = DAT_UnitsState::instance.units[unitId].x / 10;
         this->casDisRelated = param_2;
         this->candidateIndex = 0;
         this->candidateIndex2 = 1;
@@ -94,8 +94,8 @@ namespace Map {
             x10 += DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[bestDir].int_.xOffset;
             y10 += DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[bestDir].int_.yOffset;
             this->grid[x10][y10].field_0x3c = 1;
-            int tileX = x10 * 10 + 5;
             int tileY = y10 * 10 + 5;
+            int tileX = x10 * 10 + 5;
             if ((uint)tileX <= 399 && (uint)tileY <= 399
                 && DAT_ViewportRenderState::instance.DAT_BinaryTileMap400x400[tileY * 400 + tileX] != 0) {
                 short rpIdx = DAT_TribesState::instance.tribes[param_1].rallyPointCount;

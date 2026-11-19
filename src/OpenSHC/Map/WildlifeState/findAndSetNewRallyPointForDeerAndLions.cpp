@@ -17,8 +17,8 @@ namespace Map {
     void WildlifeState::findAndSetNewRallyPointForDeerAndLions(int tribeID, int always2or3or5, int always0or1)
     {
         int unitId = DAT_TribesState::instance.tribes[tribeID].selectionTargetUnitID;
-        int x10 = DAT_UnitsState::instance.units[unitId].x / 10;
         int y10 = DAT_UnitsState::instance.units[unitId].y / 10;
+        int x10 = DAT_UnitsState::instance.units[unitId].x / 10;
         this->casDisRelated = always2or3or5;
         this->candidateIndex = 0;
         this->candidateIndex2 = 1;

@@ -99,8 +99,8 @@ namespace Synchrony {
             for (int i = 0; i < 9; ++i) {
                 int const saved5 = DAT_GameState::instance.playerDataArray[i].someAiCountdown5;
                 int const saved4 = DAT_GameState::instance.playerDataArray[i].someAiCountdown4;
-                int const saved6 = DAT_GameState::instance.playerDataArray[i].someAiCountdown6;
                 int const saved3 = DAT_GameState::instance.playerDataArray[i].someAiCountdown3;
+                int const saved6 = DAT_GameState::instance.playerDataArray[i].someAiCountdown6;
                 int const savedIgnition = DAT_GameState::instance.playerDataArray[i].ignitionTime;
                 DAT_GameState::instance.playerDataArray[i].ignitionTime = 0;
                 DAT_GameState::instance.playerDataArray[i].someAiCountdown6 = 0;

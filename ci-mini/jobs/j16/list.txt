@@ -1,0 +1,4 @@
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp

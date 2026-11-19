@@ -1,0 +1,8 @@
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/UI/Helpers/FindCampaignMapHotspotAtMouse.cpp
+src/OpenSHC/Map/Entities/SomeFireSpreadFunction.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/lightUpBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingFlammabilityFactor.cpp

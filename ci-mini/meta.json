@@ -1,0 +1,1018 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl00_L72.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl01_L73.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl02_L76.cpp"
+],
+"j00/v003": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl03_L105.cpp"
+],
+"j00/v004": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl04_L106.cpp"
+],
+"j00/v005": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl05_L107.cpp"
+],
+"j00/v006": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl06_L108.cpp"
+],
+"j00/v007": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl07_L109.cpp"
+],
+"j00/v008": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl08_L110.cpp"
+],
+"j00/v009": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl09_L117.cpp"
+],
+"j00/v010": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl10_L118.cpp"
+],
+"j00/v011": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl11_L119.cpp"
+],
+"j00/v012": [
+"src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp",
+"decl00_L18.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl00_L50.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl01_L51.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl02_L52.cpp"
+],
+"j01/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl03_L53.cpp"
+],
+"j01/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl04_L54.cpp"
+],
+"j01/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl05_L55.cpp"
+],
+"j01/v006": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl06_L56.cpp"
+],
+"j01/v007": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl07_L57.cpp"
+],
+"j01/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl08_L58.cpp"
+],
+"j01/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl09_L59.cpp"
+],
+"j01/v010": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl10_L65.cpp"
+],
+"j01/v011": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp",
+"decl11_L72.cpp"
+],
+"j01/v012": [
+"src/OpenSHC/Global/TestOSVersion.cpp",
+"decl00_L8.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl00_L18.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl01_L19.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl02_L20.cpp"
+],
+"j02/v003": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl03_L21.cpp"
+],
+"j02/v004": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl04_L22.cpp"
+],
+"j02/v005": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl05_L23.cpp"
+],
+"j02/v006": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl06_L28.cpp"
+],
+"j02/v007": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl07_L29.cpp"
+],
+"j02/v008": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl08_L30.cpp"
+],
+"j02/v009": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl09_L40.cpp"
+],
+"j02/v010": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl10_L41.cpp"
+],
+"j02/v011": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"decl11_L42.cpp"
+],
+"j02/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTower1.cpp",
+"decl00_L69.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl00_L38.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl01_L39.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl02_L40.cpp"
+],
+"j03/v003": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl03_L41.cpp"
+],
+"j03/v004": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl04_L42.cpp"
+],
+"j03/v005": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl05_L43.cpp"
+],
+"j03/v006": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl06_L44.cpp"
+],
+"j03/v007": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl07_L45.cpp"
+],
+"j03/v008": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl08_L46.cpp"
+],
+"j03/v009": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl09_L47.cpp"
+],
+"j03/v010": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl10_L50.cpp"
+],
+"j03/v011": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl11_L119.cpp"
+],
+"j03/v012": [
+"src/OpenSHC/Map/Buildings/UpdateTower4.cpp",
+"decl00_L120.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl00_L62.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl01_L63.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl02_L200.cpp"
+],
+"j04/v003": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl03_L201.cpp"
+],
+"j04/v004": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl04_L260.cpp"
+],
+"j04/v005": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl05_L326.cpp"
+],
+"j04/v006": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl06_L355.cpp"
+],
+"j04/v007": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl07_L387.cpp"
+],
+"j04/v008": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl08_L1191.cpp"
+],
+"j04/v009": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl09_L1386.cpp"
+],
+"j04/v010": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl10_L1387.cpp"
+],
+"j04/v011": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"decl11_L1636.cpp"
+],
+"j04/v012": [
+"src/OpenSHC/Global/WindowMsgProcessingFunc.cpp",
+"decl00_L1252.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl00_L36.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl01_L100.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl02_L101.cpp"
+],
+"j05/v003": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl03_L102.cpp"
+],
+"j05/v004": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl04_L103.cpp"
+],
+"j05/v005": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl05_L354.cpp"
+],
+"j05/v006": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl06_L355.cpp"
+],
+"j05/v007": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl07_L356.cpp"
+],
+"j05/v008": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl08_L357.cpp"
+],
+"j05/v009": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl09_L358.cpp"
+],
+"j05/v010": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl10_L359.cpp"
+],
+"j05/v011": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl11_L360.cpp"
+],
+"j05/v012": [
+"src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp",
+"decl00_L19.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl00_L198.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl01_L199.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl02_L243.cpp"
+],
+"j06/v003": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl03_L244.cpp"
+],
+"j06/v004": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl04_L323.cpp"
+],
+"j06/v005": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl05_L347.cpp"
+],
+"j06/v006": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl06_L378.cpp"
+],
+"j06/v007": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl07_L918.cpp"
+],
+"j06/v008": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl08_L919.cpp"
+],
+"j06/v009": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"decl09_L920.cpp"
+],
+"j06/v010": [
+"src/OpenSHC/Map/Entities/EntityState/computeVelocity.cpp",
+"decl00_L12.cpp"
+],
+"j06/v011": [
+"src/OpenSHC/Map/Entities/EntityState/computeVelocity.cpp",
+"decl01_L13.cpp"
+],
+"j06/v012": [
+"src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp",
+"decl00_L12.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl00_L44.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl01_L45.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl02_L46.cpp"
+],
+"j07/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl03_L47.cpp"
+],
+"j07/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl04_L48.cpp"
+],
+"j07/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl05_L49.cpp"
+],
+"j07/v006": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl06_L50.cpp"
+],
+"j07/v007": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl07_L51.cpp"
+],
+"j07/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp",
+"decl08_L52.cpp"
+],
+"j07/v009": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"decl00_L29.cpp"
+],
+"j07/v010": [
+"src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp",
+"decl01_L30.cpp"
+],
+"j07/v011": [
+"src/OpenSHC/Map/Entities/IgniteFireAtMiniTile.cpp",
+"decl00_L28.cpp"
+],
+"j07/v012": [
+"src/OpenSHC/Map/Buildings/BuildingsState/getKeepLocationForAIUnit.cpp",
+"decl00_L65.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl00_L37.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl01_L38.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl02_L39.cpp"
+],
+"j08/v003": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl03_L40.cpp"
+],
+"j08/v004": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl04_L41.cpp"
+],
+"j08/v005": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl05_L144.cpp"
+],
+"j08/v006": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl06_L145.cpp"
+],
+"j08/v007": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"decl07_L173.cpp"
+],
+"j08/v008": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"decl00_L20.cpp"
+],
+"j08/v009": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"decl01_L37.cpp"
+],
+"j08/v010": [
+"src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp",
+"decl02_L38.cpp"
+],
+"j08/v011": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp",
+"decl00_L54.cpp"
+],
+"j08/v012": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"decl00_L69.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl00_L23.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl01_L24.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl02_L25.cpp"
+],
+"j09/v003": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl03_L26.cpp"
+],
+"j09/v004": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl04_L27.cpp"
+],
+"j09/v005": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl05_L28.cpp"
+],
+"j09/v006": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl06_L29.cpp"
+],
+"j09/v007": [
+"src/OpenSHC/Map/Buildings/UpdateGranary.cpp",
+"decl07_L191.cpp"
+],
+"j09/v008": [
+"src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp",
+"decl00_L20.cpp"
+],
+"j09/v009": [
+"src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp",
+"decl01_L46.cpp"
+],
+"j09/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"decl00_L30.cpp"
+],
+"j09/v011": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp",
+"decl01_L31.cpp"
+],
+"j09/v012": [
+"src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp",
+"decl00_L159.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl00_L20.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl01_L21.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl02_L22.cpp"
+],
+"j10/v003": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl03_L23.cpp"
+],
+"j10/v004": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl04_L31.cpp"
+],
+"j10/v005": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl05_L32.cpp"
+],
+"j10/v006": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl06_L33.cpp"
+],
+"j10/v007": [
+"src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp",
+"decl07_L34.cpp"
+],
+"j10/v008": [
+"src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp",
+"decl00_L36.cpp"
+],
+"j10/v009": [
+"src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp",
+"decl01_L37.cpp"
+],
+"j10/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"decl00_L38.cpp"
+],
+"j10/v011": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"decl01_L39.cpp"
+],
+"j10/v012": [
+"src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp",
+"decl00_L75.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl00_L39.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl01_L212.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl02_L213.cpp"
+],
+"j11/v003": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl03_L214.cpp"
+],
+"j11/v004": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl04_L215.cpp"
+],
+"j11/v005": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl05_L216.cpp"
+],
+"j11/v006": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl06_L218.cpp"
+],
+"j11/v007": [
+"src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp",
+"decl07_L515.cpp"
+],
+"j11/v008": [
+"src/OpenSHC/UI/MenuItems/Chat/MenuItemRenderFunction_Chat_MostButtons.cpp",
+"decl00_L40.cpp"
+],
+"j11/v009": [
+"src/OpenSHC/UI/MenuItems/Chat/MenuItemRenderFunction_Chat_MostButtons.cpp",
+"decl01_L98.cpp"
+],
+"j11/v010": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"decl00_L17.cpp"
+],
+"j11/v011": [
+"src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp",
+"decl01_L21.cpp"
+],
+"j11/v012": [
+"src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingData.cpp",
+"decl00_L364.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl00_L39.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl01_L41.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl02_L42.cpp"
+],
+"j12/v003": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl03_L43.cpp"
+],
+"j12/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl04_L44.cpp"
+],
+"j12/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl05_L79.cpp"
+],
+"j12/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl06_L105.cpp"
+],
+"j12/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp",
+"decl07_L135.cpp"
+],
+"j12/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Food.cpp",
+"decl00_L31.cpp"
+],
+"j12/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Food.cpp",
+"decl01_L39.cpp"
+],
+"j12/v010": [
+"src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp",
+"decl00_L43.cpp"
+],
+"j12/v011": [
+"src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp",
+"decl01_L47.cpp"
+],
+"j12/v012": [
+"src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp",
+"decl00_L43.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl00_L37.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl01_L38.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl02_L39.cpp"
+],
+"j13/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl03_L40.cpp"
+],
+"j13/v004": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl04_L41.cpp"
+],
+"j13/v005": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp",
+"decl05_L42.cpp"
+],
+"j13/v006": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl00_L20.cpp"
+],
+"j13/v007": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl01_L39.cpp"
+],
+"j13/v008": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl02_L118.cpp"
+],
+"j13/v009": [
+"src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp",
+"decl00_L17.cpp"
+],
+"j13/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp",
+"decl01_L18.cpp"
+],
+"j13/v011": [
+"src/OpenSHC/Game/Skirmish/Skirmish_SortAIOpponentOrder.cpp",
+"decl00_L21.cpp"
+],
+"j13/v012": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"decl00_L19.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"decl00_L20.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"decl01_L22.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"decl02_L23.cpp"
+],
+"j14/v003": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"decl03_L24.cpp"
+],
+"j14/v004": [
+"src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp",
+"decl04_L28.cpp"
+],
+"j14/v005": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"decl00_L20.cpp"
+],
+"j14/v006": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"decl01_L21.cpp"
+],
+"j14/v007": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"decl02_L30.cpp"
+],
+"j14/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp",
+"decl00_L29.cpp"
+],
+"j14/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp",
+"decl01_L37.cpp"
+],
+"j14/v010": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"decl00_L155.cpp"
+],
+"j14/v011": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp",
+"decl01_L161.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"decl00_L36.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"decl01_L114.cpp"
+],
+"j15/v002": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"decl02_L382.cpp"
+],
+"j15/v003": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"decl03_L424.cpp"
+],
+"j15/v004": [
+"src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp",
+"decl04_L425.cpp"
+],
+"j15/v005": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"decl00_L24.cpp"
+],
+"j15/v006": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"decl01_L25.cpp"
+],
+"j15/v007": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"decl02_L220.cpp"
+],
+"j15/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp",
+"decl00_L29.cpp"
+],
+"j15/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp",
+"decl01_L37.cpp"
+],
+"j15/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"decl00_L16.cpp"
+],
+"j15/v011": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp",
+"decl01_L23.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl00_L14.cpp"
+],
+"j16/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl01_L15.cpp"
+],
+"j16/v002": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl02_L16.cpp"
+],
+"j16/v003": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl03_L18.cpp"
+],
+"j16/v004": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl04_L22.cpp"
+],
+"j16/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"decl00_L27.cpp"
+],
+"j16/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"decl01_L52.cpp"
+],
+"j16/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/displayPopularityAndGoldPopups.cpp",
+"decl02_L53.cpp"
+],
+"j16/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"decl00_L26.cpp"
+],
+"j16/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp",
+"decl01_L56.cpp"
+],
+"j16/v010": [
+"src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp",
+"decl00_L399.cpp"
+],
+"j16/v011": [
+"src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp",
+"decl01_L400.cpp"
+],
+"j17/v000": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"decl00_L30.cpp"
+],
+"j17/v001": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"decl01_L39.cpp"
+],
+"j17/v002": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"decl02_L43.cpp"
+],
+"j17/v003": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp",
+"decl03_L44.cpp"
+],
+"j17/v004": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"decl00_L22.cpp"
+],
+"j17/v005": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"decl01_L23.cpp"
+],
+"j17/v006": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"decl02_L24.cpp"
+],
+"j17/v007": [
+"src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp",
+"decl03_L26.cpp"
+],
+"j17/v008": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp",
+"decl00_L51.cpp"
+],
+"j17/v009": [
+"src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp",
+"decl01_L54.cpp"
+],
+"j17/v010": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"decl00_L17.cpp"
+],
+"j17/v011": [
+"src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp",
+"decl01_L18.cpp"
+],
+"j18/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"decl00_L72.cpp"
+],
+"j18/v001": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"decl01_L74.cpp"
+],
+"j18/v002": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"decl02_L99.cpp"
+],
+"j18/v003": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"decl03_L151.cpp"
+],
+"j18/v004": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"decl00_L45.cpp"
+],
+"j18/v005": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"decl01_L46.cpp"
+],
+"j18/v006": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"decl02_L47.cpp"
+],
+"j18/v007": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"decl03_L61.cpp"
+],
+"j18/v008": [
+"src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp",
+"decl00_L13.cpp"
+],
+"j18/v009": [
+"src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp",
+"decl01_L14.cpp"
+],
+"j18/v010": [
+"src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp",
+"decl00_L22.cpp"
+],
+"j18/v011": [
+"src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp",
+"decl01_L183.cpp"
+],
+"j19/v000": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl00_L17.cpp"
+],
+"j19/v001": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl01_L39.cpp"
+],
+"j19/v002": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl02_L79.cpp"
+],
+"j19/v003": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl03_L97.cpp"
+],
+"j19/v004": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"decl00_L90.cpp"
+],
+"j19/v005": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"decl01_L94.cpp"
+],
+"j19/v006": [
+"src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp",
+"decl02_L153.cpp"
+],
+"j19/v007": [
+"src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp",
+"decl00_L13.cpp"
+],
+"j19/v008": [
+"src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp",
+"decl01_L14.cpp"
+],
+"j19/v009": [
+"src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp",
+"decl02_L79.cpp"
+],
+"j19/v010": [
+"src/OpenSHC/UI/Helpers/FindCampaignMapHotspotAtMouse.cpp",
+"decl00_L13.cpp"
+],
+"j19/v011": [
+"src/OpenSHC/Map/Entities/SomeFireSpreadFunction.cpp",
+"decl00_L27.cpp"
+]
+}

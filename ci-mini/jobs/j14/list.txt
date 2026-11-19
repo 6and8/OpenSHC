@@ -1,0 +1,6 @@
+src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp

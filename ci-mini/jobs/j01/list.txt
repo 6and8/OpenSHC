@@ -1,0 +1,2 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp
+src/OpenSHC/Global/TestOSVersion.cpp

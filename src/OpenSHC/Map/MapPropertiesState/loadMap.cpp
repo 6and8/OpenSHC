@@ -35,10 +35,10 @@ namespace Map {
     void MapPropertiesState::loadMap(char* mapName)
     {
         // the map file overwrites these: keep the current game's values
-        int xbowProducible = DAT_GameCore::instance.xbowProducible_logic;
+        int gameMode = DAT_GameCore::instance.gameMode_2;
         int difficulty = DAT_GameState::instance.mapAndTime.difficulty;
         int playerSlot = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-        int gameMode = DAT_GameCore::instance.gameMode_2;
+        int xbowProducible = DAT_GameCore::instance.xbowProducible_logic;
         int pikeProducible = DAT_GameCore::instance.pikeProducible_logic;
         int swordProducible = DAT_GameCore::instance.swordProducible_logic;
         int bowProducible = DAT_GameCore::instance.bowProducible_logic;

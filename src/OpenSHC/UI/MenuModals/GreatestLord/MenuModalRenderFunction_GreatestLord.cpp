@@ -36,9 +36,9 @@ namespace UI {
             {
                 int nameX = x + 58;
                 int order[10] = { 0 };
-                int lordDead[10] = { 0 };
                 GreatestLordRow rows[10];
                 int frameHeight = height - 96;
+                int lordDead[10] = { 0 };
                 int frameWidth = width - 48;
                 for (int row = 0; row < frameHeight; row += 24) {
                     int rowTile;

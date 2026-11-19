@@ -523,7 +523,7 @@ SHC_3BB0A8C1_0x00402C50 | 65.1% | Pending
 
 SHC_3BB0A8C1_0x00402DA0 | 100.0% | Reimplemented (counted: only float constant names and the CRT math helpers (_CIcos, _CItan, _CIsqrt) differ)
 
-SHC_3BB0A8C1_0x00402E20 | 29.8% | Pending
+SHC_3BB0A8C1_0x00402E20 | 30.1% | Pending
 
 SHC_3BB0A8C1_0x00403200 | 0.0% | Pending
 
@@ -545,7 +545,7 @@ SHC_3BB0A8C1_0x004039F0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00403A20 | 69.1% | Pending
 
-SHC_3BB0A8C1_0x00403FF0 | 90.4% | Pending
+SHC_3BB0A8C1_0x00403FF0 | 90.5% | Pending
 
 SHC_3BB0A8C1_0x004044E4 | 0.0% | Pending
 
@@ -25865,7 +25865,7 @@ SHC_3BB0A8C1_0x004AE010 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004AE070 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004AE0F0 | 46.9% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
+SHC_3BB0A8C1_0x004AE0F0 | 47.1% | Reimplemented, asm differs (stack layout of the three local arrays; logic follows the asm)
 
 SHC_3BB0A8C1_0x004AE4F0 | 0.0% | Pending
 
@@ -34141,7 +34141,7 @@ SHC_3BB0A8C1_0x004C6298 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004C62A0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004C62C0 | 81.3% | Reimplemented, asm differs (order of the saved/restored settings)
+SHC_3BB0A8C1_0x004C62C0 | 82.7% | Reimplemented, asm differs (order of the saved/restored settings)
 
 SHC_3BB0A8C1_0x004C6820 | 95.7% | Reimplemented, sub eax, 1 is add eax, -1
 

@@ -38,9 +38,9 @@ namespace Map {
                 buildingID = DAT_TileMapState::instance.BuildingLayer[startTile];
             }
             int const distY = y > targetY ? y - targetY : targetY - y;
+            int const stepY = (y <= targetY) * 2 - 1;
             int const distX = x > targetX ? x - targetX : targetX - x;
             int const stepX = (x <= targetX) * 2 - 1;
-            int const stepY = (y <= targetY) * 2 - 1;
             if (distX == 0) {
                 if (distY == 0) {
                     return i;

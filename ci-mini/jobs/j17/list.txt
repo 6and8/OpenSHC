@@ -1,0 +1,12 @@
+src/OpenSHC/Map/Buildings/UpdateArmory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getArmoryIDIfSpaceLeft.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_DoEveryFrame.cpp
+src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/Game/Skirmish/Skirmish_SortAIOpponentOrder.cpp
+src/OpenSHC/Map/Buildings/UpdateBadBuildingDunkingStool.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp

@@ -1,0 +1,11 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_ChapelAndChurch.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp
+src/OpenSHC/Map/Entities/EntityState/doSomethingWithOtherEntitiesOnTile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/UpdateOxTether.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setBuildingInitialEntryTileTry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/LandscapeState/createRock.cpp

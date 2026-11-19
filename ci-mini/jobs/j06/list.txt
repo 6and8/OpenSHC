@@ -1,0 +1,8 @@
+src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp
+src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/UI/MenuItems/NewInvasion/MenuItemActionHandler_NewInvasion_UnitButtons.cpp
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp

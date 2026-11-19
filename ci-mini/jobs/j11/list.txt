@@ -1,0 +1,15 @@
+src/OpenSHC/UI/BottomLeftTextDisplayState/renderCurrentlyDisplayedTextConstructionCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasLessWoodThanTheCostOfAWoodcuttersHutAndNoWoodcutters.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findFirstBuildingOfType.cpp
+src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp
+src/OpenSHC/UI/Helpers/FindCampaignMapHotspotAtMouse.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp

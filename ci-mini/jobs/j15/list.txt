@@ -1,0 +1,9 @@
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingAreaTileGraphics.cpp
+src/OpenSHC/Map/Buildings/UpdateTower1.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Weapons.cpp
+src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp

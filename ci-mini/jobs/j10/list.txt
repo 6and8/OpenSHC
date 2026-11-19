@@ -1,0 +1,10 @@
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/Map/Buildings/UpdateTower4.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stables.cpp
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/Map/Buildings/UpdateBrewery.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp

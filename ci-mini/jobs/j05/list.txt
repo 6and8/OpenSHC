@@ -1,0 +1,7 @@
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp
+src/OpenSHC/Map/Entities/EntityState/processSeaGulls.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Armory.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/renderChatMessageList.cpp

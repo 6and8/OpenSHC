@@ -1,0 +1,13 @@
+src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp
+src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp
+src/OpenSHC/Map/Entities/EntityState/updateProjectileHeightAndCollision.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/Map/Buildings/UpdateQuarry.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingResourceAmountByUid.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/addResourceToStockpile.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/extendResourceCountdownForPlayerBuildingsOfType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp
+src/OpenSHC/Map/Entities/EntityState/createSeagull.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp

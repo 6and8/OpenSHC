@@ -1,0 +1,8 @@
+src/OpenSHC/Map/Entities/EntityState/handleProjectileWallBounce.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp
+src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp

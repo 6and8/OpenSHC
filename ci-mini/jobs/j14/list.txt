@@ -1,0 +1,14 @@
+src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingPriority.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/playerHasBurningBuilding.cpp
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp
+src/OpenSHC/UI/MenuItems/Unused/MenuItemActionHandler_UnusedCreateMessageEvent_SetTextUnk.cpp

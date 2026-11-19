@@ -62,7 +62,7 @@ namespace Map {
             }
         }
 
-        int startDir = SEC_RNG::instance.currentNumber2 & 7;
+        short startDir = SEC_RNG::instance.currentNumber2 & 7;
         DAT_TribesState::instance.tribes[param_1].currentRallyPointIndex = 0;
         DAT_TribesState::instance.tribes[param_1].rallyPointCount = 0;
         this->grid[x10][y10].field_0x3c = 1;

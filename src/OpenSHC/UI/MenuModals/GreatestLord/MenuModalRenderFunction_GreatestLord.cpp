@@ -171,7 +171,7 @@ namespace UI {
                         break;
                     }
                     int dead = lordDead[player];
-                    int nameOffset = 0;
+                    short nameOffset = 0;
                     if (dead != 0) {
                         MACRO_CALL_MEMBER(
                             UI::Rendering::TextureRenderCore_Func::renderGM, DAT_TextureRenderCoreObject::ptr)(

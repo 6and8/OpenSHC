@@ -93,7 +93,7 @@ namespace Map {
                                 == OpenSHC::Map::Entities::ET_FLAG_3) {
                             flagEntityID = entityID;
                         }
-                        int next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
+                        short next = DAT_EntityState::instance.entityArray[entityID].nextEntityOnThisTileByID;
                         if (entityID == next) {
                             break;
                         }

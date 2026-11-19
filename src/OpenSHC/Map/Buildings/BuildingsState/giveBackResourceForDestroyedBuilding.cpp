@@ -73,7 +73,8 @@ namespace Map {
                 int wood = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredWood * percentage / 100;
                 int stone
                     = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredStone_0x4 * percentage / 100;
-                int iron = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredIron_0x8 * percentage / 100;
+                short iron
+                    = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredIron_0x8 * percentage / 100;
                 pitch = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredPitch_0xc * percentage / 100;
                 gold = DAT_BuildingsState::instance.buildingCosts[BT_MANGONEL].requiredGold * percentage / 100;
                 if (MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::processResourceGain,
@@ -135,7 +136,7 @@ namespace Map {
                 }
                 goto goldGain;
             } else {
-                int buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
+                short buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
                 int wood = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredWood * percentage / 100;
                 int stone
                     = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredStone_0x4 * percentage / 100;

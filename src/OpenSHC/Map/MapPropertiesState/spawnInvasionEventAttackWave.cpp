@@ -36,128 +36,128 @@ namespace Map {
             }
             int tribeType = 0;
             int unitType = 0;
-            int groupSizeDivisor = 0;
+            short groupSizeDivisor = 0;
             switch (slot) {
-                case 0:
-                    tribeType = 3;
-                    unitType = 22;
-                    groupSizeDivisor = 10;
-                    break;
-                case 1:
-                    tribeType = 7;
-                    unitType = 23;
-                    groupSizeDivisor = 10;
-                    break;
-                case 2:
-                    tribeType = 5;
-                    unitType = 24;
-                    groupSizeDivisor = 10;
-                    break;
-                case 3:
-                    tribeType = 6;
-                    unitType = 25;
-                    groupSizeDivisor = 10;
-                    break;
-                case 4:
-                    tribeType = 9;
-                    unitType = 26;
-                    groupSizeDivisor = 10;
-                    break;
-                case 5:
-                    tribeType = 8;
-                    unitType = 27;
-                    groupSizeDivisor = 10;
-                    break;
-                case 6:
-                    tribeType = 10;
-                    unitType = 28;
-                    groupSizeDivisor = 10;
-                    break;
-                case 7:
-                    tribeType = 4;
-                    unitType = 29;
-                    groupSizeDivisor = 10;
-                    break;
-                case 8:
-                    tribeType = 11;
-                    unitType = 30;
-                    groupSizeDivisor = 10;
-                    break;
-                case 9:
-                    tribeType = 22;
-                    unitType = 39;
-                    groupSizeDivisor = 10;
-                    break;
-                case 10:
-                    tribeType = 23;
-                    unitType = 40;
-                    groupSizeDivisor = 10;
-                    break;
-                case 11:
-                    tribeType = 19;
-                    unitType = 59;
-                    groupSizeDivisor = 10;
-                    break;
-                case 12:
-                    tribeType = 20;
-                    unitType = 58;
-                    groupSizeDivisor = 10;
-                    break;
-                case 13:
-                    tribeType = 21;
-                    unitType = 60;
-                    groupSizeDivisor = 10;
-                    break;
-                case 14:
-                    tribeType = 12;
-                    unitType = 37;
-                    groupSizeDivisor = 10;
-                    break;
-                case 15:
-                    tribeType = 2;
-                    unitType = 5;
-                    groupSizeDivisor = 10;
-                    break;
-                case 16:
-                    tribeType = 25;
-                    unitType = 70;
-                    groupSizeDivisor = 10;
-                    break;
-                case 17:
-                    tribeType = 26;
-                    unitType = 71;
-                    groupSizeDivisor = 10;
-                    break;
-                case 18:
-                    tribeType = 27;
-                    unitType = 72;
-                    groupSizeDivisor = 10;
-                    break;
-                case 19:
-                    tribeType = 28;
-                    unitType = 73;
-                    groupSizeDivisor = 10;
-                    break;
-                case 20:
-                    tribeType = 29;
-                    unitType = 74;
-                    groupSizeDivisor = 10;
-                    break;
-                case 21:
-                    tribeType = 30;
-                    unitType = 75;
-                    groupSizeDivisor = 10;
-                    break;
-                case 22:
-                    tribeType = 31;
-                    unitType = 76;
-                    groupSizeDivisor = 10;
-                    break;
-                case 23:
-                    tribeType = 24;
-                    unitType = 77;
-                    groupSizeDivisor = 10;
-                    break;
+            case 0:
+                tribeType = 3;
+                unitType = 22;
+                groupSizeDivisor = 10;
+                break;
+            case 1:
+                tribeType = 7;
+                unitType = 23;
+                groupSizeDivisor = 10;
+                break;
+            case 2:
+                tribeType = 5;
+                unitType = 24;
+                groupSizeDivisor = 10;
+                break;
+            case 3:
+                tribeType = 6;
+                unitType = 25;
+                groupSizeDivisor = 10;
+                break;
+            case 4:
+                tribeType = 9;
+                unitType = 26;
+                groupSizeDivisor = 10;
+                break;
+            case 5:
+                tribeType = 8;
+                unitType = 27;
+                groupSizeDivisor = 10;
+                break;
+            case 6:
+                tribeType = 10;
+                unitType = 28;
+                groupSizeDivisor = 10;
+                break;
+            case 7:
+                tribeType = 4;
+                unitType = 29;
+                groupSizeDivisor = 10;
+                break;
+            case 8:
+                tribeType = 11;
+                unitType = 30;
+                groupSizeDivisor = 10;
+                break;
+            case 9:
+                tribeType = 22;
+                unitType = 39;
+                groupSizeDivisor = 10;
+                break;
+            case 10:
+                tribeType = 23;
+                unitType = 40;
+                groupSizeDivisor = 10;
+                break;
+            case 11:
+                tribeType = 19;
+                unitType = 59;
+                groupSizeDivisor = 10;
+                break;
+            case 12:
+                tribeType = 20;
+                unitType = 58;
+                groupSizeDivisor = 10;
+                break;
+            case 13:
+                tribeType = 21;
+                unitType = 60;
+                groupSizeDivisor = 10;
+                break;
+            case 14:
+                tribeType = 12;
+                unitType = 37;
+                groupSizeDivisor = 10;
+                break;
+            case 15:
+                tribeType = 2;
+                unitType = 5;
+                groupSizeDivisor = 10;
+                break;
+            case 16:
+                tribeType = 25;
+                unitType = 70;
+                groupSizeDivisor = 10;
+                break;
+            case 17:
+                tribeType = 26;
+                unitType = 71;
+                groupSizeDivisor = 10;
+                break;
+            case 18:
+                tribeType = 27;
+                unitType = 72;
+                groupSizeDivisor = 10;
+                break;
+            case 19:
+                tribeType = 28;
+                unitType = 73;
+                groupSizeDivisor = 10;
+                break;
+            case 20:
+                tribeType = 29;
+                unitType = 74;
+                groupSizeDivisor = 10;
+                break;
+            case 21:
+                tribeType = 30;
+                unitType = 75;
+                groupSizeDivisor = 10;
+                break;
+            case 22:
+                tribeType = 31;
+                unitType = 76;
+                groupSizeDivisor = 10;
+                break;
+            case 23:
+                tribeType = 24;
+                unitType = 77;
+                groupSizeDivisor = 10;
+                break;
             }
             byte* score = DAT_TroopValueState::instance.attackInfo
                               .someSinglePlayerScore[DAT_TroopValueState::instance.attackInfo.inv_count];

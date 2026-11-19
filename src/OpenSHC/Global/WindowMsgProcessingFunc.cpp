@@ -291,7 +291,7 @@ namespace Global {
                     if (DAT_UserTextHandlerState::instance.textArrayIndex == (Text::TextArrayIndexType)4) {
                         char* text = MACRO_CALL_MEMBER(
                             Text::UserTextHandler_Func::getCurrentText, DAT_UserTextHandlerState::ptr)();
-                        int len = (int)strlen(text);
+                        short len = (int)strlen(text);
                         for (int i = 0; i < len; ++i) {
                             if (text[i] != ' ') {
                                 DAT_GameSynchronyState::instance.DAT_ChatTauntOrMessage = 0;

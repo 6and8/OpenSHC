@@ -15,7 +15,7 @@ namespace Game {
             if (!MACRO_CALL(Skirmish_Func::StoreCurrentGameIntoTemporarySKMasterEntry)(score)) {
                 return;
             }
-            int const count = DAT_SkMasters2Data_Count::instance;
+            int count = DAT_SkMasters2Data_Count::instance;
             int insertAt = -1;
             if (count <= 0) {
                 insertAt = 0;
@@ -35,9 +35,9 @@ namespace Game {
                     return;
                 }
             }
-            for (int i = count; i > insertAt; --i) {
-                if (i <= 249) {
-                    DAT_SkMasters2DataArray::instance[i] = DAT_SkMasters2DataArray::instance[i - 1];
+            for (; count > insertAt; --count) {
+                if (count <= 249) {
+                    DAT_SkMasters2DataArray::instance[count] = DAT_SkMasters2DataArray::instance[count - 1];
                 }
             }
             DAT_SkMasters2DataArray::instance[insertAt] = DAT_SkMasterDataEntry::instance;

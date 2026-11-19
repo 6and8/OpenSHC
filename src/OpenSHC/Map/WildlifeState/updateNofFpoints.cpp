@@ -41,7 +41,7 @@ namespace Map {
             int tileY = y10 * 10 + 5;
             for (int x10 = 0; x10 < 40; ++x10) {
                 if (this->grid[x10][y10].field_0x6c != 0 && this->grid[x10][y10].firstMember > 0) {
-                    int tileX = x10 * 10 + 5;
+                    unsigned int tileX = x10 * 10 + 5;
                     int tile = DAT_ViewportRenderState::instance.translationMatrix[tileY].addXgetTile + tileX;
                     int areaId = (short)DAT_TileMapState::instance.PathConnectionLayer[tile];
                     if (spArea == areaId && (uint)tileX <= 399 && (uint)tileY <= 399

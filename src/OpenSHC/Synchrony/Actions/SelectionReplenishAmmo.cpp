@@ -25,8 +25,8 @@ namespace Synchrony {
                     int const stoneNeeded = (missing + 1) / 2;
                     if (DAT_GameState::instance.playerDataArray[playerID].currentResources[Game::Resources::RT_STONE]
                         < stoneNeeded) {
-                        int const stoneLeft = DAT_GameState::instance.playerDataArray[playerID]
-                                                  .currentResources[Game::Resources::RT_STONE];
+                        short const stoneLeft = DAT_GameState::instance.playerDataArray[playerID]
+                                                    .currentResources[Game::Resources::RT_STONE];
                         if (stoneLeft > 0) {
                             MACRO_CALL_MEMBER(Map::Buildings::BuildingsState_Func::processResourceLoss,
                                 DAT_BuildingsState::ptr)(playerID, Game::Resources::RT_STONE, stoneLeft, 0);

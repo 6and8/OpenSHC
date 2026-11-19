@@ -26,7 +26,7 @@ namespace Map {
                 steps = 100;
             }
             int curX = x;
-            int curY = y;
+            short curY = y;
             int const startTileY = y / 8;
             int const startTileX = x / 8;
             int const startTile

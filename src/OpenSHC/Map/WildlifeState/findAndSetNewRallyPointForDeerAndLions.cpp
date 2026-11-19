@@ -33,7 +33,7 @@ namespace Map {
         this->DAT_Y10_Array_Section1034[0] = (short)y10;
         this->DAT_X10_Array_Section1034[0] = (short)x10;
         this->grid[x10][y10].casDisRelated2 = always2or3or5;
-        int startArea = this->grid[x10][y10].separateAreaID;
+        short startArea = this->grid[x10][y10].separateAreaID;
 
         while (this->candidateIndex != this->candidateIndex2) {
             int curX = this->DAT_X10_Array_Section1034[this->candidateIndex];

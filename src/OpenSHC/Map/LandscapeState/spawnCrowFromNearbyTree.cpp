@@ -42,7 +42,7 @@ namespace Map {
             if (this->trees[treeID].rng200till300 != 0) {
                 continue;
             }
-            int const owner = DAT_UnitsState::instance.units[unitID].owner;
+            unsigned int const owner = DAT_UnitsState::instance.units[unitID].owner;
             int targetX = 0;
             int targetY = 0;
             int closestDistance = 10000;
@@ -58,7 +58,7 @@ namespace Map {
                 int const keepY
                     = DAT_GameState::instance.playerDataArray[playerID].buildingEntryInfos[BEIE_KEEP].yEntry;
                 int const distanceX = abs(DAT_UnitsState::instance.units[unitID].x - keepX);
-                int const distanceY = abs(unitY - keepY);
+                short const distanceY = abs(unitY - keepY);
                 int distance;
                 if (distanceX > distanceY) {
                     distance = distanceX;

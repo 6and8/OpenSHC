@@ -64,7 +64,7 @@ namespace Map {
             }
 
             for (int dy = 0; dy < 10; ++dy) {
-                int y = yBase + dy;
+                short y = yBase + dy;
                 for (int dx = 0; dx < 10; ++dx) {
                     int x = xBase + dx;
                     if ((uint)x <= 399 && (uint)y <= 399

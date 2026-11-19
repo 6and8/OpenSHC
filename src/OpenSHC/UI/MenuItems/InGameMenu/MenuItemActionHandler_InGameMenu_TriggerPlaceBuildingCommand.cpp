@@ -195,7 +195,7 @@ namespace UI {
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int spriteIdx;
+                short spriteIdx;
                 int xOff;
                 int yOff;
                 switch (DAT_TileMapState::instance.currentMapperCommand) {

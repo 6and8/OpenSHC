@@ -44,11 +44,11 @@ namespace UI {
                 MACRO_CALL_MEMBER(UI::Rendering::PencilRenderCore_Func::drawBlendedBlackBox, DAT_PencilRenderCore::ptr)(
                     x - 95, posY - 5, x + 95, posY + 50, 16);
                 DAT_PencilRenderCore::instance.surfaceTarget = 0;
-                int const playerColor = DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player];
+                short const playerColor = DAT_BlendingDefinedData::instance.PlayerSlotUnitColor[player];
                 MACRO_CALL_MEMBER(Text::TextManager_Func::renderInGameTextWithShadow, DAT_TextManagerObject::ptr)(name,
                     x, posY, Text::TTA_CENTER, DAT_RenderingDefinedData::instance.ColorArray[playerColor], 0, 18, FALSE,
                     0);
-                int numberWidth;
+                short numberWidth;
                 if ((int)DAT_GameSynchronyState::instance.skirmishPoints >= 1000000) {
                     numberWidth = 77;
                 } else if ((int)DAT_GameSynchronyState::instance.skirmishPoints >= 100000) {

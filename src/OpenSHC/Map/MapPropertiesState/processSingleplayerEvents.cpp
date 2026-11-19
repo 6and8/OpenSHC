@@ -283,9 +283,9 @@ namespace Map {
                             break;
                         }
                         case 2: {
-                            int killer = DAT_GameState::instance
-                                             .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
-                                             .lordKilledByPlayerID;
+                            short killer = DAT_GameState::instance
+                                               .playerDataArray[DAT_GameSynchronyState::instance.currentPlayerSlotID]
+                                               .lordKilledByPlayerID;
                             if (killer != 0) {
                                 char subType = this->scenarioEvents[eventIdx].data.scenario.conditions[condIdx].subType;
                                 if (subType == 0 || killer == 10 || subType + 1 == killer) {

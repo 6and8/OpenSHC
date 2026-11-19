@@ -41,7 +41,7 @@ namespace Map {
             if (DAT_BuildingsState::instance.buildings[buildingID].buildingType == BT_QUARRY) {
                 heightStep = 32;
             }
-            int size = this->buildings[buildingID].widthOrHeight + flag * 2;
+            short size = this->buildings[buildingID].widthOrHeight + flag * 2;
             int tileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCount[size];
             if (tileCount <= 0) {
                 index = 0;

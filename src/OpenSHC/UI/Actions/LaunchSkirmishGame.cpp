@@ -66,7 +66,6 @@ namespace UI {
         // FUNCTION: STRONGHOLDCRUSADER 0x00441270
         void __cdecl LaunchSkirmishGame(int whichCastle)
         {
-            int maxTeam = 0;
             int* const castles = (int*)whichCastle;
             MACRO_CALL_MEMBER(Game::Skirmish::SkirmishLobbySetupStructure_Func::commitSkirmishSettings,
                 SEC_SkirmishLobbySetupStructure::ptr)();
@@ -85,6 +84,7 @@ namespace UI {
             strcat(mapFileName, s__map_005a2294);
             MACRO_CALL_MEMBER(IO::ResourceManager_Func::resolveResourceFileName, DAT_ResourceManager::ptr)(
                 (IO::FileResourceType)15, mapFileName);
+            int maxTeam = 0;
             MACRO_CALL_MEMBER(Map::TileMapState_Func::setupAllMapSections, DAT_TileMapState::ptr)();
             for (int i = 1; i < 9; i++) {
                 char const group = DAT_GameSynchronyState::instance.DAT_PlayerGroupArray[i];

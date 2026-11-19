@@ -36,8 +36,8 @@ namespace Map {
         int startArea = this->grid[x10][y10].separateAreaID;
 
         while (this->candidateIndex != this->candidateIndex2) {
-            int curY = this->DAT_Y10_Array_Section1034[this->candidateIndex];
             int curX = this->DAT_X10_Array_Section1034[this->candidateIndex];
+            int curY = this->DAT_Y10_Array_Section1034[this->candidateIndex];
             for (int dir = 0; dir < 8; ++dir) {
                 unsigned int const nx
                     = DAT_TerrainDefinedData::instance.clockwiseCardinalTranslationMatrix[dir].int_.xOffset + curX;

@@ -1,0 +1,194 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl00_L72.cpp"
+],
+"j00/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl01_L73.cpp"
+],
+"j00/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl02_L76.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl03_L105.cpp"
+],
+"j01/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl04_L106.cpp"
+],
+"j01/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl05_L107.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl06_L108.cpp"
+],
+"j02/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl07_L109.cpp"
+],
+"j02/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl08_L110.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl09_L117.cpp"
+],
+"j03/v001": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl10_L118.cpp"
+],
+"j03/v002": [
+"src/OpenSHC/UI/Actions/LaunchSkirmishGame.cpp",
+"decl11_L119.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl00_L17.cpp"
+],
+"j04/v001": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl01_L39.cpp"
+],
+"j04/v002": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl02_L79.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl00_L20.cpp"
+],
+"j05/v001": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl01_L39.cpp"
+],
+"j05/v002": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"decl02_L118.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl00_L38.cpp"
+],
+"j06/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl01_L39.cpp"
+],
+"j06/v002": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl02_L40.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl03_L41.cpp"
+],
+"j07/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl04_L42.cpp"
+],
+"j07/v002": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl05_L43.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl06_L44.cpp"
+],
+"j08/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl07_L45.cpp"
+],
+"j08/v002": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl08_L46.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl09_L47.cpp"
+],
+"j09/v001": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl10_L50.cpp"
+],
+"j09/v002": [
+"src/OpenSHC/Map/MapPropertiesState/loadMap.cpp",
+"decl11_L119.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl00_L36.cpp"
+],
+"j10/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl01_L100.cpp"
+],
+"j10/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl02_L101.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl03_L102.cpp"
+],
+"j11/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl04_L103.cpp"
+],
+"j11/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl05_L354.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl06_L355.cpp"
+],
+"j12/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl07_L356.cpp"
+],
+"j12/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl08_L357.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl09_L358.cpp"
+],
+"j13/v001": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl10_L359.cpp"
+],
+"j13/v002": [
+"src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp",
+"decl11_L360.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl00_L14.cpp"
+],
+"j14/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl01_L15.cpp"
+],
+"j14/v002": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl02_L16.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl03_L18.cpp"
+],
+"j15/v001": [
+"src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp",
+"decl04_L22.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp",
+"decl03_L97.cpp"
+]
+}

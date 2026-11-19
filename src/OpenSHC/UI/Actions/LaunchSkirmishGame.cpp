@@ -183,9 +183,9 @@ namespace UI {
                 DAT_GameCore::instance.swordProducible_logic = 0;
                 DAT_GameCore::instance.pikeProducible_logic = 0;
             }
-            int keepCount = 0;
             int playerCount = 0;
             int keepPositions[9][2];
+            int keepCount = 0;
             for (int playerID = 1; playerID < 9; playerID++) {
                 keepPositions[playerID][0] = -1;
                 keepPositions[playerID][1] = -1;

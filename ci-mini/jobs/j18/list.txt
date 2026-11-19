@@ -1,0 +1,4 @@
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/Map/Entities/EntityState/moveProjectileEntity.cpp
+src/OpenSHC/Map/Entities/EntityState/updateProjectileHeightAndCollision.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp

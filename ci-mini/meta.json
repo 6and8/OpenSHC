@@ -1,0 +1,70 @@
+{
+"j00/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"all.cpp"
+],
+"j01/v000": [
+"src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp",
+"top2.cpp"
+],
+"j02/v000": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"all.cpp"
+],
+"j03/v000": [
+"src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp",
+"top2.cpp"
+],
+"j04/v000": [
+"src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp",
+"all.cpp"
+],
+"j05/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"all.cpp"
+],
+"j06/v000": [
+"src/OpenSHC/Map/Buildings/UpdateArmory.cpp",
+"top2.cpp"
+],
+"j07/v000": [
+"src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp",
+"all.cpp"
+],
+"j08/v000": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"all.cpp"
+],
+"j09/v000": [
+"src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp",
+"top2.cpp"
+],
+"j10/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp",
+"all.cpp"
+],
+"j11/v000": [
+"src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp",
+"all.cpp"
+],
+"j12/v000": [
+"src/OpenSHC/Map/Buildings/BuildingsState/giveBackResourceForDestroyedBuilding.cpp",
+"all.cpp"
+],
+"j13/v000": [
+"src/OpenSHC/Map/MapPropertiesState/processSingleplayerEvents.cpp",
+"all.cpp"
+],
+"j14/v000": [
+"src/OpenSHC/Map/LandscapeState/spawnCrowFromNearbyTree.cpp",
+"all.cpp"
+],
+"j15/v000": [
+"src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp",
+"all.cpp"
+],
+"j16/v000": [
+"src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp",
+"all.cpp"
+]
+}

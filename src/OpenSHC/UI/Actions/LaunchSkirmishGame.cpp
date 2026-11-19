@@ -103,8 +103,8 @@ namespace UI {
                 }
             }
             int const playerSlotID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
-            int const rngSeed = SEC_RNG::instance.seed;
             int const advantageBalance = DAT_GameSynchronyState::instance.skirmishCurrentAdvantageBalance;
+            int const rngSeed = SEC_RNG::instance.seed;
             int const intensityType = DAT_GameSynchronyState::instance.skirmishGameIntensityType;
             int const trailType = DAT_GameCore::instance.currentTrailType;
             int const isSkirmishTrail = DAT_GameCore::instance.isSkirmishTrail;

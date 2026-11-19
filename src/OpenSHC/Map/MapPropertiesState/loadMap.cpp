@@ -45,9 +45,9 @@ namespace Map {
         int spearProducible = DAT_GameCore::instance.spearProducible_logic;
         int maceProducible = DAT_GameCore::instance.maceProducible_logic;
         int jester = DAT_GameState::instance.mapAndTime.unitJesterRelated;
+        int lady = DAT_GameState::instance.mapAndTime.unitLadyRelated;
         char hintsRevealed[8];
         memcpy(hintsRevealed, &DAT_GameState::instance.mapAndTime.field43_0xf0, sizeof(hintsRevealed));
-        int lady = DAT_GameState::instance.mapAndTime.unitLadyRelated;
         int mission = DAT_GameCore::instance.missionNumber1to20;
         MACRO_CALL_MEMBER(Game::GameStateStructures_Func::resetTeams, DAT_GameState::ptr)();
         MACRO_CALL_MEMBER(Map::TileMapState_Func::setupAllMapSections, DAT_TileMapState::ptr)();

@@ -1,0 +1,8 @@
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/UpdateGranary.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp

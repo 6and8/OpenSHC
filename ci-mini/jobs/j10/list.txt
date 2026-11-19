@@ -1,0 +1,6 @@
+src/OpenSHC/UI/MenuModals/GreatestLord/MenuModalRenderFunction_GreatestLord.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateWheatFieldTileGraphics.cpp

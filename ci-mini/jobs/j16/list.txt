@@ -1,0 +1,8 @@
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_RenderTowerAndGateHealth.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/MapPropertiesState/updateMilitaryCampaignMissionState.cpp

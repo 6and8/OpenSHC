@@ -1,0 +1,3 @@
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp
+src/OpenSHC/UI/Helpers/TrimStoredMenuString.cpp
+src/OpenSHC/UI/Credits/ResetCredits.cpp

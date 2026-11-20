@@ -5389,7 +5389,7 @@ SHC_3BB0A8C1_0x004113C0 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00411480 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00411540 | 82.6% | Register allocation differs
+SHC_3BB0A8C1_0x00411540 | 84.6% | Register allocation differs
 
 SHC_3BB0A8C1_0x004116B0 | 0.0% | Pending
 
@@ -5571,7 +5571,7 @@ SHC_3BB0A8C1_0x00418A60 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00418B20 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00418C80 | 97.3% | Register allocation differs
+SHC_3BB0A8C1_0x00418C80 | 99.2% | Register allocation differs
 
 SHC_3BB0A8C1_0x00418EC0 | 100.0% | Reimplemented
 
@@ -6197,9 +6197,9 @@ SHC_3BB0A8C1_0x0041E85C | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041E860 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041E870 | 95.9% | Register allocation differs
+SHC_3BB0A8C1_0x0041E870 | 99.4% | Register allocation differs
 
-SHC_3BB0A8C1_0x0041EB00 | 95.0% | Register allocation differs
+SHC_3BB0A8C1_0x0041EB00 | 99.4% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041EC80 | 0.0% | Pending
 
@@ -6207,7 +6207,7 @@ SHC_3BB0A8C1_0x0041EDA0 | 80.2% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041EF30 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041F110 | 95.0% | Register allocation differs
+SHC_3BB0A8C1_0x0041F110 | 99.4% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041F290 | 0.0% | Pending
 
@@ -15485,7 +15485,7 @@ SHC_3BB0A8C1_0x004451BD | 0.0% | Pending
 
 SHC_3BB0A8C1_0x004451BE | 0.0% | Pending
 
-SHC_3BB0A8C1_0x004451C0 | 59.5% | Pending
+SHC_3BB0A8C1_0x004451C0 | 61.4% | Pending
 
 SHC_3BB0A8C1_0x0044544B | 0.0% | Pending
 
@@ -35567,7 +35567,7 @@ SHC_3BB0A8C1_0x004D5180 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D52A0 | 87.4% | Reimplemented, asm differs (register allocation around the count; the count and array are one struct in the original)
 
-SHC_3BB0A8C1_0x004D5370 | 34.5% | Reimplemented, asm differs (count and array are one struct in the original: count is reloaded after each copy)
+SHC_3BB0A8C1_0x004D5370 | 41.4% | Reimplemented, asm differs (count and array are one struct in the original: count is reloaded after each copy)
 
 SHC_3BB0A8C1_0x004D53A0 | 0.0% | Pending
 

@@ -14,9 +14,13 @@ namespace Game {
             if (index < 0 || index >= DAT_SkMasters2Data_Count::instance) {
                 return;
             }
-            for (int i = index; i < DAT_SkMasters2Data_Count::instance - 1; ++i) {
-                OpenSHC::IO::SkMasterDataEntry* entryPtr = &DAT_SkMasters2DataArray::instance[i];
-                *entryPtr = DAT_SkMasters2DataArray::instance[i + 1];
+            int i = index;
+            if (i < DAT_SkMasters2Data_Count::instance - 1) {
+                do {
+                    OpenSHC::IO::SkMasterDataEntry* entryPtr = &DAT_SkMasters2DataArray::instance[i];
+                    *entryPtr = DAT_SkMasters2DataArray::instance[i + 1];
+                    ++i;
+                } while (i < DAT_SkMasters2Data_Count::instance - 1);
             }
             DAT_SkMasters2Data_Count::instance -= 1;
             MACRO_CALL(OpenSHC::IO_Func::WriteSkMasters2)();

@@ -337,12 +337,12 @@ namespace UI {
                 }
                 return;
             }
+            int canAfford = 1;
             if (DAT_TileMapState::instance.currentMapperCommand == (Commands::MappersEnum)148) {
                 int tile
                     = DAT_ViewportRenderState::instance.translationMatrix[DAT_TileMapState::instance.DAT_ClickedTileY]
                           .addXgetTile
                     + DAT_TileMapState::instance.DAT_ClickedTileX;
-                int canAfford = 1;
                 if (DAT_GameCore::instance.gameMode_2 == 6) {
                     int stoneCost;
                     int goldCost;

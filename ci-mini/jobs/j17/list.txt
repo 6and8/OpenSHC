@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Entities/EntityState/computeLineOfSightDistance.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/Map/Buildings/UpdateTower4.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/UI/Credits/ResetCredits.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileImpactDebris.cpp

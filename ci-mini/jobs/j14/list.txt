@@ -1,0 +1,11 @@
+src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/Map/Entities/EntityState/spawnProjectileEntity.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseLarge.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/LandscapeState/createTree.cpp

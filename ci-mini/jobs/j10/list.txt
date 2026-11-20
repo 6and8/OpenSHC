@@ -1,0 +1,12 @@
+src/OpenSHC/Game/Skirmish/Skirmish_PrepareLeaderboardView.cpp
+src/OpenSHC/Map/Buildings/UpdateBatteringRamBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Map/Buildings/UpdateCatapultBuilding.cpp
+src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Resource.cpp
+src/OpenSHC/Map/Version/UpgradeMapLogicToVersion_102.cpp

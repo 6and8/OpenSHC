@@ -1,0 +1,13 @@
+src/OpenSHC/Map/MapPropertiesState/spawnInvasionEventAttackWave.cpp
+src/OpenSHC/Map/MapPropertiesState/setStartingYearAndStartingResources.cpp
+src/OpenSHC/UI/MenuItems/Chat/MenuItemRenderFunction_Chat_MostButtons.cpp
+src/OpenSHC/Map/Buildings/UpdateTower3.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/UI/Helpers/PrepareHistoryBook.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingPriority.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/playerHasBurningBuilding.cpp

@@ -1,0 +1,10 @@
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromCustomArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp

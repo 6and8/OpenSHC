@@ -1,0 +1,13 @@
+src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp
+src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp
+src/OpenSHC/IO/ResourceManager/paths.cpp
+src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/Helpers/ClearSiegeInformationArray2.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLobbySetupStructure/restoreSkirmishLobbySetup.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/initBuildingCosts.cpp

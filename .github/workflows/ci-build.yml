@@ -1,0 +1,41 @@
+# Free compute: builds OpenSHC.dll on GitHub's Windows runners (public repo = free, unlimited minutes,
+# 4 vCPU each, up to 20 jobs at once). No game files here: reccmp runs locally on the downloaded DLL/PDB.
+# Lives on ci/* branches of the fork only (win/cibuild.py pushes them); never part of a PR.
+name: ci-build
+on:
+  push:
+    branches: ['ci/**']
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: jom
+        shell: pwsh
+        run: |
+          Invoke-WebRequest https://download.qt.io/official_releases/jom/jom_1_1_4.zip -OutFile jom.zip
+          Expand-Archive jom.zip -DestinationPath "$env:RUNNER_TEMP\jom"
+      - name: flags
+        shell: cmd
+        run: |
+          python tools\reimplementation-control\enable_reimplemented_data.py
+          python tools\reimplementation-helper\batch\enable_local_functions.py
+      - name: build
+        shell: cmd
+        run: |
+          call .\cmakew.bat --preset RelWithDebInfo "-DCMAKE_MAKE_PROGRAM=%RUNNER_TEMP%\jom\jom.exe"
+          call .\cmakew.bat --build --preset RelWithDebInfo --target OpenSHC.dll
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dll
+          path: |
+            build-RelWithDebInfo/DLL/OpenSHC.dll
+            build-RelWithDebInfo/DLL/OpenSHC.pdb
+          retention-days: 3

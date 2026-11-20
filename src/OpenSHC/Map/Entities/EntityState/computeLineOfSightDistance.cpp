@@ -170,7 +170,7 @@ namespace Map {
                         }
                     }
                 }
-                int skipSteps = steps / 2;
+                short skipSteps = steps / 2;
                 this->lineOfSightClearanceSteps = steps;
                 for (i = 0; i < 1000; ++i) {
                     curX += stepX;

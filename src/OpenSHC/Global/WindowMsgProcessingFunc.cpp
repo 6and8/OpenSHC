@@ -1402,7 +1402,7 @@ namespace Global {
                     int playerID = DAT_GameSynchronyState::instance.currentPlayerSlotID;
                     int lordID = DAT_GameState::instance.playerDataArray[playerID].lordID;
                     if (lordID != 0) {
-                        int lordUID = DAT_GameState::instance.playerDataArray[playerID].lordUID;
+                        short lordUID = DAT_GameState::instance.playerDataArray[playerID].lordUID;
                         DAT_GameState::instance.playerDataArray[playerID].lordID = 0;
                         DAT_GameState::instance.playerDataArray[playerID].lordUID = 0;
                         if (lordUID == DAT_UnitsState::instance.units[lordID].uid) {

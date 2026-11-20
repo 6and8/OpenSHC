@@ -262,8 +262,8 @@ namespace UI {
             for (int playerID = 1; playerID < 9; playerID++) {
                 if (DAT_GameSynchronyState::instance.currentPlayerFullIDArray[playerID] != -1) {
                     int const position = MACRO_CALL(Synchrony_Func::GetPlayerPosition)(playerID);
-                    int const keepY = keepPositions[position][1];
-                    int const keepX = keepPositions[position][0];
+                    short const keepY = keepPositions[position][1];
+                    short const keepX = keepPositions[position][0];
                     DAT_GameState::instance.playerDataArray[playerID].tacticalPowersBarLevel = 0;
                     DAT_TileMapState::instance.buildingPlacementFail = 0;
                     DAT_TileMapState::instance.clearKeepFootprintOnPlace = 1;

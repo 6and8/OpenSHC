@@ -1,0 +1,16 @@
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/Synchrony/LoadSkirmishCampaignData.cpp
+src/OpenSHC/Map/Buildings/UpdateTower1.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Stockpile.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Keep.cpp
+src/OpenSHC/UI/MenuItems/SiegeAttackingForceAndStartGoods/MenuItemActionHandler_SiegeAttackingForceAndStartGoods_Main.cpp
+src/OpenSHC/UI/MenuItems/WaitingForHost/MenuItemActionHandler_WaitingForHost_ConnectToLobby.cpp
+src/OpenSHC/Synchrony/MemCopyFromParameter.cpp
+src/OpenSHC/Map/Entities/UpdateEntity_CowFlying.cpp

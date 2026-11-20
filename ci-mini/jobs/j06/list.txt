@@ -1,0 +1,9 @@
+src/OpenSHC/Synchrony/GameSynchronyState/recomputeHashesAndSendResync.cpp
+src/OpenSHC/UI/DisplayElements/RenderUnknownDisplayElement25.cpp
+src/OpenSHC/Map/Buildings/UpdateTannersWorkshop.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/UI/MenuViews/HistoricMissionIntro/MenuView_HistoricMissionIntro_DoEveryFrame.cpp
+src/OpenSHC/Map/LandscapeState/updateTreeStage.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/UI/Credits/EndCreditsSegmentAndAdvanceToNext.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/initBuildingCosts.cpp

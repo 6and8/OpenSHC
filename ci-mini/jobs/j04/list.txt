@@ -1,0 +1,6 @@
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Game/Skirmish/SkirmishLobbySetupStructure/restoreSkirmishLobbySetup.cpp
+src/OpenSHC/Map/MapPropertiesState/updateEventYearsAndCommitBuildingAvailability.cpp
+src/OpenSHC/UI/MenuItems/TriggerInvasion/MenuItemActionHandler_TriggerInvasion_Main.cpp
+src/OpenSHC/Map/Entities/UpdateFlag_1_2_4_Entity.cpp

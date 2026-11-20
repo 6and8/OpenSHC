@@ -1,0 +1,10 @@
+src/OpenSHC/Map/Entities/EntityState/updateEntities.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/UI/BuildingMenus/RenderBuildingMenu_Marketplace_Stonks.cpp
+src/OpenSHC/UI/MenuViews/CampaignUnk/MenuView_CampaignUnk_Prepare.cpp
+src/OpenSHC/Map/Entities/EntityState/initializeProjectileVelocities.cpp
+src/OpenSHC/Map/Entities/EntityState/angleToRotationFrameIndex.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/scheduleReceivedCommand.cpp
+src/OpenSHC/Map/WildlifeState/updateWildlifeGrid.cpp
+src/OpenSHC/UI/Credits/RenderScrollingCreditsTextFrame.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp

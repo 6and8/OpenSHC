@@ -1,0 +1,16 @@
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/Map/Entities/EntityState/processEntityHitBuildingOrUnit.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp
+src/OpenSHC/Map/Buildings/UpdateBrewery.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Entities/EntityState/createSeagull.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/UpdateOilSmelter.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/sortBuildingIDsNeedPeasantsQueue.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingPriority.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/playerHasBurningBuilding.cpp
+src/OpenSHC/Map/Entities/EntityState/math_atan_1.cpp

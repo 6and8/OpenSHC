@@ -2351,7 +2351,7 @@ SHC_3BB0A8C1_0x00407130 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00407160 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x00407190 | 89.1% | Pending
+SHC_3BB0A8C1_0x00407190 | 89.6% | Pending
 
 SHC_3BB0A8C1_0x00407570 | 0.0% | Pending
 
@@ -5055,7 +5055,7 @@ SHC_3BB0A8C1_0x0040F750 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0040F790 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0040F8A0 | 91.7% | register allocation differs
+SHC_3BB0A8C1_0x0040F8A0 | 93.1% | register allocation differs
 
 SHC_3BB0A8C1_0x0040F9D0 | 100.0% | Reimplemented
 
@@ -6083,13 +6083,13 @@ SHC_3BB0A8C1_0x0041A860 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041A8D0 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041ADE0 | 80.7% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041ADE0 | 92.8% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B11E | 0.0% | Pending
 
 SHC_3BB0A8C1_0x0041B190 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x0041B2B0 | 84.7% | field pointers in stack slots
+SHC_3BB0A8C1_0x0041B2B0 | 95.9% | field pointers in stack slots
 
 SHC_3BB0A8C1_0x0041B6A0 | 0.0% | Pending
 
@@ -6123,7 +6123,7 @@ SHC_3BB0A8C1_0x0041C190 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x0041C240 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041C310 | 68.5% | original inlines buildingHasSpaceForResource, ours calls it
+SHC_3BB0A8C1_0x0041C310 | 71.2% | original inlines buildingHasSpaceForResource, ours calls it
 
 SHC_3BB0A8C1_0x0041C570 | 100.0% | Reimplemented
 
@@ -6179,7 +6179,7 @@ SHC_3BB0A8C1_0x0041CA00 | 81.2% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041CC70 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x0041D510 | 94.8% | Register allocation differs
+SHC_3BB0A8C1_0x0041D510 | 98.8% | Register allocation differs
 
 SHC_3BB0A8C1_0x0041E240 | 100.0% | Reimplemented
 
@@ -6509,7 +6509,7 @@ SHC_3BB0A8C1_0x00421A40 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00421BE0 | 61.2% | register allocation differs
 
-SHC_3BB0A8C1_0x00421D70 | 79.4% | this spilled, register allocation differs
+SHC_3BB0A8C1_0x00421D70 | 80.5% | this spilled, register allocation differs
 
 SHC_3BB0A8C1_0x00422230 | 100.0% | Reimplemented
 
@@ -22997,7 +22997,7 @@ SHC_3BB0A8C1_0x004863A0 | 0.0% | Pending
 
 SHC_3BB0A8C1_0x00486530 | 0.0% | Pending
 
-SHC_3BB0A8C1_0x00486600 | 99.1% | Pending
+SHC_3BB0A8C1_0x00486600 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x00486A70 | 100.0% | Reimplemented
 
@@ -36023,7 +36023,7 @@ SHC_3BB0A8C1_0x004D9270 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D9290 | 100.0% | Reimplemented (counted: only memset/_stricmp call labels and the instance[i - 1] address label differ)
 
-SHC_3BB0A8C1_0x004D9400 | 85.4% | Pending
+SHC_3BB0A8C1_0x004D9400 | 91.3% | Pending
 
 SHC_3BB0A8C1_0x004D9520 | 0.0% | Pending
 

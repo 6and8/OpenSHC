@@ -136,7 +136,8 @@ namespace Map {
                 }
                 goto goldGain;
             } else {
-                short buildingType = this->buildings[buildingIDORIfNegResourceType].buildingType;
+                OpenSHC::Map::Buildings::Building* const buildingPtr = &this->buildings[buildingIDORIfNegResourceType];
+                short buildingType = buildingPtr->buildingType;
                 int wood = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredWood * percentage / 100;
                 int stone
                     = DAT_BuildingsState::instance.buildingCosts[buildingType].requiredStone_0x4 * percentage / 100;
@@ -148,8 +149,7 @@ namespace Map {
                 if (DAT_GameCore::instance.gameMode_2 == OpenSHC::Game::GM_SIEGE_THAT) {
                     MACRO_CALL_MEMBER(
                         OpenSHC::Map::Buildings::BuildingsState_Func::resourceGainForKillingPitAndPitchDitch, this)(
-                        (BuildingType)this->buildings[buildingIDORIfNegResourceType].buildingType, &stoneCost,
-                        &goldCost);
+                        (BuildingType)buildingPtr->buildingType, &stoneCost, &goldCost);
                     DAT_GameState::instance.playerDataArray[playerID].startResources[OpenSHC::Game::Resources::RT_STONE]
                         += stoneCost;
                     DAT_GameState::instance.playerDataArray[playerID].startResources[OpenSHC::Game::Resources::RT_GOLD]

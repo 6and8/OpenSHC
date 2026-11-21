@@ -17,7 +17,8 @@ namespace Map {
                 if (this->buildings[i].logicalState != BLS_NORMAL) {
                     continue;
                 }
-                if (this->buildings[i].buildingType >= 91) {
+                OpenSHC::Map::Buildings::Building* const buildingPtr = &this->buildings[i];
+                if (buildingPtr->buildingType >= 91) {
                     this->buildings[i].sleeping = false;
                     continue;
                 }

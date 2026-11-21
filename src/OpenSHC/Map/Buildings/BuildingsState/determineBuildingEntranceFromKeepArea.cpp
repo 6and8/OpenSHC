@@ -52,9 +52,10 @@ namespace Map {
             int height = this->buildings[buildingID].terrainHeightUnk;
             this->buildings[buildingID].buildingEntryX = 0;
             this->buildings[buildingID].buildingEntryY = 0;
+            int tries;
 
             // Tiles next to the building
-            for (int tries = 0; tries < tileCount; ++tries) {
+            for (tries = 0; tries < tileCount; ++tries) {
                 MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::setupBuildingEntrancesOffset, this)(
                     size, 1, index, 0);
                 int tile = DAT_ViewportRenderState::instance
@@ -93,7 +94,7 @@ namespace Map {
 
             // Tiles one step further away
             int largerTileCount = DAT_BuildingDefinedData::instance.BuildingAccessibleTilesCountForOneLarger[size];
-            for (int tries = 0; tries < largerTileCount; ++tries) {
+            for (tries = 0; tries < largerTileCount; ++tries) {
                 MACRO_CALL_MEMBER(
                     OpenSHC::Map::Buildings::BuildingsState_Func::setupNextCandidateLocationComputeOffsets2, this)(
                     size, 1, index, 0);
@@ -139,7 +140,7 @@ namespace Map {
             } else {
                 index = 0;
             }
-            for (int tries = 0; tries < tileCount; ++tries) {
+            for (tries = 0; tries < tileCount; ++tries) {
                 MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::setupBuildingEntrancesOffset, this)(
                     size, 1, index, 0);
                 int tile = DAT_ViewportRenderState::instance

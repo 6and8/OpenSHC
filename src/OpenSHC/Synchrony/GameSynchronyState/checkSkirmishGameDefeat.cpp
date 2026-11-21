@@ -32,7 +32,8 @@ namespace Synchrony {
         if (this->currentGameMode == Game::GM_SOLITARY) {
             return;
         }
-        for (int player = 1; player < 9; ++player) {
+        int player;
+        for (player = 1; player < 9; ++player) {
             if (DAT_GameState::instance.playerDataArray[player].commemorationShrinePlacementCountdown <= 0) {
                 continue;
             }
@@ -48,7 +49,7 @@ namespace Synchrony {
         }
         if (DAT_GameCore::instance.unknownAlwaysZero != 0) {
             DAT_GameCore::instance.unknownAlwaysZero = 0;
-            for (int player = 1; player < 9; ++player) {
+            for (player = 1; player < 9; ++player) {
                 DAT_GameState::instance.mapAndTime.playerIsAlive[player] = 0;
                 DAT_GameState::instance.playerDataArray[player].playerDeathRelated = 1;
             }
@@ -66,7 +67,7 @@ namespace Synchrony {
             teams[team].lordsKilled = 0;
             teams[team].players = 0;
         }
-        for (int player = 1; player < 9; ++player) {
+        for (player = 1; player < 9; ++player) {
             if (this->currentPlayerFullIDArray[player] == -1 && this->currentAIArray[player] == 0) {
                 continue;
             }
@@ -89,7 +90,7 @@ namespace Synchrony {
         }
 
         int won[9];
-        for (int player = 1; player < 9; ++player) {
+        for (player = 1; player < 9; ++player) {
             won[player] = 0;
         }
         if (defeatedTeams >= activeTeams - 1) {
@@ -98,7 +99,7 @@ namespace Synchrony {
             if (DAT_GameCore::instance.mapU4Int0 == 0) {
                 return;
             }
-            for (int player = 1; player < 9; ++player) {
+            for (player = 1; player < 9; ++player) {
                 if ((this->currentPlayerFullIDArray[player] != -1 || this->currentAIArray[player] != 0)
                     && DAT_GameState::instance.playerDataArray[player].field_0x229c == 0) {
                     winningTeam = DAT_GameState::instance.mapAndTime.playerTeams[player];

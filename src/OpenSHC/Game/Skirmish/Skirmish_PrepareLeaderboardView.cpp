@@ -85,18 +85,19 @@ namespace Game {
                         if (INT_ARRAY_00eb0e48::instance[i] == 0) {
                             continue;
                         }
-                        if (DAT_SkMasters2DataArray::instance[i].score != 0) {
-                            strcpy(DAT_SkMasters2DataArray::instance[i].mapName,
+                        OpenSHC::IO::SkMasterDataEntry* const skMasters2DataPtr = &DAT_SkMasters2DataArray::instance[i];
+                        if (skMasters2DataPtr->score != 0) {
+                            strcpy(skMasters2DataPtr->mapName,
                                 MACRO_CALL_MEMBER(
                                     Text::TextManager_Func::getTextStringInGroupAtOffset, DAT_TextManagerObject::ptr)(
-                                    DE::SHCDE::TEXT_TRAIL_NAMES_CRU, DAT_SkMasters2DataArray::instance[i].score));
+                                    DE::SHCDE::TEXT_TRAIL_NAMES_CRU, skMasters2DataPtr->score));
                             count = DAT_SkMasters2Data_Count::instance;
                         }
-                        uchar first = DAT_SkMasters2DataArray::instance[i].mapName[0];
+                        uchar first = skMasters2DataPtr->mapName[0];
                         if ((uchar)(first - 'A') <= 'Z' - 'A') {
                             first += 'a' - 'A';
                         }
-                        uchar second = DAT_SkMasters2DataArray::instance[i].mapName[1];
+                        uchar second = skMasters2DataPtr->mapName[1];
                         if ((uchar)(second - 'A') <= 'Z' - 'A') {
                             second += 'a' - 'A';
                         }

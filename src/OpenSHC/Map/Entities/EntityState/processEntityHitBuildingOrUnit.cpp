@@ -432,9 +432,10 @@ namespace Map {
                 uint const wall = logic & 0x100;
                 if (wall == 0 && (logic & 0x10000400) == 0 && DAT_TileMapState::instance.BuildingLayer[tile] == 0) {
                     DAT_UnitsState::instance.units[this->entityArray[entityID].unitID_OR_seaGullID].field_0xd2 += 1;
+                    int i;
                     if ((logic & 0x4a5014b1) != 0) {
                         if ((logic & 0x40100001) != 0) {
-                            for (int i = 0; i < this->entityArray[entityID].rng_1 % 16 + 10; i++) {
+                            for (i = 0; i < this->entityArray[entityID].rng_1 % 16 + 10; i++) {
                                 short const rng = SEC_RNG::instance.currentNumber2;
                                 MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(1, 0, 0,
                                     this->entityArray[entityID].microX, this->entityArray[entityID].microY,
@@ -454,7 +455,7 @@ namespace Map {
                             this->entityArray[entityID].xPosition, this->entityArray[entityID].yPosition,
                             DE::SHCDE::FX_ROCK_HIT_GROUND);
                         this->entityArray[entityID].someCounter_OR_hitGround = 40;
-                        for (int i = 0; i < this->entityArray[entityID].rng_1 % 8 + 5; i++) {
+                        for (i = 0; i < this->entityArray[entityID].rng_1 % 8 + 5; i++) {
                             short const rng = SEC_RNG::instance.currentNumber2;
                             MACRO_CALL_MEMBER(EntityState_Func::spawnProjectileEntity, this)(2, 0, 0,
                                 this->entityArray[entityID].microX, this->entityArray[entityID].microY,

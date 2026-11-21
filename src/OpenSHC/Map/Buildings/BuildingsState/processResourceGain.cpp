@@ -50,6 +50,7 @@ namespace Map {
                 MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::countPlayerResources, this)(playerID);
                 return TRUE;
             }
+            int n;
 
             // Fill up the stockpiles that already store this resource first. The original has
             // buildingHasSpaceForResource inlined here (currentNumberOfResource is tested twice); ours calls it.
@@ -63,7 +64,7 @@ namespace Map {
                 }
                 int space = DAT_BuildingDefinedData::instance.StorageLimitResourceTypeArray[resourceType]
                     - this->buildings[i].resources[resourceType];
-                for (int n = 0; n < space; ++n) {
+                for (n = 0; n < space; ++n) {
                     MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::addResourceToStockpile,
                         DAT_BuildingsState::ptr)(i, this->buildings[i].uid, resourceType, 1,
                         DAT_BuildingDefinedData::instance.StorageLimitResourceTypeArray[resourceType], 1);
@@ -82,7 +83,7 @@ namespace Map {
                 }
                 int space = DAT_BuildingDefinedData::instance.StorageLimitResourceTypeArray[resourceType]
                     - this->buildings[i].resources[resourceType];
-                for (int n = 0; n < space; ++n) {
+                for (n = 0; n < space; ++n) {
                     MACRO_CALL_MEMBER(OpenSHC::Map::Buildings::BuildingsState_Func::addResourceToStockpile,
                         DAT_BuildingsState::ptr)(i, this->buildings[i].uid, resourceType, 1,
                         DAT_BuildingDefinedData::instance.StorageLimitResourceTypeArray[resourceType], 1);

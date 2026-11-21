@@ -17,7 +17,7 @@ namespace Game {
         {
             int buffer[250];
             memset(buffer, 0, sizeof(buffer));
-            for (int i = 0; i != (int)INT_00eb9b60::instance; ++i) {
+            for (int i = 0; i < (int)INT_00eb9b60::instance; ++i) {
                 uint maxValue;
                 int best = -1;
                 for (int j = 0; j < (int)INT_00eb9b60::instance; ++j) {
@@ -38,9 +38,11 @@ namespace Game {
                 for (int pass = 0; pass < 2500; ++pass) {
                     int swaps = 0;
                     for (int i = 1; i < (int)INT_00eb9b60::instance; ++i) {
-                        if (_stricmp(DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i - 1]].mapName,
-                                DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i]].mapName)
-                            > 0) {
+                        OpenSHC::IO::SkMasterDataEntry* const a
+                            = &DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i - 1]];
+                        OpenSHC::IO::SkMasterDataEntry* const b
+                            = &DAT_SkMasters2DataArray::instance[INT_ARRAY_00eb96d8::instance[i]];
+                        if (_stricmp(a->mapName, b->mapName) > 0) {
                             int const swap = INT_ARRAY_00eb96d8::instance[i];
                             INT_ARRAY_00eb96d8::instance[i] = INT_ARRAY_00eb96d8::instance[i - 1];
                             INT_ARRAY_00eb96d8::instance[i - 1] = swap;

@@ -36021,7 +36021,7 @@ SHC_3BB0A8C1_0x004D9230 | 100.0% | Reimplemented
 
 SHC_3BB0A8C1_0x004D9270 | 100.0% | Reimplemented
 
-SHC_3BB0A8C1_0x004D9290 | 76.6% | Pending
+SHC_3BB0A8C1_0x004D9290 | 100.0% | Reimplemented (counted: only memset/_stricmp call labels and the instance[i - 1] address label differ)
 
 SHC_3BB0A8C1_0x004D9400 | 85.4% | Pending
 

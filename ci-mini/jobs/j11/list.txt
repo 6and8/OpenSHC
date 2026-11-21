@@ -1,0 +1,12 @@
+src/OpenSHC/Map/WildlifeState/updateNofFpoints.cpp
+src/OpenSHC/Map/WildlifeState/floodFillCasDisFromSignpost.cpp
+src/OpenSHC/UI/MenuItems/InGameMenu/MenuItemActionHandler_InGameMenu_TriggerPlaceBuildingCommand.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingCost.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/createEntityForAssemblyPointsForActiveTabType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/convertCommandBuildingTypeToBuildingType.cpp
+src/OpenSHC/Map/Trees/UpdateAppleTree.cpp
+src/OpenSHC/Global/WindowMsgProcessingFunc.cpp
+src/OpenSHC/Rendering/ProcessCreditsScriptCommands.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp

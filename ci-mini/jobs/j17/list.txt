@@ -1,0 +1,10 @@
+src/OpenSHC/Map/Buildings/UpdateTower5.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/WildlifeState/renderDebugDataMapData.cpp
+src/OpenSHC/Map/Buildings/UpdateBadBuildingDunkingStool.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingSignpostCounter.cpp
+src/OpenSHC/Map/LandscapeState/createRock.cpp
+src/OpenSHC/UI/MenuViews/ScenarioDescription/MenuView_ScenarioDescription_Prepare.cpp

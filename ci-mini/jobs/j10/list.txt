@@ -1,0 +1,6 @@
+src/OpenSHC/Synchrony/GameSynchronyState/reorderTeamsAndPositions.cpp
+src/OpenSHC/Map/MapPropertiesState/computeMissionCompletionScore.cpp
+src/OpenSHC/Map/Buildings/UpdateDairyFarm.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateBuildingAreaTileGraphics.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/spawnCrowForBuilding.cpp
+src/OpenSHC/Synchrony/GameSynchronyState/computeLatencyAdjustmentFromMatchTimes.cpp

@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Buildings/UpdateOutpostBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_2.cpp
+src/OpenSHC/Map/Buildings/UpdateTrebutchetBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/Credits/EndCreditsSegmentAndAdvanceToNext.cpp
+src/OpenSHC/UI/Helpers/SomeFearFactorComputation.cpp

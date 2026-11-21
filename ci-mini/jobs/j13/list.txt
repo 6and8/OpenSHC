@@ -1,0 +1,11 @@
+src/OpenSHC/Map/Buildings/UpdateTower1.cpp
+src/OpenSHC/Map/WildlifeState/buildRallyPointPathForTribe.cpp
+src/OpenSHC/Map/Buildings/UpdateGateHouseSmall.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateGateDrawBridgeOpenCloseLogic.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/applyGateOrDrawbridgeOpenCloseChange.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/findParticularBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Entities/EntityState/calculateEntityDrawOffset.cpp
+src/OpenSHC/Audio/SFX/ComputePlayerRanking.cpp
+src/OpenSHC/UI/MenuTextInputState/loadOrSaveGame.cpp
+src/OpenSHC/IO/ResourceManager/paths.cpp

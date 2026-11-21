@@ -1,0 +1,6 @@
+src/OpenSHC/Synchrony/GameSynchronyState/checkSkirmishGameDefeat.cpp
+src/OpenSHC/Map/WildlifeState/findAndSetNewRallyPointForDeerAndLions.cpp
+src/OpenSHC/Map/Buildings/UpdateMill.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateVisuallyActiveState.cpp
+src/OpenSHC/Game/Skirmish/SetupSkirmishMode.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/updateHopsFieldTileGraphics.cpp

@@ -1,0 +1,15 @@
+src/OpenSHC/UI/MenuItems/General/MenuItemActionHandler_General_AdvancedGameOptions.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoAnArrayAt_ec0348.cpp
+src/OpenSHC/Map/Buildings/UpdateSiegeTowerBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Random/RNG/nextRandomNumber2.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/Synchrony/Actions/SelectionReplenishAmmo.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/processResourceLoss.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingStorageTypeForResourceType.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeResourceSumForBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/countPlayerResources.cpp
+src/OpenSHC/Game/Skirmish/StoreGameIntoSKMasters.cpp

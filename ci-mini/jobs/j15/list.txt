@@ -1,0 +1,16 @@
+src/OpenSHC/Map/Buildings/UpdateTower3.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingEntranceFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/hasBuildingExitFlagForOrientation.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/computeBuildingEntranceFlagsForOrientations.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupBuildingEntrancesOffset.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/determineBuildingEntranceFromKeepArea.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/getBuildingHeightForBuildingID.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/setupNextCandidateLocationComputeOffsets2.cpp
+src/OpenSHC/Map/Buildings/UpdateKillingPit.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroyBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isFearFactorBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/isReligiousBuilding.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/recomputeAllFearFactors.cpp
+src/OpenSHC/Map/Buildings/BuildingsState/destroySignpostData.cpp
+src/OpenSHC/UI/Credits/InsertElementIntoArrayAt_ec0348_3.cpp
+src/OpenSHC/Synchrony/InitSkirmishLobbyData.cpp
